@@ -688,6 +688,53 @@ many("Judas Priest", "heavy metal", [
     ("Electric Eye", "1980s", "distorted", "solo", (8,5,7,7,6.5,2.5), {"fx": ["Cry Baby wah"]}),
 ], "Marshall", "Gibson Flying V / Fender Stratocaster", JPN, "bridge humbucker", 0.45, JP)
 
+# ============ Guns N' Roses ============
+GNR = src("https://guitarworld.com/features/slash-appetite-reconstruction",
+          "https://www.guitarworld.com/features/slashs-guitar-gear-everything-you-need-to-nail-the-guns-n-roses-legends-sound",
+          "https://musicradar.com/news/the-story-of-slashs-signature-marshall-amps-and-how-they-capture-his-classic-tones")
+GNRN = ("Slash på Appetite for Destruction: Kris Derrig-kopia av en -59 Les Paul -> hyrd, modifierad Marshall Super Lead (S.I.R. #39) "
+        "med Vintage 30-kabinett. Use Your Illusion: Marshall (modell inte bekräftad i källorna). Cry Baby på solon.")
+many("Guns N' Roses", "hard rock", [
+    ("Nightrain", "1980s", "distorted", "riff", (7.5,6,6.5,6.5,6,2)),
+    ("It's So Easy", "1980s", "distorted", "riff", (7.5,6,6.5,6.5,6,2)),
+    ("Out ta Get Me", "1980s", "distorted", "riff", (7.5,6,6.5,6.5,6,2)),
+    ("My Michelle", "1980s", "distorted", "riff", (7.5,6,6.5,6.5,6,2)),
+    ("Rocket Queen", "1980s", "distorted", "riff", (7.5,6,6.5,6.5,6,2)),
+    ("Think About You", "1980s", "distorted", "riff", (7,6,6.5,6.5,6,2)),
+    ("Sweet Child O' Mine", "1980s", "distorted", "solo", (7.5,5.5,7,6.5,6,2.5), {"fx": ["Cry Baby wah"],
+        "note": "Wah-delen av solot."}),
+    ("You Could Be Mine", "1990s", "distorted", "riff", (8,6,6.5,6.5,6,2), {"amp": "Marshall", "conf": 0.4}),
+    ("Live and Let Die", "1990s", "distorted", "riff", (7.5,6,6.5,6.5,6,2.5), {"amp": "Marshall", "conf": 0.4}),
+    ("Civil War", "1990s", "distorted", "riff", (7.5,6,6.5,6.5,6,2.5), {"amp": "Marshall", "conf": 0.4}),
+    ("Estranged", "1990s", "distorted", "solo", (7.5,5.5,7,6.5,6,3.5), {"amp": "Marshall", "conf": 0.4, "fx": ["delay"]}),
+    ("Yesterdays", "1990s", "distorted", "riff", (7,6,6.5,6.5,6,2.5), {"amp": "Marshall", "conf": 0.4}),
+], "Marshall Super Lead (modded S.I.R. rental)", "Gibson Les Paul (Derrig '59 replica)", GNRN, "bridge humbucker", 0.5, GNR)
+
+# ============ Def Leppard ============
+DL = src("https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria",
+         "https://guitar.com/features/artist-rigs/gear-used-by-phil-collen-steve-clark-def-leppard-hysteria",
+         "https://www.guitarworld.com/features/phil-collen-on-def-leppard-pyromania")
+DLN = ("Steve Clark: Marshall JCM-toppar på de tre första albumen. Phil Collen på Pyromania: Marshall JMP utan mastervolym. "
+       "Hysteria: 99 % av gitarrerna genom en Tom Scholz Rockman (Gallien-Krueger för feedbackpartier).")
+HY = "Tom Scholz Rockman"
+HYFX = ["compressor", "chorus", "delay"]
+many("Def Leppard", "hard rock", [
+    ("Let It Go", "1980s", "distorted", "riff", (6.5,5.5,6.5,6.5,6,2), {"amp": "Marshall JCM800"}),
+    ("Bringin' On the Heartbreak", "1980s", "clean", "clean", (2.5,5,6,6.5,6,3.5), {"amp": "Marshall JCM800", "fx": ["chorus"], "pickup": "neck"}),
+    ("Bringin' On the Heartbreak", "1980s", "distorted", "riff", (6.5,5.5,6.5,6.5,6,2.5), {"amp": "Marshall JCM800"}),
+    ("Photograph", "1980s", "distorted", "riff", (7,5.5,6.5,7,6.5,2.5)),
+    ("Rock of Ages", "1980s", "distorted", "riff", (7,5.5,6.5,7,6.5,2.5)),
+    ("Foolin'", "1980s", "distorted", "riff", (6.5,5.5,6.5,7,6.5,3)),
+    ("Too Late for Love", "1980s", "distorted", "riff", (6.5,5.5,6.5,7,6.5,3)),
+    ("Stagefright", "1980s", "distorted", "riff", (7,5.5,6.5,7,6.5,2)),
+    ("Animal", "1980s", "distorted", "riff", (6.5,5,6,7,6.5,3), {"amp": HY, "fx": HYFX}),
+    ("Hysteria", "1980s", "clean", "clean", (3,5,6,7,6.5,3.5), {"amp": HY, "fx": HYFX}),
+    ("Armageddon It", "1980s", "distorted", "riff", (6.5,5,6,7,6.5,3), {"amp": HY, "fx": HYFX}),
+    ("Rocket", "1980s", "distorted", "riff", (6.5,5,6,7,6.5,3), {"amp": HY, "fx": HYFX}),
+    ("Love Bites", "1980s", "clean", "clean", (3,5,6,7,6.5,4), {"amp": HY, "fx": HYFX}),
+    ("Women", "1980s", "distorted", "riff", (6.5,5,6,7,6.5,3), {"amp": HY, "fx": HYFX}),
+], "Marshall JMP", "Gibson Les Paul / Fender Stratocaster", DLN, "bridge humbucker", 0.5, DL)
+
 ds = dict(source="Egen research (sammanställd vid utveckling – appen använder ingen AI)",
           sourceUrl="", homepage="", license="Egen sammanställning; källor anges per post",
           attribution="Egen research – källor per låt",

@@ -83,6 +83,24 @@
     },
     {
       "match": [
+        "rockman",
+        "scholz"
+      ],
+      "byGain": [
+        {
+          "maxGain": 4,
+          "model": "J-120 CL"
+        },
+        {
+          "maxGain": 10,
+          "model": "UK 800"
+        }
+      ],
+      "reason": "Tom Scholz Rockman (hörlursförstärkare, Boston/Def Leppard): ren kanal är mycket ren och kompressad (närmast J-120 CL); distkanalen är jämn, kompressad 80-talsdist – närmast UK 800. Rockmans karaktär kommer också från inbyggd kompressor, chorus och eko, som läggs i PRE/MOD/DLY.",
+      "basis": "interpretation"
+    },
+    {
+      "match": [
         "marshall"
       ],
       "byGain": [

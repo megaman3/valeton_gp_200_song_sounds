@@ -5,7 +5,7 @@
   "license": "Egen sammanställning; källor anges per post",
   "attribution": "Egen research – källor per låt",
   "importedAt": "2026-11-10",
-  "count": 333,
+  "count": 359,
   "tones": [
     {
       "id": "volbeat-a-warrior-s-call-riff-distorted",
@@ -9824,6 +9824,790 @@
         "https://www.woodytone.com/?p=2157"
       ],
       "url": "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview"
+    },
+    {
+      "id": "guns-n-roses-nightrain-riff-distorted",
+      "artist": "Guns N' Roses",
+      "song": "Nightrain",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Marshall Super Lead (modded S.I.R. rental)",
+      "guitar": "Gibson Les Paul (Derrig '59 replica)",
+      "notes": "Slash på Appetite for Destruction: Kris Derrig-kopia av en -59 Les Paul -> hyrd, modifierad Marshall Super Lead (S.I.R. #39) med Vintage 30-kabinett. Use Your Illusion: Marshall (modell inte bekräftad i källorna). Cry Baby på solon.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://guitarworld.com/features/slash-appetite-reconstruction",
+        "https://www.guitarworld.com/features/slashs-guitar-gear-everything-you-need-to-nail-the-guns-n-roses-legends-sound",
+        "https://musicradar.com/news/the-story-of-slashs-signature-marshall-amps-and-how-they-capture-his-classic-tones"
+      ],
+      "url": "https://guitarworld.com/features/slash-appetite-reconstruction"
+    },
+    {
+      "id": "guns-n-roses-it-s-so-easy-riff-distorted",
+      "artist": "Guns N' Roses",
+      "song": "It's So Easy",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Marshall Super Lead (modded S.I.R. rental)",
+      "guitar": "Gibson Les Paul (Derrig '59 replica)",
+      "notes": "Slash på Appetite for Destruction: Kris Derrig-kopia av en -59 Les Paul -> hyrd, modifierad Marshall Super Lead (S.I.R. #39) med Vintage 30-kabinett. Use Your Illusion: Marshall (modell inte bekräftad i källorna). Cry Baby på solon.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://guitarworld.com/features/slash-appetite-reconstruction",
+        "https://www.guitarworld.com/features/slashs-guitar-gear-everything-you-need-to-nail-the-guns-n-roses-legends-sound",
+        "https://musicradar.com/news/the-story-of-slashs-signature-marshall-amps-and-how-they-capture-his-classic-tones"
+      ],
+      "url": "https://guitarworld.com/features/slash-appetite-reconstruction"
+    },
+    {
+      "id": "guns-n-roses-out-ta-get-me-riff-distorted",
+      "artist": "Guns N' Roses",
+      "song": "Out ta Get Me",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Marshall Super Lead (modded S.I.R. rental)",
+      "guitar": "Gibson Les Paul (Derrig '59 replica)",
+      "notes": "Slash på Appetite for Destruction: Kris Derrig-kopia av en -59 Les Paul -> hyrd, modifierad Marshall Super Lead (S.I.R. #39) med Vintage 30-kabinett. Use Your Illusion: Marshall (modell inte bekräftad i källorna). Cry Baby på solon.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://guitarworld.com/features/slash-appetite-reconstruction",
+        "https://www.guitarworld.com/features/slashs-guitar-gear-everything-you-need-to-nail-the-guns-n-roses-legends-sound",
+        "https://musicradar.com/news/the-story-of-slashs-signature-marshall-amps-and-how-they-capture-his-classic-tones"
+      ],
+      "url": "https://guitarworld.com/features/slash-appetite-reconstruction"
+    },
+    {
+      "id": "guns-n-roses-my-michelle-riff-distorted",
+      "artist": "Guns N' Roses",
+      "song": "My Michelle",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Marshall Super Lead (modded S.I.R. rental)",
+      "guitar": "Gibson Les Paul (Derrig '59 replica)",
+      "notes": "Slash på Appetite for Destruction: Kris Derrig-kopia av en -59 Les Paul -> hyrd, modifierad Marshall Super Lead (S.I.R. #39) med Vintage 30-kabinett. Use Your Illusion: Marshall (modell inte bekräftad i källorna). Cry Baby på solon.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://guitarworld.com/features/slash-appetite-reconstruction",
+        "https://www.guitarworld.com/features/slashs-guitar-gear-everything-you-need-to-nail-the-guns-n-roses-legends-sound",
+        "https://musicradar.com/news/the-story-of-slashs-signature-marshall-amps-and-how-they-capture-his-classic-tones"
+      ],
+      "url": "https://guitarworld.com/features/slash-appetite-reconstruction"
+    },
+    {
+      "id": "guns-n-roses-rocket-queen-riff-distorted",
+      "artist": "Guns N' Roses",
+      "song": "Rocket Queen",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Marshall Super Lead (modded S.I.R. rental)",
+      "guitar": "Gibson Les Paul (Derrig '59 replica)",
+      "notes": "Slash på Appetite for Destruction: Kris Derrig-kopia av en -59 Les Paul -> hyrd, modifierad Marshall Super Lead (S.I.R. #39) med Vintage 30-kabinett. Use Your Illusion: Marshall (modell inte bekräftad i källorna). Cry Baby på solon.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://guitarworld.com/features/slash-appetite-reconstruction",
+        "https://www.guitarworld.com/features/slashs-guitar-gear-everything-you-need-to-nail-the-guns-n-roses-legends-sound",
+        "https://musicradar.com/news/the-story-of-slashs-signature-marshall-amps-and-how-they-capture-his-classic-tones"
+      ],
+      "url": "https://guitarworld.com/features/slash-appetite-reconstruction"
+    },
+    {
+      "id": "guns-n-roses-think-about-you-riff-distorted",
+      "artist": "Guns N' Roses",
+      "song": "Think About You",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 6,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Marshall Super Lead (modded S.I.R. rental)",
+      "guitar": "Gibson Les Paul (Derrig '59 replica)",
+      "notes": "Slash på Appetite for Destruction: Kris Derrig-kopia av en -59 Les Paul -> hyrd, modifierad Marshall Super Lead (S.I.R. #39) med Vintage 30-kabinett. Use Your Illusion: Marshall (modell inte bekräftad i källorna). Cry Baby på solon.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://guitarworld.com/features/slash-appetite-reconstruction",
+        "https://www.guitarworld.com/features/slashs-guitar-gear-everything-you-need-to-nail-the-guns-n-roses-legends-sound",
+        "https://musicradar.com/news/the-story-of-slashs-signature-marshall-amps-and-how-they-capture-his-classic-tones"
+      ],
+      "url": "https://guitarworld.com/features/slash-appetite-reconstruction"
+    },
+    {
+      "id": "guns-n-roses-sweet-child-o-mine-solo-distorted",
+      "artist": "Guns N' Roses",
+      "song": "Sweet Child O' Mine",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "solo",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 5.5,
+        "mid": 7,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2.5
+      },
+      "amp": "Marshall Super Lead (modded S.I.R. rental)",
+      "guitar": "Gibson Les Paul (Derrig '59 replica)",
+      "notes": "Slash på Appetite for Destruction: Kris Derrig-kopia av en -59 Les Paul -> hyrd, modifierad Marshall Super Lead (S.I.R. #39) med Vintage 30-kabinett. Use Your Illusion: Marshall (modell inte bekräftad i källorna). Cry Baby på solon. Wah-delen av solot.",
+      "effects": [
+        "Cry Baby wah"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://guitarworld.com/features/slash-appetite-reconstruction",
+        "https://www.guitarworld.com/features/slashs-guitar-gear-everything-you-need-to-nail-the-guns-n-roses-legends-sound",
+        "https://musicradar.com/news/the-story-of-slashs-signature-marshall-amps-and-how-they-capture-his-classic-tones"
+      ],
+      "url": "https://guitarworld.com/features/slash-appetite-reconstruction"
+    },
+    {
+      "id": "guns-n-roses-you-could-be-mine-riff-distorted",
+      "artist": "Guns N' Roses",
+      "song": "You Could Be Mine",
+      "genre": "hard rock",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Les Paul (Derrig '59 replica)",
+      "notes": "Slash på Appetite for Destruction: Kris Derrig-kopia av en -59 Les Paul -> hyrd, modifierad Marshall Super Lead (S.I.R. #39) med Vintage 30-kabinett. Use Your Illusion: Marshall (modell inte bekräftad i källorna). Cry Baby på solon.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.4,
+      "sources": [
+        "https://guitarworld.com/features/slash-appetite-reconstruction",
+        "https://www.guitarworld.com/features/slashs-guitar-gear-everything-you-need-to-nail-the-guns-n-roses-legends-sound",
+        "https://musicradar.com/news/the-story-of-slashs-signature-marshall-amps-and-how-they-capture-his-classic-tones"
+      ],
+      "url": "https://guitarworld.com/features/slash-appetite-reconstruction"
+    },
+    {
+      "id": "guns-n-roses-live-and-let-die-riff-distorted",
+      "artist": "Guns N' Roses",
+      "song": "Live and Let Die",
+      "genre": "hard rock",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2.5
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Les Paul (Derrig '59 replica)",
+      "notes": "Slash på Appetite for Destruction: Kris Derrig-kopia av en -59 Les Paul -> hyrd, modifierad Marshall Super Lead (S.I.R. #39) med Vintage 30-kabinett. Use Your Illusion: Marshall (modell inte bekräftad i källorna). Cry Baby på solon.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.4,
+      "sources": [
+        "https://guitarworld.com/features/slash-appetite-reconstruction",
+        "https://www.guitarworld.com/features/slashs-guitar-gear-everything-you-need-to-nail-the-guns-n-roses-legends-sound",
+        "https://musicradar.com/news/the-story-of-slashs-signature-marshall-amps-and-how-they-capture-his-classic-tones"
+      ],
+      "url": "https://guitarworld.com/features/slash-appetite-reconstruction"
+    },
+    {
+      "id": "guns-n-roses-civil-war-riff-distorted",
+      "artist": "Guns N' Roses",
+      "song": "Civil War",
+      "genre": "hard rock",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2.5
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Les Paul (Derrig '59 replica)",
+      "notes": "Slash på Appetite for Destruction: Kris Derrig-kopia av en -59 Les Paul -> hyrd, modifierad Marshall Super Lead (S.I.R. #39) med Vintage 30-kabinett. Use Your Illusion: Marshall (modell inte bekräftad i källorna). Cry Baby på solon.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.4,
+      "sources": [
+        "https://guitarworld.com/features/slash-appetite-reconstruction",
+        "https://www.guitarworld.com/features/slashs-guitar-gear-everything-you-need-to-nail-the-guns-n-roses-legends-sound",
+        "https://musicradar.com/news/the-story-of-slashs-signature-marshall-amps-and-how-they-capture-his-classic-tones"
+      ],
+      "url": "https://guitarworld.com/features/slash-appetite-reconstruction"
+    },
+    {
+      "id": "guns-n-roses-estranged-solo-distorted",
+      "artist": "Guns N' Roses",
+      "song": "Estranged",
+      "genre": "hard rock",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "solo",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 5.5,
+        "mid": 7,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 3.5
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Les Paul (Derrig '59 replica)",
+      "notes": "Slash på Appetite for Destruction: Kris Derrig-kopia av en -59 Les Paul -> hyrd, modifierad Marshall Super Lead (S.I.R. #39) med Vintage 30-kabinett. Use Your Illusion: Marshall (modell inte bekräftad i källorna). Cry Baby på solon.",
+      "effects": [
+        "delay"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.4,
+      "sources": [
+        "https://guitarworld.com/features/slash-appetite-reconstruction",
+        "https://www.guitarworld.com/features/slashs-guitar-gear-everything-you-need-to-nail-the-guns-n-roses-legends-sound",
+        "https://musicradar.com/news/the-story-of-slashs-signature-marshall-amps-and-how-they-capture-his-classic-tones"
+      ],
+      "url": "https://guitarworld.com/features/slash-appetite-reconstruction"
+    },
+    {
+      "id": "guns-n-roses-yesterdays-riff-distorted",
+      "artist": "Guns N' Roses",
+      "song": "Yesterdays",
+      "genre": "hard rock",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 6,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2.5
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Les Paul (Derrig '59 replica)",
+      "notes": "Slash på Appetite for Destruction: Kris Derrig-kopia av en -59 Les Paul -> hyrd, modifierad Marshall Super Lead (S.I.R. #39) med Vintage 30-kabinett. Use Your Illusion: Marshall (modell inte bekräftad i källorna). Cry Baby på solon.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.4,
+      "sources": [
+        "https://guitarworld.com/features/slash-appetite-reconstruction",
+        "https://www.guitarworld.com/features/slashs-guitar-gear-everything-you-need-to-nail-the-guns-n-roses-legends-sound",
+        "https://musicradar.com/news/the-story-of-slashs-signature-marshall-amps-and-how-they-capture-his-classic-tones"
+      ],
+      "url": "https://guitarworld.com/features/slash-appetite-reconstruction"
+    },
+    {
+      "id": "def-leppard-let-it-go-riff-distorted",
+      "artist": "Def Leppard",
+      "song": "Let It Go",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Marshall JCM800",
+      "guitar": "Gibson Les Paul / Fender Stratocaster",
+      "notes": "Steve Clark: Marshall JCM-toppar på de tre första albumen. Phil Collen på Pyromania: Marshall JMP utan mastervolym. Hysteria: 99 % av gitarrerna genom en Tom Scholz Rockman (Gallien-Krueger för feedbackpartier).",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria",
+        "https://guitar.com/features/artist-rigs/gear-used-by-phil-collen-steve-clark-def-leppard-hysteria",
+        "https://www.guitarworld.com/features/phil-collen-on-def-leppard-pyromania"
+      ],
+      "url": "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria"
+    },
+    {
+      "id": "def-leppard-bringin-on-the-heartbreak-clean-clean",
+      "artist": "Def Leppard",
+      "song": "Bringin' On the Heartbreak",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "clean",
+      "part": "clean",
+      "ampSettings": {
+        "gain": 2.5,
+        "bass": 5,
+        "mid": 6,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 3.5
+      },
+      "amp": "Marshall JCM800",
+      "guitar": "Gibson Les Paul / Fender Stratocaster",
+      "notes": "Steve Clark: Marshall JCM-toppar på de tre första albumen. Phil Collen på Pyromania: Marshall JMP utan mastervolym. Hysteria: 99 % av gitarrerna genom en Tom Scholz Rockman (Gallien-Krueger för feedbackpartier).",
+      "effects": [
+        "chorus"
+      ],
+      "pickup": "neck",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria",
+        "https://guitar.com/features/artist-rigs/gear-used-by-phil-collen-steve-clark-def-leppard-hysteria",
+        "https://www.guitarworld.com/features/phil-collen-on-def-leppard-pyromania"
+      ],
+      "url": "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria"
+    },
+    {
+      "id": "def-leppard-bringin-on-the-heartbreak-riff-distorted",
+      "artist": "Def Leppard",
+      "song": "Bringin' On the Heartbreak",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2.5
+      },
+      "amp": "Marshall JCM800",
+      "guitar": "Gibson Les Paul / Fender Stratocaster",
+      "notes": "Steve Clark: Marshall JCM-toppar på de tre första albumen. Phil Collen på Pyromania: Marshall JMP utan mastervolym. Hysteria: 99 % av gitarrerna genom en Tom Scholz Rockman (Gallien-Krueger för feedbackpartier).",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria",
+        "https://guitar.com/features/artist-rigs/gear-used-by-phil-collen-steve-clark-def-leppard-hysteria",
+        "https://www.guitarworld.com/features/phil-collen-on-def-leppard-pyromania"
+      ],
+      "url": "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria"
+    },
+    {
+      "id": "def-leppard-photograph-riff-distorted",
+      "artist": "Def Leppard",
+      "song": "Photograph",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 2.5
+      },
+      "amp": "Marshall JMP",
+      "guitar": "Gibson Les Paul / Fender Stratocaster",
+      "notes": "Steve Clark: Marshall JCM-toppar på de tre första albumen. Phil Collen på Pyromania: Marshall JMP utan mastervolym. Hysteria: 99 % av gitarrerna genom en Tom Scholz Rockman (Gallien-Krueger för feedbackpartier).",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria",
+        "https://guitar.com/features/artist-rigs/gear-used-by-phil-collen-steve-clark-def-leppard-hysteria",
+        "https://www.guitarworld.com/features/phil-collen-on-def-leppard-pyromania"
+      ],
+      "url": "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria"
+    },
+    {
+      "id": "def-leppard-rock-of-ages-riff-distorted",
+      "artist": "Def Leppard",
+      "song": "Rock of Ages",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 2.5
+      },
+      "amp": "Marshall JMP",
+      "guitar": "Gibson Les Paul / Fender Stratocaster",
+      "notes": "Steve Clark: Marshall JCM-toppar på de tre första albumen. Phil Collen på Pyromania: Marshall JMP utan mastervolym. Hysteria: 99 % av gitarrerna genom en Tom Scholz Rockman (Gallien-Krueger för feedbackpartier).",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria",
+        "https://guitar.com/features/artist-rigs/gear-used-by-phil-collen-steve-clark-def-leppard-hysteria",
+        "https://www.guitarworld.com/features/phil-collen-on-def-leppard-pyromania"
+      ],
+      "url": "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria"
+    },
+    {
+      "id": "def-leppard-foolin-riff-distorted",
+      "artist": "Def Leppard",
+      "song": "Foolin'",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 3
+      },
+      "amp": "Marshall JMP",
+      "guitar": "Gibson Les Paul / Fender Stratocaster",
+      "notes": "Steve Clark: Marshall JCM-toppar på de tre första albumen. Phil Collen på Pyromania: Marshall JMP utan mastervolym. Hysteria: 99 % av gitarrerna genom en Tom Scholz Rockman (Gallien-Krueger för feedbackpartier).",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria",
+        "https://guitar.com/features/artist-rigs/gear-used-by-phil-collen-steve-clark-def-leppard-hysteria",
+        "https://www.guitarworld.com/features/phil-collen-on-def-leppard-pyromania"
+      ],
+      "url": "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria"
+    },
+    {
+      "id": "def-leppard-too-late-for-love-riff-distorted",
+      "artist": "Def Leppard",
+      "song": "Too Late for Love",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 3
+      },
+      "amp": "Marshall JMP",
+      "guitar": "Gibson Les Paul / Fender Stratocaster",
+      "notes": "Steve Clark: Marshall JCM-toppar på de tre första albumen. Phil Collen på Pyromania: Marshall JMP utan mastervolym. Hysteria: 99 % av gitarrerna genom en Tom Scholz Rockman (Gallien-Krueger för feedbackpartier).",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria",
+        "https://guitar.com/features/artist-rigs/gear-used-by-phil-collen-steve-clark-def-leppard-hysteria",
+        "https://www.guitarworld.com/features/phil-collen-on-def-leppard-pyromania"
+      ],
+      "url": "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria"
+    },
+    {
+      "id": "def-leppard-stagefright-riff-distorted",
+      "artist": "Def Leppard",
+      "song": "Stagefright",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 2
+      },
+      "amp": "Marshall JMP",
+      "guitar": "Gibson Les Paul / Fender Stratocaster",
+      "notes": "Steve Clark: Marshall JCM-toppar på de tre första albumen. Phil Collen på Pyromania: Marshall JMP utan mastervolym. Hysteria: 99 % av gitarrerna genom en Tom Scholz Rockman (Gallien-Krueger för feedbackpartier).",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria",
+        "https://guitar.com/features/artist-rigs/gear-used-by-phil-collen-steve-clark-def-leppard-hysteria",
+        "https://www.guitarworld.com/features/phil-collen-on-def-leppard-pyromania"
+      ],
+      "url": "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria"
+    },
+    {
+      "id": "def-leppard-animal-riff-distorted",
+      "artist": "Def Leppard",
+      "song": "Animal",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 5,
+        "mid": 6,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 3
+      },
+      "amp": "Tom Scholz Rockman",
+      "guitar": "Gibson Les Paul / Fender Stratocaster",
+      "notes": "Steve Clark: Marshall JCM-toppar på de tre första albumen. Phil Collen på Pyromania: Marshall JMP utan mastervolym. Hysteria: 99 % av gitarrerna genom en Tom Scholz Rockman (Gallien-Krueger för feedbackpartier).",
+      "effects": [
+        "compressor",
+        "chorus",
+        "delay"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria",
+        "https://guitar.com/features/artist-rigs/gear-used-by-phil-collen-steve-clark-def-leppard-hysteria",
+        "https://www.guitarworld.com/features/phil-collen-on-def-leppard-pyromania"
+      ],
+      "url": "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria"
+    },
+    {
+      "id": "def-leppard-hysteria-clean-clean",
+      "artist": "Def Leppard",
+      "song": "Hysteria",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "clean",
+      "part": "clean",
+      "ampSettings": {
+        "gain": 3,
+        "bass": 5,
+        "mid": 6,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 3.5
+      },
+      "amp": "Tom Scholz Rockman",
+      "guitar": "Gibson Les Paul / Fender Stratocaster",
+      "notes": "Steve Clark: Marshall JCM-toppar på de tre första albumen. Phil Collen på Pyromania: Marshall JMP utan mastervolym. Hysteria: 99 % av gitarrerna genom en Tom Scholz Rockman (Gallien-Krueger för feedbackpartier).",
+      "effects": [
+        "compressor",
+        "chorus",
+        "delay"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria",
+        "https://guitar.com/features/artist-rigs/gear-used-by-phil-collen-steve-clark-def-leppard-hysteria",
+        "https://www.guitarworld.com/features/phil-collen-on-def-leppard-pyromania"
+      ],
+      "url": "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria"
+    },
+    {
+      "id": "def-leppard-armageddon-it-riff-distorted",
+      "artist": "Def Leppard",
+      "song": "Armageddon It",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 5,
+        "mid": 6,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 3
+      },
+      "amp": "Tom Scholz Rockman",
+      "guitar": "Gibson Les Paul / Fender Stratocaster",
+      "notes": "Steve Clark: Marshall JCM-toppar på de tre första albumen. Phil Collen på Pyromania: Marshall JMP utan mastervolym. Hysteria: 99 % av gitarrerna genom en Tom Scholz Rockman (Gallien-Krueger för feedbackpartier).",
+      "effects": [
+        "compressor",
+        "chorus",
+        "delay"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria",
+        "https://guitar.com/features/artist-rigs/gear-used-by-phil-collen-steve-clark-def-leppard-hysteria",
+        "https://www.guitarworld.com/features/phil-collen-on-def-leppard-pyromania"
+      ],
+      "url": "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria"
+    },
+    {
+      "id": "def-leppard-rocket-riff-distorted",
+      "artist": "Def Leppard",
+      "song": "Rocket",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 5,
+        "mid": 6,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 3
+      },
+      "amp": "Tom Scholz Rockman",
+      "guitar": "Gibson Les Paul / Fender Stratocaster",
+      "notes": "Steve Clark: Marshall JCM-toppar på de tre första albumen. Phil Collen på Pyromania: Marshall JMP utan mastervolym. Hysteria: 99 % av gitarrerna genom en Tom Scholz Rockman (Gallien-Krueger för feedbackpartier).",
+      "effects": [
+        "compressor",
+        "chorus",
+        "delay"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria",
+        "https://guitar.com/features/artist-rigs/gear-used-by-phil-collen-steve-clark-def-leppard-hysteria",
+        "https://www.guitarworld.com/features/phil-collen-on-def-leppard-pyromania"
+      ],
+      "url": "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria"
+    },
+    {
+      "id": "def-leppard-love-bites-clean-clean",
+      "artist": "Def Leppard",
+      "song": "Love Bites",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "clean",
+      "part": "clean",
+      "ampSettings": {
+        "gain": 3,
+        "bass": 5,
+        "mid": 6,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 4
+      },
+      "amp": "Tom Scholz Rockman",
+      "guitar": "Gibson Les Paul / Fender Stratocaster",
+      "notes": "Steve Clark: Marshall JCM-toppar på de tre första albumen. Phil Collen på Pyromania: Marshall JMP utan mastervolym. Hysteria: 99 % av gitarrerna genom en Tom Scholz Rockman (Gallien-Krueger för feedbackpartier).",
+      "effects": [
+        "compressor",
+        "chorus",
+        "delay"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria",
+        "https://guitar.com/features/artist-rigs/gear-used-by-phil-collen-steve-clark-def-leppard-hysteria",
+        "https://www.guitarworld.com/features/phil-collen-on-def-leppard-pyromania"
+      ],
+      "url": "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria"
+    },
+    {
+      "id": "def-leppard-women-riff-distorted",
+      "artist": "Def Leppard",
+      "song": "Women",
+      "genre": "hard rock",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 5,
+        "mid": 6,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 3
+      },
+      "amp": "Tom Scholz Rockman",
+      "guitar": "Gibson Les Paul / Fender Stratocaster",
+      "notes": "Steve Clark: Marshall JCM-toppar på de tre första albumen. Phil Collen på Pyromania: Marshall JMP utan mastervolym. Hysteria: 99 % av gitarrerna genom en Tom Scholz Rockman (Gallien-Krueger för feedbackpartier).",
+      "effects": [
+        "compressor",
+        "chorus",
+        "delay"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria",
+        "https://guitar.com/features/artist-rigs/gear-used-by-phil-collen-steve-clark-def-leppard-hysteria",
+        "https://www.guitarworld.com/features/phil-collen-on-def-leppard-pyromania"
+      ],
+      "url": "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria"
     }
   ]
 }
