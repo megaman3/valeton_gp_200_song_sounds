@@ -14,10 +14,12 @@ export function searchSongs(songs: Song[], query: string, limit = Infinity): Son
   for (const song of songs) {
     const title = normalize(song.title);
     const haystack = normalize([song.artist, song.title, song.album ?? '', ...(song.aliases ?? [])].join(' '));
-    if (!terms.every((t) => haystack.includes(t))) continue;
+    // Ihopskrivet ska också hitta: "acdc" → "AC/DC", "whitesnake" → "White Snake".
+    const compact = haystack.replace(/ /g, '');
+    if (!terms.every((t) => haystack.includes(t) || compact.includes(t))) continue;
     let score = terms.filter((t) => title.includes(t)).length * 2;
     if (title === normalize(query)) score += 5;
-    if (song.source !== 'guitartoneadapt') score += 1;
+    if (song.source === undefined || song.source === 'curated') score += 1;
     scored.push({ song, score });
   }
   return scored
