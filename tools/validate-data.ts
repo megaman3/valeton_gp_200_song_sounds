@@ -58,7 +58,7 @@ for (const song of allSongs) {
 }
 
 console.log(
-  `\n${allSongs.length} låtar (${database.curatedSongs.length} handskrivna), ${presets} presets, ` +
+  `\n${allSongs.length} låtar (${database.curatedSongs.length} handskrivna, ${database.research.count} researchade toner), ${presets} presets, ` +
     `${rules.amp.length + rules.cab.length + rules.effects.length} regler.`,
 );
 if (warnings.size) {

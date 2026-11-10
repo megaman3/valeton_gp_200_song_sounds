@@ -9,6 +9,7 @@ import type {
   ResearchedTone,
   Song,
   SongPart,
+  SongSource,
 } from '../types';
 import type { GP200Validator } from './GP200Validator';
 import { findKeyword, normalizeText } from './matching';
@@ -317,7 +318,11 @@ export class ToneTranslator {
     };
   }
 
-  translateDataset(dataset: ExternalDataset, skipKeys = new Set<string>()): Song[] {
+  translateDataset(
+    dataset: ExternalDataset,
+    skipKeys = new Set<string>(),
+    source: SongSource = 'guitartoneadapt',
+  ): Song[] {
     const songs = new Map<string, Song>();
     const order = ['riff', 'main', 'distorted', 'clean', 'solo'];
     const sorted = [...dataset.tones].sort((a, b) => order.indexOf(a.part) - order.indexOf(b.part));
@@ -327,12 +332,12 @@ export class ToneTranslator {
       let song = songs.get(key);
       if (!song) {
         song = {
-          id: `gta-${key}`,
+          id: `${source === 'research' ? 'res' : 'gta'}-${key}`,
           artist: tone.artist,
           title: tone.song,
           genre: tone.genre,
           parts: [],
-          source: 'guitartoneadapt',
+          source,
           attribution: dataset.attribution,
         };
         songs.set(key, song);

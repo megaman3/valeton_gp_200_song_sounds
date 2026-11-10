@@ -8,10 +8,14 @@ export const validator = new GP200Validator(database.models, database.manual);
 export const generator = new PresetGenerator(database.profiles, validator);
 export const translator = new ToneTranslator(database.rules, validator);
 
-/** Handskrivna låtar har företräde; externa låtar med samma artist+titel hoppas över. */
+/**
+ * Företräde vid samma artist+titel: handskrivna låtar → egen research → GuitarToneAdapt.
+ */
 const curatedKeys = new Set(database.curatedSongs.map((s) => songKey(s.artist, s.title)));
-export const externalSongs: Song[] = translator.translateDataset(database.external, curatedKeys);
-export const allSongs: Song[] = [...database.curatedSongs, ...externalSongs];
+export const researchSongs: Song[] = translator.translateDataset(database.research, curatedKeys, 'research');
+const takenKeys = new Set([...curatedKeys, ...researchSongs.map((s) => songKey(s.artist, s.title))]);
+export const externalSongs: Song[] = translator.translateDataset(database.external, takenKeys);
+export const allSongs: Song[] = [...database.curatedSongs, ...researchSongs, ...externalSongs];
 
 export { database };
 export { searchSongs } from './SongSearch';

@@ -137,7 +137,7 @@ export interface SongPart {
   sourceUrl?: string;
 }
 
-export type SongSource = 'curated' | 'guitartoneadapt';
+export type SongSource = 'curated' | 'guitartoneadapt' | 'research';
 
 export interface Song {
   id: string;
