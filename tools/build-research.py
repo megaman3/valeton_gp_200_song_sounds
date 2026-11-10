@@ -545,6 +545,96 @@ many("The Haunted", "thrash metal", [
    "bridge humbucker", 0.3, ["https://equipboard.com/pros/patrik-jensen", "https://www.uberproaudio.com/who-plays-what/513-the-haunted-anders-bjoerler-guitar-rig-gear-and-equipment"],
    ["noise gate"])
 
+# ============ Metallica ============
+MET = src("https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+          "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B", "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/")
+METN = ("Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare "
+        "genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). "
+        "Kirk Hammett: Cry Baby-wah på solon.")
+MCL = "Mesa Boogie clean channel"
+many("Metallica", "thrash metal", [
+    # Kill 'Em All / Ride the Lightning – Marshall
+    ("Whiplash", "1980s", "distorted", "riff", (8,6,5,6.5,6,1), {"amp": "Marshall JCM800 2203"}),
+    ("Fight Fire with Fire", "1980s", "distorted", "riff", (8,6,5,6.5,6,1), {"amp": "Marshall JCM800 2203"}),
+    ("Fade to Black", "1980s", "clean", "clean", (2,5,6,6,5.5,4), {"amp": MCL, "fx": ["chorus"], "pickup": "neck humbucker",
+        "note": "Rent intro med chorus – förstärkarkanal och chorus är tolkning."}),
+    # Master of Puppets / Justice – Mark IIC+
+    ("Master of Puppets", "1980s", "clean", "clean", (2,5,6,6,5.5,4), {"amp": MCL, "pickup": "neck humbucker",
+        "note": "Det rena mellanpartiet – tolkning."}),
+    ("Welcome Home (Sanitarium)", "1980s", "clean", "clean", (2,5,6,6,5.5,4), {"amp": MCL, "fx": ["chorus"], "pickup": "neck humbucker",
+        "note": "Rent intro – chorus är tolkning."}),
+    ("Welcome Home (Sanitarium)", "1980s", "distorted", "riff", (7.5,6,5,6.5,6,1.5)),
+    ("Battery", "1980s", "clean", "clean", (2,5,5.5,6,5.5,4), {"amp": MCL, "note": "Det harmoniserade intot (på skivan delvis akustiskt) – tolkning."}),
+    ("Blackened", "1980s", "distorted", "riff", (8,5,4.5,6.5,6,1)),
+    ("Harvester of Sorrow", "1980s", "distorted", "riff", (8,5,4.5,6.5,6,1)),
+    ("One", "1980s", "clean", "clean", (2,5,6,6,5.5,4), {"amp": MCL, "fx": ["chorus"], "pickup": "neck humbucker",
+        "note": "Rent intro – chorus är tolkning."}),
+    # Svarta albumet
+    ("The Unforgiven", "1990s", "clean", "clean", (2,5,6,6,5.5,3.5), {"amp": MCL, "pickup": "neck humbucker"}),
+    ("The Unforgiven", "1990s", "distorted", "riff", (7,6.5,5,6,6,2)),
+    ("Nothing Else Matters", "1990s", "clean", "clean", (2,5,6,6,5.5,3.5), {"amp": MCL, "pickup": "neck humbucker",
+        "note": "Arpeggiointrot (originalet spelat på akustisk/ren el) – tolkning."}),
+    ("Holier Than Thou", "1990s", "distorted", "riff", (7.5,6.5,5,6,6,1.5)),
+    ("Through the Never", "1990s", "distorted", "riff", (7.5,6.5,5,6,6,1.5)),
+    ("Of Wolf and Man", "1990s", "distorted", "riff", (7.5,6.5,5,6,6,1.5)),
+    # Load / Reload – osäkert
+    ("Fuel", "1990s", "distorted", "riff", (7.5,6.5,5.5,6.5,6,1.5), {"amp": "Mesa Boogie Dual Rectifier", "conf": 0.35,
+        "note": "Förstärkaren för Load/Reload är inte bekräftad i källorna."}),
+    ("The Memory Remains", "1990s", "distorted", "riff", (7,6.5,5.5,6.5,6,2), {"amp": "Mesa Boogie Dual Rectifier", "conf": 0.35,
+        "note": "Förstärkaren för Load/Reload är inte bekräftad i källorna."}),
+    ("King Nothing", "1990s", "distorted", "riff", (7,6.5,5.5,6.5,6,2), {"amp": "Mesa Boogie Dual Rectifier", "conf": 0.35,
+        "note": "Förstärkaren för Load/Reload är inte bekräftad i källorna."}),
+    # Death Magnetic / Hardwired
+    ("The Day That Never Comes", "2000s", "distorted", "riff", (7.5,6,5,6.5,6,1.5)),
+    ("All Nightmare Long", "2000s", "distorted", "riff", (8,6,5,6.5,6,1)),
+    ("Cyanide", "2000s", "distorted", "riff", (8,6,5,6.5,6,1)),
+    ("Moth Into Flame", "2010s", "distorted", "riff", (8,6,5,6.5,6,1), {"conf": 0.35, "note": "Förstärkaren för Hardwired är inte bekräftad."}),
+    ("Hardwired", "2010s", "distorted", "riff", (8,6,5,6.5,6,1), {"conf": 0.35, "note": "Förstärkaren för Hardwired är inte bekräftad."}),
+    ("Spit Out the Bone", "2010s", "distorted", "riff", (8,6,5,6.5,6,1), {"conf": 0.35, "note": "Förstärkaren för Hardwired är inte bekräftad."}),
+], "Mesa Boogie Mark IIC+", "ESP / Gibson Explorer", METN, "bridge humbucker (EMG)", 0.45, MET, ["noise gate"])
+
+# ============ Ozzy Osbourne ============
+RR = src("https://www.guitarworld.com/features/randy-rhoads-crazy-train-tone-secrets",
+         "https://guitar.com/features/artist-rigs/gear-used-by-randy-rhoads-blizzard-of-ozz-ozzy-osbourne",
+         "https://www.guitarworld.com/features/ozzy-osbourne-randy-rhoads-recording-of-blizzard-of-ozz")
+RRN = ("Randy Rhoads: hyrd, omodifierad Marshall JMP 1959 Super Lead MKII (100 W) på Blizzard of Ozz; MXR Distortion+ nästan alltid på, "
+       "MXR 10-band EQ (mittenlyft runt 500 Hz), MXR stereo chorus och flanger, Cry Baby.")
+many("Ozzy Osbourne", "heavy metal", [
+    ("I Don't Know", "1980s", "distorted", "riff", (6.5,5.5,6.5,6.5,6,2)),
+    ("Suicide Solution", "1980s", "distorted", "riff", (6.5,5.5,6.5,6.5,6,2)),
+    ("Goodbye to Romance", "1980s", "clean", "clean", (2,5,6,6,5.5,3.5), {"fx": ["chorus"], "pickup": "neck humbucker"}),
+    ("Goodbye to Romance", "1980s", "distorted", "solo", (6.5,5,7,6.5,6,3)),
+    ("Revelation (Mother Earth)", "1980s", "distorted", "riff", (6.5,5.5,6.5,6.5,6,2.5)),
+    ("Over the Mountain", "1980s", "distorted", "riff", (6.5,5.5,6.5,6.5,6,2)),
+    ("Diary of a Madman", "1980s", "clean", "clean", (2,5,6,6,5.5,3.5), {"fx": ["chorus"], "pickup": "neck humbucker"}),
+    ("Diary of a Madman", "1980s", "distorted", "riff", (6.5,5.5,6.5,6.5,6,2)),
+    ("You Can't Kill Rock and Roll", "1980s", "distorted", "riff", (6.5,5.5,6.5,6.5,6,2.5)),
+], "Marshall JMP 1959 Super Lead", "Gibson Les Paul Custom / Jackson Rhoads", RRN, "bridge humbucker", 0.5, RR, ["MXR Distortion+"])
+
+JL = src("https://en.wikipedia.org/wiki/Jake_E._Lee")
+many("Ozzy Osbourne", "heavy metal", [
+    ("Bark at the Moon", "1980s", "distorted", "riff", (7.5,6,6,6.5,6.5,2)),
+    ("Shot in the Dark", "1980s", "distorted", "riff", (7,6,6,6.5,6.5,2.5), {"fx": ["chorus"]}),
+    ("Rock 'n' Roll Rebel", "1980s", "distorted", "riff", (7.5,6,6,6.5,6.5,2)),
+], "Marshall", "Charvel (Jake E. Lee)", "Jake E. Lee-eran (1983-86). Ingen förstärkare dokumenterad i källorna jag hittade – Marshall-typ är en tolkning.",
+   "bridge humbucker", 0.3, JL)
+
+ZW = src("https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears",
+         "https://www.premierguitar.com/articles/20658-no-rest-for-the-wylde")
+ZWN = ("Zakk Wylde: No More Tears – två JCM800 2203 (6550-rör) i 1960B 4x12 med G12T-75; Les Paul med EMG. "
+       "No Rest for the Wicked spelades in med rackutrustning (Lee Jackson GP-1000-förförstärkare). Phase 90, chorus, Rotovibe, Cry Baby.")
+many("Ozzy Osbourne", "heavy metal", [
+    ("Miracle Man", "1980s", "distorted", "riff", (8,6,6,6.5,6.5,2), {"amp": "Lee Jackson GP-1000 preamp", "conf": 0.35}),
+    ("Crazy Babies", "1980s", "distorted", "riff", (8,6,6,6.5,6.5,2), {"amp": "Lee Jackson GP-1000 preamp", "conf": 0.35}),
+    ("Mama, I'm Coming Home", "1990s", "clean", "clean", (2,5,6,6,5.5,3.5), {"fx": ["chorus"]}),
+    ("Mama, I'm Coming Home", "1990s", "distorted", "solo", (7.5,5.5,6.5,6.5,6,3)),
+    ("Hellraiser", "1990s", "distorted", "riff", (8,6,6,6.5,6.5,2)),
+    ("I Don't Want to Change the World", "1990s", "distorted", "riff", (8,6,6,6.5,6.5,2)),
+    ("Road to Nowhere", "1990s", "distorted", "riff", (7,6,6,6.5,6.5,3), {"fx": ["chorus"]}),
+    ("Desire", "1990s", "distorted", "riff", (8,6,6,6.5,6.5,2), {"fx": ["MXR Phase 90"]}),
+    ("Perry Mason", "1990s", "distorted", "riff", (8,6,6,6.5,6.5,2), {"conf": 0.35}),
+], "Marshall JCM800 2203 into 1960B cab with G12T 75", "Gibson Les Paul (EMG)", ZWN, "bridge humbucker (EMG 81)", 0.45, ZW, ["noise gate"])
+
 ds = dict(source="Egen research (sammanställd vid utveckling – appen använder ingen AI)",
           sourceUrl="", homepage="", license="Egen sammanställning; källor anges per post",
           attribution="Egen research – källor per låt",

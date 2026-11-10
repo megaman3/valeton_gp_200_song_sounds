@@ -5,7 +5,7 @@
   "license": "Egen sammanställning; källor anges per post",
   "attribution": "Egen research – källor per låt",
   "importedAt": "2026-11-10",
-  "count": 254,
+  "count": 300,
   "tones": [
     {
       "id": "volbeat-a-warrior-s-call-riff-distorted",
@@ -7398,6 +7398,1413 @@
         "https://www.uberproaudio.com/who-plays-what/513-the-haunted-anders-bjoerler-guitar-rig-gear-and-equipment"
       ],
       "url": "https://equipboard.com/pros/patrik-jensen"
+    },
+    {
+      "id": "metallica-whiplash-riff-distorted",
+      "artist": "Metallica",
+      "song": "Whiplash",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6,
+        "mid": 5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1
+      },
+      "amp": "Marshall JCM800 2203",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-fight-fire-with-fire-riff-distorted",
+      "artist": "Metallica",
+      "song": "Fight Fire with Fire",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6,
+        "mid": 5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1
+      },
+      "amp": "Marshall JCM800 2203",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-fade-to-black-clean-clean",
+      "artist": "Metallica",
+      "song": "Fade to Black",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "clean",
+      "part": "clean",
+      "ampSettings": {
+        "gain": 2,
+        "bass": 5,
+        "mid": 6,
+        "treble": 6,
+        "presence": 5.5,
+        "reverb": 4
+      },
+      "amp": "Mesa Boogie clean channel",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon. Rent intro med chorus – förstärkarkanal och chorus är tolkning.",
+      "effects": [
+        "chorus"
+      ],
+      "pickup": "neck humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-master-of-puppets-clean-clean",
+      "artist": "Metallica",
+      "song": "Master of Puppets",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "clean",
+      "part": "clean",
+      "ampSettings": {
+        "gain": 2,
+        "bass": 5,
+        "mid": 6,
+        "treble": 6,
+        "presence": 5.5,
+        "reverb": 4
+      },
+      "amp": "Mesa Boogie clean channel",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon. Det rena mellanpartiet – tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "neck humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-welcome-home-sanitarium-clean-clean",
+      "artist": "Metallica",
+      "song": "Welcome Home (Sanitarium)",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "clean",
+      "part": "clean",
+      "ampSettings": {
+        "gain": 2,
+        "bass": 5,
+        "mid": 6,
+        "treble": 6,
+        "presence": 5.5,
+        "reverb": 4
+      },
+      "amp": "Mesa Boogie clean channel",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon. Rent intro – chorus är tolkning.",
+      "effects": [
+        "chorus"
+      ],
+      "pickup": "neck humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-welcome-home-sanitarium-riff-distorted",
+      "artist": "Metallica",
+      "song": "Welcome Home (Sanitarium)",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6,
+        "mid": 5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa Boogie Mark IIC+",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-battery-clean-clean",
+      "artist": "Metallica",
+      "song": "Battery",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "clean",
+      "part": "clean",
+      "ampSettings": {
+        "gain": 2,
+        "bass": 5,
+        "mid": 5.5,
+        "treble": 6,
+        "presence": 5.5,
+        "reverb": 4
+      },
+      "amp": "Mesa Boogie clean channel",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon. Det harmoniserade intot (på skivan delvis akustiskt) – tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-blackened-riff-distorted",
+      "artist": "Metallica",
+      "song": "Blackened",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 5,
+        "mid": 4.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1
+      },
+      "amp": "Mesa Boogie Mark IIC+",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-harvester-of-sorrow-riff-distorted",
+      "artist": "Metallica",
+      "song": "Harvester of Sorrow",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 5,
+        "mid": 4.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1
+      },
+      "amp": "Mesa Boogie Mark IIC+",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-one-clean-clean",
+      "artist": "Metallica",
+      "song": "One",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "clean",
+      "part": "clean",
+      "ampSettings": {
+        "gain": 2,
+        "bass": 5,
+        "mid": 6,
+        "treble": 6,
+        "presence": 5.5,
+        "reverb": 4
+      },
+      "amp": "Mesa Boogie clean channel",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon. Rent intro – chorus är tolkning.",
+      "effects": [
+        "chorus"
+      ],
+      "pickup": "neck humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-the-unforgiven-clean-clean",
+      "artist": "Metallica",
+      "song": "The Unforgiven",
+      "genre": "thrash metal",
+      "era": "1990s",
+      "toneType": "clean",
+      "part": "clean",
+      "ampSettings": {
+        "gain": 2,
+        "bass": 5,
+        "mid": 6,
+        "treble": 6,
+        "presence": 5.5,
+        "reverb": 3.5
+      },
+      "amp": "Mesa Boogie clean channel",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "neck humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-the-unforgiven-riff-distorted",
+      "artist": "Metallica",
+      "song": "The Unforgiven",
+      "genre": "thrash metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 6.5,
+        "mid": 5,
+        "treble": 6,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Mesa Boogie Mark IIC+",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-nothing-else-matters-clean-clean",
+      "artist": "Metallica",
+      "song": "Nothing Else Matters",
+      "genre": "thrash metal",
+      "era": "1990s",
+      "toneType": "clean",
+      "part": "clean",
+      "ampSettings": {
+        "gain": 2,
+        "bass": 5,
+        "mid": 6,
+        "treble": 6,
+        "presence": 5.5,
+        "reverb": 3.5
+      },
+      "amp": "Mesa Boogie clean channel",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon. Arpeggiointrot (originalet spelat på akustisk/ren el) – tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "neck humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-holier-than-thou-riff-distorted",
+      "artist": "Metallica",
+      "song": "Holier Than Thou",
+      "genre": "thrash metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6.5,
+        "mid": 5,
+        "treble": 6,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa Boogie Mark IIC+",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-through-the-never-riff-distorted",
+      "artist": "Metallica",
+      "song": "Through the Never",
+      "genre": "thrash metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6.5,
+        "mid": 5,
+        "treble": 6,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa Boogie Mark IIC+",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-of-wolf-and-man-riff-distorted",
+      "artist": "Metallica",
+      "song": "Of Wolf and Man",
+      "genre": "thrash metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6.5,
+        "mid": 5,
+        "treble": 6,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa Boogie Mark IIC+",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-fuel-riff-distorted",
+      "artist": "Metallica",
+      "song": "Fuel",
+      "genre": "thrash metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6.5,
+        "mid": 5.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa Boogie Dual Rectifier",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon. Förstärkaren för Load/Reload är inte bekräftad i källorna.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.35,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-the-memory-remains-riff-distorted",
+      "artist": "Metallica",
+      "song": "The Memory Remains",
+      "genre": "thrash metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 6.5,
+        "mid": 5.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Mesa Boogie Dual Rectifier",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon. Förstärkaren för Load/Reload är inte bekräftad i källorna.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.35,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-king-nothing-riff-distorted",
+      "artist": "Metallica",
+      "song": "King Nothing",
+      "genre": "thrash metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 6.5,
+        "mid": 5.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Mesa Boogie Dual Rectifier",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon. Förstärkaren för Load/Reload är inte bekräftad i källorna.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.35,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-the-day-that-never-comes-riff-distorted",
+      "artist": "Metallica",
+      "song": "The Day That Never Comes",
+      "genre": "thrash metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6,
+        "mid": 5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa Boogie Mark IIC+",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-all-nightmare-long-riff-distorted",
+      "artist": "Metallica",
+      "song": "All Nightmare Long",
+      "genre": "thrash metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6,
+        "mid": 5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1
+      },
+      "amp": "Mesa Boogie Mark IIC+",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-cyanide-riff-distorted",
+      "artist": "Metallica",
+      "song": "Cyanide",
+      "genre": "thrash metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6,
+        "mid": 5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1
+      },
+      "amp": "Mesa Boogie Mark IIC+",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-moth-into-flame-riff-distorted",
+      "artist": "Metallica",
+      "song": "Moth Into Flame",
+      "genre": "thrash metal",
+      "era": "2010s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6,
+        "mid": 5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1
+      },
+      "amp": "Mesa Boogie Mark IIC+",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon. Förstärkaren för Hardwired är inte bekräftad.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.35,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-hardwired-riff-distorted",
+      "artist": "Metallica",
+      "song": "Hardwired",
+      "genre": "thrash metal",
+      "era": "2010s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6,
+        "mid": 5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1
+      },
+      "amp": "Mesa Boogie Mark IIC+",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon. Förstärkaren för Hardwired är inte bekräftad.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.35,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-spit-out-the-bone-riff-distorted",
+      "artist": "Metallica",
+      "song": "Spit Out the Bone",
+      "genre": "thrash metal",
+      "era": "2010s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6,
+        "mid": 5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1
+      },
+      "amp": "Mesa Boogie Mark IIC+",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon. Förstärkaren för Hardwired är inte bekräftad.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.35,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "ozzy-osbourne-i-don-t-know-riff-distorted",
+      "artist": "Ozzy Osbourne",
+      "song": "I Don't Know",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Marshall JMP 1959 Super Lead",
+      "guitar": "Gibson Les Paul Custom / Jackson Rhoads",
+      "notes": "Randy Rhoads: hyrd, omodifierad Marshall JMP 1959 Super Lead MKII (100 W) på Blizzard of Ozz; MXR Distortion+ nästan alltid på, MXR 10-band EQ (mittenlyft runt 500 Hz), MXR stereo chorus och flanger, Cry Baby.",
+      "effects": [
+        "MXR Distortion+"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/features/randy-rhoads-crazy-train-tone-secrets",
+        "https://guitar.com/features/artist-rigs/gear-used-by-randy-rhoads-blizzard-of-ozz-ozzy-osbourne",
+        "https://www.guitarworld.com/features/ozzy-osbourne-randy-rhoads-recording-of-blizzard-of-ozz"
+      ],
+      "url": "https://www.guitarworld.com/features/randy-rhoads-crazy-train-tone-secrets"
+    },
+    {
+      "id": "ozzy-osbourne-suicide-solution-riff-distorted",
+      "artist": "Ozzy Osbourne",
+      "song": "Suicide Solution",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Marshall JMP 1959 Super Lead",
+      "guitar": "Gibson Les Paul Custom / Jackson Rhoads",
+      "notes": "Randy Rhoads: hyrd, omodifierad Marshall JMP 1959 Super Lead MKII (100 W) på Blizzard of Ozz; MXR Distortion+ nästan alltid på, MXR 10-band EQ (mittenlyft runt 500 Hz), MXR stereo chorus och flanger, Cry Baby.",
+      "effects": [
+        "MXR Distortion+"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/features/randy-rhoads-crazy-train-tone-secrets",
+        "https://guitar.com/features/artist-rigs/gear-used-by-randy-rhoads-blizzard-of-ozz-ozzy-osbourne",
+        "https://www.guitarworld.com/features/ozzy-osbourne-randy-rhoads-recording-of-blizzard-of-ozz"
+      ],
+      "url": "https://www.guitarworld.com/features/randy-rhoads-crazy-train-tone-secrets"
+    },
+    {
+      "id": "ozzy-osbourne-goodbye-to-romance-clean-clean",
+      "artist": "Ozzy Osbourne",
+      "song": "Goodbye to Romance",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "clean",
+      "part": "clean",
+      "ampSettings": {
+        "gain": 2,
+        "bass": 5,
+        "mid": 6,
+        "treble": 6,
+        "presence": 5.5,
+        "reverb": 3.5
+      },
+      "amp": "Marshall JMP 1959 Super Lead",
+      "guitar": "Gibson Les Paul Custom / Jackson Rhoads",
+      "notes": "Randy Rhoads: hyrd, omodifierad Marshall JMP 1959 Super Lead MKII (100 W) på Blizzard of Ozz; MXR Distortion+ nästan alltid på, MXR 10-band EQ (mittenlyft runt 500 Hz), MXR stereo chorus och flanger, Cry Baby.",
+      "effects": [
+        "chorus"
+      ],
+      "pickup": "neck humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/features/randy-rhoads-crazy-train-tone-secrets",
+        "https://guitar.com/features/artist-rigs/gear-used-by-randy-rhoads-blizzard-of-ozz-ozzy-osbourne",
+        "https://www.guitarworld.com/features/ozzy-osbourne-randy-rhoads-recording-of-blizzard-of-ozz"
+      ],
+      "url": "https://www.guitarworld.com/features/randy-rhoads-crazy-train-tone-secrets"
+    },
+    {
+      "id": "ozzy-osbourne-goodbye-to-romance-solo-distorted",
+      "artist": "Ozzy Osbourne",
+      "song": "Goodbye to Romance",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "solo",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 5,
+        "mid": 7,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 3
+      },
+      "amp": "Marshall JMP 1959 Super Lead",
+      "guitar": "Gibson Les Paul Custom / Jackson Rhoads",
+      "notes": "Randy Rhoads: hyrd, omodifierad Marshall JMP 1959 Super Lead MKII (100 W) på Blizzard of Ozz; MXR Distortion+ nästan alltid på, MXR 10-band EQ (mittenlyft runt 500 Hz), MXR stereo chorus och flanger, Cry Baby.",
+      "effects": [
+        "MXR Distortion+"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/features/randy-rhoads-crazy-train-tone-secrets",
+        "https://guitar.com/features/artist-rigs/gear-used-by-randy-rhoads-blizzard-of-ozz-ozzy-osbourne",
+        "https://www.guitarworld.com/features/ozzy-osbourne-randy-rhoads-recording-of-blizzard-of-ozz"
+      ],
+      "url": "https://www.guitarworld.com/features/randy-rhoads-crazy-train-tone-secrets"
+    },
+    {
+      "id": "ozzy-osbourne-revelation-mother-earth-riff-distorted",
+      "artist": "Ozzy Osbourne",
+      "song": "Revelation (Mother Earth)",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2.5
+      },
+      "amp": "Marshall JMP 1959 Super Lead",
+      "guitar": "Gibson Les Paul Custom / Jackson Rhoads",
+      "notes": "Randy Rhoads: hyrd, omodifierad Marshall JMP 1959 Super Lead MKII (100 W) på Blizzard of Ozz; MXR Distortion+ nästan alltid på, MXR 10-band EQ (mittenlyft runt 500 Hz), MXR stereo chorus och flanger, Cry Baby.",
+      "effects": [
+        "MXR Distortion+"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/features/randy-rhoads-crazy-train-tone-secrets",
+        "https://guitar.com/features/artist-rigs/gear-used-by-randy-rhoads-blizzard-of-ozz-ozzy-osbourne",
+        "https://www.guitarworld.com/features/ozzy-osbourne-randy-rhoads-recording-of-blizzard-of-ozz"
+      ],
+      "url": "https://www.guitarworld.com/features/randy-rhoads-crazy-train-tone-secrets"
+    },
+    {
+      "id": "ozzy-osbourne-over-the-mountain-riff-distorted",
+      "artist": "Ozzy Osbourne",
+      "song": "Over the Mountain",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Marshall JMP 1959 Super Lead",
+      "guitar": "Gibson Les Paul Custom / Jackson Rhoads",
+      "notes": "Randy Rhoads: hyrd, omodifierad Marshall JMP 1959 Super Lead MKII (100 W) på Blizzard of Ozz; MXR Distortion+ nästan alltid på, MXR 10-band EQ (mittenlyft runt 500 Hz), MXR stereo chorus och flanger, Cry Baby.",
+      "effects": [
+        "MXR Distortion+"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/features/randy-rhoads-crazy-train-tone-secrets",
+        "https://guitar.com/features/artist-rigs/gear-used-by-randy-rhoads-blizzard-of-ozz-ozzy-osbourne",
+        "https://www.guitarworld.com/features/ozzy-osbourne-randy-rhoads-recording-of-blizzard-of-ozz"
+      ],
+      "url": "https://www.guitarworld.com/features/randy-rhoads-crazy-train-tone-secrets"
+    },
+    {
+      "id": "ozzy-osbourne-diary-of-a-madman-clean-clean",
+      "artist": "Ozzy Osbourne",
+      "song": "Diary of a Madman",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "clean",
+      "part": "clean",
+      "ampSettings": {
+        "gain": 2,
+        "bass": 5,
+        "mid": 6,
+        "treble": 6,
+        "presence": 5.5,
+        "reverb": 3.5
+      },
+      "amp": "Marshall JMP 1959 Super Lead",
+      "guitar": "Gibson Les Paul Custom / Jackson Rhoads",
+      "notes": "Randy Rhoads: hyrd, omodifierad Marshall JMP 1959 Super Lead MKII (100 W) på Blizzard of Ozz; MXR Distortion+ nästan alltid på, MXR 10-band EQ (mittenlyft runt 500 Hz), MXR stereo chorus och flanger, Cry Baby.",
+      "effects": [
+        "chorus"
+      ],
+      "pickup": "neck humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/features/randy-rhoads-crazy-train-tone-secrets",
+        "https://guitar.com/features/artist-rigs/gear-used-by-randy-rhoads-blizzard-of-ozz-ozzy-osbourne",
+        "https://www.guitarworld.com/features/ozzy-osbourne-randy-rhoads-recording-of-blizzard-of-ozz"
+      ],
+      "url": "https://www.guitarworld.com/features/randy-rhoads-crazy-train-tone-secrets"
+    },
+    {
+      "id": "ozzy-osbourne-diary-of-a-madman-riff-distorted",
+      "artist": "Ozzy Osbourne",
+      "song": "Diary of a Madman",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Marshall JMP 1959 Super Lead",
+      "guitar": "Gibson Les Paul Custom / Jackson Rhoads",
+      "notes": "Randy Rhoads: hyrd, omodifierad Marshall JMP 1959 Super Lead MKII (100 W) på Blizzard of Ozz; MXR Distortion+ nästan alltid på, MXR 10-band EQ (mittenlyft runt 500 Hz), MXR stereo chorus och flanger, Cry Baby.",
+      "effects": [
+        "MXR Distortion+"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/features/randy-rhoads-crazy-train-tone-secrets",
+        "https://guitar.com/features/artist-rigs/gear-used-by-randy-rhoads-blizzard-of-ozz-ozzy-osbourne",
+        "https://www.guitarworld.com/features/ozzy-osbourne-randy-rhoads-recording-of-blizzard-of-ozz"
+      ],
+      "url": "https://www.guitarworld.com/features/randy-rhoads-crazy-train-tone-secrets"
+    },
+    {
+      "id": "ozzy-osbourne-you-can-t-kill-rock-and-roll-riff-distorted",
+      "artist": "Ozzy Osbourne",
+      "song": "You Can't Kill Rock and Roll",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2.5
+      },
+      "amp": "Marshall JMP 1959 Super Lead",
+      "guitar": "Gibson Les Paul Custom / Jackson Rhoads",
+      "notes": "Randy Rhoads: hyrd, omodifierad Marshall JMP 1959 Super Lead MKII (100 W) på Blizzard of Ozz; MXR Distortion+ nästan alltid på, MXR 10-band EQ (mittenlyft runt 500 Hz), MXR stereo chorus och flanger, Cry Baby.",
+      "effects": [
+        "MXR Distortion+"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/features/randy-rhoads-crazy-train-tone-secrets",
+        "https://guitar.com/features/artist-rigs/gear-used-by-randy-rhoads-blizzard-of-ozz-ozzy-osbourne",
+        "https://www.guitarworld.com/features/ozzy-osbourne-randy-rhoads-recording-of-blizzard-of-ozz"
+      ],
+      "url": "https://www.guitarworld.com/features/randy-rhoads-crazy-train-tone-secrets"
+    },
+    {
+      "id": "ozzy-osbourne-bark-at-the-moon-riff-distorted",
+      "artist": "Ozzy Osbourne",
+      "song": "Bark at the Moon",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6,
+        "mid": 6,
+        "treble": 6.5,
+        "presence": 6.5,
+        "reverb": 2
+      },
+      "amp": "Marshall",
+      "guitar": "Charvel (Jake E. Lee)",
+      "notes": "Jake E. Lee-eran (1983-86). Ingen förstärkare dokumenterad i källorna jag hittade – Marshall-typ är en tolkning.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.3,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jake_E._Lee"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Jake_E._Lee"
+    },
+    {
+      "id": "ozzy-osbourne-shot-in-the-dark-riff-distorted",
+      "artist": "Ozzy Osbourne",
+      "song": "Shot in the Dark",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 6,
+        "mid": 6,
+        "treble": 6.5,
+        "presence": 6.5,
+        "reverb": 2.5
+      },
+      "amp": "Marshall",
+      "guitar": "Charvel (Jake E. Lee)",
+      "notes": "Jake E. Lee-eran (1983-86). Ingen förstärkare dokumenterad i källorna jag hittade – Marshall-typ är en tolkning.",
+      "effects": [
+        "chorus"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.3,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jake_E._Lee"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Jake_E._Lee"
+    },
+    {
+      "id": "ozzy-osbourne-rock-n-roll-rebel-riff-distorted",
+      "artist": "Ozzy Osbourne",
+      "song": "Rock 'n' Roll Rebel",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6,
+        "mid": 6,
+        "treble": 6.5,
+        "presence": 6.5,
+        "reverb": 2
+      },
+      "amp": "Marshall",
+      "guitar": "Charvel (Jake E. Lee)",
+      "notes": "Jake E. Lee-eran (1983-86). Ingen förstärkare dokumenterad i källorna jag hittade – Marshall-typ är en tolkning.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.3,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jake_E._Lee"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Jake_E._Lee"
+    },
+    {
+      "id": "ozzy-osbourne-miracle-man-riff-distorted",
+      "artist": "Ozzy Osbourne",
+      "song": "Miracle Man",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6,
+        "mid": 6,
+        "treble": 6.5,
+        "presence": 6.5,
+        "reverb": 2
+      },
+      "amp": "Lee Jackson GP-1000 preamp",
+      "guitar": "Gibson Les Paul (EMG)",
+      "notes": "Zakk Wylde: No More Tears – två JCM800 2203 (6550-rör) i 1960B 4x12 med G12T-75; Les Paul med EMG. No Rest for the Wicked spelades in med rackutrustning (Lee Jackson GP-1000-förförstärkare). Phase 90, chorus, Rotovibe, Cry Baby.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG 81)",
+      "confidence": 0.35,
+      "sources": [
+        "https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears",
+        "https://www.premierguitar.com/articles/20658-no-rest-for-the-wylde"
+      ],
+      "url": "https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears"
+    },
+    {
+      "id": "ozzy-osbourne-crazy-babies-riff-distorted",
+      "artist": "Ozzy Osbourne",
+      "song": "Crazy Babies",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6,
+        "mid": 6,
+        "treble": 6.5,
+        "presence": 6.5,
+        "reverb": 2
+      },
+      "amp": "Lee Jackson GP-1000 preamp",
+      "guitar": "Gibson Les Paul (EMG)",
+      "notes": "Zakk Wylde: No More Tears – två JCM800 2203 (6550-rör) i 1960B 4x12 med G12T-75; Les Paul med EMG. No Rest for the Wicked spelades in med rackutrustning (Lee Jackson GP-1000-förförstärkare). Phase 90, chorus, Rotovibe, Cry Baby.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG 81)",
+      "confidence": 0.35,
+      "sources": [
+        "https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears",
+        "https://www.premierguitar.com/articles/20658-no-rest-for-the-wylde"
+      ],
+      "url": "https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears"
+    },
+    {
+      "id": "ozzy-osbourne-mama-i-m-coming-home-clean-clean",
+      "artist": "Ozzy Osbourne",
+      "song": "Mama, I'm Coming Home",
+      "genre": "heavy metal",
+      "era": "1990s",
+      "toneType": "clean",
+      "part": "clean",
+      "ampSettings": {
+        "gain": 2,
+        "bass": 5,
+        "mid": 6,
+        "treble": 6,
+        "presence": 5.5,
+        "reverb": 3.5
+      },
+      "amp": "Marshall JCM800 2203 into 1960B cab with G12T 75",
+      "guitar": "Gibson Les Paul (EMG)",
+      "notes": "Zakk Wylde: No More Tears – två JCM800 2203 (6550-rör) i 1960B 4x12 med G12T-75; Les Paul med EMG. No Rest for the Wicked spelades in med rackutrustning (Lee Jackson GP-1000-förförstärkare). Phase 90, chorus, Rotovibe, Cry Baby.",
+      "effects": [
+        "chorus"
+      ],
+      "pickup": "bridge humbucker (EMG 81)",
+      "confidence": 0.45,
+      "sources": [
+        "https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears",
+        "https://www.premierguitar.com/articles/20658-no-rest-for-the-wylde"
+      ],
+      "url": "https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears"
+    },
+    {
+      "id": "ozzy-osbourne-mama-i-m-coming-home-solo-distorted",
+      "artist": "Ozzy Osbourne",
+      "song": "Mama, I'm Coming Home",
+      "genre": "heavy metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "solo",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 3
+      },
+      "amp": "Marshall JCM800 2203 into 1960B cab with G12T 75",
+      "guitar": "Gibson Les Paul (EMG)",
+      "notes": "Zakk Wylde: No More Tears – två JCM800 2203 (6550-rör) i 1960B 4x12 med G12T-75; Les Paul med EMG. No Rest for the Wicked spelades in med rackutrustning (Lee Jackson GP-1000-förförstärkare). Phase 90, chorus, Rotovibe, Cry Baby.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG 81)",
+      "confidence": 0.45,
+      "sources": [
+        "https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears",
+        "https://www.premierguitar.com/articles/20658-no-rest-for-the-wylde"
+      ],
+      "url": "https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears"
+    },
+    {
+      "id": "ozzy-osbourne-hellraiser-riff-distorted",
+      "artist": "Ozzy Osbourne",
+      "song": "Hellraiser",
+      "genre": "heavy metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6,
+        "mid": 6,
+        "treble": 6.5,
+        "presence": 6.5,
+        "reverb": 2
+      },
+      "amp": "Marshall JCM800 2203 into 1960B cab with G12T 75",
+      "guitar": "Gibson Les Paul (EMG)",
+      "notes": "Zakk Wylde: No More Tears – två JCM800 2203 (6550-rör) i 1960B 4x12 med G12T-75; Les Paul med EMG. No Rest for the Wicked spelades in med rackutrustning (Lee Jackson GP-1000-förförstärkare). Phase 90, chorus, Rotovibe, Cry Baby.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG 81)",
+      "confidence": 0.45,
+      "sources": [
+        "https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears",
+        "https://www.premierguitar.com/articles/20658-no-rest-for-the-wylde"
+      ],
+      "url": "https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears"
+    },
+    {
+      "id": "ozzy-osbourne-i-don-t-want-to-change-the-world-riff-distorted",
+      "artist": "Ozzy Osbourne",
+      "song": "I Don't Want to Change the World",
+      "genre": "heavy metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6,
+        "mid": 6,
+        "treble": 6.5,
+        "presence": 6.5,
+        "reverb": 2
+      },
+      "amp": "Marshall JCM800 2203 into 1960B cab with G12T 75",
+      "guitar": "Gibson Les Paul (EMG)",
+      "notes": "Zakk Wylde: No More Tears – två JCM800 2203 (6550-rör) i 1960B 4x12 med G12T-75; Les Paul med EMG. No Rest for the Wicked spelades in med rackutrustning (Lee Jackson GP-1000-förförstärkare). Phase 90, chorus, Rotovibe, Cry Baby.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG 81)",
+      "confidence": 0.45,
+      "sources": [
+        "https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears",
+        "https://www.premierguitar.com/articles/20658-no-rest-for-the-wylde"
+      ],
+      "url": "https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears"
+    },
+    {
+      "id": "ozzy-osbourne-road-to-nowhere-riff-distorted",
+      "artist": "Ozzy Osbourne",
+      "song": "Road to Nowhere",
+      "genre": "heavy metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 6,
+        "mid": 6,
+        "treble": 6.5,
+        "presence": 6.5,
+        "reverb": 3
+      },
+      "amp": "Marshall JCM800 2203 into 1960B cab with G12T 75",
+      "guitar": "Gibson Les Paul (EMG)",
+      "notes": "Zakk Wylde: No More Tears – två JCM800 2203 (6550-rör) i 1960B 4x12 med G12T-75; Les Paul med EMG. No Rest for the Wicked spelades in med rackutrustning (Lee Jackson GP-1000-förförstärkare). Phase 90, chorus, Rotovibe, Cry Baby.",
+      "effects": [
+        "chorus"
+      ],
+      "pickup": "bridge humbucker (EMG 81)",
+      "confidence": 0.45,
+      "sources": [
+        "https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears",
+        "https://www.premierguitar.com/articles/20658-no-rest-for-the-wylde"
+      ],
+      "url": "https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears"
+    },
+    {
+      "id": "ozzy-osbourne-desire-riff-distorted",
+      "artist": "Ozzy Osbourne",
+      "song": "Desire",
+      "genre": "heavy metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6,
+        "mid": 6,
+        "treble": 6.5,
+        "presence": 6.5,
+        "reverb": 2
+      },
+      "amp": "Marshall JCM800 2203 into 1960B cab with G12T 75",
+      "guitar": "Gibson Les Paul (EMG)",
+      "notes": "Zakk Wylde: No More Tears – två JCM800 2203 (6550-rör) i 1960B 4x12 med G12T-75; Les Paul med EMG. No Rest for the Wicked spelades in med rackutrustning (Lee Jackson GP-1000-förförstärkare). Phase 90, chorus, Rotovibe, Cry Baby.",
+      "effects": [
+        "MXR Phase 90"
+      ],
+      "pickup": "bridge humbucker (EMG 81)",
+      "confidence": 0.45,
+      "sources": [
+        "https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears",
+        "https://www.premierguitar.com/articles/20658-no-rest-for-the-wylde"
+      ],
+      "url": "https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears"
+    },
+    {
+      "id": "ozzy-osbourne-perry-mason-riff-distorted",
+      "artist": "Ozzy Osbourne",
+      "song": "Perry Mason",
+      "genre": "heavy metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6,
+        "mid": 6,
+        "treble": 6.5,
+        "presence": 6.5,
+        "reverb": 2
+      },
+      "amp": "Marshall JCM800 2203 into 1960B cab with G12T 75",
+      "guitar": "Gibson Les Paul (EMG)",
+      "notes": "Zakk Wylde: No More Tears – två JCM800 2203 (6550-rör) i 1960B 4x12 med G12T-75; Les Paul med EMG. No Rest for the Wicked spelades in med rackutrustning (Lee Jackson GP-1000-förförstärkare). Phase 90, chorus, Rotovibe, Cry Baby.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG 81)",
+      "confidence": 0.35,
+      "sources": [
+        "https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears",
+        "https://www.premierguitar.com/articles/20658-no-rest-for-the-wylde"
+      ],
+      "url": "https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears"
     }
   ]
 }
