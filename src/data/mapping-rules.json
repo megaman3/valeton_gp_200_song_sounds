@@ -1,0 +1,1972 @@
+{
+  "amp": [
+    {
+      "match": [
+        "jcm800",
+        "jcm 800",
+        "2203",
+        "2204",
+        "2210"
+      ],
+      "model": "UK 800",
+      "basis": "manual",
+      "reason": "UK 800 bygger på Marshall JCM800 (manualen s. 46)."
+    },
+    {
+      "match": [
+        "jcm900",
+        "jcm 900"
+      ],
+      "model": "UK 900",
+      "basis": "manual",
+      "reason": "UK 900 bygger på Marshall JCM900 (manualen s. 46)."
+    },
+    {
+      "match": [
+        "jcm2000",
+        "jcm 2000",
+        "dsl",
+        "tsl",
+        "jvm",
+        "jvm410h",
+        "silver jubilee",
+        "2555"
+      ],
+      "model": "UK 900",
+      "basis": "interpretation",
+      "reason": "Senare Marshall-high-gain saknas; UK 900 (JCM900) är närmast."
+    },
+    {
+      "match": [
+        "jtm45",
+        "jtm 45"
+      ],
+      "model": "UK 45",
+      "basis": "manual",
+      "reason": "UK 45 bygger på Marshall JTM45 (manualen s. 45)."
+    },
+    {
+      "match": [
+        "jmp",
+        "jmp50",
+        "jtm50",
+        "jmp 50"
+      ],
+      "model": "UK 50",
+      "basis": "manual",
+      "reason": "UK 50 bygger på Marshall JMP50 (manualen s. 45)."
+    },
+    {
+      "match": [
+        "plexi",
+        "super lead",
+        "1959",
+        "1959slp",
+        "1959hw",
+        "1987",
+        "1987x",
+        "super bass",
+        "marshall major"
+      ],
+      "model": "UK SLP",
+      "basis": "manual",
+      "reason": "UK SLP bygger på Marshall 1959 Super Lead/Plexi (manualen s. 46)."
+    },
+    {
+      "match": [
+        "1962",
+        "bluesbreaker combo"
+      ],
+      "model": "UK 45",
+      "basis": "interpretation",
+      "reason": "Marshall 1962 Bluesbreaker-combon bygger på JTM45-kretsen; UK 45 är närmast."
+    },
+    {
+      "match": [
+        "marshall"
+      ],
+      "byGain": [
+        {
+          "maxGain": 6.5,
+          "model": "UK SLP"
+        },
+        {
+          "maxGain": 8.5,
+          "model": "UK 800"
+        },
+        {
+          "maxGain": 10,
+          "model": "UK 900"
+        }
+      ],
+      "basis": "interpretation",
+      "reason": "Marshall utan modellangivelse: Plexi vid låg/medel gain, JCM800 vid hög, JCM900 vid mycket hög. Inspelningar från 1960–70-talet → Plexi (UK SLP).",
+      "vintage": "UK SLP"
+    },
+    {
+      "match": [
+        "mark iic+",
+        "mark ii c+",
+        "mark iic",
+        "mark 2c+",
+        "mark 2c",
+        "iic+",
+        "c+"
+      ],
+      "model": "Mess2C+ 1",
+      "basis": "manual",
+      "reason": "Mess2C+ bygger på Mesa/Boogie Mark IIC+ (manualen s. 47)."
+    },
+    {
+      "match": [
+        "mark iv",
+        "mark 4"
+      ],
+      "model": "Mess4 LD",
+      "basis": "manual",
+      "reason": "Mess4 LD bygger på Mesa/Boogie Mark IV (manualen s. 48)."
+    },
+    {
+      "match": [
+        "mark v",
+        "mark 5",
+        "mark iii",
+        "mark 3",
+        "mark i"
+      ],
+      "model": "Mess4 LD",
+      "basis": "interpretation",
+      "reason": "Övriga Mesa Mark-modeller saknas; Mark IV (Mess4 LD) är närmast."
+    },
+    {
+      "match": [
+        "rectifier",
+        "recto",
+        "dual rec",
+        "triple rec",
+        "triple rectifier",
+        "dual rectifier"
+      ],
+      "byGain": [
+        {
+          "maxGain": 7.5,
+          "model": "Mess DualV"
+        },
+        {
+          "maxGain": 10,
+          "model": "Mess DualM"
+        }
+      ],
+      "basis": "manual",
+      "reason": "Mess Dual bygger på Mesa/Boogie Dual Rectifier (manualen s. 49); Vintage-läge vid lägre gain, Modern vid högre."
+    },
+    {
+      "match": [
+        "lone star",
+        "lonestar"
+      ],
+      "byGain": [
+        {
+          "maxGain": 4,
+          "model": "L-Star CL"
+        },
+        {
+          "maxGain": 10,
+          "model": "L-Star OD"
+        }
+      ],
+      "basis": "manual",
+      "reason": "L-Star bygger på Mesa/Boogie Lone Star (manualen s. 42)."
+    },
+    {
+      "match": [
+        "road king"
+      ],
+      "model": "Mess DualV",
+      "basis": "interpretation",
+      "reason": "Road King är Rectifier-baserad; Mess DualV är närmast."
+    },
+    {
+      "match": [
+        "mesa",
+        "boogie"
+      ],
+      "byGain": [
+        {
+          "maxGain": 4,
+          "model": "L-Star CL"
+        },
+        {
+          "maxGain": 7,
+          "model": "Mess2C+ 1"
+        },
+        {
+          "maxGain": 10,
+          "model": "Mess DualM"
+        }
+      ],
+      "basis": "interpretation",
+      "reason": "Mesa/Boogie utan modellangivelse: Lone Star clean, Mark IIC+ vid medel gain, Dual Rectifier vid hög."
+    },
+    {
+      "match": [
+        "5150",
+        "6505",
+        "6505+",
+        "5153",
+        "evh"
+      ],
+      "model": "EV 51",
+      "basis": "manual",
+      "reason": "EV 51 bygger på Peavey 5150 (manualen s. 49)."
+    },
+    {
+      "match": [
+        "vh4",
+        "diezel",
+        "herbert",
+        "hagen"
+      ],
+      "model": "Dizz VH",
+      "basis": "manual",
+      "reason": "Dizz VH bygger på Diezel VH4 (manualen s. 50)."
+    },
+    {
+      "match": [
+        "powerball"
+      ],
+      "model": "Power LD",
+      "basis": "manual",
+      "reason": "Power LD bygger på ENGL Powerball II (manualen s. 50)."
+    },
+    {
+      "match": [
+        "savage"
+      ],
+      "model": "Eagle 120",
+      "basis": "manual",
+      "reason": "Eagle 120 bygger på ENGL Savage 120 (manualen s. 50)."
+    },
+    {
+      "match": [
+        "engl"
+      ],
+      "model": "Power LD",
+      "basis": "interpretation",
+      "reason": "ENGL utan modellangivelse: Powerball (Power LD)."
+    },
+    {
+      "match": [
+        "friedman",
+        "be 100",
+        "be100",
+        "brown eye",
+        "be od"
+      ],
+      "byGain": [
+        {
+          "maxGain": 7,
+          "model": "Flagman 1"
+        },
+        {
+          "maxGain": 10,
+          "model": "Flagman+ 1"
+        }
+      ],
+      "basis": "manual",
+      "reason": "Flagman bygger på Friedman BE-100 \"Brown Eye\" (manualen s. 47)."
+    },
+    {
+      "match": [
+        "soldano",
+        "slo",
+        "slo 100",
+        "slo100"
+      ],
+      "byGain": [
+        {
+          "maxGain": 3,
+          "model": "Solo100 CL"
+        },
+        {
+          "maxGain": 6,
+          "model": "Solo100 OD"
+        },
+        {
+          "maxGain": 10,
+          "model": "Solo100 LD"
+        }
+      ],
+      "basis": "manual",
+      "reason": "Solo100 bygger på Soldano SLO-100 (manualen s. 44–45)."
+    },
+    {
+      "match": [
+        "shiva"
+      ],
+      "byGain": [
+        {
+          "maxGain": 4,
+          "model": "BogSV CL"
+        },
+        {
+          "maxGain": 10,
+          "model": "BogSV OD"
+        }
+      ],
+      "basis": "manual",
+      "reason": "BogSV bygger på Bogner Shiva (manualen s. 42)."
+    },
+    {
+      "match": [
+        "ecstasy",
+        "xtc",
+        "bogner",
+        "uberschall"
+      ],
+      "byGain": [
+        {
+          "maxGain": 6,
+          "model": "Bog BlueV"
+        },
+        {
+          "maxGain": 10,
+          "model": "Bog RedV"
+        }
+      ],
+      "basis": "manual",
+      "reason": "Bog Blue/Red bygger på Bogner Ecstasy XTC (manualen s. 43)."
+    },
+    {
+      "match": [
+        "rockerverb"
+      ],
+      "model": "Juice R100",
+      "basis": "manual",
+      "reason": "Juice R100 bygger på Orange Rockerverb 100 (manualen s. 49)."
+    },
+    {
+      "match": [
+        "ad30",
+        "ad 30"
+      ],
+      "model": "Juice30 OD",
+      "basis": "manual",
+      "reason": "Juice30 OD bygger på Orange AD30 (manualen s. 49)."
+    },
+    {
+      "match": [
+        "orange"
+      ],
+      "byGain": [
+        {
+          "maxGain": 6,
+          "model": "Juice30 OD"
+        },
+        {
+          "maxGain": 10,
+          "model": "Juice R100"
+        }
+      ],
+      "basis": "interpretation",
+      "reason": "Orange utan modellangivelse: AD30 vid lägre gain, Rockerverb vid högre."
+    },
+    {
+      "match": [
+        "ac30",
+        "ac 30",
+        "ac15",
+        "ac 15",
+        "vox"
+      ],
+      "byGain": [
+        {
+          "maxGain": 3,
+          "model": "Foxy 30N"
+        },
+        {
+          "maxGain": 10,
+          "model": "Foxy 30TB"
+        }
+      ],
+      "basis": "manual",
+      "reason": "Foxy 30 bygger på Vox AC30HW (manualen s. 41)."
+    },
+    {
+      "match": [
+        "jazz chorus",
+        "jc 120",
+        "jc120",
+        "roland jc"
+      ],
+      "model": "J-120 CL",
+      "basis": "manual",
+      "reason": "J-120 CL bygger på Roland JC-120 Jazz Chorus (manualen s. 41)."
+    },
+    {
+      "match": [
+        "silverface"
+      ],
+      "model": "Silver Twin",
+      "basis": "manual",
+      "reason": "Silver Twin bygger på Fender Silverface Twin Reverb (manualen s. 40)."
+    },
+    {
+      "match": [
+        "twin reverb",
+        "twin",
+        "showman",
+        "dual showman",
+        "bandmaster"
+      ],
+      "model": "Dark Twin",
+      "basis": "manual",
+      "reason": "Dark Twin bygger på Fender '65 Twin Reverb (manualen s. 39)."
+    },
+    {
+      "match": [
+        "tweed deluxe",
+        "5e3",
+        "tweed",
+        "champ"
+      ],
+      "model": "Tweedy",
+      "basis": "manual",
+      "reason": "Tweedy bygger på Fender Tweed Deluxe (manualen s. 39)."
+    },
+    {
+      "match": [
+        "deluxe reverb",
+        "deluxe",
+        "princeton",
+        "blues junior",
+        "hot rod",
+        "blues deluxe",
+        "deville",
+        "hot rod deluxe"
+      ],
+      "model": "Dark DLX",
+      "basis": "manual",
+      "reason": "Dark DLX bygger på Fender Deluxe Reverb (manualen s. 40)."
+    },
+    {
+      "match": [
+        "vibroverb",
+        "vibrolux",
+        "super reverb",
+        "pro reverb"
+      ],
+      "model": "Dark Vibra",
+      "basis": "interpretation",
+      "reason": "Dark Vibra (Fender Vibroverb) är närmast för dessa blackface-förstärkare."
+    },
+    {
+      "match": [
+        "bassman"
+      ],
+      "byGain": [
+        {
+          "maxGain": 3,
+          "model": "Bellman 59N"
+        },
+        {
+          "maxGain": 10,
+          "model": "Bellman 59B"
+        }
+      ],
+      "basis": "manual",
+      "reason": "Bellman 59 bygger på Fender '59 Bassman (manualen s. 39)."
+    },
+    {
+      "match": [
+        "fender"
+      ],
+      "byGain": [
+        {
+          "maxGain": 3,
+          "model": "Dark Twin"
+        },
+        {
+          "maxGain": 6,
+          "model": "Dark DLX"
+        },
+        {
+          "maxGain": 10,
+          "model": "Bellman 59B"
+        }
+      ],
+      "basis": "interpretation",
+      "reason": "Fender utan modellangivelse: Twin för clean, Deluxe för crunch, Bassman för mer gain."
+    },
+    {
+      "match": [
+        "matchless",
+        "chieftain",
+        "dc 30",
+        "dc30"
+      ],
+      "byGain": [
+        {
+          "maxGain": 4,
+          "model": "Match CL"
+        },
+        {
+          "maxGain": 10,
+          "model": "Match OD"
+        }
+      ],
+      "basis": "manual",
+      "reason": "Match bygger på Matchless Chieftain (manualen s. 41–42)."
+    },
+    {
+      "match": [
+        "dr z",
+        "maz"
+      ],
+      "byGain": [
+        {
+          "maxGain": 4,
+          "model": "Z38 CL"
+        },
+        {
+          "maxGain": 10,
+          "model": "Z38 OD"
+        }
+      ],
+      "basis": "manual",
+      "reason": "Z38 bygger på Dr. Z Maz 38 (manualen s. 43)."
+    },
+    {
+      "match": [
+        "bad cat",
+        "hot cat"
+      ],
+      "byGain": [
+        {
+          "maxGain": 4,
+          "model": "Bad-KT CL"
+        },
+        {
+          "maxGain": 10,
+          "model": "Bad-KT OD"
+        }
+      ],
+      "basis": "manual",
+      "reason": "Bad-KT bygger på Bad Cat Hot Cat 30 (manualen s. 44)."
+    },
+    {
+      "match": [
+        "supro"
+      ],
+      "byGain": [
+        {
+          "maxGain": 4,
+          "model": "SUPDual CL"
+        },
+        {
+          "maxGain": 10,
+          "model": "SUPDual OD"
+        }
+      ],
+      "basis": "manual",
+      "reason": "SUPDual bygger på Supro Dual-Tone 1624T (manualen s. 40)."
+    },
+    {
+      "match": [
+        "grindrod",
+        "pendragon"
+      ],
+      "byGain": [
+        {
+          "maxGain": 4,
+          "model": "Knights CL"
+        },
+        {
+          "maxGain": 10,
+          "model": "Knights OD"
+        }
+      ],
+      "basis": "manual",
+      "reason": "Knights bygger på Grindrod Pendragon PG20C (manualen s. 44)."
+    },
+    {
+      "match": [
+        "dumble",
+        "two rock",
+        "tworock"
+      ],
+      "byGain": [
+        {
+          "maxGain": 4,
+          "model": "Match CL"
+        },
+        {
+          "maxGain": 10,
+          "model": "Match OD"
+        }
+      ],
+      "basis": "interpretation",
+      "reason": "Dumble/Two-Rock saknas som förstärkarmodell; Matchless (Match) ger liknande boutique-karaktär."
+    },
+    {
+      "match": [
+        "hiwatt",
+        "dr103",
+        "wem"
+      ],
+      "byGain": [
+        {
+          "maxGain": 4,
+          "model": "Knights CL+"
+        },
+        {
+          "maxGain": 10,
+          "model": "UK 50"
+        }
+      ],
+      "basis": "interpretation",
+      "reason": "Hiwatt saknas som förstärkarmodell; brittisk clean (Knights) eller tidig Marshall (UK 50) är närmast."
+    },
+    {
+      "match": [
+        "victory"
+      ],
+      "byGain": [
+        {
+          "maxGain": 6,
+          "model": "Flagman 1"
+        },
+        {
+          "maxGain": 10,
+          "model": "Flagman+ 1"
+        }
+      ],
+      "basis": "interpretation",
+      "reason": "Victory saknas; modern brittisk boutique-förstärkare (Flagman) är närmast."
+    },
+    {
+      "match": [
+        "budda"
+      ],
+      "byGain": [
+        {
+          "maxGain": 4,
+          "model": "Match CL"
+        },
+        {
+          "maxGain": 10,
+          "model": "Match OD"
+        }
+      ],
+      "basis": "interpretation",
+      "reason": "Budda saknas; Matchless (Match) ger liknande EL84-karaktär."
+    },
+    {
+      "match": [
+        "laney"
+      ],
+      "basis": "interpretation",
+      "reason": "Laney saknas; 1960–70-talets Laney (t.ex. Supergroup) låter Plexi-likt (UK SLP), senare modeller närmast UK 800.",
+      "byGain": [
+        {
+          "maxGain": 10,
+          "model": "UK 800"
+        }
+      ],
+      "vintage": "UK SLP"
+    },
+    {
+      "match": [
+        "randall"
+      ],
+      "model": "EV 51",
+      "basis": "interpretation",
+      "reason": "Randall saknas; tight, ljus high gain (EV 51) är närmast."
+    },
+    {
+      "match": [
+        "hughes",
+        "kettner",
+        "triamp"
+      ],
+      "model": "Eagle 120",
+      "basis": "interpretation",
+      "reason": "Hughes & Kettner saknas; tysk high gain (ENGL Savage) är närmast."
+    },
+    {
+      "match": [
+        "krank",
+        "splawn",
+        "revv",
+        "framus",
+        "carvin",
+        "peavey"
+      ],
+      "byGain": [
+        {
+          "maxGain": 4,
+          "model": "Dark Twin"
+        },
+        {
+          "maxGain": 10,
+          "model": "EV 51"
+        }
+      ],
+      "basis": "interpretation",
+      "reason": "Amerikansk high gain utan egen modell; EV 51 (5150) är närmast."
+    },
+    {
+      "match": [
+        "silvertone",
+        "magnatone",
+        "danelectro",
+        "valco",
+        "kay",
+        "gibson"
+      ],
+      "model": "Tweedy",
+      "basis": "interpretation",
+      "reason": "Liten vintage-förstärkare; Tweedy (Tweed Deluxe) är närmast."
+    },
+    {
+      "match": [
+        "svt",
+        "ampeg"
+      ],
+      "model": "Classic Bass",
+      "basis": "manual",
+      "reason": "Classic Bass bygger på Ampeg SVT (manualen s. 51)."
+    }
+  ],
+  "cab": [
+    {
+      "match": [
+        "greenback",
+        "greenbacks"
+      ],
+      "model": "UK GRN 2",
+      "basis": "manual",
+      "reason": "Marshall 4x12 med Celestion Greenback (manualen s. 54)."
+    },
+    {
+      "match": [
+        "g12t 75",
+        "g12t75"
+      ],
+      "model": "UK 75",
+      "basis": "manual",
+      "reason": "Marshall 4x12 med G12T-75 (manualen s. 54)."
+    },
+    {
+      "match": [
+        "1960av",
+        "1960a",
+        "1960"
+      ],
+      "model": "UK LD",
+      "basis": "manual",
+      "reason": "Marshall 1960AV 4x12 (manualen s. 54)."
+    },
+    {
+      "match": [
+        "basketweave",
+        "1968"
+      ],
+      "model": "UK TD",
+      "basis": "manual",
+      "reason": "Marshall '68 Basketweave 4x12 (manualen s. 54)."
+    },
+    {
+      "match": [
+        "marshall"
+      ],
+      "model": "UK 75",
+      "basis": "interpretation",
+      "reason": "Marshall 4x12 utan högtalarangivelse."
+    },
+    {
+      "match": [
+        "road king"
+      ],
+      "model": "King",
+      "basis": "manual",
+      "reason": "Mesa/Boogie Road King 4x12 (manualen s. 55)."
+    },
+    {
+      "match": [
+        "lone star",
+        "lonestar"
+      ],
+      "model": "SUP Star",
+      "basis": "manual",
+      "reason": "Mesa/Boogie Lone Star 2x12 (manualen s. 54)."
+    },
+    {
+      "match": [
+        "mesa",
+        "boogie",
+        "rectifier",
+        "recto"
+      ],
+      "model": "Mess",
+      "basis": "manual",
+      "reason": "Mesa/Boogie Rectifier 4x12 (manualen s. 54)."
+    },
+    {
+      "match": [
+        "6505",
+        "5150",
+        "peavey",
+        "evh"
+      ],
+      "model": "EV",
+      "basis": "manual",
+      "reason": "Peavey 6505 4x12 (manualen s. 54)."
+    },
+    {
+      "match": [
+        "diezel"
+      ],
+      "model": "Dizz",
+      "basis": "manual",
+      "reason": "Diezel 4x12 (manualen s. 55)."
+    },
+    {
+      "match": [
+        "engl"
+      ],
+      "model": "Eagle",
+      "basis": "manual",
+      "reason": "ENGL 4x12 (manualen s. 54)."
+    },
+    {
+      "match": [
+        "uberkab"
+      ],
+      "model": "Uban",
+      "basis": "manual",
+      "reason": "Bogner Uberkab (manualen s. 54)."
+    },
+    {
+      "match": [
+        "bogner"
+      ],
+      "model": "Bog",
+      "basis": "manual",
+      "reason": "Bogner 4x12 (manualen s. 54)."
+    },
+    {
+      "match": [
+        "soldano"
+      ],
+      "model": "Solo",
+      "basis": "manual",
+      "reason": "Soldano 4x12 (manualen s. 55)."
+    },
+    {
+      "match": [
+        "orange",
+        "ppc412"
+      ],
+      "model": "Juice",
+      "basis": "manual",
+      "reason": "Orange PPC412 (manualen s. 55)."
+    },
+    {
+      "match": [
+        "hiwatt"
+      ],
+      "model": "H-WAY",
+      "basis": "manual",
+      "reason": "Hiwatt SE4123 4x12 (manualen s. 55)."
+    },
+    {
+      "match": [
+        "wem"
+      ],
+      "model": "Way",
+      "basis": "manual",
+      "reason": "WEM 4x12 (manualen s. 55)."
+    },
+    {
+      "match": [
+        "dumble"
+      ],
+      "model": "Dumb",
+      "basis": "manual",
+      "reason": "Dumble 4x12 (manualen s. 55)."
+    },
+    {
+      "match": [
+        "hughes",
+        "kettner",
+        "triamp"
+      ],
+      "model": "TRP",
+      "basis": "manual",
+      "reason": "Hughes & Kettner Triamp 4x12 (manualen s. 55)."
+    },
+    {
+      "match": [
+        "two rock"
+      ],
+      "model": "DB Rock",
+      "basis": "manual",
+      "reason": "Two-Rock 2x12 (manualen s. 54)."
+    },
+    {
+      "match": [
+        "fryette",
+        "deliverance"
+      ],
+      "model": "Freed",
+      "basis": "manual",
+      "reason": "Fryette Deliverance 2x12 (manualen s. 54)."
+    },
+    {
+      "match": [
+        "matchless"
+      ],
+      "model": "Match",
+      "basis": "manual",
+      "reason": "Matchless Chieftain 2x12 (manualen s. 54)."
+    },
+    {
+      "match": [
+        "alnico blue"
+      ],
+      "model": "Blue SK",
+      "basis": "manual",
+      "reason": "2x12 med Celestion Alnico Blue (manualen s. 54)."
+    },
+    {
+      "match": [
+        "vox",
+        "ac30"
+      ],
+      "model": "FOXY 2",
+      "basis": "manual",
+      "reason": "Vox AC30 2x12 (manualen s. 54)."
+    },
+    {
+      "match": [
+        "ac15"
+      ],
+      "model": "FOXY 1",
+      "basis": "manual",
+      "reason": "Vox AC15 1x12 (manualen s. 54)."
+    },
+    {
+      "match": [
+        "twin"
+      ],
+      "model": "Dark Twin",
+      "basis": "manual",
+      "reason": "Fender '65 Twin Reverb 2x12 (manualen s. 53)."
+    },
+    {
+      "match": [
+        "bassman"
+      ],
+      "model": "Bellman 2",
+      "basis": "manual",
+      "reason": "Fender '59 Bassman 4x10 (manualen s. 53)."
+    },
+    {
+      "match": [
+        "supro"
+      ],
+      "model": "SUP",
+      "basis": "manual",
+      "reason": "Supro 1624T 2x12 (manualen s. 54)."
+    }
+  ],
+  "effects": [
+    {
+      "match": [
+        "decimator",
+        "isp"
+      ],
+      "block": "NR",
+      "model": "Gate 1",
+      "params": {
+        "Threshold": 45
+      },
+      "basis": "manual",
+      "reason": "Gate 1 bygger på ISP Decimator (manualen s. 52)."
+    },
+    {
+      "match": [
+        "noise gate",
+        "gate",
+        "ns 2",
+        "smart gate",
+        "zuul"
+      ],
+      "block": "NR",
+      "model": "Gate 2",
+      "params": {
+        "Threshold": 45,
+        "Attack": 10,
+        "Release": 30
+      },
+      "basis": "interpretation",
+      "reason": "Noise gate med justerbar attack/release."
+    },
+    {
+      "match": [
+        "ts808",
+        "ts 808",
+        "od808",
+        "od 808",
+        "tube screamer",
+        "screamer",
+        "maxon"
+      ],
+      "block": "DST",
+      "model": "Green OD",
+      "params": {
+        "Gain": 45,
+        "Tone": 55,
+        "Volume": 65
+      },
+      "paramsHighGain": {
+        "Gain": 10,
+        "Tone": 60,
+        "Volume": 80
+      },
+      "basis": "manual",
+      "reason": "Green OD bygger på Ibanez TS-808 (manualen s. 32). Vid high gain används den som ren boost."
+    },
+    {
+      "match": [
+        "ts9",
+        "ts 9"
+      ],
+      "block": "DST",
+      "model": "OD 9",
+      "params": {
+        "Gain": 45,
+        "Tone": 55,
+        "Volume": 65
+      },
+      "paramsHighGain": {
+        "Gain": 10,
+        "Tone": 60,
+        "Volume": 80
+      },
+      "basis": "manual",
+      "reason": "OD 9 bygger på Ibanez TS9 (manualen s. 32)."
+    },
+    {
+      "match": [
+        "klon",
+        "centaur"
+      ],
+      "block": "DST",
+      "model": "Penesas",
+      "params": {
+        "Gain": 35,
+        "Tone": 55,
+        "Volume": 70
+      },
+      "paramsHighGain": {
+        "Gain": 10,
+        "Tone": 55,
+        "Volume": 80
+      },
+      "basis": "manual",
+      "reason": "Penesas bygger på Klon Centaur (manualen s. 32)."
+    },
+    {
+      "match": [
+        "ocd"
+      ],
+      "block": "DST",
+      "model": "Force",
+      "params": {
+        "Gain": 50,
+        "Tone": 55,
+        "Volume": 65,
+        "Mode": "HP"
+      },
+      "basis": "manual",
+      "reason": "Force bygger på Fulltone OCD (manualen s. 33)."
+    },
+    {
+      "match": [
+        "tube driver"
+      ],
+      "block": "DST",
+      "model": "Tube",
+      "params": {
+        "Gain": 50,
+        "Volume": 65,
+        "Bass": 50,
+        "Treble": 55
+      },
+      "basis": "manual",
+      "reason": "Tube bygger på B.K. Butler Tube Driver (manualen s. 33)."
+    },
+    {
+      "match": [
+        "bluesbreaker",
+        "blues breaker"
+      ],
+      "block": "DST",
+      "model": "Blues Master",
+      "params": {
+        "Gain": 40,
+        "Volume": 65,
+        "Bass": 50,
+        "Middle": 50,
+        "Treble": 55
+      },
+      "basis": "manual",
+      "reason": "Blues Master bygger på Marshall BluesBreaker (manualen s. 34)."
+    },
+    {
+      "match": [
+        "zendrive"
+      ],
+      "block": "DST",
+      "model": "Taichi OD",
+      "params": {
+        "Gain": 45,
+        "Tone": 55,
+        "Volume": 65,
+        "Voice": 50
+      },
+      "basis": "manual",
+      "reason": "Taichi OD bygger på Hermida Zendrive (manualen s. 34)."
+    },
+    {
+      "match": [
+        "timmy"
+      ],
+      "block": "DST",
+      "model": "Timmy OD",
+      "params": {
+        "Gain": 40,
+        "Volume": 65,
+        "Bass": 50,
+        "Middle": 50,
+        "Treble": 55
+      },
+      "basis": "manual",
+      "reason": "Timmy OD bygger på Paul Cochrane Timmy (manualen s. 34)."
+    },
+    {
+      "match": [
+        "precision drive"
+      ],
+      "block": "DST",
+      "model": "Precise OD",
+      "params": {
+        "Gain": 15,
+        "Tone": 55,
+        "Volume": 80,
+        "Gate": 30
+      },
+      "basis": "manual",
+      "reason": "Precise OD bygger på Horizon Devices Precision Drive (manualen s. 34)."
+    },
+    {
+      "match": [
+        "prince of tone"
+      ],
+      "block": "DST",
+      "model": "Empire OD",
+      "params": {
+        "Gain": 45,
+        "Tone": 55,
+        "Volume": 65
+      },
+      "basis": "manual",
+      "reason": "Empire OD bygger på Analog.Man Prince of Tone (manualen s. 34)."
+    },
+    {
+      "match": [
+        "big muff",
+        "muff"
+      ],
+      "block": "DST",
+      "model": "Lazaro",
+      "params": {
+        "Sustain": 70,
+        "Tone": 50,
+        "Volume": 60
+      },
+      "basis": "manual",
+      "reason": "Lazaro bygger på Electro-Harmonix Big Muff Pi (manualen s. 35)."
+    },
+    {
+      "match": [
+        "fuzz face"
+      ],
+      "block": "DST",
+      "model": "Red Haze",
+      "params": {
+        "Fuzz": 70,
+        "Volume": 60
+      },
+      "basis": "manual",
+      "reason": "Red Haze bygger på Dallas-Arbiter Fuzz Face (manualen s. 35)."
+    },
+    {
+      "match": [
+        "tone bender"
+      ],
+      "block": "DST",
+      "model": "Sora Fuzz",
+      "params": {
+        "Fuzz": 70,
+        "Volume": 60
+      },
+      "basis": "manual",
+      "reason": "Sora Fuzz bygger på Sola Sound Tone Bender (manualen s. 35)."
+    },
+    {
+      "match": [
+        "fuzz"
+      ],
+      "block": "DST",
+      "model": "Red Haze",
+      "params": {
+        "Fuzz": 65,
+        "Volume": 60
+      },
+      "basis": "interpretation",
+      "reason": "Fuzz utan modellangivelse: Fuzz Face-typ (Red Haze)."
+    },
+    {
+      "match": [
+        "distortion+",
+        "distortion plus",
+        "m104"
+      ],
+      "block": "DST",
+      "model": "Plustortion",
+      "params": {
+        "Gain": 60,
+        "Volume": 60
+      },
+      "basis": "manual",
+      "reason": "Plustortion bygger på MXR Distortion+ (manualen s. 35)."
+    },
+    {
+      "match": [
+        "ds 1",
+        "ds1"
+      ],
+      "block": "DST",
+      "model": "SM Dist",
+      "params": {
+        "Gain": 55,
+        "Tone": 50,
+        "Volume": 60
+      },
+      "basis": "manual",
+      "reason": "SM Dist bygger på en klassisk orange 3-ratters distortion (manualen s. 35)."
+    },
+    {
+      "match": [
+        "rat",
+        "proco"
+      ],
+      "block": "DST",
+      "model": "Darktale",
+      "params": {
+        "Gain": 60,
+        "Filter": 40,
+        "Volume": 60
+      },
+      "basis": "manual",
+      "reason": "Darktale bygger på ProCo Rat (manualen s. 36)."
+    },
+    {
+      "match": [
+        "guv nor",
+        "guvnor"
+      ],
+      "block": "DST",
+      "model": "Chief",
+      "params": {
+        "Gain": 55,
+        "Volume": 60,
+        "Bass": 50,
+        "Middle": 55,
+        "Treble": 55
+      },
+      "basis": "manual",
+      "reason": "Chief bygger på Marshall Guv'nor (manualen s. 36)."
+    },
+    {
+      "match": [
+        "shredmaster"
+      ],
+      "block": "DST",
+      "model": "Master Dist",
+      "params": {
+        "Gain": 60,
+        "Volume": 60,
+        "Bass": 50,
+        "Contour": 50,
+        "Treble": 55
+      },
+      "basis": "manual",
+      "reason": "Master Dist bygger på Marshall Shredmaster (manualen s. 36)."
+    },
+    {
+      "match": [
+        "crunch box"
+      ],
+      "block": "DST",
+      "model": "La Charger",
+      "params": {
+        "Gain": 55,
+        "Tone": 50,
+        "Volume": 60
+      },
+      "basis": "manual",
+      "reason": "La Charger bygger på MI Audio Crunch Box (manualen s. 36)."
+    },
+    {
+      "match": [
+        "riot"
+      ],
+      "block": "DST",
+      "model": "Revolt",
+      "params": {
+        "Gain": 55,
+        "Tone": 50,
+        "Volume": 60,
+        "Mode": "I"
+      },
+      "basis": "manual",
+      "reason": "Revolt bygger på Suhr Riot (manualen s. 36)."
+    },
+    {
+      "match": [
+        "treble booster",
+        "treble boost",
+        "rangemaster"
+      ],
+      "block": "DST",
+      "model": "AC Boost",
+      "params": {
+        "Gain": 50,
+        "Volume": 70,
+        "Bass": 30,
+        "Treble": 75
+      },
+      "basis": "interpretation",
+      "reason": "Ingen treble booster finns; AC Boost med sänkt bas och höjd diskant ger liknande effekt."
+    },
+    {
+      "match": [
+        "micro amp",
+        "mxr micro"
+      ],
+      "block": "DST",
+      "model": "Micro Boost",
+      "params": {
+        "Gain": 50
+      },
+      "basis": "manual",
+      "reason": "Micro Boost bygger på MXR M133 Micro Amp (manualen s. 37)."
+    },
+    {
+      "match": [
+        "ep booster",
+        "ep 3"
+      ],
+      "block": "DST",
+      "model": "Boost",
+      "params": {
+        "Volume": 60,
+        "+3dB": "OFF",
+        "Bright": "OFF"
+      },
+      "basis": "manual",
+      "reason": "Boost bygger på Xotic EP Booster (manualen s. 38)."
+    },
+    {
+      "match": [
+        "grind"
+      ],
+      "block": "DST",
+      "model": "14 Boost",
+      "params": {
+        "Gain": 50
+      },
+      "basis": "manual",
+      "reason": "14 Boost bygger på Fortin Grind (manualen s. 38)."
+    },
+    {
+      "match": [
+        "sd 1",
+        "sd1",
+        "super overdrive"
+      ],
+      "block": "DST",
+      "model": "Super OD",
+      "params": {
+        "Gain": 45,
+        "Tone": 55,
+        "Volume": 65
+      },
+      "paramsHighGain": {
+        "Gain": 10,
+        "Tone": 60,
+        "Volume": 80
+      },
+      "basis": "interpretation",
+      "reason": "Super OD är en asymmetrisk overdrive (manualen s. 33) – närmast Boss SD-1."
+    },
+    {
+      "match": [
+        "bd 2",
+        "blues driver"
+      ],
+      "block": "DST",
+      "model": "Blues OD",
+      "params": {
+        "Gain": 45,
+        "Tone": 55,
+        "Volume": 65
+      },
+      "basis": "interpretation",
+      "reason": "Blues OD är närmast Boss Blues Driver."
+    },
+    {
+      "match": [
+        "distortion"
+      ],
+      "block": "DST",
+      "model": "SM Dist",
+      "params": {
+        "Gain": 55,
+        "Tone": 50,
+        "Volume": 60
+      },
+      "maxAmpGain": 5.5,
+      "basis": "interpretation",
+      "reason": "Distorsionspedal framför en förstärkare med låg gain."
+    },
+    {
+      "match": [
+        "overdrive",
+        "od",
+        "drive"
+      ],
+      "block": "DST",
+      "model": "Green OD",
+      "params": {
+        "Gain": 45,
+        "Tone": 55,
+        "Volume": 65
+      },
+      "paramsHighGain": {
+        "Gain": 10,
+        "Tone": 60,
+        "Volume": 80
+      },
+      "basis": "interpretation",
+      "reason": "Overdrive utan modellangivelse: Tube Screamer-typ (Green OD). Vid high gain som ren boost."
+    },
+    {
+      "match": [
+        "boost",
+        "booster"
+      ],
+      "block": "DST",
+      "model": "Micro Boost",
+      "params": {
+        "Gain": 50
+      },
+      "paramsHighGain": {
+        "Gain": 40
+      },
+      "basis": "interpretation",
+      "reason": "Boost utan modellangivelse: ren boost (Micro Boost)."
+    },
+    {
+      "match": [
+        "compression",
+        "compressor",
+        "comp",
+        "dyna comp",
+        "ross"
+      ],
+      "block": "PRE",
+      "model": "COMP",
+      "params": {
+        "Sustain": 45,
+        "Volume": 50
+      },
+      "basis": "manual",
+      "reason": "COMP bygger på Ross Compressor (manualen s. 25)."
+    },
+    {
+      "match": [
+        "whammy"
+      ],
+      "block": "PRE",
+      "model": "Hammy",
+      "params": {
+        "Range": 50,
+        "Harmony": "OFF",
+        "Volume": 50,
+        "Position": 0
+      },
+      "basis": "manual",
+      "reason": "Hammy bygger på DigiTech Whammy (manualen s. 29). Styr Position med expressionpedal."
+    },
+    {
+      "match": [
+        "harmonizer",
+        "harmony"
+      ],
+      "block": "PRE",
+      "model": "Harmonizer 1",
+      "params": {
+        "Mix": 40
+      },
+      "basis": "interpretation",
+      "reason": "Harmonizer – ställ in Key och Interval efter låten."
+    },
+    {
+      "match": [
+        "octave",
+        "octavia",
+        "octaver"
+      ],
+      "block": "PRE",
+      "model": "OCTA",
+      "params": {
+        "Oct 1": 40,
+        "Oct 2": 0,
+        "Dry": 70
+      },
+      "basis": "interpretation",
+      "reason": "Polyfon oktav."
+    },
+    {
+      "match": [
+        "pitch shifter",
+        "pitch shift",
+        "pitch"
+      ],
+      "block": "PRE",
+      "model": "Pitch",
+      "params": {
+        "Dry": 70,
+        "Low Volume": 40,
+        "High Volume": 0
+      },
+      "basis": "interpretation",
+      "reason": "Pitch shifter – ställ in tonsteg efter låten."
+    },
+    {
+      "match": [
+        "envelope filter",
+        "auto wah",
+        "autowah",
+        "touch wah",
+        "mutron",
+        "mu tron"
+      ],
+      "block": "PRE",
+      "model": "T-Wah",
+      "params": {
+        "Sens": 55,
+        "Range": 50,
+        "Q": 50,
+        "Mix": 70
+      },
+      "basis": "interpretation",
+      "reason": "Envelope filter (touch wah)."
+    },
+    {
+      "match": [
+        "vox wah",
+        "v846",
+        "v847"
+      ],
+      "block": "WHA",
+      "model": "V-Wah",
+      "params": {
+        "Position": 50,
+        "Range": 50,
+        "Q": 50,
+        "Volume": 50
+      },
+      "basis": "manual",
+      "reason": "V-Wah bygger på Vox V846 (manualen s. 31)."
+    },
+    {
+      "match": [
+        "cry baby",
+        "crybaby",
+        "wah"
+      ],
+      "block": "WHA",
+      "model": "C-Wah",
+      "params": {
+        "Position": 50,
+        "Range": 50,
+        "Q": 50,
+        "Volume": 50
+      },
+      "basis": "manual",
+      "reason": "C-Wah bygger på Dunlop Cry Baby (manualen s. 31). Styr Position med expressionpedalen."
+    },
+    {
+      "match": [
+        "uni vibe",
+        "univibe",
+        "vibe"
+      ],
+      "block": "MOD",
+      "model": "Vibe",
+      "params": {
+        "Depth": 60,
+        "Rate": 40,
+        "Volume": 50
+      },
+      "basis": "manual",
+      "reason": "Vibe bygger på Shin-Ei Uni-Vibe (manualen s. 59)."
+    },
+    {
+      "match": [
+        "rotary",
+        "leslie"
+      ],
+      "block": "MOD",
+      "model": "Vibe",
+      "params": {
+        "Depth": 60,
+        "Rate": 45,
+        "Volume": 50
+      },
+      "basis": "interpretation",
+      "reason": "Ingen roterande högtalare finns; Uni-Vibe (Vibe) konstruerades för att efterlikna Leslie."
+    },
+    {
+      "match": [
+        "small stone"
+      ],
+      "block": "MOD",
+      "model": "S-Phase",
+      "params": {
+        "Rate": 35
+      },
+      "basis": "manual",
+      "reason": "S-Phase bygger på Electro-Harmonix Small Stone (manualen s. 59)."
+    },
+    {
+      "match": [
+        "phase 90",
+        "phaser",
+        "phase"
+      ],
+      "block": "MOD",
+      "model": "O-Phase",
+      "params": {
+        "Rate": 35
+      },
+      "basis": "manual",
+      "reason": "O-Phase bygger på MXR Phase 90 (manualen s. 58)."
+    },
+    {
+      "match": [
+        "flanger",
+        "flange",
+        "electric mistress"
+      ],
+      "block": "MOD",
+      "model": "Jet",
+      "params": {
+        "Depth": 50,
+        "Rate": 30,
+        "Pre Delay": 30,
+        "Feedback": 45
+      },
+      "basis": "interpretation",
+      "reason": "Klassisk flanger (Jet)."
+    },
+    {
+      "match": [
+        "tremolo",
+        "trem"
+      ],
+      "block": "MOD",
+      "model": "O-Trem",
+      "params": {
+        "Depth": 55,
+        "Rate": 45
+      },
+      "basis": "manual",
+      "reason": "O-Trem bygger på Demeter Tremulator (opto-tremolo, manualen s. 60)."
+    },
+    {
+      "match": [
+        "vibrato"
+      ],
+      "block": "MOD",
+      "model": "Vibrato",
+      "params": {
+        "Depth": 40,
+        "Rate": 45,
+        "Volume": 50
+      },
+      "basis": "interpretation",
+      "reason": "Klassisk vibrato."
+    },
+    {
+      "match": [
+        "ce 1",
+        "ce1"
+      ],
+      "block": "MOD",
+      "model": "G-Chorus",
+      "params": {
+        "Depth": 50,
+        "Rate": 35,
+        "Volume": 50
+      },
+      "basis": "interpretation",
+      "reason": "G-Chorus bygger på ensemble-chorus från sent 70-tal (manualen s. 57)."
+    },
+    {
+      "match": [
+        "chorus"
+      ],
+      "block": "MOD",
+      "model": "A-Chorus",
+      "params": {
+        "Depth": 45,
+        "Rate": 35,
+        "Tone": 50
+      },
+      "basis": "interpretation",
+      "reason": "Chorus utan modellangivelse: klassisk 80-tals chorus (A-Chorus)."
+    },
+    {
+      "match": [
+        "detune"
+      ],
+      "block": "MOD",
+      "model": "Detune",
+      "params": {
+        "Dry/Wet": 30,
+        "Detune": 10
+      },
+      "basis": "interpretation",
+      "reason": "Detune ger chorusliknande dubblering."
+    },
+    {
+      "match": [
+        "slapback",
+        "slap back"
+      ],
+      "block": "DLY",
+      "model": "Slapback",
+      "params": {
+        "Mix": 25,
+        "Feedback": 5,
+        "Time": 110
+      },
+      "basis": "interpretation",
+      "reason": "Slapback-eko."
+    },
+    {
+      "match": [
+        "tape echo",
+        "tape delay",
+        "echoplex",
+        "space echo",
+        "binson",
+        "echorec",
+        "tape"
+      ],
+      "block": "DLY",
+      "model": "Tape",
+      "params": {
+        "Mix": 20,
+        "Feedback": 30,
+        "Time": 380
+      },
+      "basis": "interpretation",
+      "reason": "Bandeko."
+    },
+    {
+      "match": [
+        "analog delay",
+        "dm 2",
+        "dm2",
+        "carbon copy",
+        "memory man"
+      ],
+      "block": "DLY",
+      "model": "Analog",
+      "params": {
+        "Mix": 20,
+        "Feedback": 25,
+        "Time": 400
+      },
+      "basis": "interpretation",
+      "reason": "Analog delay."
+    },
+    {
+      "match": [
+        "digital delay",
+        "dd 3",
+        "dd3"
+      ],
+      "block": "DLY",
+      "model": "Pure",
+      "params": {
+        "Mix": 18,
+        "Feedback": 25,
+        "Time": 400
+      },
+      "basis": "interpretation",
+      "reason": "Ren digital delay (Pure)."
+    },
+    {
+      "match": [
+        "ping pong",
+        "stereo delay"
+      ],
+      "block": "DLY",
+      "model": "Ping Pong",
+      "params": {
+        "Mix": 20,
+        "Feedback": 25,
+        "Time": 400
+      },
+      "basis": "interpretation",
+      "reason": "Stereo ping-pong delay."
+    },
+    {
+      "match": [
+        "delay",
+        "echo"
+      ],
+      "block": "DLY",
+      "model": "Analog",
+      "params": {
+        "Mix": 18,
+        "Feedback": 25,
+        "Time": 400
+      },
+      "basis": "interpretation",
+      "reason": "Delay utan modellangivelse: varm delay (Analog)."
+    },
+    {
+      "match": [
+        "shimmer"
+      ],
+      "block": "RVB",
+      "model": "Shimmer",
+      "params": {
+        "Mix": 30,
+        "Pre Delay": 20,
+        "Decay": 60
+      },
+      "basis": "interpretation",
+      "reason": "Shimmer-reverb."
+    },
+    {
+      "match": [
+        "spring"
+      ],
+      "block": "RVB",
+      "model": "Spring",
+      "params": {
+        "Mix": 25,
+        "Decay": 40,
+        "Tone": 50
+      },
+      "basis": "interpretation",
+      "reason": "Fjäderreverb."
+    },
+    {
+      "match": [
+        "plate"
+      ],
+      "block": "RVB",
+      "model": "Plate",
+      "params": {
+        "Mix": 20,
+        "Decay": 45,
+        "High Damp": 50
+      },
+      "basis": "interpretation",
+      "reason": "Plattreverb."
+    },
+    {
+      "match": [
+        "hall",
+        "ambient",
+        "big sky",
+        "cloud",
+        "lush",
+        "spacious"
+      ],
+      "block": "RVB",
+      "model": "Hall",
+      "params": {
+        "Mix": 25,
+        "Pre Delay": 20,
+        "Decay": 55
+      },
+      "basis": "interpretation",
+      "reason": "Stor reverb (Hall)."
+    },
+    {
+      "match": [
+        "room"
+      ],
+      "block": "RVB",
+      "model": "Room",
+      "params": {
+        "Mix": 15,
+        "Pre Delay": 10,
+        "Decay": 30
+      },
+      "basis": "interpretation",
+      "reason": "Rumsreverb."
+    },
+    {
+      "match": [
+        "reverb"
+      ],
+      "block": "RVB",
+      "model": "Room",
+      "params": {
+        "Mix": 15,
+        "Pre Delay": 10,
+        "Decay": 35
+      },
+      "basis": "interpretation",
+      "reason": "Reverb utan typangivelse: Room (Spring för Fender-förstärkare)."
+    }
+  ],
+  "ignoredEffects": [
+    "volume pedal",
+    "talk box",
+    "talkbox",
+    "ebow",
+    "e bow",
+    "sustainer",
+    "looper",
+    "sidechain",
+    "synth",
+    "multi effects",
+    "modulation",
+    "fx"
+  ]
+}

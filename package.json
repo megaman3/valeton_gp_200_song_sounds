@@ -1,0 +1,35 @@
+{
+  "name": "gp200-tone-generator",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Regelbaserad (AI-fri) generator av Valeton GP-200-presets för låtar och ljud.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -b --noEmit",
+    "validate-data": "tsx tools/validate-data.ts",
+    "preset": "tsx tools/preset-cli.ts",
+    "import:gta": "tsx tools/import-guitartoneadapt.ts"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.9.0",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "4.3.3",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.49",
+    "tailwindcss": "3.4.15",
+    "tsx": "4.19.2",
+    "typescript": "5.6.3",
+    "vite": "5.4.11",
+    "vitest": "2.1.5"
+  }
+}
