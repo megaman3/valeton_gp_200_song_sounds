@@ -83,6 +83,24 @@
     },
     {
       "match": [
+        "rockman",
+        "scholz"
+      ],
+      "byGain": [
+        {
+          "maxGain": 4,
+          "model": "J-120 CL"
+        },
+        {
+          "maxGain": 10,
+          "model": "UK 800"
+        }
+      ],
+      "reason": "Tom Scholz Rockman (hörlursförstärkare, Boston/Def Leppard): ren kanal är mycket ren och kompressad (närmast J-120 CL); distkanalen är jämn, kompressad 80-talsdist – närmast UK 800. Rockmans karaktär kommer också från inbyggd kompressor, chorus och eko, som läggs i PRE/MOD/DLY.",
+      "basis": "interpretation"
+    },
+    {
+      "match": [
         "marshall"
       ],
       "byGain": [
@@ -373,6 +391,15 @@
     },
     {
       "match": [
+        "normal channel",
+        "ac30 normal"
+      ],
+      "model": "Foxy 30N",
+      "reason": "AC30:ns Normal-kanal (utan Top Boost) motsvaras av Foxy 30N enligt manualen; t.ex. Brian Mays ljud.",
+      "basis": "manual"
+    },
+    {
+      "match": [
         "ac30",
         "ac 30",
         "ac15",
@@ -422,6 +449,15 @@
       "model": "Dark Twin",
       "basis": "manual",
       "reason": "Dark Twin bygger på Fender '65 Twin Reverb (manualen s. 39)."
+    },
+    {
+      "match": [
+        "echosonic",
+        "ray butts"
+      ],
+      "model": "Tweedy",
+      "reason": "Ray Butts EchoSonic: liten 1950-talscombo med inbyggt tejpeko – närmast en tweed-combo. Ekot läggs i DLY (Slapback).",
+      "basis": "interpretation"
     },
     {
       "match": [
@@ -727,6 +763,44 @@
       "model": "Tweedy",
       "basis": "interpretation",
       "reason": "Liten vintage-förstärkare; Tweedy (Tweed Deluxe) är närmast."
+    },
+    {
+      "match": [
+        "ampeg guitar",
+        "ampeg gemini",
+        "reverberocket",
+        "ampeg jet"
+      ],
+      "byGain": [
+        {
+          "maxGain": 3.5,
+          "model": "Dark Twin"
+        },
+        {
+          "maxGain": 10,
+          "model": "Dark DLX"
+        }
+      ],
+      "reason": "Ampegs gitarrcombos (Gemini/Reverberocket) är rena amerikanska rörcombos med 6L6/7591 – närmast Fender-typerna, inte basförstärkaren Classic Bass.",
+      "basis": "interpretation"
+    },
+    {
+      "match": [
+        "music man",
+        "musicman"
+      ],
+      "byGain": [
+        {
+          "maxGain": 3.5,
+          "model": "Dark Twin"
+        },
+        {
+          "maxGain": 10,
+          "model": "Dark DLX"
+        }
+      ],
+      "reason": "Music Man-förstärkarna konstruerades av Leo Fenders team och har ett rent, Fender-likt ljud.",
+      "basis": "interpretation"
     },
     {
       "match": [

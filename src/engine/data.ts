@@ -4,6 +4,7 @@ import profilesJson from '../data/tone-profiles.json';
 import songsJson from '../data/songs.json';
 import rulesJson from '../data/mapping-rules.json';
 import gtaJson from '../data/external/guitartoneadapt.json';
+import researchJson from '../data/research/research-tones.json';
 import type {
   ExternalDataset,
   GP200Manual,
@@ -21,6 +22,8 @@ export interface ToneDatabase {
   curatedSongs: Song[];
   rules: MappingRules;
   external: ExternalDataset;
+  /** Egen research för artister som saknas i externa källor (samma format). */
+  research: ExternalDataset;
 }
 
 export const database: ToneDatabase = {
@@ -30,4 +33,5 @@ export const database: ToneDatabase = {
   curatedSongs: songsJson as unknown as Song[],
   rules: rulesJson as unknown as MappingRules,
   external: gtaJson as ExternalDataset,
+  research: researchJson as ExternalDataset,
 };
