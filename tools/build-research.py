@@ -635,6 +635,59 @@ many("Ozzy Osbourne", "heavy metal", [
     ("Perry Mason", "1990s", "distorted", "riff", (8,6,6,6.5,6.5,2), {"conf": 0.35}),
 ], "Marshall JCM800 2203 into 1960B cab with G12T 75", "Gibson Les Paul (EMG)", ZWN, "bridge humbucker (EMG 81)", 0.45, ZW, ["noise gate"])
 
+# ============ Black Sabbath ============
+BS = src("https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out",
+         "https://www.musicradar.com/artists/tony-iommi-secret-to-black-sabbath-electric-guitar-tone",
+         "https://equipboard.com/albums/black-sabbath-paranoid")
+BSN = ("Tony Iommi: Gibson SG -> modifierad Dallas Rangemaster -> Laney Supergroup (Normal-kanalen) från Paranoid till sent 80-tal. "
+       "Paranoid-ljudet: basen nedvriden, mitten/diskant/presence på max. Från Master of Reality stämt ned 1,5 ton (C#).")
+many("Black Sabbath", "heavy metal", [
+    ("The Wizard", "1970s", "distorted", "riff", (6.5,3,8.5,8,8,2), {"fx": ["Dallas Rangemaster treble booster", "Cry Baby wah"]}),
+    ("Behind the Wall of Sleep", "1970s", "distorted", "riff", (6.5,3,8.5,8,8,2)),
+    ("Electric Funeral", "1970s", "distorted", "riff", (7,3,8.5,8,8,2), {"fx": ["Dallas Rangemaster treble booster", "wah"]}),
+    ("Hand of Doom", "1970s", "distorted", "riff", (7,3,8.5,8,8,2)),
+    ("Lord of This World", "1970s", "distorted", "riff", (7,3.5,8.5,8,8,2), {"note": "Nedstämt C#."}),
+    ("Into the Void", "1970s", "distorted", "riff", (7,3.5,8.5,8,8,2), {"note": "Nedstämt C#."}),
+    ("After Forever", "1970s", "distorted", "riff", (6.5,3.5,8.5,8,8,2), {"note": "Nedstämt C#."}),
+    ("Snowblind", "1970s", "distorted", "riff", (7,3.5,8.5,8,8,2.5), {"note": "Nedstämt C#."}),
+    ("Supernaut", "1970s", "distorted", "riff", (7,3.5,8.5,8,8,2), {"note": "Nedstämt C#."}),
+    ("Wheels of Confusion", "1970s", "distorted", "riff", (7,3.5,8.5,8,8,2.5), {"note": "Nedstämt C#."}),
+    ("Sabbath Bloody Sabbath", "1970s", "distorted", "riff", (7,4,8,8,8,2)),
+    ("Symptom of the Universe", "1970s", "distorted", "riff", (7.5,4,8,8,8,2)),
+    ("Hole in the Sky", "1970s", "distorted", "riff", (7,4,8,8,8,2)),
+    ("Neon Knights", "1980s", "distorted", "riff", (7.5,4.5,7.5,7.5,7.5,2), {"note": "Dio-eran (Heaven and Hell, 1980)."}),
+    ("Heaven and Hell", "1980s", "distorted", "riff", (7.5,4.5,7.5,7.5,7.5,2.5), {"note": "Dio-eran (Heaven and Hell, 1980)."}),
+    ("Die Young", "1980s", "distorted", "riff", (7.5,4.5,7.5,7.5,7.5,2.5), {"note": "Dio-eran (Heaven and Hell, 1980)."}),
+    ("The Mob Rules", "1980s", "distorted", "riff", (7.5,4.5,7.5,7.5,7.5,2), {"note": "Dio-eran (Mob Rules, 1981)."}),
+    ("Paranoid", "1970s", "distorted", "solo", (7,3,8.5,8,8,2.5), {"fx": ["Dallas Rangemaster treble booster", "wah"],
+        "note": "Solot (filtrerat genom wah/ringmodulator i studion) – wah är en approximation."}),
+], "Laney Supergroup", "Gibson SG", BSN, "bridge P-90/humbucker", 0.55, BS, ["Dallas Rangemaster treble booster"])
+
+# ============ Judas Priest ============
+JP = src("https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview",
+         "https://www.musicradar.com/news/guitars/judas-priests-glenn-tipton-and-kk-downing-talk-british-steel-248758",
+         "https://equipboard.com/k-k-downing", "https://www.woodytone.com/?p=2157")
+JPN = ("K.K. Downing och Glenn Tipton: Marshall-toppar (50 W runt 1980, JCM800/Super Lead senare), Marshall 4x12. "
+       "Downing runt 1980: Pete Cornish-bräda med MXR Phase 100, Cry Baby och Echoplex. Tipton senare Engl. Flying V / Strat / SG.")
+many("Judas Priest", "heavy metal", [
+    ("Victim of Changes", "1970s", "distorted", "riff", (6.5,5.5,6.5,7,6.5,2.5)),
+    ("Diamonds and Rust", "1970s", "distorted", "riff", (6,5.5,6.5,7,6.5,2.5)),
+    ("Exciter", "1970s", "distorted", "riff", (7,5.5,6.5,7,6.5,2)),
+    ("Hell Bent for Leather", "1970s", "distorted", "riff", (7,5.5,6.5,7,6.5,2)),
+    ("Living After Midnight", "1980s", "distorted", "riff", (6.5,5.5,6.5,7,6.5,2)),
+    ("Metal Gods", "1980s", "distorted", "riff", (7,5.5,6.5,7,6.5,2)),
+    ("United", "1980s", "distorted", "riff", (6.5,5.5,6.5,7,6.5,2.5)),
+    ("You've Got Another Thing Comin'", "1980s", "distorted", "riff", (7,5.5,6.5,7,6.5,2)),
+    ("Electric Eye", "1980s", "distorted", "riff", (7.5,5.5,6.5,7,6.5,2)),
+    ("Screaming for Vengeance", "1980s", "distorted", "riff", (7.5,5.5,6.5,7,6.5,2)),
+    ("Freewheel Burning", "1980s", "distorted", "riff", (7.5,5.5,6.5,7,6.5,2)),
+    ("Painkiller", "1990s", "distorted", "riff", (9,6,6,7,6.5,1.5), {"fx": ["noise gate"], "conf": 0.4,
+        "note": "Painkiller (1990): mycket hög gain – exakt förstärkare för albumet är inte bekräftad."}),
+    ("A Touch of Evil", "1990s", "distorted", "riff", (8.5,6,6,7,6.5,2.5), {"fx": ["noise gate"], "conf": 0.4}),
+    ("Night Crawler", "1990s", "distorted", "riff", (8.5,6,6,7,6.5,2.5), {"fx": ["noise gate"], "conf": 0.4}),
+    ("Electric Eye", "1980s", "distorted", "solo", (8,5,7,7,6.5,2.5), {"fx": ["Cry Baby wah"]}),
+], "Marshall", "Gibson Flying V / Fender Stratocaster", JPN, "bridge humbucker", 0.45, JP)
+
 ds = dict(source="Egen research (sammanställd vid utveckling – appen använder ingen AI)",
           sourceUrl="", homepage="", license="Egen sammanställning; källor anges per post",
           attribution="Egen research – källor per låt",

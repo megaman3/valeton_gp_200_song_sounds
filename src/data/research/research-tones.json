@@ -5,7 +5,7 @@
   "license": "Egen sammanställning; källor anges per post",
   "attribution": "Egen research – källor per låt",
   "importedAt": "2026-11-10",
-  "count": 300,
+  "count": 333,
   "tones": [
     {
       "id": "volbeat-a-warrior-s-call-riff-distorted",
@@ -8805,6 +8805,1025 @@
         "https://www.premierguitar.com/articles/20658-no-rest-for-the-wylde"
       ],
       "url": "https://www.guitarworld.com/features/the-secrets-behind-zakk-wyldes-guitar-tone-on-ozzy-osbournes-no-more-tears"
+    },
+    {
+      "id": "black-sabbath-the-wizard-riff-distorted",
+      "artist": "Black Sabbath",
+      "song": "The Wizard",
+      "genre": "heavy metal",
+      "era": "1970s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 3,
+        "mid": 8.5,
+        "treble": 8,
+        "presence": 8,
+        "reverb": 2
+      },
+      "amp": "Laney Supergroup",
+      "guitar": "Gibson SG",
+      "notes": "Tony Iommi: Gibson SG -> modifierad Dallas Rangemaster -> Laney Supergroup (Normal-kanalen) från Paranoid till sent 80-tal. Paranoid-ljudet: basen nedvriden, mitten/diskant/presence på max. Från Master of Reality stämt ned 1,5 ton (C#).",
+      "effects": [
+        "Dallas Rangemaster treble booster",
+        "Cry Baby wah"
+      ],
+      "pickup": "bridge P-90/humbucker",
+      "confidence": 0.55,
+      "sources": [
+        "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out",
+        "https://www.musicradar.com/artists/tony-iommi-secret-to-black-sabbath-electric-guitar-tone",
+        "https://equipboard.com/albums/black-sabbath-paranoid"
+      ],
+      "url": "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out"
+    },
+    {
+      "id": "black-sabbath-behind-the-wall-of-sleep-riff-distorted",
+      "artist": "Black Sabbath",
+      "song": "Behind the Wall of Sleep",
+      "genre": "heavy metal",
+      "era": "1970s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 3,
+        "mid": 8.5,
+        "treble": 8,
+        "presence": 8,
+        "reverb": 2
+      },
+      "amp": "Laney Supergroup",
+      "guitar": "Gibson SG",
+      "notes": "Tony Iommi: Gibson SG -> modifierad Dallas Rangemaster -> Laney Supergroup (Normal-kanalen) från Paranoid till sent 80-tal. Paranoid-ljudet: basen nedvriden, mitten/diskant/presence på max. Från Master of Reality stämt ned 1,5 ton (C#).",
+      "effects": [
+        "Dallas Rangemaster treble booster"
+      ],
+      "pickup": "bridge P-90/humbucker",
+      "confidence": 0.55,
+      "sources": [
+        "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out",
+        "https://www.musicradar.com/artists/tony-iommi-secret-to-black-sabbath-electric-guitar-tone",
+        "https://equipboard.com/albums/black-sabbath-paranoid"
+      ],
+      "url": "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out"
+    },
+    {
+      "id": "black-sabbath-electric-funeral-riff-distorted",
+      "artist": "Black Sabbath",
+      "song": "Electric Funeral",
+      "genre": "heavy metal",
+      "era": "1970s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 3,
+        "mid": 8.5,
+        "treble": 8,
+        "presence": 8,
+        "reverb": 2
+      },
+      "amp": "Laney Supergroup",
+      "guitar": "Gibson SG",
+      "notes": "Tony Iommi: Gibson SG -> modifierad Dallas Rangemaster -> Laney Supergroup (Normal-kanalen) från Paranoid till sent 80-tal. Paranoid-ljudet: basen nedvriden, mitten/diskant/presence på max. Från Master of Reality stämt ned 1,5 ton (C#).",
+      "effects": [
+        "Dallas Rangemaster treble booster",
+        "wah"
+      ],
+      "pickup": "bridge P-90/humbucker",
+      "confidence": 0.55,
+      "sources": [
+        "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out",
+        "https://www.musicradar.com/artists/tony-iommi-secret-to-black-sabbath-electric-guitar-tone",
+        "https://equipboard.com/albums/black-sabbath-paranoid"
+      ],
+      "url": "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out"
+    },
+    {
+      "id": "black-sabbath-hand-of-doom-riff-distorted",
+      "artist": "Black Sabbath",
+      "song": "Hand of Doom",
+      "genre": "heavy metal",
+      "era": "1970s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 3,
+        "mid": 8.5,
+        "treble": 8,
+        "presence": 8,
+        "reverb": 2
+      },
+      "amp": "Laney Supergroup",
+      "guitar": "Gibson SG",
+      "notes": "Tony Iommi: Gibson SG -> modifierad Dallas Rangemaster -> Laney Supergroup (Normal-kanalen) från Paranoid till sent 80-tal. Paranoid-ljudet: basen nedvriden, mitten/diskant/presence på max. Från Master of Reality stämt ned 1,5 ton (C#).",
+      "effects": [
+        "Dallas Rangemaster treble booster"
+      ],
+      "pickup": "bridge P-90/humbucker",
+      "confidence": 0.55,
+      "sources": [
+        "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out",
+        "https://www.musicradar.com/artists/tony-iommi-secret-to-black-sabbath-electric-guitar-tone",
+        "https://equipboard.com/albums/black-sabbath-paranoid"
+      ],
+      "url": "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out"
+    },
+    {
+      "id": "black-sabbath-lord-of-this-world-riff-distorted",
+      "artist": "Black Sabbath",
+      "song": "Lord of This World",
+      "genre": "heavy metal",
+      "era": "1970s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 3.5,
+        "mid": 8.5,
+        "treble": 8,
+        "presence": 8,
+        "reverb": 2
+      },
+      "amp": "Laney Supergroup",
+      "guitar": "Gibson SG",
+      "notes": "Tony Iommi: Gibson SG -> modifierad Dallas Rangemaster -> Laney Supergroup (Normal-kanalen) från Paranoid till sent 80-tal. Paranoid-ljudet: basen nedvriden, mitten/diskant/presence på max. Från Master of Reality stämt ned 1,5 ton (C#). Nedstämt C#.",
+      "effects": [
+        "Dallas Rangemaster treble booster"
+      ],
+      "pickup": "bridge P-90/humbucker",
+      "confidence": 0.55,
+      "sources": [
+        "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out",
+        "https://www.musicradar.com/artists/tony-iommi-secret-to-black-sabbath-electric-guitar-tone",
+        "https://equipboard.com/albums/black-sabbath-paranoid"
+      ],
+      "url": "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out"
+    },
+    {
+      "id": "black-sabbath-into-the-void-riff-distorted",
+      "artist": "Black Sabbath",
+      "song": "Into the Void",
+      "genre": "heavy metal",
+      "era": "1970s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 3.5,
+        "mid": 8.5,
+        "treble": 8,
+        "presence": 8,
+        "reverb": 2
+      },
+      "amp": "Laney Supergroup",
+      "guitar": "Gibson SG",
+      "notes": "Tony Iommi: Gibson SG -> modifierad Dallas Rangemaster -> Laney Supergroup (Normal-kanalen) från Paranoid till sent 80-tal. Paranoid-ljudet: basen nedvriden, mitten/diskant/presence på max. Från Master of Reality stämt ned 1,5 ton (C#). Nedstämt C#.",
+      "effects": [
+        "Dallas Rangemaster treble booster"
+      ],
+      "pickup": "bridge P-90/humbucker",
+      "confidence": 0.55,
+      "sources": [
+        "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out",
+        "https://www.musicradar.com/artists/tony-iommi-secret-to-black-sabbath-electric-guitar-tone",
+        "https://equipboard.com/albums/black-sabbath-paranoid"
+      ],
+      "url": "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out"
+    },
+    {
+      "id": "black-sabbath-after-forever-riff-distorted",
+      "artist": "Black Sabbath",
+      "song": "After Forever",
+      "genre": "heavy metal",
+      "era": "1970s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 3.5,
+        "mid": 8.5,
+        "treble": 8,
+        "presence": 8,
+        "reverb": 2
+      },
+      "amp": "Laney Supergroup",
+      "guitar": "Gibson SG",
+      "notes": "Tony Iommi: Gibson SG -> modifierad Dallas Rangemaster -> Laney Supergroup (Normal-kanalen) från Paranoid till sent 80-tal. Paranoid-ljudet: basen nedvriden, mitten/diskant/presence på max. Från Master of Reality stämt ned 1,5 ton (C#). Nedstämt C#.",
+      "effects": [
+        "Dallas Rangemaster treble booster"
+      ],
+      "pickup": "bridge P-90/humbucker",
+      "confidence": 0.55,
+      "sources": [
+        "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out",
+        "https://www.musicradar.com/artists/tony-iommi-secret-to-black-sabbath-electric-guitar-tone",
+        "https://equipboard.com/albums/black-sabbath-paranoid"
+      ],
+      "url": "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out"
+    },
+    {
+      "id": "black-sabbath-snowblind-riff-distorted",
+      "artist": "Black Sabbath",
+      "song": "Snowblind",
+      "genre": "heavy metal",
+      "era": "1970s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 3.5,
+        "mid": 8.5,
+        "treble": 8,
+        "presence": 8,
+        "reverb": 2.5
+      },
+      "amp": "Laney Supergroup",
+      "guitar": "Gibson SG",
+      "notes": "Tony Iommi: Gibson SG -> modifierad Dallas Rangemaster -> Laney Supergroup (Normal-kanalen) från Paranoid till sent 80-tal. Paranoid-ljudet: basen nedvriden, mitten/diskant/presence på max. Från Master of Reality stämt ned 1,5 ton (C#). Nedstämt C#.",
+      "effects": [
+        "Dallas Rangemaster treble booster"
+      ],
+      "pickup": "bridge P-90/humbucker",
+      "confidence": 0.55,
+      "sources": [
+        "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out",
+        "https://www.musicradar.com/artists/tony-iommi-secret-to-black-sabbath-electric-guitar-tone",
+        "https://equipboard.com/albums/black-sabbath-paranoid"
+      ],
+      "url": "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out"
+    },
+    {
+      "id": "black-sabbath-supernaut-riff-distorted",
+      "artist": "Black Sabbath",
+      "song": "Supernaut",
+      "genre": "heavy metal",
+      "era": "1970s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 3.5,
+        "mid": 8.5,
+        "treble": 8,
+        "presence": 8,
+        "reverb": 2
+      },
+      "amp": "Laney Supergroup",
+      "guitar": "Gibson SG",
+      "notes": "Tony Iommi: Gibson SG -> modifierad Dallas Rangemaster -> Laney Supergroup (Normal-kanalen) från Paranoid till sent 80-tal. Paranoid-ljudet: basen nedvriden, mitten/diskant/presence på max. Från Master of Reality stämt ned 1,5 ton (C#). Nedstämt C#.",
+      "effects": [
+        "Dallas Rangemaster treble booster"
+      ],
+      "pickup": "bridge P-90/humbucker",
+      "confidence": 0.55,
+      "sources": [
+        "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out",
+        "https://www.musicradar.com/artists/tony-iommi-secret-to-black-sabbath-electric-guitar-tone",
+        "https://equipboard.com/albums/black-sabbath-paranoid"
+      ],
+      "url": "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out"
+    },
+    {
+      "id": "black-sabbath-wheels-of-confusion-riff-distorted",
+      "artist": "Black Sabbath",
+      "song": "Wheels of Confusion",
+      "genre": "heavy metal",
+      "era": "1970s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 3.5,
+        "mid": 8.5,
+        "treble": 8,
+        "presence": 8,
+        "reverb": 2.5
+      },
+      "amp": "Laney Supergroup",
+      "guitar": "Gibson SG",
+      "notes": "Tony Iommi: Gibson SG -> modifierad Dallas Rangemaster -> Laney Supergroup (Normal-kanalen) från Paranoid till sent 80-tal. Paranoid-ljudet: basen nedvriden, mitten/diskant/presence på max. Från Master of Reality stämt ned 1,5 ton (C#). Nedstämt C#.",
+      "effects": [
+        "Dallas Rangemaster treble booster"
+      ],
+      "pickup": "bridge P-90/humbucker",
+      "confidence": 0.55,
+      "sources": [
+        "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out",
+        "https://www.musicradar.com/artists/tony-iommi-secret-to-black-sabbath-electric-guitar-tone",
+        "https://equipboard.com/albums/black-sabbath-paranoid"
+      ],
+      "url": "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out"
+    },
+    {
+      "id": "black-sabbath-sabbath-bloody-sabbath-riff-distorted",
+      "artist": "Black Sabbath",
+      "song": "Sabbath Bloody Sabbath",
+      "genre": "heavy metal",
+      "era": "1970s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 4,
+        "mid": 8,
+        "treble": 8,
+        "presence": 8,
+        "reverb": 2
+      },
+      "amp": "Laney Supergroup",
+      "guitar": "Gibson SG",
+      "notes": "Tony Iommi: Gibson SG -> modifierad Dallas Rangemaster -> Laney Supergroup (Normal-kanalen) från Paranoid till sent 80-tal. Paranoid-ljudet: basen nedvriden, mitten/diskant/presence på max. Från Master of Reality stämt ned 1,5 ton (C#).",
+      "effects": [
+        "Dallas Rangemaster treble booster"
+      ],
+      "pickup": "bridge P-90/humbucker",
+      "confidence": 0.55,
+      "sources": [
+        "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out",
+        "https://www.musicradar.com/artists/tony-iommi-secret-to-black-sabbath-electric-guitar-tone",
+        "https://equipboard.com/albums/black-sabbath-paranoid"
+      ],
+      "url": "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out"
+    },
+    {
+      "id": "black-sabbath-symptom-of-the-universe-riff-distorted",
+      "artist": "Black Sabbath",
+      "song": "Symptom of the Universe",
+      "genre": "heavy metal",
+      "era": "1970s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 4,
+        "mid": 8,
+        "treble": 8,
+        "presence": 8,
+        "reverb": 2
+      },
+      "amp": "Laney Supergroup",
+      "guitar": "Gibson SG",
+      "notes": "Tony Iommi: Gibson SG -> modifierad Dallas Rangemaster -> Laney Supergroup (Normal-kanalen) från Paranoid till sent 80-tal. Paranoid-ljudet: basen nedvriden, mitten/diskant/presence på max. Från Master of Reality stämt ned 1,5 ton (C#).",
+      "effects": [
+        "Dallas Rangemaster treble booster"
+      ],
+      "pickup": "bridge P-90/humbucker",
+      "confidence": 0.55,
+      "sources": [
+        "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out",
+        "https://www.musicradar.com/artists/tony-iommi-secret-to-black-sabbath-electric-guitar-tone",
+        "https://equipboard.com/albums/black-sabbath-paranoid"
+      ],
+      "url": "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out"
+    },
+    {
+      "id": "black-sabbath-hole-in-the-sky-riff-distorted",
+      "artist": "Black Sabbath",
+      "song": "Hole in the Sky",
+      "genre": "heavy metal",
+      "era": "1970s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 4,
+        "mid": 8,
+        "treble": 8,
+        "presence": 8,
+        "reverb": 2
+      },
+      "amp": "Laney Supergroup",
+      "guitar": "Gibson SG",
+      "notes": "Tony Iommi: Gibson SG -> modifierad Dallas Rangemaster -> Laney Supergroup (Normal-kanalen) från Paranoid till sent 80-tal. Paranoid-ljudet: basen nedvriden, mitten/diskant/presence på max. Från Master of Reality stämt ned 1,5 ton (C#).",
+      "effects": [
+        "Dallas Rangemaster treble booster"
+      ],
+      "pickup": "bridge P-90/humbucker",
+      "confidence": 0.55,
+      "sources": [
+        "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out",
+        "https://www.musicradar.com/artists/tony-iommi-secret-to-black-sabbath-electric-guitar-tone",
+        "https://equipboard.com/albums/black-sabbath-paranoid"
+      ],
+      "url": "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out"
+    },
+    {
+      "id": "black-sabbath-neon-knights-riff-distorted",
+      "artist": "Black Sabbath",
+      "song": "Neon Knights",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 4.5,
+        "mid": 7.5,
+        "treble": 7.5,
+        "presence": 7.5,
+        "reverb": 2
+      },
+      "amp": "Laney Supergroup",
+      "guitar": "Gibson SG",
+      "notes": "Tony Iommi: Gibson SG -> modifierad Dallas Rangemaster -> Laney Supergroup (Normal-kanalen) från Paranoid till sent 80-tal. Paranoid-ljudet: basen nedvriden, mitten/diskant/presence på max. Från Master of Reality stämt ned 1,5 ton (C#). Dio-eran (Heaven and Hell, 1980).",
+      "effects": [
+        "Dallas Rangemaster treble booster"
+      ],
+      "pickup": "bridge P-90/humbucker",
+      "confidence": 0.55,
+      "sources": [
+        "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out",
+        "https://www.musicradar.com/artists/tony-iommi-secret-to-black-sabbath-electric-guitar-tone",
+        "https://equipboard.com/albums/black-sabbath-paranoid"
+      ],
+      "url": "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out"
+    },
+    {
+      "id": "black-sabbath-heaven-and-hell-riff-distorted",
+      "artist": "Black Sabbath",
+      "song": "Heaven and Hell",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 4.5,
+        "mid": 7.5,
+        "treble": 7.5,
+        "presence": 7.5,
+        "reverb": 2.5
+      },
+      "amp": "Laney Supergroup",
+      "guitar": "Gibson SG",
+      "notes": "Tony Iommi: Gibson SG -> modifierad Dallas Rangemaster -> Laney Supergroup (Normal-kanalen) från Paranoid till sent 80-tal. Paranoid-ljudet: basen nedvriden, mitten/diskant/presence på max. Från Master of Reality stämt ned 1,5 ton (C#). Dio-eran (Heaven and Hell, 1980).",
+      "effects": [
+        "Dallas Rangemaster treble booster"
+      ],
+      "pickup": "bridge P-90/humbucker",
+      "confidence": 0.55,
+      "sources": [
+        "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out",
+        "https://www.musicradar.com/artists/tony-iommi-secret-to-black-sabbath-electric-guitar-tone",
+        "https://equipboard.com/albums/black-sabbath-paranoid"
+      ],
+      "url": "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out"
+    },
+    {
+      "id": "black-sabbath-die-young-riff-distorted",
+      "artist": "Black Sabbath",
+      "song": "Die Young",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 4.5,
+        "mid": 7.5,
+        "treble": 7.5,
+        "presence": 7.5,
+        "reverb": 2.5
+      },
+      "amp": "Laney Supergroup",
+      "guitar": "Gibson SG",
+      "notes": "Tony Iommi: Gibson SG -> modifierad Dallas Rangemaster -> Laney Supergroup (Normal-kanalen) från Paranoid till sent 80-tal. Paranoid-ljudet: basen nedvriden, mitten/diskant/presence på max. Från Master of Reality stämt ned 1,5 ton (C#). Dio-eran (Heaven and Hell, 1980).",
+      "effects": [
+        "Dallas Rangemaster treble booster"
+      ],
+      "pickup": "bridge P-90/humbucker",
+      "confidence": 0.55,
+      "sources": [
+        "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out",
+        "https://www.musicradar.com/artists/tony-iommi-secret-to-black-sabbath-electric-guitar-tone",
+        "https://equipboard.com/albums/black-sabbath-paranoid"
+      ],
+      "url": "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out"
+    },
+    {
+      "id": "black-sabbath-the-mob-rules-riff-distorted",
+      "artist": "Black Sabbath",
+      "song": "The Mob Rules",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 4.5,
+        "mid": 7.5,
+        "treble": 7.5,
+        "presence": 7.5,
+        "reverb": 2
+      },
+      "amp": "Laney Supergroup",
+      "guitar": "Gibson SG",
+      "notes": "Tony Iommi: Gibson SG -> modifierad Dallas Rangemaster -> Laney Supergroup (Normal-kanalen) från Paranoid till sent 80-tal. Paranoid-ljudet: basen nedvriden, mitten/diskant/presence på max. Från Master of Reality stämt ned 1,5 ton (C#). Dio-eran (Mob Rules, 1981).",
+      "effects": [
+        "Dallas Rangemaster treble booster"
+      ],
+      "pickup": "bridge P-90/humbucker",
+      "confidence": 0.55,
+      "sources": [
+        "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out",
+        "https://www.musicradar.com/artists/tony-iommi-secret-to-black-sabbath-electric-guitar-tone",
+        "https://equipboard.com/albums/black-sabbath-paranoid"
+      ],
+      "url": "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out"
+    },
+    {
+      "id": "black-sabbath-paranoid-solo-distorted",
+      "artist": "Black Sabbath",
+      "song": "Paranoid",
+      "genre": "heavy metal",
+      "era": "1970s",
+      "toneType": "distorted",
+      "part": "solo",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 3,
+        "mid": 8.5,
+        "treble": 8,
+        "presence": 8,
+        "reverb": 2.5
+      },
+      "amp": "Laney Supergroup",
+      "guitar": "Gibson SG",
+      "notes": "Tony Iommi: Gibson SG -> modifierad Dallas Rangemaster -> Laney Supergroup (Normal-kanalen) från Paranoid till sent 80-tal. Paranoid-ljudet: basen nedvriden, mitten/diskant/presence på max. Från Master of Reality stämt ned 1,5 ton (C#). Solot (filtrerat genom wah/ringmodulator i studion) – wah är en approximation.",
+      "effects": [
+        "Dallas Rangemaster treble booster",
+        "wah"
+      ],
+      "pickup": "bridge P-90/humbucker",
+      "confidence": 0.55,
+      "sources": [
+        "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out",
+        "https://www.musicradar.com/artists/tony-iommi-secret-to-black-sabbath-electric-guitar-tone",
+        "https://equipboard.com/albums/black-sabbath-paranoid"
+      ],
+      "url": "https://www.guitarplayer.com/guitarists/tony-iommi-modified-treble-booster-thrown-out"
+    },
+    {
+      "id": "judas-priest-victim-of-changes-riff-distorted",
+      "artist": "Judas Priest",
+      "song": "Victim of Changes",
+      "genre": "heavy metal",
+      "era": "1970s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 2.5
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Flying V / Fender Stratocaster",
+      "notes": "K.K. Downing och Glenn Tipton: Marshall-toppar (50 W runt 1980, JCM800/Super Lead senare), Marshall 4x12. Downing runt 1980: Pete Cornish-bräda med MXR Phase 100, Cry Baby och Echoplex. Tipton senare Engl. Flying V / Strat / SG.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview",
+        "https://www.musicradar.com/news/guitars/judas-priests-glenn-tipton-and-kk-downing-talk-british-steel-248758",
+        "https://equipboard.com/k-k-downing",
+        "https://www.woodytone.com/?p=2157"
+      ],
+      "url": "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview"
+    },
+    {
+      "id": "judas-priest-diamonds-and-rust-riff-distorted",
+      "artist": "Judas Priest",
+      "song": "Diamonds and Rust",
+      "genre": "heavy metal",
+      "era": "1970s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 2.5
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Flying V / Fender Stratocaster",
+      "notes": "K.K. Downing och Glenn Tipton: Marshall-toppar (50 W runt 1980, JCM800/Super Lead senare), Marshall 4x12. Downing runt 1980: Pete Cornish-bräda med MXR Phase 100, Cry Baby och Echoplex. Tipton senare Engl. Flying V / Strat / SG.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview",
+        "https://www.musicradar.com/news/guitars/judas-priests-glenn-tipton-and-kk-downing-talk-british-steel-248758",
+        "https://equipboard.com/k-k-downing",
+        "https://www.woodytone.com/?p=2157"
+      ],
+      "url": "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview"
+    },
+    {
+      "id": "judas-priest-exciter-riff-distorted",
+      "artist": "Judas Priest",
+      "song": "Exciter",
+      "genre": "heavy metal",
+      "era": "1970s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 2
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Flying V / Fender Stratocaster",
+      "notes": "K.K. Downing och Glenn Tipton: Marshall-toppar (50 W runt 1980, JCM800/Super Lead senare), Marshall 4x12. Downing runt 1980: Pete Cornish-bräda med MXR Phase 100, Cry Baby och Echoplex. Tipton senare Engl. Flying V / Strat / SG.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview",
+        "https://www.musicradar.com/news/guitars/judas-priests-glenn-tipton-and-kk-downing-talk-british-steel-248758",
+        "https://equipboard.com/k-k-downing",
+        "https://www.woodytone.com/?p=2157"
+      ],
+      "url": "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview"
+    },
+    {
+      "id": "judas-priest-hell-bent-for-leather-riff-distorted",
+      "artist": "Judas Priest",
+      "song": "Hell Bent for Leather",
+      "genre": "heavy metal",
+      "era": "1970s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 2
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Flying V / Fender Stratocaster",
+      "notes": "K.K. Downing och Glenn Tipton: Marshall-toppar (50 W runt 1980, JCM800/Super Lead senare), Marshall 4x12. Downing runt 1980: Pete Cornish-bräda med MXR Phase 100, Cry Baby och Echoplex. Tipton senare Engl. Flying V / Strat / SG.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview",
+        "https://www.musicradar.com/news/guitars/judas-priests-glenn-tipton-and-kk-downing-talk-british-steel-248758",
+        "https://equipboard.com/k-k-downing",
+        "https://www.woodytone.com/?p=2157"
+      ],
+      "url": "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview"
+    },
+    {
+      "id": "judas-priest-living-after-midnight-riff-distorted",
+      "artist": "Judas Priest",
+      "song": "Living After Midnight",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 2
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Flying V / Fender Stratocaster",
+      "notes": "K.K. Downing och Glenn Tipton: Marshall-toppar (50 W runt 1980, JCM800/Super Lead senare), Marshall 4x12. Downing runt 1980: Pete Cornish-bräda med MXR Phase 100, Cry Baby och Echoplex. Tipton senare Engl. Flying V / Strat / SG.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview",
+        "https://www.musicradar.com/news/guitars/judas-priests-glenn-tipton-and-kk-downing-talk-british-steel-248758",
+        "https://equipboard.com/k-k-downing",
+        "https://www.woodytone.com/?p=2157"
+      ],
+      "url": "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview"
+    },
+    {
+      "id": "judas-priest-metal-gods-riff-distorted",
+      "artist": "Judas Priest",
+      "song": "Metal Gods",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 2
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Flying V / Fender Stratocaster",
+      "notes": "K.K. Downing och Glenn Tipton: Marshall-toppar (50 W runt 1980, JCM800/Super Lead senare), Marshall 4x12. Downing runt 1980: Pete Cornish-bräda med MXR Phase 100, Cry Baby och Echoplex. Tipton senare Engl. Flying V / Strat / SG.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview",
+        "https://www.musicradar.com/news/guitars/judas-priests-glenn-tipton-and-kk-downing-talk-british-steel-248758",
+        "https://equipboard.com/k-k-downing",
+        "https://www.woodytone.com/?p=2157"
+      ],
+      "url": "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview"
+    },
+    {
+      "id": "judas-priest-united-riff-distorted",
+      "artist": "Judas Priest",
+      "song": "United",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 6.5,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 2.5
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Flying V / Fender Stratocaster",
+      "notes": "K.K. Downing och Glenn Tipton: Marshall-toppar (50 W runt 1980, JCM800/Super Lead senare), Marshall 4x12. Downing runt 1980: Pete Cornish-bräda med MXR Phase 100, Cry Baby och Echoplex. Tipton senare Engl. Flying V / Strat / SG.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview",
+        "https://www.musicradar.com/news/guitars/judas-priests-glenn-tipton-and-kk-downing-talk-british-steel-248758",
+        "https://equipboard.com/k-k-downing",
+        "https://www.woodytone.com/?p=2157"
+      ],
+      "url": "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview"
+    },
+    {
+      "id": "judas-priest-you-ve-got-another-thing-comin-riff-distorted",
+      "artist": "Judas Priest",
+      "song": "You've Got Another Thing Comin'",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 2
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Flying V / Fender Stratocaster",
+      "notes": "K.K. Downing och Glenn Tipton: Marshall-toppar (50 W runt 1980, JCM800/Super Lead senare), Marshall 4x12. Downing runt 1980: Pete Cornish-bräda med MXR Phase 100, Cry Baby och Echoplex. Tipton senare Engl. Flying V / Strat / SG.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview",
+        "https://www.musicradar.com/news/guitars/judas-priests-glenn-tipton-and-kk-downing-talk-british-steel-248758",
+        "https://equipboard.com/k-k-downing",
+        "https://www.woodytone.com/?p=2157"
+      ],
+      "url": "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview"
+    },
+    {
+      "id": "judas-priest-electric-eye-riff-distorted",
+      "artist": "Judas Priest",
+      "song": "Electric Eye",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 2
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Flying V / Fender Stratocaster",
+      "notes": "K.K. Downing och Glenn Tipton: Marshall-toppar (50 W runt 1980, JCM800/Super Lead senare), Marshall 4x12. Downing runt 1980: Pete Cornish-bräda med MXR Phase 100, Cry Baby och Echoplex. Tipton senare Engl. Flying V / Strat / SG.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview",
+        "https://www.musicradar.com/news/guitars/judas-priests-glenn-tipton-and-kk-downing-talk-british-steel-248758",
+        "https://equipboard.com/k-k-downing",
+        "https://www.woodytone.com/?p=2157"
+      ],
+      "url": "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview"
+    },
+    {
+      "id": "judas-priest-screaming-for-vengeance-riff-distorted",
+      "artist": "Judas Priest",
+      "song": "Screaming for Vengeance",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 2
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Flying V / Fender Stratocaster",
+      "notes": "K.K. Downing och Glenn Tipton: Marshall-toppar (50 W runt 1980, JCM800/Super Lead senare), Marshall 4x12. Downing runt 1980: Pete Cornish-bräda med MXR Phase 100, Cry Baby och Echoplex. Tipton senare Engl. Flying V / Strat / SG.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview",
+        "https://www.musicradar.com/news/guitars/judas-priests-glenn-tipton-and-kk-downing-talk-british-steel-248758",
+        "https://equipboard.com/k-k-downing",
+        "https://www.woodytone.com/?p=2157"
+      ],
+      "url": "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview"
+    },
+    {
+      "id": "judas-priest-freewheel-burning-riff-distorted",
+      "artist": "Judas Priest",
+      "song": "Freewheel Burning",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 2
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Flying V / Fender Stratocaster",
+      "notes": "K.K. Downing och Glenn Tipton: Marshall-toppar (50 W runt 1980, JCM800/Super Lead senare), Marshall 4x12. Downing runt 1980: Pete Cornish-bräda med MXR Phase 100, Cry Baby och Echoplex. Tipton senare Engl. Flying V / Strat / SG.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview",
+        "https://www.musicradar.com/news/guitars/judas-priests-glenn-tipton-and-kk-downing-talk-british-steel-248758",
+        "https://equipboard.com/k-k-downing",
+        "https://www.woodytone.com/?p=2157"
+      ],
+      "url": "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview"
+    },
+    {
+      "id": "judas-priest-painkiller-riff-distorted",
+      "artist": "Judas Priest",
+      "song": "Painkiller",
+      "genre": "heavy metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 9,
+        "bass": 6,
+        "mid": 6,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 1.5
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Flying V / Fender Stratocaster",
+      "notes": "K.K. Downing och Glenn Tipton: Marshall-toppar (50 W runt 1980, JCM800/Super Lead senare), Marshall 4x12. Downing runt 1980: Pete Cornish-bräda med MXR Phase 100, Cry Baby och Echoplex. Tipton senare Engl. Flying V / Strat / SG. Painkiller (1990): mycket hög gain – exakt förstärkare för albumet är inte bekräftad.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.4,
+      "sources": [
+        "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview",
+        "https://www.musicradar.com/news/guitars/judas-priests-glenn-tipton-and-kk-downing-talk-british-steel-248758",
+        "https://equipboard.com/k-k-downing",
+        "https://www.woodytone.com/?p=2157"
+      ],
+      "url": "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview"
+    },
+    {
+      "id": "judas-priest-a-touch-of-evil-riff-distorted",
+      "artist": "Judas Priest",
+      "song": "A Touch of Evil",
+      "genre": "heavy metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8.5,
+        "bass": 6,
+        "mid": 6,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 2.5
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Flying V / Fender Stratocaster",
+      "notes": "K.K. Downing och Glenn Tipton: Marshall-toppar (50 W runt 1980, JCM800/Super Lead senare), Marshall 4x12. Downing runt 1980: Pete Cornish-bräda med MXR Phase 100, Cry Baby och Echoplex. Tipton senare Engl. Flying V / Strat / SG.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.4,
+      "sources": [
+        "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview",
+        "https://www.musicradar.com/news/guitars/judas-priests-glenn-tipton-and-kk-downing-talk-british-steel-248758",
+        "https://equipboard.com/k-k-downing",
+        "https://www.woodytone.com/?p=2157"
+      ],
+      "url": "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview"
+    },
+    {
+      "id": "judas-priest-night-crawler-riff-distorted",
+      "artist": "Judas Priest",
+      "song": "Night Crawler",
+      "genre": "heavy metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8.5,
+        "bass": 6,
+        "mid": 6,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 2.5
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Flying V / Fender Stratocaster",
+      "notes": "K.K. Downing och Glenn Tipton: Marshall-toppar (50 W runt 1980, JCM800/Super Lead senare), Marshall 4x12. Downing runt 1980: Pete Cornish-bräda med MXR Phase 100, Cry Baby och Echoplex. Tipton senare Engl. Flying V / Strat / SG.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.4,
+      "sources": [
+        "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview",
+        "https://www.musicradar.com/news/guitars/judas-priests-glenn-tipton-and-kk-downing-talk-british-steel-248758",
+        "https://equipboard.com/k-k-downing",
+        "https://www.woodytone.com/?p=2157"
+      ],
+      "url": "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview"
+    },
+    {
+      "id": "judas-priest-electric-eye-solo-distorted",
+      "artist": "Judas Priest",
+      "song": "Electric Eye",
+      "genre": "heavy metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "solo",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 5,
+        "mid": 7,
+        "treble": 7,
+        "presence": 6.5,
+        "reverb": 2.5
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Flying V / Fender Stratocaster",
+      "notes": "K.K. Downing och Glenn Tipton: Marshall-toppar (50 W runt 1980, JCM800/Super Lead senare), Marshall 4x12. Downing runt 1980: Pete Cornish-bräda med MXR Phase 100, Cry Baby och Echoplex. Tipton senare Engl. Flying V / Strat / SG.",
+      "effects": [
+        "Cry Baby wah"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview",
+        "https://www.musicradar.com/news/guitars/judas-priests-glenn-tipton-and-kk-downing-talk-british-steel-248758",
+        "https://equipboard.com/k-k-downing",
+        "https://www.woodytone.com/?p=2157"
+      ],
+      "url": "https://guitarworld.com/gw-archive/kk-downing-and-glenn-tipton-judas-priest-talk-gear-1984-guitar-world-interview"
     }
   ]
 }
