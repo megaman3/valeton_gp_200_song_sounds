@@ -69,7 +69,7 @@ export default function PresetView({ preset }: { preset: GeneratedPreset }) {
       <p className="text-xs text-zinc-500">Parameternamnen följer Valetons manual. * = rekommenderat startvärde; manualen anger inte reglagets intervall (antaget 0–100).</p>
 
       {g && Object.keys(g).length > 0 && (
-        <div className="rounded bg-zinc-900 p-3 text-sm">
+        <div className="rounded bg-zinc-900/80 backdrop-blur-sm p-3 text-sm">
           <h3 className="mb-1 font-semibold">Gitarr (separat från GP-200)</h3>
           {g.pickup && <div>Mick: {g.pickup}</div>}
           {g.guitarVolume && <div>Volym: {g.guitarVolume}</div>}

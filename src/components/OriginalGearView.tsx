@@ -5,7 +5,7 @@ export default function OriginalGearView({ preset }: { preset: GeneratedPreset }
   const notes = preset.translationNotes ?? [];
   if (!gear && notes.length === 0) return null;
   return (
-    <section className="space-y-3 rounded bg-zinc-900 p-3 text-sm">
+    <section className="space-y-3 rounded bg-zinc-900/80 backdrop-blur-sm p-3 text-sm">
       {gear && (
         <div>
           <h3 className="mb-1 font-semibold">Originalutrustning (referens)</h3>
