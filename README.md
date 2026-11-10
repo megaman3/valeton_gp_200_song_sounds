@@ -1,14 +1,19 @@
 # GP-200 Tone Generator
 
-Webbapp som ger färdiga inställningar för **Valeton GP-200** för över 1 100 låtar –
+Webbapp som ger färdiga inställningar för **Valeton GP-200** för omkring 1 500 låtar –
 regelbaserat, utan AI och utan backend. Originalljuden (förstärkare, rattar, effekter) kommer från
-GuitarToneAdapts dataset och översätts till de modeller och parametrar som finns i din GP-200 enligt Valetons manual.
+GuitarToneAdapts dataset och från egen research med källor per låt, och översätts till de modeller och
+parametrar som finns i din GP-200 enligt Valetons manual.
+
+**Appen online:** https://megaman3.github.io/valeton_gp_200_song_sounds/
+
+Skriv låt och/eller artist, välj med musen eller med **↑ / ↓ + Enter** (Esc rensar sökningen).
 
 ## Kom igång
 
 ```bash
 npm install
-npm run dev            # starta appen lokalt (http://localhost:5173)
+npm run dev            # starta appen lokalt (http://localhost:5173, eller nästa lediga port)
 npm test               # kör testerna (Vitest)
 npm run validate-data  # kontrollera att all data bara använder modeller/parametrar som finns i din GP-200
 npm run import:gta     # hämta senaste GuitarToneAdapt-datasetet
@@ -23,11 +28,13 @@ npm run build          # bygg för produktion (dist/)
 src/
   data/        JSON: din modellista, manualkatalog, mappningsregler, låtar, profiler
     external/  Importerade data (GuitarToneAdapt)
+    research/  Egen research för artister/låtar som saknas i externa källor (byggs av tools/build-research.py)
+  assets/      Bilder (bakgrund, logga)
   engine/      Tone Engine: validator, translator, generator, sökning, textformat
   components/  React-UI: SongSearch, EffectChain, PresetView, OriginalGearView
   types/       Delade TypeScript-typer
 tests/         Vitest – bl.a. att inget preset använder en modell som saknas i GP-200
-tools/         CLI: import-guitartoneadapt, validate-data, preset-cli
+tools/         CLI: import-guitartoneadapt, validate-data, preset-cli, build-research.py
 docs/          ARCHITECTURE.md – dataflöde, hur man lägger till låtar, färdplan
 ```
 
@@ -36,7 +43,8 @@ Se [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) för detaljer.
 ## Teknik
 
 React + TypeScript + Vite + Tailwind CSS, Vitest, GitHub Actions → GitHub Pages
-(deploy sker vid push till `main`; aktivera Pages med källa "GitHub Actions" i repo-inställningarna).
+(deploy sker vid push till `main` och publiceras på https://megaman3.github.io/valeton_gp_200_song_sounds/;
+Pages måste vara aktiverat med källa "GitHub Actions" under Settings → Pages).
 
 ## Principer (från CLAUDE.md)
 
@@ -50,4 +58,9 @@ React + TypeScript + Vite + Tailwind CSS, Vitest, GitHub Actions → GitHub Page
 - **Låtdata:** [GuitarToneAdapt – Guitar Tone Dataset](https://github.com/Pera-Labs/guitar-tone-dataset),
   © GuitarToneAdapt (https://guitartoneadapt.com), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
   Datan är normaliserad (basljud borttagna) och översatt till GP-200-modeller av detta projekt.
+- **Egen research:** `src/data/research/research-tones.json` – originalutrustning från intervjuer och
+  rig-genomgångar (källa anges per låt). Utrustningen är källbelagd; rattlägen per låt är tolkningar och
+  märks med lägre säkerhet. Finns låten redan i GuitarToneAdapt läggs researchdelarna till som extra delar.
+  Lägg till fler artister i `tools/build-research.py` och kör
+  `python3 tools/build-research.py src/data/research/research-tones.json`.
 - **Modeller och parametrar:** Valeton GP-200 Online Manual, firmware v1.8.0.
