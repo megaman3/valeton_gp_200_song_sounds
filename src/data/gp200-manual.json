@@ -1,0 +1,7476 @@
+{
+ "source": "Valeton GP-200 Online Manual, firmware v1.8.0 (Effect List s. 25-69). Sidnummer = manualens tryckta sidnummer.",
+ "sourceUrl": "https://www.valeton.net/download/117/gp-200/22451/gp-200_online-manual_en_firmware-v1-8-0-pdf.pdf",
+ "defaultSignalChain": [
+  "PRE",
+  "WAH",
+  "DST",
+  "AMP",
+  "NR",
+  "CAB",
+  "EQ",
+  "MOD",
+  "DLY",
+  "RVB",
+  "VOL"
+ ],
+ "notes": [
+  "Parameternamn är hämtade ur manualen. Numeriska intervall anges inte i manualen (förutom Hyper EQ ±12 dB och Detune ±50 cent); vridreglage antas vara 0–100 tills de verifierats.",
+  "DLY-tabellen på s. 62–65 i manualen är förskjuten en rad (beskrivning + parametrar hör till modellen på raden under). Katalogen är rättad efter modellnamnen.",
+  "Club, Concert, Arena (RVB) och Triangle Trem (MOD) finns i användarens lista men saknas i manualen v1.8.0.",
+  "defaultCab för AMP är en rekommendation (motsvarar Auto CAB Match), inte hämtad från manualen."
+ ],
+ "blocks": {
+  "NR": {
+   "Gate 1": {
+    "type": "Gate",
+    "basedOn": "ISP Decimator",
+    "params": [
+     {
+      "name": "Threshold",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 52
+   },
+   "Gate 2": {
+    "type": "Gate",
+    "basedOn": null,
+    "params": [
+     {
+      "name": "Threshold",
+      "kind": "knob"
+     },
+     {
+      "name": "Attack",
+      "kind": "knob"
+     },
+     {
+      "name": "Release",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 52
+   },
+   "Gate 3": {
+    "type": "Gate",
+    "basedOn": "Inverse expander",
+    "params": [
+     {
+      "name": "Threshold",
+      "kind": "knob"
+     },
+     {
+      "name": "Ratio",
+      "kind": "knob"
+     },
+     {
+      "name": "Attack",
+      "kind": "knob"
+     },
+     {
+      "name": "Release",
+      "kind": "knob"
+     },
+     {
+      "name": "Hold",
+      "kind": "knob"
+     },
+     {
+      "name": "Hysteresis",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 53
+   },
+   "Auto Swell": {
+    "type": "Special",
+    "basedOn": null,
+    "params": [
+     {
+      "name": "Attack",
+      "kind": "knob"
+     },
+     {
+      "name": "Curve",
+      "kind": "select"
+     }
+    ],
+    "manualPage": 53
+   }
+  },
+  "DST": {
+   "Green OD": {
+    "type": "OD",
+    "basedOn": "Ibanez TS-808 Tube Screamer",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 32
+   },
+   "OD 9": {
+    "type": "OD",
+    "basedOn": "Ibanez TS9 Tube Screamer",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 32
+   },
+   "Yellow OD": {
+    "type": "OD",
+    "basedOn": "70-tals asymmetrisk overdrive (förebild ej namngiven)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 32
+   },
+   "Penesas": {
+    "type": "OD",
+    "basedOn": "Klon Centaur",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 32
+   },
+   "Swarm": {
+    "type": "OD",
+    "basedOn": "Providence SOV-2 Stampede OD",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 33
+   },
+   "Super OD": {
+    "type": "OD",
+    "basedOn": "Asymmetrisk overdrive (förebild ej namngiven)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 33
+   },
+   "Scream OD": {
+    "type": "OD",
+    "basedOn": "Tube Screamer-stil",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Fat",
+      "kind": "switch"
+     },
+     {
+      "name": "Air",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 33
+   },
+   "Blues OD": {
+    "type": "OD",
+    "basedOn": "Blues-overdrive (förebild ej namngiven)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 33
+   },
+   "Force": {
+    "type": "OD",
+    "basedOn": "Fulltone OCD",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Mode",
+      "kind": "select"
+     }
+    ],
+    "manualPage": 33
+   },
+   "Tube": {
+    "type": "OD",
+    "basedOn": "B.K. Butler Tube Driver",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 33
+   },
+   "Blues Master": {
+    "type": "OD",
+    "basedOn": "Marshall BluesBreaker",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 34
+   },
+   "Master OD": {
+    "type": "OD",
+    "basedOn": "Plexi-liknande overdrive (förebild ej namngiven)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 34
+   },
+   "Taichi OD": {
+    "type": "OD",
+    "basedOn": "Hermida Zendrive",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Voice",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 34,
+    "manualName": "TaiChi OD"
+   },
+   "Timmy OD": {
+    "type": "OD",
+    "basedOn": "Paul Cochrane Timmy",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     },
+     {
+      "name": "Mode",
+      "kind": "select"
+     }
+    ],
+    "manualPage": 34
+   },
+   "Precise OD": {
+    "type": "OD",
+    "basedOn": "Horizon Devices Precision Drive",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Attack",
+      "kind": "select"
+     },
+     {
+      "name": "Gate",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 34
+   },
+   "Empire OD": {
+    "type": "OD",
+    "basedOn": "Analog.Man Prince of Tone",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Mode",
+      "kind": "select"
+     }
+    ],
+    "manualPage": 34
+   },
+   "Lazaro": {
+    "type": "Fuzz",
+    "basedOn": "Electro-Harmonix Big Muff Pi",
+    "params": [
+     {
+      "name": "Sustain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 35
+   },
+   "Red Haze": {
+    "type": "Fuzz",
+    "basedOn": "Dallas-Arbiter Fuzz Face",
+    "params": [
+     {
+      "name": "Fuzz",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 35
+   },
+   "Sora Fuzz": {
+    "type": "Fuzz",
+    "basedOn": "Sola Sound Tone Bender",
+    "params": [
+     {
+      "name": "Fuzz",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 35
+   },
+   "Plustortion": {
+    "type": "Distortion",
+    "basedOn": "MXR M104 Distortion+",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 35
+   },
+   "SM Dist": {
+    "type": "Distortion",
+    "basedOn": "Klassisk orange 3-ratters distortion (Boss DS-1-typ)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 35
+   },
+   "Darktale": {
+    "type": "Distortion",
+    "basedOn": "ProCo Rat",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Filter",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 36
+   },
+   "Chief": {
+    "type": "Distortion",
+    "basedOn": "Marshall Guv'nor",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 36
+   },
+   "Master Dist": {
+    "type": "Distortion",
+    "basedOn": "Marshall Shredmaster",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Contour",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 36
+   },
+   "La Charger": {
+    "type": "Distortion",
+    "basedOn": "MI Audio Crunch Box",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 36
+   },
+   "Revolt": {
+    "type": "Distortion",
+    "basedOn": "Suhr Riot",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Mode",
+      "kind": "select"
+     }
+    ],
+    "manualPage": 36
+   },
+   "Flagman Dist": {
+    "type": "Distortion",
+    "basedOn": "Modern brittisk high-gain-pedal",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Tight",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 37
+   },
+   "Flex OD": {
+    "type": "Bass Drive",
+    "basedOn": null,
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Mode",
+      "kind": "select"
+     },
+     {
+      "name": "Blend",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 37
+   },
+   "Bass OD": {
+    "type": "Bass Drive",
+    "basedOn": null,
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Blend",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 37
+   },
+   "Black Bass": {
+    "type": "Bass Preamp",
+    "basedOn": "Darkglass Microtubes B7K",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Blend",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low",
+      "kind": "knob"
+     },
+     {
+      "name": "Lo-mid",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi-mid",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     },
+     {
+      "name": "Attack",
+      "kind": "select"
+     }
+    ],
+    "manualPage": 37
+   },
+   "Bass Hammer": {
+    "type": "Bass Preamp",
+    "basedOn": "Aguilar Tone Hammer",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Master",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     },
+     {
+      "name": "Mid Freq",
+      "kind": "knob"
+     },
+     {
+      "name": "Drive",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 37
+   },
+   "Micro Boost": {
+    "type": "Boost",
+    "basedOn": "MXR M133 Micro Amp",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 37
+   },
+   "AC Boost": {
+    "type": "Boost",
+    "basedOn": "Xotic AC Booster",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 38
+   },
+   "B-Boost": {
+    "type": "Boost",
+    "basedOn": "Xotic BB Preamp",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 38
+   },
+   "P-Boost": {
+    "type": "Boost",
+    "basedOn": "Xotic RC Booster",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 38
+   },
+   "14 Boost": {
+    "type": "Boost",
+    "basedOn": "Fortin Grind",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 38
+   },
+   "FAT BB": {
+    "type": "Boost",
+    "basedOn": "Clean boost med low cut",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 38
+   },
+   "Boost": {
+    "type": "Boost",
+    "basedOn": "Xotic EP Booster",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "+3dB",
+      "kind": "switch"
+     },
+     {
+      "name": "Bright",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 38
+   },
+   "SnapTone 1": {
+    "type": "NAM",
+    "basedOn": "Importerad .nam-fil",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 39
+   },
+   "SnapTone 2": {
+    "type": "NAM",
+    "basedOn": "Importerad .nam-fil",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 39
+   },
+   "SnapTone 3": {
+    "type": "NAM",
+    "basedOn": "Importerad .nam-fil",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 39
+   },
+   "SnapTone 4": {
+    "type": "NAM",
+    "basedOn": "Importerad .nam-fil",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 39
+   },
+   "SnapTone 5": {
+    "type": "NAM",
+    "basedOn": "Importerad .nam-fil",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 39
+   }
+  },
+  "AMP": {
+   "Tweedy": {
+    "type": "Clean",
+    "basedOn": "Fender Tweed Deluxe",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 39,
+    "defaultCab": "TWD LUX"
+   },
+   "Bellman 59N": {
+    "type": "Clean",
+    "basedOn": "Fender '59 Bassman",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 39,
+    "defaultCab": "Bellman 2"
+   },
+   "Bellman 59B": {
+    "type": "Drive",
+    "basedOn": "Fender '59 Bassman",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 39,
+    "defaultCab": "Bellman 2"
+   },
+   "Dark Twin": {
+    "type": "Clean",
+    "basedOn": "Fender '65 Twin Reverb",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     },
+     {
+      "name": "Bright",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 39,
+    "defaultCab": "Dark Twin"
+   },
+   "Dark DLX": {
+    "type": "Clean",
+    "basedOn": "Fender Deluxe Reverb (blackface)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 40,
+    "defaultCab": "DARK LUX"
+   },
+   "Dark Vibra": {
+    "type": "Clean",
+    "basedOn": "Fender Vibroverb (6G16)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     },
+     {
+      "name": "Bright",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 40,
+    "defaultCab": "DARK VIT"
+   },
+   "Silver Twin": {
+    "type": "Clean",
+    "basedOn": "Fender Silverface Twin Reverb",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 40,
+    "defaultCab": "Dark Twin"
+   },
+   "SUPDual CL": {
+    "type": "Clean",
+    "basedOn": "Supro Dual-Tone 1624T (CH1)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 40,
+    "defaultCab": "SUP"
+   },
+   "SUPDual OD": {
+    "type": "Drive",
+    "basedOn": "Supro Dual-Tone 1624T (CH1+2)",
+    "params": [
+     {
+      "name": "Gain 1",
+      "kind": "knob"
+     },
+     {
+      "name": "Gain 2",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone 1",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone 2",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 40,
+    "defaultCab": "SUP"
+   },
+   "Foxy 15TB": {
+    "type": "Clean",
+    "basedOn": "Vox AC-100",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 41,
+    "defaultCab": "FOXY 2"
+   },
+   "Foxy 30N": {
+    "type": "Clean",
+    "basedOn": "Vox AC30HW (Normal)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Bright",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 41,
+    "defaultCab": "FOXY 2"
+   },
+   "Foxy 30TB": {
+    "type": "Drive",
+    "basedOn": "Vox AC30HW (Top Boost)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     },
+     {
+      "name": "Char",
+      "kind": "select"
+     }
+    ],
+    "manualPage": 41,
+    "defaultCab": "FOXY 2"
+   },
+   "J-120 CL": {
+    "type": "Clean",
+    "basedOn": "Roland JC-120 Jazz Chorus",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Bright",
+      "kind": "switch"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 41,
+    "defaultCab": "J-120"
+   },
+   "Match CL": {
+    "type": "Clean",
+    "basedOn": "Matchless Chieftain 212 (clean)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 41,
+    "defaultCab": "Match"
+   },
+   "Match OD": {
+    "type": "Drive",
+    "basedOn": "Matchless Chieftain 212 (overdrive)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 42,
+    "defaultCab": "Match"
+   },
+   "L-Star CL": {
+    "type": "Clean",
+    "basedOn": "Mesa/Boogie Lone Star (CH1)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 42,
+    "defaultCab": "SUP Star"
+   },
+   "L-Star OD": {
+    "type": "Drive",
+    "basedOn": "Mesa/Boogie Lone Star (CH2)",
+    "params": [
+     {
+      "name": "Input",
+      "kind": "knob"
+     },
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 42,
+    "defaultCab": "SUP Star"
+   },
+   "BogSV CL": {
+    "type": "Clean",
+    "basedOn": "Bogner Shiva (CH1)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     },
+     {
+      "name": "Bright",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 42,
+    "defaultCab": "BogSV"
+   },
+   "BogSV OD": {
+    "type": "Drive",
+    "basedOn": "Bogner Shiva (CH2)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 42,
+    "defaultCab": "BogSV"
+   },
+   "Bog BlueV": {
+    "type": "Drive",
+    "basedOn": "Bogner Ecstasy XTC (blå kanal)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 43,
+    "defaultCab": "Bog"
+   },
+   "Bog BlueM": {
+    "type": "Drive",
+    "basedOn": "Bogner Ecstasy XTC (blå kanal)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 43,
+    "defaultCab": "Bog"
+   },
+   "Bog RedV": {
+    "type": "Hi Gain",
+    "basedOn": "Bogner Ecstasy XTC (röd kanal)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 43,
+    "defaultCab": "Bog"
+   },
+   "Bog RedM": {
+    "type": "Hi Gain",
+    "basedOn": "Bogner Ecstasy XTC (röd kanal)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 43,
+    "defaultCab": "Bog"
+   },
+   "Z38 CL": {
+    "type": "Clean",
+    "basedOn": "Dr. Z Maz 38 Sr. (clean)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 43,
+    "defaultCab": "BOUTI"
+   },
+   "Z38 OD": {
+    "type": "Drive",
+    "basedOn": "Dr. Z Maz 38 Sr.",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 43,
+    "defaultCab": "BOUTI"
+   },
+   "Knights CL": {
+    "type": "Clean",
+    "basedOn": "Grindrod Pendragon PG20C (Normal, bright off)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 44,
+    "defaultCab": "UK GRN 1"
+   },
+   "Knights CL+": {
+    "type": "Clean",
+    "basedOn": "Grindrod Pendragon PG20C (Normal, bright on)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 44,
+    "defaultCab": "UK GRN 1"
+   },
+   "Knights OD": {
+    "type": "Drive",
+    "basedOn": "Grindrod Pendragon PG20C (Drive)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 44,
+    "defaultCab": "UK GRN 1"
+   },
+   "Bad-KT CL": {
+    "type": "Clean",
+    "basedOn": "Bad Cat Hot Cat 30 (clean)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 44,
+    "defaultCab": "Bad-KT"
+   },
+   "Bad-KT OD": {
+    "type": "Drive",
+    "basedOn": "Bad Cat Hot Cat 30 (overdrive)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Edge",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 44,
+    "defaultCab": "Bad-KT"
+   },
+   "Solo100 CL": {
+    "type": "Clean",
+    "basedOn": "Soldano SLO-100 (clean)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 44,
+    "defaultCab": "Solo"
+   },
+   "Solo100 OD": {
+    "type": "Drive",
+    "basedOn": "Soldano SLO-100 (crunch)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 44,
+    "defaultCab": "Solo",
+    "paramsInferred": true
+   },
+   "Solo100 LD": {
+    "type": "Hi Gain",
+    "basedOn": "Soldano SLO-100 (overdrive)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 45,
+    "defaultCab": "Solo"
+   },
+   "UK 45": {
+    "type": "Drive",
+    "basedOn": "Marshall JTM45 (normal)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 45,
+    "defaultCab": "UK GRN 2"
+   },
+   "UK 45+": {
+    "type": "Drive",
+    "basedOn": "Marshall JTM45",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 45,
+    "defaultCab": "UK GRN 2"
+   },
+   "UK 45JP": {
+    "type": "Drive",
+    "basedOn": "Marshall JTM45 (jumpad)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 45,
+    "defaultCab": "UK GRN 2"
+   },
+   "UK 50": {
+    "type": "Drive",
+    "basedOn": "Marshall JMP50",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 45,
+    "defaultCab": "UK GRN 2"
+   },
+   "UK 50+": {
+    "type": "Drive",
+    "basedOn": "Marshall JMP50",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 46,
+    "defaultCab": "UK GRN 2"
+   },
+   "UK 50JP": {
+    "type": "Drive",
+    "basedOn": "Marshall JMP50 (jumpad)",
+    "params": [
+     {
+      "name": "Gain 1",
+      "kind": "knob"
+     },
+     {
+      "name": "Gain 2",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 46,
+    "defaultCab": "UK GRN 2"
+   },
+   "UK SLP": {
+    "type": "Drive",
+    "basedOn": "Marshall 1959HW Super Lead (Plexi)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 46,
+    "defaultCab": "UK GRN 2"
+   },
+   "UK 800": {
+    "type": "Drive",
+    "basedOn": "Marshall JCM800",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 46,
+    "defaultCab": "UK 75"
+   },
+   "UK 900": {
+    "type": "Hi Gain",
+    "basedOn": "Marshall JCM900",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 46,
+    "defaultCab": "UK 75"
+   },
+   "Flagman 1": {
+    "type": "Drive",
+    "basedOn": "Friedman BE-100 \"Brown Eye\" (BE)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 47,
+    "defaultCab": "UK LD"
+   },
+   "Flagman 2": {
+    "type": "Drive",
+    "basedOn": "Friedman BE-100 \"Brown Eye\" (BE)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 47,
+    "defaultCab": "UK LD"
+   },
+   "Flagman+ 1": {
+    "type": "Hi Gain",
+    "basedOn": "Friedman BE-100 \"Brown Eye\" (HBE)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 47,
+    "defaultCab": "UK LD"
+   },
+   "Flagman+ 2": {
+    "type": "Hi Gain",
+    "basedOn": "Friedman BE-100 \"Brown Eye\" (HBE)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 47,
+    "defaultCab": "UK LD"
+   },
+   "Mess2C+ 1": {
+    "type": "Drive",
+    "basedOn": "Mesa/Boogie Mark IIC+ (Lead)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 47,
+    "defaultCab": "Mess"
+   },
+   "Mess2C+ 2": {
+    "type": "Drive",
+    "basedOn": "Mesa/Boogie Mark IIC+ (Lead)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 48,
+    "defaultCab": "Mess"
+   },
+   "Mess2C+ 3": {
+    "type": "Drive",
+    "basedOn": "Mesa/Boogie Mark IIC+ (Lead)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 48,
+    "defaultCab": "Mess",
+    "manualName": "Mess 2C+ 3"
+   },
+   "Mess4 LD": {
+    "type": "Hi Gain",
+    "basedOn": "Mesa/Boogie Mark IV (Lead)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 48,
+    "defaultCab": "Mess"
+   },
+   "Mess4 LD 2": {
+    "type": "Hi Gain",
+    "basedOn": "Mesa/Boogie Mark IV (Lead 2)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 48,
+    "defaultCab": "Mess"
+   },
+   "Mess4 LD 3": {
+    "type": "Hi Gain",
+    "basedOn": "Mesa/Boogie Mark IV (Lead 3)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 48,
+    "defaultCab": "Mess"
+   },
+   "Mess DualV": {
+    "type": "Hi Gain",
+    "basedOn": "Mesa/Boogie Dual Rectifier (Vintage)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 49,
+    "defaultCab": "Mess"
+   },
+   "Mess DualM": {
+    "type": "Hi Gain",
+    "basedOn": "Mesa/Boogie Dual Rectifier (Modern)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 49,
+    "defaultCab": "Mess"
+   },
+   "Juice30 OD": {
+    "type": "Drive",
+    "basedOn": "Orange AD30 (dirty)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 49,
+    "defaultCab": "Juice"
+   },
+   "Juice R100": {
+    "type": "Hi Gain",
+    "basedOn": "Orange Rockerverb 100 (dirty)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     },
+     {
+      "name": "Bright",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 49,
+    "defaultCab": "Juice"
+   },
+   "EV 51": {
+    "type": "Hi Gain",
+    "basedOn": "Peavey 5150 (Lead)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 49,
+    "defaultCab": "EV"
+   },
+   "Eagle 120": {
+    "type": "Hi Gain",
+    "basedOn": "ENGL Savage 120",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 50,
+    "defaultCab": "Eagle"
+   },
+   "Eagle 120+": {
+    "type": "Hi Gain",
+    "basedOn": "ENGL Savage 120",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 50,
+    "defaultCab": "Eagle"
+   },
+   "Power LD": {
+    "type": "Hi Gain",
+    "basedOn": "ENGL Powerball II (CH4)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 50,
+    "defaultCab": "Eagle"
+   },
+   "Dizz VH": {
+    "type": "Hi Gain",
+    "basedOn": "Diezel VH4",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 50,
+    "defaultCab": "Dizz"
+   },
+   "Dizz VH S": {
+    "type": "Hi Gain",
+    "basedOn": "Diezel VH4 (variant)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 50,
+    "defaultCab": "Dizz",
+    "paramsInferred": true
+   },
+   "Dizz VH+": {
+    "type": "Hi Gain",
+    "basedOn": "Diezel VH4 (variant)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 50,
+    "defaultCab": "Dizz",
+    "paramsInferred": true
+   },
+   "Dizz VH+ S": {
+    "type": "Hi Gain",
+    "basedOn": "Diezel VH4 (variant)",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Presence",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 50,
+    "defaultCab": "Dizz",
+    "paramsInferred": true
+   },
+   "Classic Bass": {
+    "type": "Bass",
+    "basedOn": "Ampeg SVT",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Midrange",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 51,
+    "defaultCab": "AMPG 2"
+   },
+   "Foxy Bass": {
+    "type": "Bass",
+    "basedOn": "Vox AC-100 (bas)",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 51,
+    "defaultCab": "AMPG 1"
+   },
+   "Mess Bass": {
+    "type": "Bass",
+    "basedOn": "Mesa/Boogie Bass 400",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 51,
+    "defaultCab": "US BASS"
+   },
+   "Mini Bass": {
+    "type": "Bass",
+    "basedOn": "Ampeg B-15 Flip Top",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 51,
+    "defaultCab": "F-TOP"
+   },
+   "Bass Pre": {
+    "type": "Bass",
+    "basedOn": "Alembic F-2B",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bright",
+      "kind": "switch"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 51,
+    "defaultCab": "AMPG 1"
+   },
+   "AC Pre": {
+    "type": "Acoustic",
+    "basedOn": "AER Colourizer 2",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Balance",
+      "kind": "knob"
+     },
+     {
+      "name": "EQ Freq",
+      "kind": "knob"
+     },
+     {
+      "name": "EQ Q",
+      "kind": "knob"
+     },
+     {
+      "name": "EQ Gain",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 51,
+    "defaultCab": "AC"
+   },
+   "AC Pre 2": {
+    "type": "Acoustic",
+    "basedOn": "AER Colourizer 2",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Balance",
+      "kind": "knob"
+     },
+     {
+      "name": "EQ Freq",
+      "kind": "knob"
+     },
+     {
+      "name": "EQ Q",
+      "kind": "knob"
+     },
+     {
+      "name": "EQ Gain",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 52,
+    "defaultCab": "AC"
+   },
+   "SnapTone 1": {
+    "type": "NAM",
+    "basedOn": "Importerad .nam-fil",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 52,
+    "defaultCab": null
+   },
+   "SnapTone 2": {
+    "type": "NAM",
+    "basedOn": "Importerad .nam-fil",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 52,
+    "defaultCab": null
+   },
+   "SnapTone 3": {
+    "type": "NAM",
+    "basedOn": "Importerad .nam-fil",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 52,
+    "defaultCab": null
+   },
+   "SnapTone 4": {
+    "type": "NAM",
+    "basedOn": "Importerad .nam-fil",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 52,
+    "defaultCab": null
+   },
+   "SnapTone 5": {
+    "type": "NAM",
+    "basedOn": "Importerad .nam-fil",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Middle",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 52,
+    "defaultCab": null
+   }
+  },
+  "CAB": {
+   "SUP ZEP": {
+    "type": "Cabinet 1x6\"",
+    "basedOn": "Supro 1x6\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 53
+   },
+   "TWD CP": {
+    "type": "Cabinet 1x8\"",
+    "basedOn": "Fender Champ",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 53
+   },
+   "TWD PRC": {
+    "type": "Cabinet 1x10\"",
+    "basedOn": "Fender Princeton",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 53
+   },
+   "TWD SUP": {
+    "type": "Cabinet 2x10\"",
+    "basedOn": "Fender Tweed 2x10\" (custom)",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 53
+   },
+   "TWD LUX": {
+    "type": "Cabinet 1x12\"",
+    "basedOn": "Fender Tweed Deluxe",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 53
+   },
+   "DARK LUX": {
+    "type": "Cabinet 1x12\"",
+    "basedOn": "Fender Deluxe (blackface)",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 53
+   },
+   "DARK VIT": {
+    "type": "Cabinet 1x12\"",
+    "basedOn": "Fender Vibrolux",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 53
+   },
+   "Dark Twin": {
+    "type": "Cabinet 2x12\"",
+    "basedOn": "Fender '65 Twin Reverb",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 53
+   },
+   "Dark CS": {
+    "type": "Cabinet 2x12\"",
+    "basedOn": "Modifierad Fender 2x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 53
+   },
+   "Bellman 1": {
+    "type": "Cabinet 2x12\"",
+    "basedOn": "Fender Bassman piggyback 2x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 53
+   },
+   "Bellman 2": {
+    "type": "Cabinet 4x10\"",
+    "basedOn": "Fender '59 Bassman 4x10\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 53
+   },
+   "J-120": {
+    "type": "Cabinet 2x12\"",
+    "basedOn": "Roland Jazz Chorus",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 53
+   },
+   "UK G12": {
+    "type": "Cabinet 1x12\"",
+    "basedOn": "Marshall 1x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 53
+   },
+   "UK GRN 1": {
+    "type": "Cabinet 2x12\"",
+    "basedOn": "Marshall 2550 2x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "UK LD": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "Marshall 1960AV",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "UK TD": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "Marshall 1968 Basketweave",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "UK MD": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "Modifierad Marshall 4x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "UK GRN 2": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "Vintage Marshall 4x12\" med Celestion Greenback",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "UK 75": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "Marshall 4x12\" med Celestion G12T-75",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "UK Dark": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "Marshall 4x12\" (1968)",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "FOXY 1": {
+    "type": "Cabinet 1x12\"",
+    "basedOn": "Vox AC15",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "FOXY 2": {
+    "type": "Cabinet 2x12\"",
+    "basedOn": "Vox AC30",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "ROUT": {
+    "type": "Cabinet 1x12\"",
+    "basedOn": "Carr Rambler",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "BogSV": {
+    "type": "Cabinet 1x12\"",
+    "basedOn": "Bogner Shiva",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "Bad-KT": {
+    "type": "Cabinet 1x12\"",
+    "basedOn": "Bad Cat Hot Cat",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "Match": {
+    "type": "Cabinet 2x12\"",
+    "basedOn": "Matchless Chieftain",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "TOM OPEN": {
+    "type": "Cabinet 1x12\"",
+    "basedOn": "Swart Atomic Space",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "ACE": {
+    "type": "Cabinet 1x12\"",
+    "basedOn": "Morgan AC-20 Deluxe",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "Mess": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "Mesa/Boogie Rectifier 4x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "D STAR": {
+    "type": "Cabinet 1x12\"",
+    "basedOn": "Mesa/Boogie Lone Star 1x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "SUP Star": {
+    "type": "Cabinet 2x12\"",
+    "basedOn": "Mesa/Boogie Lone Star 2x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "US STO": {
+    "type": "Cabinet 1x12\"",
+    "basedOn": "Mesa/Boogie 1x12\" (1980-tal)",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "BOUTI": {
+    "type": "Cabinet 2x12\"",
+    "basedOn": "Custom 2x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "SUP": {
+    "type": "Cabinet 2x12\"",
+    "basedOn": "Supro 1624T",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "MATT TWD": {
+    "type": "Cabinet 2x12\"",
+    "basedOn": "Matchless 2x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "Freed": {
+    "type": "Cabinet 2x12\"",
+    "basedOn": "Fryette Deliverance",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "DB Rock": {
+    "type": "Cabinet 2x12\"",
+    "basedOn": "Two-Rock 2x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "Blue SK": {
+    "type": "Cabinet 2x12\"",
+    "basedOn": "Custom 2x12\" med Celestion Alnico Blue",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "EV": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "Peavey 6505 4x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "Bog": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "Bogner 4x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "Eagle": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "ENGL 4x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "Uban": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "Bogner Uberkab",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 54
+   },
+   "Solo": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "Soldano 4x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55
+   },
+   "Juice": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "Orange PPC412",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55
+   },
+   "H-WAY": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "Hiwatt SE4123",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55
+   },
+   "Way": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "WEM 4x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55
+   },
+   "Dumb": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "Dumble 4x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55
+   },
+   "Dizz": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "Diezel 4x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55
+   },
+   "TRP": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "Hughes & Kettner Triamp 4x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55
+   },
+   "King": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "Mesa/Boogie Road King 4x12\"",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55
+   },
+   "ADM 1": {
+    "type": "Cabinet 1x15\"",
+    "basedOn": "David Eden 1x15\" (bas)",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55
+   },
+   "ADM 2": {
+    "type": "Cabinet 4x10\"",
+    "basedOn": "David Eden 4x10\" (bas)",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55
+   },
+   "Workman 1": {
+    "type": "Cabinet 1x15\"",
+    "basedOn": "SWR 1x15\" (bas)",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55
+   },
+   "Workman 2": {
+    "type": "Cabinet 4x10\"",
+    "basedOn": "SWR Workingman's 4x10\" (bas)",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55
+   },
+   "US BASS": {
+    "type": "Cabinet 2x10\"",
+    "basedOn": "Mesa/Boogie 2x10\" (bas)",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55
+   },
+   "MATT": {
+    "type": "Cabinet 4x10\"",
+    "basedOn": "Markbass 4x10\" (bas)",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55
+   },
+   "F-TOP": {
+    "type": "Cabinet 1x15\"",
+    "basedOn": "Ampeg PF-115HE (bas)",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55
+   },
+   "AMPG 1": {
+    "type": "Cabinet 4x10\"",
+    "basedOn": "Ampeg SVT-410HE (bas)",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55
+   },
+   "AMPG 2": {
+    "type": "Cabinet 8x10\"",
+    "basedOn": "Ampeg SVT-810E (bas)",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55
+   },
+   "HACK": {
+    "type": "Cabinet 4x12\"",
+    "basedOn": "Hartke 4x12\" (bas)",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55
+   },
+   "AC": {
+    "type": "Acoustic",
+    "basedOn": "Dreadnought (simulering 1)",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55,
+    "paramsInferred": true
+   },
+   "AC Dream": {
+    "type": "Acoustic",
+    "basedOn": "Dreadnought (simulering 2)",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55,
+    "paramsInferred": true
+   },
+   "OM": {
+    "type": "Acoustic",
+    "basedOn": "OM-akustisk",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55,
+    "paramsInferred": true
+   },
+   "JUMBO": {
+    "type": "Acoustic",
+    "basedOn": "Jumbo-akustisk",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55,
+    "paramsInferred": true
+   },
+   "Bird": {
+    "type": "Acoustic",
+    "basedOn": "\"H-Bird\"-akustisk",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55,
+    "paramsInferred": true
+   },
+   "GA": {
+    "type": "Acoustic",
+    "basedOn": "GA-akustisk",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55,
+    "paramsInferred": true
+   },
+   "Classic AC": {
+    "type": "Acoustic",
+    "basedOn": "Klassisk gitarr",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55,
+    "paramsInferred": true
+   },
+   "Mandolin": {
+    "type": "Acoustic",
+    "basedOn": "Mandolin",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55,
+    "paramsInferred": true
+   },
+   "Fretless Bass": {
+    "type": "Acoustic",
+    "basedOn": "Bandlös akustisk bas",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55,
+    "paramsInferred": true
+   },
+   "Double Bass": {
+    "type": "Acoustic",
+    "basedOn": "Kontrabas",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 55,
+    "paramsInferred": true
+   },
+   "User IR": {
+    "type": "User IR",
+    "basedOn": "Egen IR (WAV 44 kHz/1024 samples, plats 1–20)",
+    "params": [],
+    "manualPage": 55
+   }
+  },
+  "EQ": {
+   "Guitar EQ 1": {
+    "type": "EQ",
+    "basedOn": "Gitarr-EQ",
+    "params": [
+     {
+      "name": "125 Hz",
+      "kind": "knob",
+      "min": -50,
+      "max": 50,
+      "rangeConfirmed": true
+     },
+     {
+      "name": "400 Hz",
+      "kind": "knob",
+      "min": -50,
+      "max": 50,
+      "rangeConfirmed": true
+     },
+     {
+      "name": "800 Hz",
+      "kind": "knob",
+      "min": -50,
+      "max": 50,
+      "rangeConfirmed": true
+     },
+     {
+      "name": "1.6 kHz",
+      "kind": "knob",
+      "min": -50,
+      "max": 50,
+      "rangeConfirmed": true
+     },
+     {
+      "name": "4 kHz",
+      "kind": "knob",
+      "min": -50,
+      "max": 50,
+      "rangeConfirmed": true
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 56
+   },
+   "Guitar EQ 2": {
+    "type": "EQ",
+    "basedOn": "Gitarr-EQ",
+    "params": [
+     {
+      "name": "100 Hz",
+      "kind": "knob"
+     },
+     {
+      "name": "500 Hz",
+      "kind": "knob"
+     },
+     {
+      "name": "1 kHz",
+      "kind": "knob"
+     },
+     {
+      "name": "3 kHz",
+      "kind": "knob"
+     },
+     {
+      "name": "6 kHz",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 56
+   },
+   "Bass EQ 1": {
+    "type": "EQ",
+    "basedOn": "Bas-EQ",
+    "params": [
+     {
+      "name": "33 Hz",
+      "kind": "knob"
+     },
+     {
+      "name": "150 Hz",
+      "kind": "knob"
+     },
+     {
+      "name": "600 Hz",
+      "kind": "knob"
+     },
+     {
+      "name": "2 kHz",
+      "kind": "knob"
+     },
+     {
+      "name": "8 kHz",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 56
+   },
+   "Bass EQ 2": {
+    "type": "EQ",
+    "basedOn": "Bas-EQ",
+    "params": [
+     {
+      "name": "50 Hz",
+      "kind": "knob"
+     },
+     {
+      "name": "120 Hz",
+      "kind": "knob"
+     },
+     {
+      "name": "400 Hz",
+      "kind": "knob"
+     },
+     {
+      "name": "800 Hz",
+      "kind": "knob"
+     },
+     {
+      "name": "4.5 kHz",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 56
+   },
+   "Mess EQ": {
+    "type": "EQ",
+    "basedOn": "Mesa/Boogie 5-bands grafisk EQ",
+    "params": [
+     {
+      "name": "80 Hz",
+      "kind": "knob"
+     },
+     {
+      "name": "240 Hz",
+      "kind": "knob"
+     },
+     {
+      "name": "750 Hz",
+      "kind": "knob"
+     },
+     {
+      "name": "2.2 kHz",
+      "kind": "knob"
+     },
+     {
+      "name": "6.6 kHz",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 56
+   },
+   "Hyper EQ": {
+    "type": "EQ",
+    "basedOn": "10-bands grafisk EQ (±12 dB)",
+    "params": [
+     {
+      "name": "31 Hz",
+      "kind": "knob"
+     },
+     {
+      "name": "63 Hz",
+      "kind": "knob"
+     },
+     {
+      "name": "125 Hz",
+      "kind": "knob"
+     },
+     {
+      "name": "250 Hz",
+      "kind": "knob"
+     },
+     {
+      "name": "500 Hz",
+      "kind": "knob"
+     },
+     {
+      "name": "1 kHz",
+      "kind": "knob"
+     },
+     {
+      "name": "2 kHz",
+      "kind": "knob"
+     },
+     {
+      "name": "4 kHz",
+      "kind": "knob"
+     },
+     {
+      "name": "8 kHz",
+      "kind": "knob"
+     },
+     {
+      "name": "16 kHz",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 56
+   }
+  },
+  "DLY": {
+   "BBD Delay S": {
+    "type": "Delay",
+    "basedOn": "Stereo analog BBD-delay",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Time R%",
+      "kind": "knob"
+     },
+     {
+      "name": "Spread",
+      "kind": "knob"
+     },
+     {
+      "name": "Level",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 61
+   },
+   "Digital Delay S": {
+    "type": "Delay",
+    "basedOn": "Stereo digital delay",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Time R%",
+      "kind": "knob"
+     },
+     {
+      "name": "Spread",
+      "kind": "knob"
+     },
+     {
+      "name": "Level",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 62
+   },
+   "Tape Delay S": {
+    "type": "Delay",
+    "basedOn": "Stereo bandeko",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Time R%",
+      "kind": "knob"
+     },
+     {
+      "name": "Spread",
+      "kind": "knob"
+     },
+     {
+      "name": "Wow & Flutter",
+      "kind": "knob"
+     },
+     {
+      "name": "Age",
+      "kind": "select"
+     },
+     {
+      "name": "Scrape",
+      "kind": "knob"
+     },
+     {
+      "name": "Drive",
+      "kind": "knob"
+     },
+     {
+      "name": "Level",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 62
+   },
+   "Ambience 1": {
+    "type": "Delay",
+    "basedOn": "Multi-tap delay",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Level",
+      "kind": "knob"
+     },
+     {
+      "name": "Mod",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 62
+   },
+   "Ambience 2": {
+    "type": "Delay",
+    "basedOn": "Multi-tap delay (variant 2)",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Level",
+      "kind": "knob"
+     },
+     {
+      "name": "Mod",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 62
+   },
+   "Pure": {
+    "type": "Delay",
+    "basedOn": "Ren, exakt delay",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 62
+   },
+   "Analog": {
+    "type": "Delay",
+    "basedOn": "Varm delay med analog känsla",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 63
+   },
+   "Tape": {
+    "type": "Delay",
+    "basedOn": "Solid-state-bandeko",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 63
+   },
+   "Ping Pong": {
+    "type": "Delay",
+    "basedOn": "Stereo ping-pong",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 63
+   },
+   "Slapback": {
+    "type": "Delay",
+    "basedOn": "Klassiskt slapback-eko",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 63
+   },
+   "Sweep Echo": {
+    "type": "Delay",
+    "basedOn": "Delay med svepande filter",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Sweep Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Sweep Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Swp Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Time Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 63
+   },
+   "Ring Echo": {
+    "type": "Delay",
+    "basedOn": "Delay med ringmodulerade repetitioner",
+    "params": [
+     {
+      "name": "Dly Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Ring Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Freq",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 63
+   },
+   "Tube": {
+    "type": "Delay",
+    "basedOn": "Rördriven bandeko",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 64
+   },
+   "M-Echo": {
+    "type": "Delay",
+    "basedOn": "4-huvuds bandeko",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Mode",
+      "kind": "select"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 64
+   },
+   "Sweet Echo": {
+    "type": "Delay",
+    "basedOn": "Analog delaypedal 1981–84 (20–300 ms)",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 64
+   },
+   "999 Echo": {
+    "type": "Delay",
+    "basedOn": "Maxon AD900 analog delay",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 64
+   },
+   "Vintage Rack": {
+    "type": "Delay",
+    "basedOn": "1980-tals rack-delay",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Mod",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 65
+   },
+   "Lofi Echo": {
+    "type": "Delay",
+    "basedOn": "Lo-fi-repetitioner",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Crush",
+      "kind": "knob"
+     },
+     {
+      "name": "Bit",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 65
+   },
+   "Rev Echo": {
+    "type": "Delay",
+    "basedOn": "Baklänges feedback",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 65
+   },
+   "Dual Echo": {
+    "type": "Delay",
+    "basedOn": "Dubbel delay, separata L/R",
+    "params": [
+     {
+      "name": "Mix A",
+      "kind": "knob"
+     },
+     {
+      "name": "FB A",
+      "kind": "knob"
+     },
+     {
+      "name": "Time A",
+      "kind": "knob"
+     },
+     {
+      "name": "Mix B",
+      "kind": "knob"
+     },
+     {
+      "name": "FB B",
+      "kind": "knob"
+     },
+     {
+      "name": "Time B",
+      "kind": "knob"
+     },
+     {
+      "name": "A Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "B Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trail",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 65
+   },
+   "Ice Delay": {
+    "type": "Delay",
+    "basedOn": "Feedback med tonhöjdsförskjutna slices",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Mod",
+      "kind": "knob"
+     },
+     {
+      "name": "Pitch",
+      "kind": "select"
+     },
+     {
+      "name": "Slice",
+      "kind": "select"
+     },
+     {
+      "name": "Direction",
+      "kind": "select"
+     },
+     {
+      "name": "Blend",
+      "kind": "knob"
+     },
+     {
+      "name": "Smooth",
+      "kind": "knob"
+     },
+     {
+      "name": "Level",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 66
+   },
+   "Broken Delay": {
+    "type": "Delay",
+    "basedOn": "Glitch/stutter-delay",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Time",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Latch",
+      "kind": "knob"
+     },
+     {
+      "name": "Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 66
+   }
+  },
+  "RVB": {
+   "Room": {
+    "type": "Reverb",
+    "basedOn": "Rum",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Pre Delay",
+      "kind": "knob"
+     },
+     {
+      "name": "Decay",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 67
+   },
+   "Hall": {
+    "type": "Reverb",
+    "basedOn": "Konserthall",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Pre Delay",
+      "kind": "knob"
+     },
+     {
+      "name": "Decay",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 67
+   },
+   "Church": {
+    "type": "Reverb",
+    "basedOn": "Kyrka",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Pre Delay",
+      "kind": "knob"
+     },
+     {
+      "name": "Decay",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 67
+   },
+   "Plate": {
+    "type": "Reverb",
+    "basedOn": "Vintage plattreverb",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Decay",
+      "kind": "knob"
+     },
+     {
+      "name": "High Damp",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 67
+   },
+   "Spring": {
+    "type": "Reverb",
+    "basedOn": "Vintage fjäderreverb",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Decay",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 67
+   },
+   "Tube Spring": {
+    "type": "Reverb",
+    "basedOn": "Rördriven fjäderreverb",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Pre Delay",
+      "kind": "knob"
+     },
+     {
+      "name": "Decay",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Damp",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Damp",
+      "kind": "knob"
+     },
+     {
+      "name": "Mod",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 67
+   },
+   "Amp Spring": {
+    "type": "Reverb",
+    "basedOn": "Fjäderreverb från combo-förstärkare",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Pre Delay",
+      "kind": "knob"
+     },
+     {
+      "name": "Decay",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Damp",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Damp",
+      "kind": "knob"
+     },
+     {
+      "name": "Mod",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 68
+   },
+   "Studio": {
+    "type": "Reverb",
+    "basedOn": "Inspelningsstudio",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Pre Delay",
+      "kind": "knob"
+     },
+     {
+      "name": "Decay",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Damp",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Damp",
+      "kind": "knob"
+     },
+     {
+      "name": "Mod",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 68
+   },
+   "Club": {
+    "type": "Reverb",
+    "basedOn": null,
+    "params": [],
+    "manualPage": null,
+    "missingInManual": true
+   },
+   "Concert": {
+    "type": "Reverb",
+    "basedOn": null,
+    "params": [],
+    "manualPage": null,
+    "missingInManual": true
+   },
+   "Arena": {
+    "type": "Reverb",
+    "basedOn": null,
+    "params": [],
+    "manualPage": null,
+    "missingInManual": true
+   },
+   "N-Star": {
+    "type": "Reverb",
+    "basedOn": "Ljus, frodig reverb",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Decay",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 68
+   },
+   "Deepsea": {
+    "type": "Reverb",
+    "basedOn": "Stor, djup reverb",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Decay",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 68
+   },
+   "Sweet Space": {
+    "type": "Reverb",
+    "basedOn": "Modulerad reverb",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Pre Delay",
+      "kind": "knob"
+     },
+     {
+      "name": "Decay",
+      "kind": "knob"
+     },
+     {
+      "name": "Low End",
+      "kind": "knob"
+     },
+     {
+      "name": "High End",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 68
+   },
+   "Shimmer": {
+    "type": "Reverb",
+    "basedOn": "Shimmer-reverb",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Pre Delay",
+      "kind": "knob"
+     },
+     {
+      "name": "Decay",
+      "kind": "knob"
+     },
+     {
+      "name": "Low End",
+      "kind": "knob"
+     },
+     {
+      "name": "High End",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 69
+   }
+  },
+  "PRE": {
+   "COMP": {
+    "type": "Comp",
+    "basedOn": "Ross Compressor",
+    "params": [
+     {
+      "name": "Sustain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 25
+   },
+   "COMP4": {
+    "type": "Comp",
+    "basedOn": "Keeley C4",
+    "params": [
+     {
+      "name": "Sustain",
+      "kind": "knob"
+     },
+     {
+      "name": "Attack",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Clipping",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 25
+   },
+   "S-Comp": {
+    "type": "Comp",
+    "basedOn": "Fullt justerbar kompressor",
+    "params": [
+     {
+      "name": "Threshold",
+      "kind": "knob"
+     },
+     {
+      "name": "Ratio",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Attack",
+      "kind": "knob"
+     },
+     {
+      "name": "Release",
+      "kind": "knob"
+     },
+     {
+      "name": "Blend",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 25
+   },
+   "Micro Boost": {
+    "type": "Boost",
+    "basedOn": "MXR M133 Micro Amp",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 25
+   },
+   "AC Boost": {
+    "type": "Boost",
+    "basedOn": "Xotic AC Booster",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 25
+   },
+   "B-Boost": {
+    "type": "Boost",
+    "basedOn": "Xotic BB Preamp",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 26
+   },
+   "P-Boost": {
+    "type": "Boost",
+    "basedOn": "Xotic RC Booster",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 26
+   },
+   "14 Boost": {
+    "type": "Boost",
+    "basedOn": "Fortin Grind",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 26
+   },
+   "FAT BB": {
+    "type": "Boost",
+    "basedOn": "Clean boost med low cut",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Bass",
+      "kind": "knob"
+     },
+     {
+      "name": "Treble",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Cut",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 26
+   },
+   "Boost": {
+    "type": "Boost",
+    "basedOn": "Xotic EP Booster",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "+3dB",
+      "kind": "switch"
+     },
+     {
+      "name": "Bright",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 26
+   },
+   "OD 9": {
+    "type": "OD",
+    "basedOn": "Ibanez TS9 Tube Screamer",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 27
+   },
+   "Yellow OD": {
+    "type": "OD",
+    "basedOn": "70-tals asymmetrisk overdrive",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 27
+   },
+   "Penesas": {
+    "type": "OD",
+    "basedOn": "Klon Centaur",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 27
+   },
+   "Super OD": {
+    "type": "OD",
+    "basedOn": "Asymmetrisk overdrive",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 27
+   },
+   "Blues OD": {
+    "type": "OD",
+    "basedOn": "Blues-overdrive",
+    "params": [
+     {
+      "name": "Gain",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 27
+   },
+   "AC Refiner": {
+    "type": "Acoustic",
+    "basedOn": "Akustisk \"trä\"-karaktär",
+    "params": [
+     {
+      "name": "Shape",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 27
+   },
+   "AC Sim": {
+    "type": "Acoustic",
+    "basedOn": "Akustisk gitarrsimulator",
+    "params": [
+     {
+      "name": "Body",
+      "kind": "knob"
+     },
+     {
+      "name": "Top",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Mode",
+      "kind": "select"
+     }
+    ],
+    "manualPage": 28
+   },
+   "T-Wah": {
+    "type": "Filter",
+    "basedOn": "Envelope filter (touch wah)",
+    "params": [
+     {
+      "name": "Sens",
+      "kind": "knob"
+     },
+     {
+      "name": "Range",
+      "kind": "knob"
+     },
+     {
+      "name": "Q",
+      "kind": "knob"
+     },
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Mode",
+      "kind": "select"
+     }
+    ],
+    "manualPage": 28
+   },
+   "A-WAH": {
+    "type": "Auto Filter",
+    "basedOn": "Auto-wah",
+    "params": [
+     {
+      "name": "Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Low",
+      "kind": "knob"
+     },
+     {
+      "name": "High",
+      "kind": "knob"
+     },
+     {
+      "name": "Q",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 28
+   },
+   "Step Filter": {
+    "type": "Filter",
+    "basedOn": "4-stegs autofilter",
+    "params": [
+     {
+      "name": "Step 1",
+      "kind": "knob"
+     },
+     {
+      "name": "Step 2",
+      "kind": "knob"
+     },
+     {
+      "name": "Step 3",
+      "kind": "knob"
+     },
+     {
+      "name": "Step 4",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 28
+   },
+   "OCTA": {
+    "type": "Pitch",
+    "basedOn": "Polyfon oktav",
+    "params": [
+     {
+      "name": "Oct 1",
+      "kind": "knob"
+     },
+     {
+      "name": "Oct 2",
+      "kind": "knob"
+     },
+     {
+      "name": "Dry",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 28
+   },
+   "Pitch": {
+    "type": "Pitch",
+    "basedOn": "Polyfon pitch shifter/harmonizer",
+    "params": [
+     {
+      "name": "Low Pitch",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Pitch",
+      "kind": "knob"
+     },
+     {
+      "name": "Dry",
+      "kind": "knob"
+     },
+     {
+      "name": "Low Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "High Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 29
+   },
+   "P-Bend": {
+    "type": "Pitch",
+    "basedOn": "Polyfon pitch shifter",
+    "params": [
+     {
+      "name": "Low Pitch",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Pitch",
+      "kind": "knob"
+     },
+     {
+      "name": "Wet",
+      "kind": "knob"
+     },
+     {
+      "name": "Dry",
+      "kind": "knob"
+     },
+     {
+      "name": "Range",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 29
+   },
+   "Hammy": {
+    "type": "Pitch",
+    "basedOn": "DigiTech Whammy",
+    "params": [
+     {
+      "name": "Range",
+      "kind": "knob"
+     },
+     {
+      "name": "Harmony",
+      "kind": "switch"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Position",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 29
+   },
+   "Harmonizer 1": {
+    "type": "Pitch",
+    "basedOn": "Harmonizer, en stämma",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Key",
+      "kind": "select"
+     },
+     {
+      "name": "Mode",
+      "kind": "select"
+     },
+     {
+      "name": "Interval",
+      "kind": "select"
+     },
+     {
+      "name": "Smooth Mode",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 29
+   },
+   "Harmonizer 2": {
+    "type": "Pitch",
+    "basedOn": "Harmonizer, två stämmor",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Key",
+      "kind": "select"
+     },
+     {
+      "name": "Mode",
+      "kind": "select"
+     },
+     {
+      "name": "Interval 1",
+      "kind": "select"
+     },
+     {
+      "name": "Interval 2",
+      "kind": "select"
+     },
+     {
+      "name": "Smooth Mode",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 29
+   },
+   "Ring Mod": {
+    "type": "Special",
+    "basedOn": "Ringmodulator",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Freq",
+      "kind": "knob"
+     },
+     {
+      "name": "Fine",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 29
+   },
+   "Saturate": {
+    "type": "Special",
+    "basedOn": "Bandmättnad",
+    "params": [
+     {
+      "name": "Saturation",
+      "kind": "knob"
+     },
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "High Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 30
+   },
+   "Auto Swell": {
+    "type": "Special",
+    "basedOn": "Auto swell (violinljud)",
+    "params": [
+     {
+      "name": "Attack",
+      "kind": "knob"
+     },
+     {
+      "name": "Curve",
+      "kind": "select"
+     }
+    ],
+    "manualPage": 30
+   },
+   "Hold": {
+    "type": "Special",
+    "basedOn": "Hold/freeze-loop",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Activate",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 30
+   },
+   "Freeze": {
+    "type": "Special",
+    "basedOn": "Freeze",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Attack",
+      "kind": "knob"
+     },
+     {
+      "name": "Release",
+      "kind": "knob"
+     },
+     {
+      "name": "Activate",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 30
+   }
+  },
+  "WHA": {
+   "V-Wah": {
+    "type": "Wah",
+    "basedOn": "Vox V846",
+    "params": [
+     {
+      "name": "Position",
+      "kind": "knob"
+     },
+     {
+      "name": "Range",
+      "kind": "knob"
+     },
+     {
+      "name": "Q",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 31
+   },
+   "C-Wah": {
+    "type": "Wah",
+    "basedOn": "Dunlop Cry Baby",
+    "params": [
+     {
+      "name": "Position",
+      "kind": "knob"
+     },
+     {
+      "name": "Range",
+      "kind": "knob"
+     },
+     {
+      "name": "Q",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 31
+   },
+   "P-Wah": {
+    "type": "Wah",
+    "basedOn": "John Petrucci rack-wah (Cry Baby)",
+    "params": [
+     {
+      "name": "Position",
+      "kind": "knob"
+     },
+     {
+      "name": "Range",
+      "kind": "knob"
+     },
+     {
+      "name": "Q",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "EQ",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 31
+   },
+   "S-Wah": {
+    "type": "Wah",
+    "basedOn": "Klassisk wah (Hendrix-stil)",
+    "params": [
+     {
+      "name": "Position",
+      "kind": "knob"
+     },
+     {
+      "name": "Range",
+      "kind": "knob"
+     },
+     {
+      "name": "Q",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 31
+   },
+   "B-Wah": {
+    "type": "Wah",
+    "basedOn": "Wah för bas",
+    "params": [
+     {
+      "name": "Position",
+      "kind": "knob"
+     },
+     {
+      "name": "Range",
+      "kind": "knob"
+     },
+     {
+      "name": "Q",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 31,
+    "paramsInferred": true
+   },
+   "Hammy": {
+    "type": "Pitch",
+    "basedOn": "DigiTech Whammy",
+    "params": [
+     {
+      "name": "Range",
+      "kind": "knob"
+     },
+     {
+      "name": "Harmony",
+      "kind": "switch"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Position",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 31
+   }
+  },
+  "MOD": {
+   "A-Chorus": {
+    "type": "Chorus",
+    "basedOn": "Klassisk 1980-tals chorus",
+    "params": [
+     {
+      "name": "Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Tone",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 57
+   },
+   "G-Chorus": {
+    "type": "Chorus",
+    "basedOn": "Ensemble-chorus sent 70-tal (Boss CE-1-typ, chorus-läge)",
+    "params": [
+     {
+      "name": "Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 57
+   },
+   "C-Chorus": {
+    "type": "Chorus",
+    "basedOn": "4-knappars lila stereo-chorus",
+    "params": [
+     {
+      "name": "Mode",
+      "kind": "select"
+     }
+    ],
+    "manualPage": 57
+   },
+   "B-Chorus": {
+    "type": "Chorus",
+    "basedOn": "Ensemble-chorus för bas",
+    "params": [
+     {
+      "name": "Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 57
+   },
+   "M-Chorus": {
+    "type": "Chorus",
+    "basedOn": "Flerdimensionell chorus",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Filter",
+      "kind": "knob"
+     },
+     {
+      "name": "Depth L",
+      "kind": "knob"
+     },
+     {
+      "name": "Depth C",
+      "kind": "knob"
+     },
+     {
+      "name": "Depth R",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 57
+   },
+   "Jet": {
+    "type": "Flanger",
+    "basedOn": "Klassisk flanger",
+    "params": [
+     {
+      "name": "Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Pre Delay",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 57
+   },
+   "B-Jet": {
+    "type": "Flanger",
+    "basedOn": "Flanger för bas",
+    "params": [
+     {
+      "name": "Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Pre Delay",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 57
+   },
+   "N-Jet": {
+    "type": "Flanger",
+    "basedOn": "Flanger med negativ feedback",
+    "params": [
+     {
+      "name": "Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Pre Delay",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 57
+   },
+   "Trem Jet": {
+    "type": "Flanger",
+    "basedOn": "Flanger + tremolo",
+    "params": [
+     {
+      "name": "Flg Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Flg Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Feedback",
+      "kind": "knob"
+     },
+     {
+      "name": "Trm Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Trm Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Flg Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Trm Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 58
+   },
+   "V-Roto": {
+    "type": "Vibrato",
+    "basedOn": "BBD-baserad blå vibratopedal",
+    "params": [
+     {
+      "name": "Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 58
+   },
+   "G-Roto": {
+    "type": "Vibrato",
+    "basedOn": "Ensemble-chorus sent 70-tal (vibrato-läge)",
+    "params": [
+     {
+      "name": "Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 58
+   },
+   "Vibrato": {
+    "type": "Vibrato",
+    "basedOn": "Klassisk vibrato",
+    "params": [
+     {
+      "name": "Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 58
+   },
+   "Vibrato T": {
+    "type": "Vibrato",
+    "basedOn": "Anslagskänslig vibrato",
+    "params": [
+     {
+      "name": "Sens",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Output",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 58
+   },
+   "O-Phase": {
+    "type": "Phaser",
+    "basedOn": "MXR Phase 90",
+    "params": [
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 58
+   },
+   "G-Phase": {
+    "type": "Phaser",
+    "basedOn": "BBD-baserad grön phaser",
+    "params": [
+     {
+      "name": "Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 58
+   },
+   "S-Phase": {
+    "type": "Phaser",
+    "basedOn": "Electro-Harmonix Small Stone",
+    "params": [
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Char",
+      "kind": "select"
+     }
+    ],
+    "manualPage": 59
+   },
+   "Pan Phase": {
+    "type": "Phaser",
+    "basedOn": "Phaser + tremolo/panorering",
+    "params": [
+     {
+      "name": "Pan Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Pan Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Phaser Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Phaser Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Phs Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Pan Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 59
+   },
+   "M-Vibe": {
+    "type": "Phaser",
+    "basedOn": "Voodoo Lab Micro Vibe (Uni-Vibe)",
+    "params": [
+     {
+      "name": "Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 59
+   },
+   "Vibe": {
+    "type": "Phaser",
+    "basedOn": "Shin-Ei Uni-Vibe",
+    "params": [
+     {
+      "name": "Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Mode",
+      "kind": "select"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 59
+   },
+   "O-Trem": {
+    "type": "Tremolo",
+    "basedOn": "Demeter TRM-1 Tremulator (opto)",
+    "params": [
+     {
+      "name": "Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 60
+   },
+   "Sine Trem": {
+    "type": "Tremolo",
+    "basedOn": "Sinus-tremolo",
+    "params": [
+     {
+      "name": "Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 60
+   },
+   "Triangle Trem": {
+    "type": "Tremolo",
+    "basedOn": "Triangel-tremolo",
+    "params": [
+     {
+      "name": "Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": null,
+    "missingInManual": true,
+    "paramsInferred": true
+   },
+   "Bias Trem": {
+    "type": "Tremolo",
+    "basedOn": "Bias-tremolo",
+    "params": [
+     {
+      "name": "Depth",
+      "kind": "knob"
+     },
+     {
+      "name": "Rate",
+      "kind": "knob"
+     },
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Sync",
+      "kind": "switch"
+     },
+     {
+      "name": "Bias",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 60
+   },
+   "Detune": {
+    "type": "Pitch",
+    "basedOn": "Detune (chorusliknande)",
+    "params": [
+     {
+      "name": "Dry/Wet",
+      "kind": "knob"
+     },
+     {
+      "name": "Detune",
+      "kind": "knob",
+      "min": -50,
+      "max": 50,
+      "rangeConfirmed": true,
+      "unit": "cent"
+     }
+    ],
+    "manualPage": 60
+   },
+   "Bit Smash": {
+    "type": "Special",
+    "basedOn": "Bitcrusher",
+    "params": [
+     {
+      "name": "Mix",
+      "kind": "knob"
+     },
+     {
+      "name": "Krush",
+      "kind": "knob"
+     },
+     {
+      "name": "Bit",
+      "kind": "knob"
+     },
+     {
+      "name": "Hi Cut",
+      "kind": "knob"
+     },
+     {
+      "name": "Lo Cut",
+      "kind": "knob"
+     }
+    ],
+    "manualPage": 60
+   },
+   "Auto Swell": {
+    "type": "Special",
+    "basedOn": "Auto swell",
+    "params": [
+     {
+      "name": "Attack",
+      "kind": "knob"
+     },
+     {
+      "name": "Curve",
+      "kind": "select"
+     }
+    ],
+    "manualPage": 60
+   },
+   "Hold": {
+    "type": "Special",
+    "basedOn": "Hold/freeze-loop",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Activate",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 61
+   },
+   "Freeze": {
+    "type": "Special",
+    "basedOn": "Freeze",
+    "params": [
+     {
+      "name": "Volume",
+      "kind": "knob"
+     },
+     {
+      "name": "Attack",
+      "kind": "knob"
+     },
+     {
+      "name": "Release",
+      "kind": "knob"
+     },
+     {
+      "name": "Activate",
+      "kind": "switch"
+     }
+    ],
+    "manualPage": 61
+   }
+  }
+ }
+}

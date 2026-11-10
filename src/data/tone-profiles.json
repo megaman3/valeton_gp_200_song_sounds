@@ -1,0 +1,308 @@
+[
+  {
+    "id": "fender-clean",
+    "name": "Fender-style clean",
+    "description": "Blackface Twin Reverb-liknande clean med fjäderreverb.",
+    "tags": [
+      "clean",
+      "fender",
+      "blackface"
+    ],
+    "blocks": {
+      "NR": {
+        "enabled": true,
+        "model": "Gate 1",
+        "params": {
+          "Threshold": 20
+        }
+      },
+      "AMP": {
+        "enabled": true,
+        "model": "Dark Twin",
+        "params": {
+          "Gain": 30,
+          "Volume": 65,
+          "Bass": 45,
+          "Middle": 50,
+          "Treble": 60,
+          "Bright": "OFF"
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "Dark Twin"
+      },
+      "RVB": {
+        "enabled": true,
+        "model": "Spring",
+        "params": {
+          "Mix": 25,
+          "Decay": 40,
+          "Tone": 55
+        }
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Halsmick eller mellanläge, single coil",
+      "guitarVolume": "10",
+      "guitarTone": "8–10"
+    }
+  },
+  {
+    "id": "plexi-crunch",
+    "name": "Marshall Plexi crunch",
+    "description": "Klassisk 70-tals Marshall Super Lead – lägre gain än man tror, mycket mellanregister.",
+    "tags": [
+      "crunch",
+      "marshall",
+      "plexi",
+      "classic rock"
+    ],
+    "blocks": {
+      "NR": {
+        "enabled": true,
+        "model": "Gate 1",
+        "params": {
+          "Threshold": 25
+        }
+      },
+      "AMP": {
+        "enabled": true,
+        "model": "UK SLP",
+        "params": {
+          "Gain": 55,
+          "Bass": 45,
+          "Middle": 65,
+          "Treble": 60,
+          "Presence": 55,
+          "Volume": 65
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "UK GRN 2"
+      },
+      "RVB": {
+        "enabled": true,
+        "model": "Room",
+        "params": {
+          "Mix": 12,
+          "Pre Delay": 10,
+          "Decay": 30
+        }
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Stallmick, humbucker",
+      "guitarVolume": "10 (dra ner till 6–7 för renare ljud)",
+      "guitarTone": "10"
+    }
+  },
+  {
+    "id": "mesa-mark-highgain",
+    "name": "Mesa Mark-style high gain",
+    "description": "Tight Mark IIC+/IV-rytm med V-formad grafisk EQ.",
+    "tags": [
+      "high gain",
+      "mesa",
+      "metal",
+      "thrash"
+    ],
+    "blocks": {
+      "NR": {
+        "enabled": true,
+        "model": "Gate 2",
+        "params": {
+          "Threshold": 45,
+          "Attack": 10,
+          "Release": 25
+        }
+      },
+      "AMP": {
+        "enabled": true,
+        "model": "Mess2C+ 1",
+        "params": {
+          "Gain": 62,
+          "Bass": 50,
+          "Middle": 40,
+          "Treble": 62,
+          "Presence": 55,
+          "Volume": 65
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "Mess"
+      },
+      "EQ": {
+        "enabled": true,
+        "model": "Guitar EQ 1",
+        "params": {
+          "125 Hz": 6,
+          "400 Hz": -6,
+          "800 Hz": -10,
+          "1.6 kHz": 0,
+          "4 kHz": 6
+        }
+      },
+      "RVB": {
+        "enabled": true,
+        "model": "Room",
+        "params": {
+          "Mix": 8,
+          "Pre Delay": 10,
+          "Decay": 25
+        }
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Stallmick, humbucker (gärna aktiv/hög output)",
+      "guitarVolume": "10",
+      "guitarTone": "10"
+    }
+  },
+  {
+    "id": "modern-highgain",
+    "name": "Modern high-gain rhythm",
+    "description": "Rectifier-liknande modern metal-rytm med boost framför för tighthet.",
+    "tags": [
+      "high gain",
+      "modern",
+      "metal",
+      "rectifier"
+    ],
+    "blocks": {
+      "NR": {
+        "enabled": true,
+        "model": "Gate 2",
+        "params": {
+          "Threshold": 50,
+          "Attack": 10,
+          "Release": 25
+        }
+      },
+      "DST": {
+        "enabled": true,
+        "model": "Super OD",
+        "params": {
+          "Gain": 0,
+          "Tone": 60,
+          "Volume": 80
+        },
+        "note": "Används som ren boost för att strama upp basen."
+      },
+      "AMP": {
+        "enabled": true,
+        "model": "Mess DualM",
+        "params": {
+          "Gain": 60,
+          "Bass": 50,
+          "Middle": 45,
+          "Treble": 58,
+          "Presence": 55,
+          "Volume": 65
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "Mess"
+      },
+      "EQ": {
+        "enabled": true,
+        "model": "Guitar EQ 1",
+        "params": {
+          "125 Hz": 4,
+          "400 Hz": -8,
+          "800 Hz": 0,
+          "1.6 kHz": 4,
+          "4 kHz": -4
+        }
+      },
+      "RVB": {
+        "enabled": true,
+        "model": "Room",
+        "params": {
+          "Mix": 8,
+          "Pre Delay": 10,
+          "Decay": 25
+        }
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Stallmick, humbucker",
+      "guitarVolume": "10",
+      "guitarTone": "10"
+    }
+  },
+  {
+    "id": "solid-state-scooped",
+    "name": "Tight scooped high gain",
+    "description": "Tight, ljus och mellanregister-urgröpt high gain (solid-state-karaktär).",
+    "tags": [
+      "high gain",
+      "scooped",
+      "groove metal"
+    ],
+    "blocks": {
+      "NR": {
+        "enabled": true,
+        "model": "Gate 2",
+        "params": {
+          "Threshold": 55,
+          "Attack": 10,
+          "Release": 25
+        }
+      },
+      "DST": {
+        "enabled": true,
+        "model": "Super OD",
+        "params": {
+          "Gain": 10,
+          "Tone": 65,
+          "Volume": 75
+        }
+      },
+      "AMP": {
+        "enabled": true,
+        "model": "EV 51",
+        "params": {
+          "Gain": 58,
+          "Bass": 60,
+          "Middle": 35,
+          "Treble": 65,
+          "Presence": 60,
+          "Volume": 65
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "UK 75"
+      },
+      "EQ": {
+        "enabled": true,
+        "model": "Guitar EQ 1",
+        "params": {
+          "125 Hz": 10,
+          "400 Hz": -12,
+          "800 Hz": -15,
+          "1.6 kHz": -4,
+          "4 kHz": 10
+        }
+      },
+      "RVB": {
+        "enabled": true,
+        "model": "Room",
+        "params": {
+          "Mix": 8,
+          "Pre Delay": 10,
+          "Decay": 25
+        }
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Stallmick, humbucker med hög output",
+      "guitarVolume": "10",
+      "guitarTone": "10"
+    }
+  }
+]

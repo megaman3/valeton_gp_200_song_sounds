@@ -1,0 +1,404 @@
+[
+  {
+    "id": "metallica-enter-sandman",
+    "artist": "Metallica",
+    "title": "Enter Sandman",
+    "album": "Metallica (The Black Album)",
+    "year": 1991,
+    "aliases": [
+      "black album",
+      "sandman"
+    ],
+    "originalGear": {
+      "guitar": "ESP (James Hetfield), Gibson/ESP (Kirk Hammett)",
+      "pickups": "EMG 81/60 aktiva humbuckers",
+      "amp": [
+        "Mesa Boogie Mark IIC+",
+        "Mesa Boogie Mark IV"
+      ],
+      "cab": [
+        "Mesa 4x12"
+      ],
+      "pedals": [
+        "Dunlop Cry Baby"
+      ],
+      "notes": "Dubbeltrackade rytmgitarrer, mindre urgröpt mellanregister än på ...And Justice for All."
+    },
+    "parts": [
+      {
+        "id": "rhythm",
+        "name": "Rhythm",
+        "profile": "mesa-mark-highgain",
+        "overrides": {
+          "AMP": {
+            "enabled": true,
+            "params": {
+              "Gain": 60,
+              "Middle": 45
+            }
+          },
+          "EQ": {
+            "enabled": true,
+            "params": {
+              "125 Hz": 5,
+              "400 Hz": -4,
+              "800 Hz": -6,
+              "1.6 kHz": 2,
+              "4 kHz": 5
+            }
+          }
+        }
+      },
+      {
+        "id": "lead",
+        "name": "Lead / Solo",
+        "profile": "mesa-mark-highgain",
+        "overrides": {
+          "AMP": {
+            "enabled": true,
+            "params": {
+              "Gain": 68,
+              "Middle": 55,
+              "Volume": 70
+            }
+          },
+          "EQ": {
+            "enabled": true,
+            "params": {
+              "125 Hz": 2,
+              "400 Hz": 0,
+              "800 Hz": 4,
+              "1.6 kHz": 4,
+              "4 kHz": 3
+            }
+          },
+          "DLY": {
+            "enabled": true,
+            "model": "Analog",
+            "params": {
+              "Mix": 18,
+              "Time": 420,
+              "Feedback": 25
+            }
+          },
+          "WHA": {
+            "enabled": true,
+            "model": "C-Wah",
+            "params": {
+              "Position": 50,
+              "Range": 50,
+              "Q": 50,
+              "Volume": 50
+            },
+            "note": "Styr med expressionpedalen under solot."
+          }
+        },
+        "footswitch": "Lägg DLY och WHA på fotswitchar i rytmpresetet istället för ett separat preset om du vill byta i låten.",
+        "guitarNotes": {
+          "pickup": "Halsmick för de mjukare fraserna, stallmick för wah-delarna"
+        }
+      }
+    ],
+    "sources": [
+      "Allmänt dokumenterad utrustning från Black Album-inspelningen (Mesa Mark-förstärkare, EMG-mickar)."
+    ]
+  },
+  {
+    "id": "acdc-back-in-black",
+    "artist": "AC/DC",
+    "title": "Back in Black",
+    "album": "Back in Black",
+    "year": 1980,
+    "aliases": [
+      "acdc",
+      "ac dc"
+    ],
+    "originalGear": {
+      "guitar": "Gibson SG (Angus), Gretsch (Malcolm)",
+      "pickups": "Humbuckers (låg/medel output)",
+      "amp": [
+        "Marshall Super Lead 100W"
+      ],
+      "cab": [
+        "Marshall 4x12 G12T-75"
+      ],
+      "notes": "Förvånansvärt lite distorsion – volymen på förstärkaren gör jobbet."
+    },
+    "parts": [
+      {
+        "id": "rhythm",
+        "name": "Rhythm",
+        "profile": "plexi-crunch",
+        "overrides": {
+          "AMP": {
+            "enabled": true,
+            "params": {
+              "Gain": 48,
+              "Middle": 68,
+              "Treble": 62
+            }
+          },
+          "CAB": {
+            "enabled": true,
+            "model": "UK 75"
+          }
+        },
+        "guitarNotes": {
+          "pickup": "Stallmick, humbucker",
+          "guitarVolume": "8–10",
+          "guitarTone": "10"
+        }
+      },
+      {
+        "id": "lead",
+        "name": "Lead / Solo",
+        "profile": "plexi-crunch",
+        "overrides": {
+          "AMP": {
+            "enabled": true,
+            "params": {
+              "Gain": 58,
+              "Middle": 70,
+              "Volume": 72
+            }
+          },
+          "CAB": {
+            "enabled": true,
+            "model": "UK 75"
+          },
+          "DLY": {
+            "enabled": true,
+            "model": "Analog",
+            "params": {
+              "Mix": 12,
+              "Time": 380,
+              "Feedback": 15
+            }
+          }
+        },
+        "footswitch": "Kan alternativt lösas med samma preset + gitarrvolym 10 och DLY på fotswitch."
+      }
+    ]
+  },
+  {
+    "id": "deep-purple-burn",
+    "artist": "Deep Purple",
+    "title": "Burn",
+    "album": "Burn",
+    "year": 1974,
+    "originalGear": {
+      "guitar": "Fender Stratocaster (Ritchie Blackmore)",
+      "pickups": "Single coils",
+      "amp": [
+        "Marshall Major",
+        "Marshall Super Lead"
+      ],
+      "pedals": [
+        "Aiwa tape preamp"
+      ],
+      "notes": "Blackmore boostade förstärkaren med förförstärkaren i en Aiwa-bandspelare."
+    },
+    "parts": [
+      {
+        "id": "rhythm",
+        "name": "Rhythm / Riff",
+        "profile": "plexi-crunch",
+        "overrides": {
+          "DST": {
+            "enabled": true,
+            "model": "Micro Boost",
+            "params": {
+              "Gain": 50
+            },
+            "note": "Ersätter Aiwa-boosten."
+          },
+          "AMP": {
+            "enabled": true,
+            "params": {
+              "Gain": 50,
+              "Bass": 40,
+              "Middle": 60,
+              "Treble": 65
+            }
+          },
+          "CAB": {
+            "enabled": true,
+            "model": "UK Dark"
+          }
+        },
+        "guitarNotes": {
+          "pickup": "Stallmick, single coil",
+          "guitarVolume": "10",
+          "guitarTone": "8"
+        }
+      },
+      {
+        "id": "lead",
+        "name": "Lead / Solo",
+        "profile": "plexi-crunch",
+        "overrides": {
+          "DST": {
+            "enabled": true,
+            "model": "Micro Boost",
+            "params": {
+              "Gain": 65
+            }
+          },
+          "AMP": {
+            "enabled": true,
+            "params": {
+              "Gain": 58,
+              "Bass": 40,
+              "Middle": 62,
+              "Treble": 65,
+              "Volume": 70
+            }
+          },
+          "CAB": {
+            "enabled": true,
+            "model": "UK Dark"
+          },
+          "DLY": {
+            "enabled": true,
+            "model": "Tape",
+            "params": {
+              "Mix": 15,
+              "Time": 350,
+              "Feedback": 20
+            }
+          }
+        },
+        "guitarNotes": {
+          "pickup": "Halsmick, single coil",
+          "guitarVolume": "10",
+          "guitarTone": "7"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pantera-cowboys-from-hell",
+    "artist": "Pantera",
+    "title": "Cowboys From Hell",
+    "album": "Cowboys From Hell",
+    "year": 1990,
+    "originalGear": {
+      "guitar": "Dean ML (Dimebag Darrell)",
+      "pickups": "Bill Lawrence L-500 (stall), humbucker med hög output",
+      "amp": [
+        "Randall Century 200"
+      ],
+      "pedals": [
+        "MXR 6-band EQ",
+        "Boost/overdrive"
+      ],
+      "notes": "Solid-state-förstärkare, kraftigt scoopat mellanregister och mycket diskant."
+    },
+    "parts": [
+      {
+        "id": "rhythm",
+        "name": "Rhythm",
+        "profile": "solid-state-scooped"
+      },
+      {
+        "id": "lead",
+        "name": "Lead / Solo",
+        "profile": "solid-state-scooped",
+        "overrides": {
+          "AMP": {
+            "enabled": true,
+            "params": {
+              "Gain": 66,
+              "Middle": 45,
+              "Volume": 70
+            }
+          },
+          "EQ": {
+            "enabled": true,
+            "params": {
+              "125 Hz": 6,
+              "400 Hz": -6,
+              "800 Hz": -4,
+              "1.6 kHz": 4,
+              "4 kHz": 8
+            }
+          },
+          "DLY": {
+            "enabled": true,
+            "model": "Digital Delay S",
+            "params": {
+              "Mix": 15,
+              "Time": 400,
+              "Feedback": 20
+            }
+          },
+          "WHA": {
+            "enabled": true,
+            "model": "C-Wah",
+            "params": {
+              "Position": 50,
+              "Range": 50,
+              "Q": 50,
+              "Volume": 50
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "style-fender-clean",
+    "artist": "Stil",
+    "title": "Clean Fender-style sound",
+    "aliases": [
+      "clean",
+      "fender",
+      "twin"
+    ],
+    "parts": [
+      {
+        "id": "clean",
+        "name": "Clean",
+        "profile": "fender-clean",
+        "overrides": {
+          "PRE": {
+            "enabled": false,
+            "model": "COMP",
+            "params": {
+              "Sustain": 40,
+              "Volume": 55
+            },
+            "note": "Slå på för funk/country-attack."
+          },
+          "MOD": {
+            "enabled": false,
+            "model": "G-Chorus",
+            "params": {
+              "Depth": 40,
+              "Rate": 30,
+              "Volume": 50
+            },
+            "note": "Valfri chorus på fotswitch."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "style-modern-high-gain",
+    "artist": "Stil",
+    "title": "Modern high-gain rhythm",
+    "aliases": [
+      "metal",
+      "djent",
+      "high gain"
+    ],
+    "parts": [
+      {
+        "id": "rhythm",
+        "name": "Rhythm",
+        "profile": "modern-highgain"
+      }
+    ]
+  }
+]
