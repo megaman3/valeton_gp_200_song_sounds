@@ -10,6 +10,13 @@ interface Props {
   onSelect: (id: string) => void;
 }
 
+const SOURCE_LABEL: Record<NonNullable<Song['source']>, string> = {
+  curated: ' · handskriven',
+  guitartoneadapt: '',
+  research: ' · egen research',
+  profile: '',
+};
+
 /** Samma brytpunkt som Tailwinds `md`: under den ligger listan ovanför inställningarna. */
 const isNarrow = () => typeof window !== 'undefined' && window.matchMedia('(max-width: 767px)').matches;
 
@@ -89,7 +96,7 @@ export default function SongSearch({ query, onQueryChange, songs, limit, selecte
         }}
         onKeyDown={onKeyDown}
         onFocus={() => isNarrow() && setCollapsed(false)}
-        placeholder="Låt och/eller artist…"
+        placeholder="Låt, artist eller ljudtyp (t.ex. clean, blues)…"
         role="combobox"
         aria-expanded={songs.length > 0 && !(collapsed && isNarrow())}
         aria-controls="song-results"
@@ -126,11 +133,18 @@ export default function SongSearch({ query, onQueryChange, songs, limit, selecte
                   isSelected ? 'ring-1 ring-amber-500' : ''
                 } ${isActive ? 'bg-zinc-700/80' : isSelected ? 'bg-zinc-800/80' : 'hover:bg-zinc-900/80'}`}
               >
-                <div className="font-medium">{s.title}</div>
+                <div className="font-medium">
+                  {s.source === 'profile' && (
+                    <span className="mr-2 rounded bg-amber-500/20 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-400">
+                      Ljudtyp
+                    </span>
+                  )}
+                  {s.title}
+                </div>
                 <div className="text-xs text-zinc-400">
                   {s.artist}
                   {s.year ? ` · ${s.year}` : ''}
-                  {s.source === 'research' ? ' · egen research' : s.source !== 'guitartoneadapt' ? ' · handskriven' : ''}
+                  {SOURCE_LABEL[s.source ?? 'curated']}
                 </div>
               </button>
             </li>

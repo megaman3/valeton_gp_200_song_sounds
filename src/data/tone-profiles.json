@@ -6,7 +6,10 @@
     "tags": [
       "clean",
       "fender",
-      "blackface"
+      "blackface",
+      "ren",
+      "fjäderreverb",
+      "twin"
     ],
     "blocks": {
       "NR": {
@@ -40,6 +43,25 @@
           "Decay": 40,
           "Tone": 55
         }
+      },
+      "PRE": {
+        "enabled": false,
+        "model": "COMP",
+        "params": {
+          "Sustain": 40,
+          "Volume": 55
+        },
+        "note": "Slå på för funk/country-attack."
+      },
+      "MOD": {
+        "enabled": false,
+        "model": "G-Chorus",
+        "params": {
+          "Depth": 40,
+          "Rate": 30,
+          "Volume": 50
+        },
+        "note": "Valfri chorus på fotswitch."
       }
     },
     "guitarNotes": {
@@ -56,7 +78,10 @@
       "crunch",
       "marshall",
       "plexi",
-      "classic rock"
+      "classic rock",
+      "70-tal",
+      "hårdrock",
+      "70s"
     ],
     "blocks": {
       "NR": {
@@ -106,7 +131,8 @@
       "high gain",
       "mesa",
       "metal",
-      "thrash"
+      "thrash",
+      "80-tal"
     ],
     "blocks": {
       "NR": {
@@ -169,7 +195,10 @@
       "high gain",
       "modern",
       "metal",
-      "rectifier"
+      "rectifier",
+      "modern metal",
+      "nu metal",
+      "djent"
     ],
     "blocks": {
       "NR": {
@@ -241,7 +270,9 @@
     "tags": [
       "high gain",
       "scooped",
-      "groove metal"
+      "groove metal",
+      "metal",
+      "pantera"
     ],
     "blocks": {
       "NR": {
@@ -303,6 +334,951 @@
       "pickup": "Stallmick, humbucker med hög output",
       "guitarVolume": "10",
       "guitarTone": "10"
+    }
+  },
+  {
+    "id": "vox-chime",
+    "name": "Vox-style chime",
+    "description": "AC30 Top Boost på gränsen till crunch – klingande, glasigt mellanregister (Beatles, Queen-rytm, britpop).",
+    "tags": [
+      "chime",
+      "vox",
+      "ac30",
+      "britpop",
+      "indie",
+      "edge of breakup",
+      "ren",
+      "crunch"
+    ],
+    "blocks": {
+      "NR": {
+        "enabled": true,
+        "model": "Gate 1",
+        "params": {
+          "Threshold": 20
+        }
+      },
+      "AMP": {
+        "enabled": true,
+        "model": "Foxy 30TB",
+        "params": {
+          "Gain": 40,
+          "Tone Cut": 35,
+          "Volume": 65,
+          "Bass": 45,
+          "Treble": 62
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "FOXY 2"
+      },
+      "RVB": {
+        "enabled": true,
+        "model": "Spring",
+        "params": {
+          "Mix": 18,
+          "Decay": 35,
+          "Tone": 50
+        }
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Stallmick eller mellanläge (single coil eller P-90)",
+      "guitarVolume": "8–10",
+      "guitarTone": "8–10"
+    }
+  },
+  {
+    "id": "jazz-clean",
+    "name": "Jazz clean",
+    "description": "Varmt, runt clean med nedskruvad diskant och lite rumsklang.",
+    "tags": [
+      "clean",
+      "jazz",
+      "ren",
+      "varm",
+      "warm"
+    ],
+    "blocks": {
+      "AMP": {
+        "enabled": true,
+        "model": "J-120 CL",
+        "params": {
+          "Gain": 25,
+          "Bright": "OFF",
+          "Bass": 55,
+          "Middle": 55,
+          "Treble": 38
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "J-120"
+      },
+      "RVB": {
+        "enabled": true,
+        "model": "Room",
+        "params": {
+          "Mix": 15,
+          "Pre Delay": 10,
+          "Decay": 30
+        }
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Halsmick, humbucker",
+      "guitarVolume": "7–9",
+      "guitarTone": "4–6"
+    }
+  },
+  {
+    "id": "80s-chorus-clean",
+    "name": "80-tals chorus clean",
+    "description": "Kristallklart Jazz Chorus-clean med chorus och stereoeko (The Police, 80-talsballader).",
+    "tags": [
+      "clean",
+      "chorus",
+      "80s",
+      "80-tal",
+      "ren",
+      "ballad",
+      "new wave"
+    ],
+    "blocks": {
+      "PRE": {
+        "enabled": true,
+        "model": "S-Comp",
+        "params": {
+          "Threshold": 40,
+          "Ratio": 40,
+          "Volume": 55,
+          "Attack": 30,
+          "Release": 40,
+          "Blend": 70,
+          "Tone": 55
+        }
+      },
+      "AMP": {
+        "enabled": true,
+        "model": "J-120 CL",
+        "params": {
+          "Gain": 30,
+          "Bright": "ON",
+          "Bass": 45,
+          "Middle": 50,
+          "Treble": 60
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "J-120"
+      },
+      "MOD": {
+        "enabled": true,
+        "model": "A-Chorus",
+        "params": {
+          "Depth": 55,
+          "Rate": 35,
+          "Tone": 55,
+          "Sync": "OFF"
+        }
+      },
+      "DLY": {
+        "enabled": true,
+        "model": "Digital Delay S",
+        "params": {
+          "Mix": 22,
+          "Feedback": 30,
+          "Time": 380,
+          "Time R%": 75,
+          "Spread": 60,
+          "Level": 50,
+          "Sync": "OFF",
+          "Trail": "ON"
+        }
+      },
+      "RVB": {
+        "enabled": true,
+        "model": "Hall",
+        "params": {
+          "Mix": 20,
+          "Pre Delay": 20,
+          "Decay": 45
+        }
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Halsmick eller mellanläge",
+      "guitarVolume": "10",
+      "guitarTone": "10"
+    }
+  },
+  {
+    "id": "funk-clean",
+    "name": "Funk clean",
+    "description": "Tight, kompressad och diskantrik clean för funk- och R&B-komp.",
+    "tags": [
+      "clean",
+      "funk",
+      "r&b",
+      "soul",
+      "ren",
+      "komp"
+    ],
+    "blocks": {
+      "PRE": {
+        "enabled": true,
+        "model": "COMP",
+        "params": {
+          "Sustain": 45,
+          "Volume": 60
+        }
+      },
+      "AMP": {
+        "enabled": true,
+        "model": "Dark Twin",
+        "params": {
+          "Gain": 25,
+          "Volume": 65,
+          "Bass": 40,
+          "Middle": 50,
+          "Treble": 66,
+          "Bright": "ON"
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "Dark Twin"
+      },
+      "RVB": {
+        "enabled": true,
+        "model": "Room",
+        "params": {
+          "Mix": 10,
+          "Pre Delay": 5,
+          "Decay": 20
+        }
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Mellanläge (läge 2 eller 4 på en Strat)",
+      "guitarVolume": "10",
+      "guitarTone": "10"
+    }
+  },
+  {
+    "id": "country-twang",
+    "name": "Country twang",
+    "description": "Knäpp, kompressad Fender-clean med slapback-eko – chicken picking.",
+    "tags": [
+      "clean",
+      "country",
+      "twang",
+      "slapback",
+      "rockabilly",
+      "ren"
+    ],
+    "blocks": {
+      "PRE": {
+        "enabled": true,
+        "model": "COMP",
+        "params": {
+          "Sustain": 55,
+          "Volume": 60
+        }
+      },
+      "AMP": {
+        "enabled": true,
+        "model": "Dark DLX",
+        "params": {
+          "Gain": 30,
+          "Volume": 65,
+          "Bass": 40,
+          "Treble": 65
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "DARK LUX"
+      },
+      "DLY": {
+        "enabled": true,
+        "model": "Slapback",
+        "params": {
+          "Mix": 25,
+          "Feedback": 5,
+          "Time": 110,
+          "Trail": "ON"
+        }
+      },
+      "RVB": {
+        "enabled": true,
+        "model": "Spring",
+        "params": {
+          "Mix": 15,
+          "Decay": 30,
+          "Tone": 55
+        }
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Stallmick, single coil (Telecaster)",
+      "guitarVolume": "10",
+      "guitarTone": "10"
+    }
+  },
+  {
+    "id": "tweed-blues",
+    "name": "Tweed blues crunch",
+    "description": "Liten Tweed som spricker upp när man tar i – blues, roots och Neil Young-crunch.",
+    "tags": [
+      "blues",
+      "crunch",
+      "tweed",
+      "edge of breakup",
+      "roots",
+      "vintage"
+    ],
+    "blocks": {
+      "NR": {
+        "enabled": true,
+        "model": "Gate 1",
+        "params": {
+          "Threshold": 20
+        }
+      },
+      "AMP": {
+        "enabled": true,
+        "model": "Tweedy",
+        "params": {
+          "Gain": 55,
+          "Tone": 55,
+          "Volume": 65
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "TWD SUP"
+      },
+      "RVB": {
+        "enabled": true,
+        "model": "Spring",
+        "params": {
+          "Mix": 15,
+          "Decay": 30,
+          "Tone": 50
+        }
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Stallmick (humbucker eller P-90)",
+      "guitarVolume": "7–10 (styr crunchen med volymratten)",
+      "guitarTone": "8–10"
+    }
+  },
+  {
+    "id": "texas-blues",
+    "name": "Texas blues",
+    "description": "Fender Deluxe driven av en Tube Screamer – fet, mellanregisterrik bluesdist (SRV-stil).",
+    "tags": [
+      "blues",
+      "texas",
+      "overdrive",
+      "tube screamer",
+      "lead",
+      "crunch"
+    ],
+    "blocks": {
+      "NR": {
+        "enabled": true,
+        "model": "Gate 1",
+        "params": {
+          "Threshold": 20
+        }
+      },
+      "DST": {
+        "enabled": true,
+        "model": "Green OD",
+        "params": {
+          "Gain": 30,
+          "Tone": 55,
+          "Volume": 75
+        }
+      },
+      "AMP": {
+        "enabled": true,
+        "model": "Dark DLX",
+        "params": {
+          "Gain": 48,
+          "Volume": 65,
+          "Bass": 45,
+          "Treble": 58
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "DARK LUX"
+      },
+      "RVB": {
+        "enabled": true,
+        "model": "Spring",
+        "params": {
+          "Mix": 18,
+          "Decay": 35,
+          "Tone": 50
+        }
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Halsmick, single coil",
+      "guitarVolume": "10",
+      "guitarTone": "7–9"
+    }
+  },
+  {
+    "id": "60s-fuzz",
+    "name": "60-tals fuzz",
+    "description": "Fuzz Face in i en Plexi med Uni-Vibe – psykedeliskt 60-tal (Hendrix-stil).",
+    "tags": [
+      "fuzz",
+      "60s",
+      "60-tal",
+      "psych",
+      "psykedelisk",
+      "vibe",
+      "vintage"
+    ],
+    "blocks": {
+      "NR": {
+        "enabled": true,
+        "model": "Gate 1",
+        "params": {
+          "Threshold": 25
+        }
+      },
+      "DST": {
+        "enabled": true,
+        "model": "Red Haze",
+        "params": {
+          "Fuzz": 70,
+          "Volume": 60
+        }
+      },
+      "AMP": {
+        "enabled": true,
+        "model": "UK SLP",
+        "params": {
+          "Gain": 45,
+          "Bass": 45,
+          "Middle": 60,
+          "Treble": 60,
+          "Presence": 55,
+          "Volume": 65
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "UK GRN 2"
+      },
+      "MOD": {
+        "enabled": false,
+        "model": "Vibe",
+        "params": {
+          "Depth": 60,
+          "Rate": 35,
+          "Volume": 50,
+          "Sync": "OFF"
+        }
+      },
+      "RVB": {
+        "enabled": true,
+        "model": "Room",
+        "params": {
+          "Mix": 15,
+          "Pre Delay": 10,
+          "Decay": 35
+        }
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Halsmick eller stallmick, single coil",
+      "guitarVolume": "10 (dra ner till 7 för renare fuzz)",
+      "guitarTone": "10",
+      "other": "Slå på MOD (Vibe) med fotswitch för Uni-Vibe-partier."
+    }
+  },
+  {
+    "id": "80s-hard-rock-lead",
+    "name": "80-tals hårdrock lead",
+    "description": "Boostad JCM800 med eko och hall – 80-tals hårdrocks- och metalsolo.",
+    "tags": [
+      "lead",
+      "solo",
+      "80s",
+      "80-tal",
+      "hard rock",
+      "hårdrock",
+      "hair metal",
+      "jcm800"
+    ],
+    "blocks": {
+      "NR": {
+        "enabled": true,
+        "model": "Gate 2",
+        "params": {
+          "Threshold": 40,
+          "Attack": 10,
+          "Release": 25
+        }
+      },
+      "DST": {
+        "enabled": true,
+        "model": "Green OD",
+        "params": {
+          "Gain": 10,
+          "Tone": 60,
+          "Volume": 80
+        }
+      },
+      "AMP": {
+        "enabled": true,
+        "model": "UK 800",
+        "params": {
+          "Gain": 70,
+          "Presence": 60,
+          "Volume": 65,
+          "Bass": 50,
+          "Middle": 62,
+          "Treble": 62
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "UK 75"
+      },
+      "DLY": {
+        "enabled": true,
+        "model": "Digital Delay S",
+        "params": {
+          "Mix": 22,
+          "Feedback": 30,
+          "Time": 420,
+          "Time R%": 75,
+          "Spread": 50,
+          "Level": 50,
+          "Sync": "OFF",
+          "Trail": "ON"
+        }
+      },
+      "RVB": {
+        "enabled": true,
+        "model": "Hall",
+        "params": {
+          "Mix": 20,
+          "Pre Delay": 20,
+          "Decay": 45
+        }
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Stallmick, humbucker",
+      "guitarVolume": "10",
+      "guitarTone": "10"
+    }
+  },
+  {
+    "id": "punk-rock",
+    "name": "Punk / pop-punk",
+    "description": "Rak Marshall-dist med mycket mellanregister och ingen reverb – power chords och nedslag.",
+    "tags": [
+      "punk",
+      "pop punk",
+      "pop-punk",
+      "power chords",
+      "distortion",
+      "rock"
+    ],
+    "blocks": {
+      "NR": {
+        "enabled": true,
+        "model": "Gate 2",
+        "params": {
+          "Threshold": 40,
+          "Attack": 10,
+          "Release": 25
+        }
+      },
+      "AMP": {
+        "enabled": true,
+        "model": "UK 800",
+        "params": {
+          "Gain": 68,
+          "Presence": 58,
+          "Volume": 65,
+          "Bass": 55,
+          "Middle": 62,
+          "Treble": 60
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "UK 75"
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Stallmick, humbucker",
+      "guitarVolume": "10",
+      "guitarTone": "10"
+    }
+  },
+  {
+    "id": "90s-grunge",
+    "name": "90-tals grunge",
+    "description": "DS-1-liknande distpedal in i en ren Fender-förstärkare – rå och bullrig 90-talsdist.",
+    "tags": [
+      "grunge",
+      "90s",
+      "90-tal",
+      "alternative",
+      "distortion",
+      "seattle"
+    ],
+    "blocks": {
+      "NR": {
+        "enabled": true,
+        "model": "Gate 2",
+        "params": {
+          "Threshold": 35,
+          "Attack": 10,
+          "Release": 25
+        }
+      },
+      "DST": {
+        "enabled": true,
+        "model": "SM Dist",
+        "params": {
+          "Gain": 70,
+          "Tone": 50,
+          "Volume": 65
+        }
+      },
+      "AMP": {
+        "enabled": true,
+        "model": "Dark Twin",
+        "params": {
+          "Gain": 40,
+          "Volume": 65,
+          "Bass": 55,
+          "Middle": 55,
+          "Treble": 55,
+          "Bright": "OFF"
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "UK 75"
+      },
+      "RVB": {
+        "enabled": true,
+        "model": "Room",
+        "params": {
+          "Mix": 10,
+          "Pre Delay": 10,
+          "Decay": 25
+        }
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Stallmick, humbucker",
+      "guitarVolume": "10",
+      "guitarTone": "10"
+    }
+  },
+  {
+    "id": "stoner-doom",
+    "name": "Stoner / doom",
+    "description": "Orange-förstärkare med fuzz framför – tjockt, mörkt och lågt (stoner rock och doom).",
+    "tags": [
+      "stoner",
+      "doom",
+      "sludge",
+      "fuzz",
+      "orange",
+      "heavy",
+      "tung"
+    ],
+    "blocks": {
+      "NR": {
+        "enabled": true,
+        "model": "Gate 2",
+        "params": {
+          "Threshold": 40,
+          "Attack": 10,
+          "Release": 25
+        }
+      },
+      "DST": {
+        "enabled": true,
+        "model": "Sora Fuzz",
+        "params": {
+          "Fuzz": 65,
+          "Volume": 60
+        }
+      },
+      "AMP": {
+        "enabled": true,
+        "model": "Juice R100",
+        "params": {
+          "Gain": 55,
+          "Volume": 65,
+          "Bass": 65,
+          "Middle": 60,
+          "Treble": 45,
+          "Bright": "OFF"
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "Juice"
+      },
+      "RVB": {
+        "enabled": true,
+        "model": "Room",
+        "params": {
+          "Mix": 12,
+          "Pre Delay": 10,
+          "Decay": 35
+        }
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Stallmick, humbucker",
+      "guitarVolume": "10",
+      "guitarTone": "6–8"
+    }
+  },
+  {
+    "id": "djent-modern",
+    "name": "Djent / modern metal",
+    "description": "Tajt boostad 5150 med hårt gate – låg stämning, snabba palm mutes (djent och metalcore).",
+    "tags": [
+      "djent",
+      "metalcore",
+      "modern",
+      "metal",
+      "high gain",
+      "tight",
+      "5150"
+    ],
+    "blocks": {
+      "NR": {
+        "enabled": true,
+        "model": "Gate 2",
+        "params": {
+          "Threshold": 60,
+          "Attack": 10,
+          "Release": 25
+        }
+      },
+      "DST": {
+        "enabled": true,
+        "model": "Precise OD",
+        "params": {
+          "Gain": 0,
+          "Tone": 60,
+          "Volume": 80,
+          "Attack": 60,
+          "Gate": 40
+        }
+      },
+      "AMP": {
+        "enabled": true,
+        "model": "EV 51",
+        "params": {
+          "Gain": 55,
+          "Presence": 55,
+          "Volume": 65,
+          "Bass": 50,
+          "Middle": 50,
+          "Treble": 60
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "Mess"
+      },
+      "EQ": {
+        "enabled": true,
+        "model": "Guitar EQ 1",
+        "params": {
+          "125 Hz": -6,
+          "400 Hz": -4,
+          "800 Hz": 4,
+          "1.6 kHz": 6,
+          "4 kHz": -8
+        }
+      },
+      "RVB": {
+        "enabled": false,
+        "model": "Room",
+        "params": {
+          "Mix": 8,
+          "Pre Delay": 10,
+          "Decay": 20
+        }
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Stallmick, aktiv humbucker",
+      "guitarVolume": "10",
+      "guitarTone": "10",
+      "other": "Fungerar bäst med nedstämd gitarr (drop C eller lägre)."
+    }
+  },
+  {
+    "id": "ambient-shimmer",
+    "name": "Ambient shimmer",
+    "description": "Ren gitarr i långt eko och shimmer-reverb – ljudmattor, post-rock och worship.",
+    "tags": [
+      "ambient",
+      "shimmer",
+      "post-rock",
+      "worship",
+      "clean",
+      "ren",
+      "delay",
+      "eko"
+    ],
+    "blocks": {
+      "PRE": {
+        "enabled": true,
+        "model": "S-Comp",
+        "params": {
+          "Threshold": 40,
+          "Ratio": 35,
+          "Volume": 55,
+          "Attack": 30,
+          "Release": 40,
+          "Blend": 60,
+          "Tone": 50
+        }
+      },
+      "AMP": {
+        "enabled": true,
+        "model": "Match CL",
+        "params": {
+          "Gain": 30,
+          "Presence": 50,
+          "Volume": 60,
+          "Bass": 45,
+          "Middle": 50,
+          "Treble": 55
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "Match"
+      },
+      "DLY": {
+        "enabled": true,
+        "model": "Ping Pong",
+        "params": {
+          "Mix": 35,
+          "Feedback": 50,
+          "Time": 500,
+          "Sync": "OFF",
+          "Trail": "ON"
+        }
+      },
+      "RVB": {
+        "enabled": true,
+        "model": "Shimmer",
+        "params": {
+          "Mix": 40,
+          "Pre Delay": 30,
+          "Decay": 75,
+          "Low End": 40,
+          "High End": 55
+        }
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Halsmick eller mellanläge",
+      "guitarVolume": "10 (svällningar med volymratten)",
+      "guitarTone": "8"
+    }
+  },
+  {
+    "id": "ambient-lead",
+    "name": "Atmosfäriskt lead",
+    "description": "Mjuk fuzz/sustain med långt analogt eko och hall – sjungande, långsamma solon (Gilmour-stil).",
+    "tags": [
+      "lead",
+      "solo",
+      "ambient",
+      "sustain",
+      "delay",
+      "eko",
+      "fuzz",
+      "prog"
+    ],
+    "blocks": {
+      "NR": {
+        "enabled": true,
+        "model": "Gate 1",
+        "params": {
+          "Threshold": 25
+        }
+      },
+      "DST": {
+        "enabled": true,
+        "model": "Sora Fuzz",
+        "params": {
+          "Fuzz": 50,
+          "Volume": 60
+        }
+      },
+      "AMP": {
+        "enabled": true,
+        "model": "Knights CL",
+        "params": {
+          "Gain": 35,
+          "Volume": 65,
+          "Bass": 45,
+          "Middle": 55,
+          "Treble": 55
+        }
+      },
+      "CAB": {
+        "enabled": true,
+        "model": "UK 75"
+      },
+      "DLY": {
+        "enabled": true,
+        "model": "Analog",
+        "params": {
+          "Mix": 30,
+          "Feedback": 35,
+          "Time": 450,
+          "Sync": "OFF",
+          "Trail": "ON"
+        }
+      },
+      "RVB": {
+        "enabled": true,
+        "model": "Hall",
+        "params": {
+          "Mix": 25,
+          "Pre Delay": 20,
+          "Decay": 55
+        }
+      }
+    },
+    "guitarNotes": {
+      "pickup": "Stallmick eller halsmick, single coil",
+      "guitarVolume": "10",
+      "guitarTone": "8–10"
     }
   }
 ]
