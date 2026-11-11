@@ -735,6 +735,80 @@ many("Def Leppard", "hard rock", [
     ("Women", "1980s", "distorted", "riff", (6.5,5,6,7,6.5,3), {"amp": HY, "fx": HYFX}),
 ], "Marshall JMP", "Gibson Les Paul / Fender Stratocaster", DLN, "bridge humbucker", 0.5, DL)
 
+# ============ Rammstein ============
+RS = src("https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+         "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+         "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig")
+RSN = ("Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. "
+       "På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. "
+       "Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.")
+RFX = ["noise gate"]
+many("Rammstein", "industrial metal", [
+    ("Du riechst so gut", "1990s", "distorted", "riff", (7.5,6.5,4.5,6.5,6,1.5), {"conf": 0.45}),
+    ("Seemann", "1990s", "clean", "clean", (2.5,5.5,6,6,5.5,4), {"conf": 0.4, "fx": ["chorus"], "pickup": "neck", "amp": MCL,
+        "note": "Ren del – Rectifierns rena kanal."}),
+    ("Engel", "1990s", "distorted", "riff", (7.5,6.5,4.5,6.5,6,1.5)),
+    ("Engel", "1990s", "clean", "clean", (2.5,5.5,6,6,5.5,3.5), {"pickup": "neck", "fx": ["delay"], "amp": MCL,
+        "note": "Den rena introdelen – Rectifierns rena kanal med lite eko."}),
+    ("Sehnsucht", "1990s", "distorted", "riff", (8,6.5,4.5,6.5,6,1.5)),
+    ("Tier", "1990s", "distorted", "riff", (8,6.5,4.5,6.5,6,1.5)),
+    ("Bück dich", "1990s", "distorted", "riff", (8,6.5,4.5,6.5,6,1.5)),
+    ("Sonne", "2000s", "distorted", "riff", (8,7,4.5,6.5,6,1.5)),
+    ("Links 2 3 4", "2000s", "distorted", "riff", (8,7,4.5,6.5,6,1.5)),
+    ("Ich will", "2000s", "distorted", "riff", (8,6.5,5,6.5,6,1.5)),
+    ("Mein Herz brennt", "2000s", "distorted", "riff", (8,7,4.5,6.5,6,2)),
+    ("Feuer frei!", "2000s", "distorted", "riff", (8,7,4.5,6.5,6,1.5)),
+    ("Mutter", "2000s", "distorted", "riff", (7.5,6.5,5,6.5,6,2.5)),
+    ("Adios", "2000s", "distorted", "riff", (8,7,4.5,6.5,6,1.5)),
+    ("Mein Teil", "2000s", "distorted", "riff", (8,7,4.5,6.5,6,1.5)),
+    ("Keine Lust", "2000s", "distorted", "riff", (8,7,4.5,6.5,6,1.5)),
+    ("Amerika", "2000s", "distorted", "riff", (7.5,6.5,5,6.5,6,2)),
+    ("Ohne dich", "2000s", "distorted", "riff", (7,6.5,5,6.5,6,3)),
+    ("Benzin", "2000s", "distorted", "riff", (8,7,4.5,6.5,6,1.5)),
+    ("Rosenrot", "2000s", "distorted", "riff", (7.5,6.5,5,6.5,6,2)),
+    ("Ich tu dir weh", "2000s", "distorted", "riff", (8,7,4.5,6.5,6,1.5)),
+    ("Haifisch", "2000s", "distorted", "riff", (7.5,6.5,5,6.5,6,2)),
+    ("Deutschland", "2010s", "distorted", "riff", (8,7,4.5,6.5,6,2)),
+    ("Radio", "2010s", "distorted", "riff", (8,7,4.5,6.5,6,1.5)),
+    ("Zick Zack", "2020s", "distorted", "riff", (8,7,4.5,6.5,6,1.5)),
+], "Mesa/Boogie Dual Rectifier", "ESP (Kruspe signature)", RSN, "bridge humbucker", 0.5, RS, RFX)
+
+# ============ Slayer ============
+SL = src("https://www.guitarworld.com/gear/kerry-king-king-pain",
+         "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+         "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+         "https://www.premierguitar.com/gear/rig-rundown-slayer")
+SLN = ("Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt "
+       "EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning.")
+SFX = ["10-band graphic EQ boost", "noise gate"]
+EARLY = {"amp": "Marshall", "conf": 0.4, "note": "Tidig era (Show No Mercy/Hell Awaits) – Marshall-modellen är inte bekräftad."}
+many("Slayer", "thrash metal", [
+    ("Die by the Sword", "1980s", "distorted", "riff", (8,6,5.5,7,7,1.5), EARLY),
+    ("Black Magic", "1980s", "distorted", "riff", (8,6,5.5,7,7,1.5), EARLY),
+    ("Hell Awaits", "1980s", "distorted", "riff", (8.5,6,5.5,7,7,1.5), EARLY),
+    ("At Dawn They Sleep", "1980s", "distorted", "riff", (8.5,6,5.5,7,7,1.5), EARLY),
+    ("Angel of Death", "1980s", "distorted", "riff", (8.5,6,5,7,7,1)),
+    ("Raining Blood", "1980s", "distorted", "solo", (8.5,6,5.5,7,7,2), {"note": "Det kaotiska solot med tremolo/whammy."}),
+    ("Postmortem", "1980s", "distorted", "riff", (8.5,6,5,7,7,1)),
+    ("Criminally Insane", "1980s", "distorted", "riff", (8.5,6,5,7,7,1)),
+    ("South of Heaven", "1980s", "distorted", "riff", (8.5,6,5,7,7,1.5)),
+    ("Mandatory Suicide", "1980s", "distorted", "riff", (8.5,6,5,7,7,1.5)),
+    ("Silent Scream", "1980s", "distorted", "riff", (8.5,6,5,7,7,1)),
+    ("War Ensemble", "1990s", "distorted", "riff", (8.5,6,5,7,7,1)),
+    ("Seasons in the Abyss", "1990s", "clean", "clean", (2.5,5.5,5.5,6.5,6,3), {"amp": "Unknown", "conf": 0.3, "fx": ["chorus"], "pickup": "neck",
+        "note": "Det rena introt – vilken förstärkare/kanal som användes för cleanpartierna är inte dokumenterat."}),
+    ("Seasons in the Abyss", "1990s", "distorted", "riff", (8.5,6,5,7,7,1.5)),
+    ("Dead Skin Mask", "1990s", "clean", "clean", (2.5,5.5,5.5,6.5,6,3), {"amp": "Unknown", "conf": 0.3, "fx": ["chorus"], "pickup": "neck",
+        "note": "Det rena introt – vilken förstärkare/kanal som användes för cleanpartierna är inte dokumenterat."}),
+    ("Spirit in Black", "1990s", "distorted", "riff", (8.5,6,5,7,7,1)),
+    ("Hallowed Point", "1990s", "distorted", "riff", (8.5,6,5,7,7,1)),
+    ("Disciple", "2000s", "distorted", "riff", (8.5,6.5,5,7,7,1), {"conf": 0.45}),
+    ("Bloodline", "2000s", "distorted", "riff", (8.5,6.5,5,7,7,1), {"conf": 0.45}),
+    ("World Painted Blood", "2000s", "distorted", "riff", (8.5,6.5,5,7,7,1), {"conf": 0.45}),
+    ("Repentless", "2010s", "distorted", "riff", (8.5,6.5,5,7,7,1), {"conf": 0.45, "amp": "Marshall JCM800 2203KK",
+        "note": "Repentless (2015): Kerry Kings signatur-JCM800 (2203KK)."}),
+], "Marshall JCM800 2203", "B.C. Rich / ESP / Jackson", SLN, "bridge humbucker", 0.5, SL, SFX)
+
 ds = dict(source="Egen research (sammanställd vid utveckling – appen använder ingen AI)",
           sourceUrl="", homepage="", license="Egen sammanställning; källor anges per post",
           attribution="Egen research – källor per låt",

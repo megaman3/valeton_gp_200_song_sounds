@@ -5,7 +5,7 @@
   "license": "Egen sammanställning; källor anges per post",
   "attribution": "Egen research – källor per låt",
   "importedAt": "2026-11-10",
-  "count": 359,
+  "count": 405,
   "tones": [
     {
       "id": "volbeat-a-warrior-s-call-riff-distorted",
@@ -10608,6 +10608,1472 @@
         "https://www.guitarworld.com/features/phil-collen-on-def-leppard-pyromania"
       ],
       "url": "https://www.guitarworld.com/gw-archive/interview-phil-collen-making-def-leppards-hysteria"
+    },
+    {
+      "id": "rammstein-du-riechst-so-gut-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Du riechst so gut",
+      "genre": "industrial metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6.5,
+        "mid": 4.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-seemann-clean-clean",
+      "artist": "Rammstein",
+      "song": "Seemann",
+      "genre": "industrial metal",
+      "era": "1990s",
+      "toneType": "clean",
+      "part": "clean",
+      "ampSettings": {
+        "gain": 2.5,
+        "bass": 5.5,
+        "mid": 6,
+        "treble": 6,
+        "presence": 5.5,
+        "reverb": 4
+      },
+      "amp": "Mesa Boogie clean channel",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning. Ren del – Rectifierns rena kanal.",
+      "effects": [
+        "chorus"
+      ],
+      "pickup": "neck",
+      "confidence": 0.4,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-engel-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Engel",
+      "genre": "industrial metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6.5,
+        "mid": 4.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-engel-clean-clean",
+      "artist": "Rammstein",
+      "song": "Engel",
+      "genre": "industrial metal",
+      "era": "1990s",
+      "toneType": "clean",
+      "part": "clean",
+      "ampSettings": {
+        "gain": 2.5,
+        "bass": 5.5,
+        "mid": 6,
+        "treble": 6,
+        "presence": 5.5,
+        "reverb": 3.5
+      },
+      "amp": "Mesa Boogie clean channel",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning. Den rena introdelen – Rectifierns rena kanal med lite eko.",
+      "effects": [
+        "delay"
+      ],
+      "pickup": "neck",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-sehnsucht-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Sehnsucht",
+      "genre": "industrial metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6.5,
+        "mid": 4.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-tier-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Tier",
+      "genre": "industrial metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6.5,
+        "mid": 4.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-b-ck-dich-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Bück dich",
+      "genre": "industrial metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6.5,
+        "mid": 4.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-sonne-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Sonne",
+      "genre": "industrial metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 7,
+        "mid": 4.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-links-2-3-4-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Links 2 3 4",
+      "genre": "industrial metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 7,
+        "mid": 4.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-ich-will-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Ich will",
+      "genre": "industrial metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6.5,
+        "mid": 5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-mein-herz-brennt-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Mein Herz brennt",
+      "genre": "industrial metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 7,
+        "mid": 4.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-feuer-frei-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Feuer frei!",
+      "genre": "industrial metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 7,
+        "mid": 4.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-mutter-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Mutter",
+      "genre": "industrial metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6.5,
+        "mid": 5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2.5
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-adios-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Adios",
+      "genre": "industrial metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 7,
+        "mid": 4.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-mein-teil-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Mein Teil",
+      "genre": "industrial metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 7,
+        "mid": 4.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-keine-lust-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Keine Lust",
+      "genre": "industrial metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 7,
+        "mid": 4.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-amerika-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Amerika",
+      "genre": "industrial metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6.5,
+        "mid": 5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-ohne-dich-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Ohne dich",
+      "genre": "industrial metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 6.5,
+        "mid": 5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 3
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-benzin-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Benzin",
+      "genre": "industrial metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 7,
+        "mid": 4.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-rosenrot-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Rosenrot",
+      "genre": "industrial metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6.5,
+        "mid": 5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-ich-tu-dir-weh-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Ich tu dir weh",
+      "genre": "industrial metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 7,
+        "mid": 4.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-haifisch-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Haifisch",
+      "genre": "industrial metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6.5,
+        "mid": 5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-deutschland-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Deutschland",
+      "genre": "industrial metal",
+      "era": "2010s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 7,
+        "mid": 4.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-radio-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Radio",
+      "genre": "industrial metal",
+      "era": "2010s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 7,
+        "mid": 4.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "rammstein-zick-zack-riff-distorted",
+      "artist": "Rammstein",
+      "song": "Zick Zack",
+      "genre": "industrial metal",
+      "era": "2020s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 7,
+        "mid": 4.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Mesa/Boogie Dual Rectifier",
+      "guitar": "ESP (Kruspe signature)",
+      "notes": "Richard Kruspe: Mesa/Boogie Dual Rectifier (sedan första albumet) i Mesa 4x12, ESP-gitarrer. Paul Landers: SansAmp/Tech 21. På Herzeleid spelades en Rectifier och en SansAmp in samtidigt. Tajta, nedstämda palm mute-riff med mycket NR. Exakt förstärkare per album är inte bekräftad – låtnivån är tolkning.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds",
+        "https://www.guitarworld.com/features/rammstein-producer-jacob-hellner-details-the-making-of-the-industrial-metal-icons-1995-debut-herzeleid",
+        "https://www.guitarworld.com/artists/rammsteins-paul-landers-gets-fired-up-about-his-new-signature-tech-21-pl1-fly-rig"
+      ],
+      "url": "https://musicradar.com/news/rammsteins-richard-z-kruspe-i-can-be-such-a-geek-when-it-comes-to-guitar-sounds"
+    },
+    {
+      "id": "slayer-die-by-the-sword-riff-distorted",
+      "artist": "Slayer",
+      "song": "Die by the Sword",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6,
+        "mid": 5.5,
+        "treble": 7,
+        "presence": 7,
+        "reverb": 1.5
+      },
+      "amp": "Marshall",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning. Tidig era (Show No Mercy/Hell Awaits) – Marshall-modellen är inte bekräftad.",
+      "effects": [
+        "10-band graphic EQ boost",
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.4,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-black-magic-riff-distorted",
+      "artist": "Slayer",
+      "song": "Black Magic",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6,
+        "mid": 5.5,
+        "treble": 7,
+        "presence": 7,
+        "reverb": 1.5
+      },
+      "amp": "Marshall",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning. Tidig era (Show No Mercy/Hell Awaits) – Marshall-modellen är inte bekräftad.",
+      "effects": [
+        "10-band graphic EQ boost",
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.4,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-hell-awaits-riff-distorted",
+      "artist": "Slayer",
+      "song": "Hell Awaits",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8.5,
+        "bass": 6,
+        "mid": 5.5,
+        "treble": 7,
+        "presence": 7,
+        "reverb": 1.5
+      },
+      "amp": "Marshall",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning. Tidig era (Show No Mercy/Hell Awaits) – Marshall-modellen är inte bekräftad.",
+      "effects": [
+        "10-band graphic EQ boost",
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.4,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-at-dawn-they-sleep-riff-distorted",
+      "artist": "Slayer",
+      "song": "At Dawn They Sleep",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8.5,
+        "bass": 6,
+        "mid": 5.5,
+        "treble": 7,
+        "presence": 7,
+        "reverb": 1.5
+      },
+      "amp": "Marshall",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning. Tidig era (Show No Mercy/Hell Awaits) – Marshall-modellen är inte bekräftad.",
+      "effects": [
+        "10-band graphic EQ boost",
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.4,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-angel-of-death-riff-distorted",
+      "artist": "Slayer",
+      "song": "Angel of Death",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8.5,
+        "bass": 6,
+        "mid": 5,
+        "treble": 7,
+        "presence": 7,
+        "reverb": 1
+      },
+      "amp": "Marshall JCM800 2203",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning.",
+      "effects": [
+        "10-band graphic EQ boost",
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-raining-blood-solo-distorted",
+      "artist": "Slayer",
+      "song": "Raining Blood",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "solo",
+      "ampSettings": {
+        "gain": 8.5,
+        "bass": 6,
+        "mid": 5.5,
+        "treble": 7,
+        "presence": 7,
+        "reverb": 2
+      },
+      "amp": "Marshall JCM800 2203",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning. Det kaotiska solot med tremolo/whammy.",
+      "effects": [
+        "10-band graphic EQ boost",
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-postmortem-riff-distorted",
+      "artist": "Slayer",
+      "song": "Postmortem",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8.5,
+        "bass": 6,
+        "mid": 5,
+        "treble": 7,
+        "presence": 7,
+        "reverb": 1
+      },
+      "amp": "Marshall JCM800 2203",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning.",
+      "effects": [
+        "10-band graphic EQ boost",
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-criminally-insane-riff-distorted",
+      "artist": "Slayer",
+      "song": "Criminally Insane",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8.5,
+        "bass": 6,
+        "mid": 5,
+        "treble": 7,
+        "presence": 7,
+        "reverb": 1
+      },
+      "amp": "Marshall JCM800 2203",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning.",
+      "effects": [
+        "10-band graphic EQ boost",
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-south-of-heaven-riff-distorted",
+      "artist": "Slayer",
+      "song": "South of Heaven",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8.5,
+        "bass": 6,
+        "mid": 5,
+        "treble": 7,
+        "presence": 7,
+        "reverb": 1.5
+      },
+      "amp": "Marshall JCM800 2203",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning.",
+      "effects": [
+        "10-band graphic EQ boost",
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-mandatory-suicide-riff-distorted",
+      "artist": "Slayer",
+      "song": "Mandatory Suicide",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8.5,
+        "bass": 6,
+        "mid": 5,
+        "treble": 7,
+        "presence": 7,
+        "reverb": 1.5
+      },
+      "amp": "Marshall JCM800 2203",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning.",
+      "effects": [
+        "10-band graphic EQ boost",
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-silent-scream-riff-distorted",
+      "artist": "Slayer",
+      "song": "Silent Scream",
+      "genre": "thrash metal",
+      "era": "1980s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8.5,
+        "bass": 6,
+        "mid": 5,
+        "treble": 7,
+        "presence": 7,
+        "reverb": 1
+      },
+      "amp": "Marshall JCM800 2203",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning.",
+      "effects": [
+        "10-band graphic EQ boost",
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-war-ensemble-riff-distorted",
+      "artist": "Slayer",
+      "song": "War Ensemble",
+      "genre": "thrash metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8.5,
+        "bass": 6,
+        "mid": 5,
+        "treble": 7,
+        "presence": 7,
+        "reverb": 1
+      },
+      "amp": "Marshall JCM800 2203",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning.",
+      "effects": [
+        "10-band graphic EQ boost",
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-seasons-in-the-abyss-clean-clean",
+      "artist": "Slayer",
+      "song": "Seasons in the Abyss",
+      "genre": "thrash metal",
+      "era": "1990s",
+      "toneType": "clean",
+      "part": "clean",
+      "ampSettings": {
+        "gain": 2.5,
+        "bass": 5.5,
+        "mid": 5.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 3
+      },
+      "amp": "Unknown",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning. Det rena introt – vilken förstärkare/kanal som användes för cleanpartierna är inte dokumenterat.",
+      "effects": [
+        "chorus"
+      ],
+      "pickup": "neck",
+      "confidence": 0.3,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-seasons-in-the-abyss-riff-distorted",
+      "artist": "Slayer",
+      "song": "Seasons in the Abyss",
+      "genre": "thrash metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8.5,
+        "bass": 6,
+        "mid": 5,
+        "treble": 7,
+        "presence": 7,
+        "reverb": 1.5
+      },
+      "amp": "Marshall JCM800 2203",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning.",
+      "effects": [
+        "10-band graphic EQ boost",
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-dead-skin-mask-clean-clean",
+      "artist": "Slayer",
+      "song": "Dead Skin Mask",
+      "genre": "thrash metal",
+      "era": "1990s",
+      "toneType": "clean",
+      "part": "clean",
+      "ampSettings": {
+        "gain": 2.5,
+        "bass": 5.5,
+        "mid": 5.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 3
+      },
+      "amp": "Unknown",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning. Det rena introt – vilken förstärkare/kanal som användes för cleanpartierna är inte dokumenterat.",
+      "effects": [
+        "chorus"
+      ],
+      "pickup": "neck",
+      "confidence": 0.3,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-spirit-in-black-riff-distorted",
+      "artist": "Slayer",
+      "song": "Spirit in Black",
+      "genre": "thrash metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8.5,
+        "bass": 6,
+        "mid": 5,
+        "treble": 7,
+        "presence": 7,
+        "reverb": 1
+      },
+      "amp": "Marshall JCM800 2203",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning.",
+      "effects": [
+        "10-band graphic EQ boost",
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-hallowed-point-riff-distorted",
+      "artist": "Slayer",
+      "song": "Hallowed Point",
+      "genre": "thrash metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8.5,
+        "bass": 6,
+        "mid": 5,
+        "treble": 7,
+        "presence": 7,
+        "reverb": 1
+      },
+      "amp": "Marshall JCM800 2203",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning.",
+      "effects": [
+        "10-band graphic EQ boost",
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-disciple-riff-distorted",
+      "artist": "Slayer",
+      "song": "Disciple",
+      "genre": "thrash metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8.5,
+        "bass": 6.5,
+        "mid": 5,
+        "treble": 7,
+        "presence": 7,
+        "reverb": 1
+      },
+      "amp": "Marshall JCM800 2203",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning.",
+      "effects": [
+        "10-band graphic EQ boost",
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-bloodline-riff-distorted",
+      "artist": "Slayer",
+      "song": "Bloodline",
+      "genre": "thrash metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8.5,
+        "bass": 6.5,
+        "mid": 5,
+        "treble": 7,
+        "presence": 7,
+        "reverb": 1
+      },
+      "amp": "Marshall JCM800 2203",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning.",
+      "effects": [
+        "10-band graphic EQ boost",
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-world-painted-blood-riff-distorted",
+      "artist": "Slayer",
+      "song": "World Painted Blood",
+      "genre": "thrash metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8.5,
+        "bass": 6.5,
+        "mid": 5,
+        "treble": 7,
+        "presence": 7,
+        "reverb": 1
+      },
+      "amp": "Marshall JCM800 2203",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning.",
+      "effects": [
+        "10-band graphic EQ boost",
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "slayer-repentless-riff-distorted",
+      "artist": "Slayer",
+      "song": "Repentless",
+      "genre": "thrash metal",
+      "era": "2010s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8.5,
+        "bass": 6.5,
+        "mid": 5,
+        "treble": 7,
+        "presence": 7,
+        "reverb": 1
+      },
+      "amp": "Marshall JCM800 2203KK",
+      "guitar": "B.C. Rich / ESP / Jackson",
+      "notes": "Kerry King och Jeff Hanneman: Marshall JCM800 2203 i Marshall 4x12 (Reign in Blood och framåt). Ett 10-bands grafiskt EQ (Boss/MXR) driver förstärkarens ingång hårdare. B.C. Rich/ESP/Jackson med humbuckers. Låtnivån är tolkning. Repentless (2015): Kerry Kings signatur-JCM800 (2203KK).",
+      "effects": [
+        "10-band graphic EQ boost",
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.45,
+      "sources": [
+        "https://www.guitarworld.com/gear/kerry-king-king-pain",
+        "https://mixdownmag.com.au/features/gear-rundown-slayers-reign-in-blood/",
+        "https://blog.zzounds.com/2017/05/20/legends-tone-slayer/",
+        "https://www.premierguitar.com/gear/rig-rundown-slayer"
+      ],
+      "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
     }
   ]
 }

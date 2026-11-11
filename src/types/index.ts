@@ -137,7 +137,8 @@ export interface SongPart {
   sourceUrl?: string;
 }
 
-export type SongSource = 'curated' | 'guitartoneadapt' | 'research';
+/** profile = en ljudtyp (t.ex. "Jazz clean") byggd direkt från tone-profiles.json, inte en låt. */
+export type SongSource = 'curated' | 'guitartoneadapt' | 'research' | 'profile';
 
 export interface Song {
   id: string;

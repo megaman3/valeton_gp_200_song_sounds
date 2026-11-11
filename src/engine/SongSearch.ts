@@ -19,7 +19,7 @@ export function searchSongs(songs: Song[], query: string, limit = Infinity): Son
     if (!terms.every((t) => haystack.includes(t) || compact.includes(t))) continue;
     let score = terms.filter((t) => title.includes(t)).length * 2;
     if (title === normalize(query)) score += 5;
-    if (song.source === undefined || song.source === 'curated') score += 1;
+    if (song.source === undefined || song.source === 'curated' || song.source === 'profile') score += 1;
     scored.push({ song, score });
   }
   return scored

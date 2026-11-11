@@ -4,7 +4,7 @@
  *   npm run validate-data -- --all   # lista alla varningar
  */
 import { BLOCK_ORDER } from '../src/types';
-import { allSongs, database, generator, validator } from '../src/engine';
+import { database, generator, searchable, soundTypes, validator } from '../src/engine';
 
 const showAll = process.argv.includes('--all');
 let errors = 0;
@@ -47,7 +47,7 @@ for (const r of rules.effects) {
 
 // 3. Alla genererade presets
 let presets = 0;
-for (const song of allSongs) {
+for (const song of searchable) {
   for (const preset of generator.generateAll(song)) {
     presets++;
     for (const issue of preset.issues) {
@@ -58,7 +58,7 @@ for (const song of allSongs) {
 }
 
 console.log(
-  `\n${allSongs.length} låtar (${database.curatedSongs.length} handskrivna, ${database.research.count} researchade toner), ${presets} presets, ` +
+  `\n${searchable.length - soundTypes.length} låtar + ${soundTypes.length} ljudtyper (${database.curatedSongs.length} handskrivna, ${database.research.count} researchade toner), ${presets} presets, ` +
     `${rules.amp.length + rules.cab.length + rules.effects.length} regler.`,
 );
 if (warnings.size) {
