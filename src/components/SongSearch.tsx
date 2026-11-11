@@ -8,6 +8,8 @@ interface Props {
   limit: number;
   selectedId?: string;
   onSelect: (id: string) => void;
+  /** Markerar favoriter med ★ i listan. */
+  isFavorite?: (song: Song) => boolean;
 }
 
 const SOURCE_LABEL: Record<NonNullable<Song['source']>, string> = {
@@ -28,7 +30,7 @@ const isNarrow = () => typeof window !== 'undefined' && window.matchMedia('(max-
  * inställningarna under en lång lista. Den fälls ut igen när man skriver, trycker
  * i sökfältet eller på "Visa alla träffar". På dator ligger listan bredvid och visas alltid.
  */
-export default function SongSearch({ query, onQueryChange, songs, limit, selectedId, onSelect }: Props) {
+export default function SongSearch({ query, onQueryChange, songs, limit, selectedId, onSelect, isFavorite }: Props) {
   const [active, setActive] = useState(0);
   const [collapsed, setCollapsed] = useState(false);
   const listRef = useRef<HTMLUListElement>(null);
@@ -140,6 +142,11 @@ export default function SongSearch({ query, onQueryChange, songs, limit, selecte
                     </span>
                   )}
                   {s.title}
+                  {isFavorite?.(s) && (
+                    <span aria-label="favorit" className="ml-1.5 text-amber-400">
+                      ★
+                    </span>
+                  )}
                 </div>
                 <div className="text-xs text-zinc-400">
                   {s.artist}

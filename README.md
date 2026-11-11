@@ -12,6 +12,9 @@ Skriv låt, artist eller **ljudtyp**, och välj med musen eller med **↑ / ↓ 
 - **Ljudtyper:** 20 färdiga grundljud som "Jazz clean", "Texas blues", "60-tals fuzz", "Djent / modern metal" och
   "Ambient shimmer". Sök på t.ex. `clean`, `blues`, `high gain`, `fuzz` eller `ljudtyp` (visar alla), eller välj en
   ljudtyp på startsidan. Ljudtyperna är profilerna i `src/data/tone-profiles.json`.
+- **Favorites:** tryck på ☆ vid en låt eller ljudtyp för att spara den under fliken *★ Favorites*. Favoriterna
+  sparas bara lokalt i webbläsaren på den enhet du använder (ingen backend, fungerar offline) och försvinner om du
+  rensar webbplatsdata.
 - **Offline:** appen är en PWA. Öppna den en gång med nät, så fungerar den sedan utan nät.
   Installera den på hemskärmen: iPhone (Safari) → Dela → *Lägg till på hemskärmen*; Android (Chrome) →
   menyn → *Installera app*. Nya versioner hämtas automatiskt nästa gång appen öppnas med nät.
@@ -38,7 +41,8 @@ src/
     research/  Egen research för artister/låtar som saknas i externa källor (byggs av tools/build-research.py)
   assets/      Bilder (bakgrund, logga)
   engine/      Tone Engine: validator, translator, generator, sökning, textformat
-  components/  React-UI: SongSearch, EffectChain, PresetView, OriginalGearView
+  components/  React-UI: SongSearch, FavoritesList, EffectChain, PresetView, OriginalGearView
+  hooks/       useFavorites – favoriter i localStorage
   types/       Delade TypeScript-typer
 public/        PWA-ikoner (appikon på hemskärmen)
 tests/         Vitest – bl.a. att inget preset använder en modell som saknas i GP-200
