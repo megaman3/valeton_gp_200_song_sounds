@@ -10,16 +10,39 @@ interface Props {
   onSelect: (id: string) => void;
 }
 
+/** Samma brytpunkt som Tailwinds `md`: under den ligger listan ovanför inställningarna. */
+const isNarrow = () => typeof window !== 'undefined' && window.matchMedia('(max-width: 767px)').matches;
+
 /**
  * Sökfält + resultatlista. Tangentbord: ↑/↓ flyttar markeringen, Enter väljer,
  * Home/End hoppar till första/sista, Esc tömmer sökningen. Fokus stannar i sökfältet.
+ *
+ * På smal skärm (telefon) fälls listan ihop när en låt väljs, annars hamnar
+ * inställningarna under en lång lista. Den fälls ut igen när man skriver, trycker
+ * i sökfältet eller på "Visa alla träffar". På dator ligger listan bredvid och visas alltid.
  */
 export default function SongSearch({ query, onQueryChange, songs, limit, selectedId, onSelect }: Props) {
   const [active, setActive] = useState(0);
+  const [collapsed, setCollapsed] = useState(false);
   const listRef = useRef<HTMLUListElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
-  // Ny sökning → markera första träffen.
-  useEffect(() => setActive(0), [songs]);
+  // Ny sökning → markera första träffen och visa listan.
+  useEffect(() => {
+    setActive(0);
+    setCollapsed(false);
+  }, [songs]);
+
+  const choose = (i: number) => {
+    setActive(i);
+    onSelect(songs[i].id);
+    setCollapsed(true);
+    if (isNarrow()) {
+      // Stäng mobiltangentbordet och visa inställningarna direkt under sökfältet.
+      inputRef.current?.blur();
+      inputRef.current?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    }
+  };
 
   // Håll den markerade raden synlig när man pilar i en lång lista.
   useEffect(() => {
@@ -43,10 +66,11 @@ export default function SongSearch({ query, onQueryChange, songs, limit, selecte
     };
     if (e.key in moves) {
       e.preventDefault();
+      setCollapsed(false);
       setActive(moves[e.key]);
     } else if (e.key === 'Enter') {
       e.preventDefault();
-      onSelect(songs[Math.min(active, last)].id);
+      choose(Math.min(active, last));
     }
   };
 
@@ -55,14 +79,19 @@ export default function SongSearch({ query, onQueryChange, songs, limit, selecte
   return (
     <aside className="space-y-3">
       <input
+        ref={inputRef}
         type="search"
         autoFocus
         value={query}
-        onChange={(e) => onQueryChange(e.target.value)}
+        onChange={(e) => {
+          setCollapsed(false);
+          onQueryChange(e.target.value);
+        }}
         onKeyDown={onKeyDown}
+        onFocus={() => isNarrow() && setCollapsed(false)}
         placeholder="Låt och/eller artist…"
         role="combobox"
-        aria-expanded={songs.length > 0}
+        aria-expanded={songs.length > 0 && !(collapsed && isNarrow())}
         aria-controls="song-results"
         aria-activedescendant={songs.length > 0 ? optionId(active) : undefined}
         className="w-full rounded bg-zinc-900/80 px-3 py-2 text-sm outline-none ring-1 ring-zinc-700 backdrop-blur-sm focus:ring-amber-500"
@@ -70,7 +99,20 @@ export default function SongSearch({ query, onQueryChange, songs, limit, selecte
       {songs.length > 0 && (
         <p className="hidden text-xs text-zinc-500 md:block">↑ ↓ för att bläddra, Enter för att välja, Esc för att rensa.</p>
       )}
-      <ul ref={listRef} id="song-results" role="listbox" className="max-h-[70vh] space-y-1 overflow-y-auto">
+      {collapsed && songs.length > 0 && (
+        <button
+          onClick={() => setCollapsed(false)}
+          className="w-full rounded bg-zinc-900/80 px-3 py-2 text-left text-sm text-amber-400 ring-1 ring-zinc-700 backdrop-blur-sm md:hidden"
+        >
+          ▾ Visa alla {songs.length} träffar
+        </button>
+      )}
+      <ul
+        ref={listRef}
+        id="song-results"
+        role="listbox"
+        className={`max-h-[70vh] space-y-1 overflow-y-auto ${collapsed ? 'hidden md:block' : ''}`}
+      >
         {songs.map((s, i) => {
           const isActive = i === active;
           const isSelected = s.id === selectedId;
@@ -78,10 +120,7 @@ export default function SongSearch({ query, onQueryChange, songs, limit, selecte
             <li key={s.id} id={optionId(i)} data-index={i} role="option" aria-selected={isSelected}>
               <button
                 tabIndex={-1}
-                onClick={() => {
-                  setActive(i);
-                  onSelect(s.id);
-                }}
+                onClick={() => choose(i)}
                 onMouseMove={() => !isActive && setActive(i)}
                 className={`w-full rounded px-3 py-2 text-left text-sm ${
                   isSelected ? 'ring-1 ring-amber-500' : ''
