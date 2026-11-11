@@ -1,13 +1,20 @@
 # GP-200 Tone Generator
 
-Webbapp som ger färdiga inställningar för **Valeton GP-200** för omkring 1 500 låtar –
+Webbapp som ger färdiga inställningar för **Valeton GP-200** för omkring 1 500 låtar och 20 ljudtyper –
 regelbaserat, utan AI och utan backend. Originalljuden (förstärkare, rattar, effekter) kommer från
 GuitarToneAdapts dataset och från egen research med källor per låt, och översätts till de modeller och
 parametrar som finns i din GP-200 enligt Valetons manual.
 
 **Appen online:** https://megaman3.github.io/valeton_gp_200_song_sounds/
 
-Skriv låt och/eller artist, välj med musen eller med **↑ / ↓ + Enter** (Esc rensar sökningen).
+Skriv låt, artist eller **ljudtyp**, och välj med musen eller med **↑ / ↓ + Enter** (Esc rensar sökningen).
+
+- **Ljudtyper:** 20 färdiga grundljud som "Jazz clean", "Texas blues", "60-tals fuzz", "Djent / modern metal" och
+  "Ambient shimmer". Sök på t.ex. `clean`, `blues`, `high gain`, `fuzz` eller `ljudtyp` (visar alla), eller välj en
+  ljudtyp på startsidan. Ljudtyperna är profilerna i `src/data/tone-profiles.json`.
+- **Offline:** appen är en PWA. Öppna den en gång med nät, så fungerar den sedan utan nät.
+  Installera den på hemskärmen: iPhone (Safari) → Dela → *Lägg till på hemskärmen*; Android (Chrome) →
+  menyn → *Installera app*. Nya versioner hämtas automatiskt nästa gång appen öppnas med nät.
 
 ## Kom igång
 
@@ -26,13 +33,14 @@ npm run build          # bygg för produktion (dist/)
 
 ```
 src/
-  data/        JSON: din modellista, manualkatalog, mappningsregler, låtar, profiler
+  data/        JSON: din modellista, manualkatalog, mappningsregler, låtar, ljudprofiler (= ljudtyper)
     external/  Importerade data (GuitarToneAdapt)
     research/  Egen research för artister/låtar som saknas i externa källor (byggs av tools/build-research.py)
   assets/      Bilder (bakgrund, logga)
   engine/      Tone Engine: validator, translator, generator, sökning, textformat
   components/  React-UI: SongSearch, EffectChain, PresetView, OriginalGearView
   types/       Delade TypeScript-typer
+public/        PWA-ikoner (appikon på hemskärmen)
 tests/         Vitest – bl.a. att inget preset använder en modell som saknas i GP-200
 tools/         CLI: import-guitartoneadapt, validate-data, preset-cli, build-research.py
 docs/          ARCHITECTURE.md – dataflöde, hur man lägger till låtar, färdplan
@@ -42,7 +50,7 @@ Se [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) för detaljer.
 
 ## Teknik
 
-React + TypeScript + Vite + Tailwind CSS, Vitest, GitHub Actions → GitHub Pages
+React + TypeScript + Vite + Tailwind CSS, vite-plugin-pwa (offline), Vitest, GitHub Actions → GitHub Pages
 (deploy sker vid push till `main` och publiceras på https://megaman3.github.io/valeton_gp_200_song_sounds/;
 Pages måste vara aktiverat med källa "GitHub Actions" under Settings → Pages).
 
