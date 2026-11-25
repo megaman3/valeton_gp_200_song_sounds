@@ -131,3 +131,27 @@ describe('ToneTranslator – regelordning och epok (funna av kvalitetsskanningen
     expect(amp({ amp: 'Orange Rockerverb 50', era: '2000s' })).toBe('Juice R100');
   });
 });
+
+describe('ToneTranslator – reverb-nivå och scoopad EQ (kodgranskning)', () => {
+  const rvb = (over: Partial<ResearchedTone>) => translator.translateTone(tone({ amp: 'Marshall JCM800', ...over })).blocks.RVB;
+  const settings = (reverb: number, mid = 5) => ({ gain: 7, bass: 5, mid, treble: 6, presence: 5, reverb });
+
+  it('en uttalad reverb behåller regelns Mix oavsett förstärkarens reverb-ratt', () => {
+    const shimmer = rvb({ effects: ['shimmer reverb'], ampSettings: settings(1) });
+    expect(shimmer?.model).toBe('Shimmer');
+    expect(shimmer?.params?.Mix).toBe(30);
+    expect(rvb({ effects: ['shimmer reverb'], ampSettings: settings(10) })?.params?.Mix).toBe(30);
+  });
+
+  it('reverb utan typ (eller bara rattläget) följer förstärkarens reverb-ratt', () => {
+    expect(rvb({ effects: ['reverb'], ampSettings: settings(8) })?.params?.Mix).toBe(32);
+    expect(rvb({ effects: [], ampSettings: settings(5) })?.params?.Mix).toBe(20);
+  });
+
+  it('"scooped mids" blir V-formad EQ även när förstärkarens mid-ratt är hög', () => {
+    const eq = translator.translateTone(tone({ effects: ['EQ with scooped mids'], ampSettings: settings(0, 6) })).blocks.EQ;
+    expect(eq?.params?.['800 Hz']).toBe(-10);
+    const lift = translator.translateTone(tone({ effects: ['EQ'], ampSettings: settings(0, 6) })).blocks.EQ;
+    expect(lift?.params?.['800 Hz']).toBe(6);
+  });
+});
