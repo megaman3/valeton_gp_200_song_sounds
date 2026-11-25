@@ -31,6 +31,21 @@ t("Volbeat", "Sad Man's Tongue", "rockabilly metal", "2000s", "overdriven", "rif
 t("Volbeat", "Sad Man's Tongue", "rockabilly metal", "2000s", "clean", "clean", (2,5,6,6.5,5,3), VBA, VBG,
   "Intro i Johnny Cash-stil (Ring of Fire-citat). Tolkning: ren ton med slapback.", ["slapback delay"], "neck humbucker", 0.4, VB)
 
+# Guitar Gangsters & Cadillac Blood (titelspåret, 2008). Belagt: inspelad i Hansen Studios (Ribe) med Jacob Hansen
+# som producent/tekniker/mixare; gitarr Michael Poulsen och Thomas Bredahl (Wikipedia, Discogs). Poulsens huvudgitarr
+# i många år: Gibson SG GT; "he likes the old 800s" (Guitar World rig tour). Ej belagt: förstärkare/pedaler just 2008 –
+# TS808 är dokumenterad först i senare rigg och läggs därför inte in. Rattlägen = teknisk uppskattning.
+GGCB = VB + ["https://en.wikipedia.org/wiki/Guitar_Gangsters_%26_Cadillac_Blood",
+             "https://www.discogs.com/release/1443382-Volbeat-Guitar-Gangsters-Cadillac-Blood"]
+t("Volbeat", "Guitar Gangsters & Cadillac Blood", "rockabilly metal", "2000s", "distorted", "riff", (7,6,6,6.5,6,2),
+  VBA, "Gibson SG GT",
+  "Titelspåret från albumet 2008, inspelat i Hansen Studios (producent Jacob Hansen); gitarr Michael Poulsen och Thomas Bredahl. "
+  "Belagt: Poulsens huvudgitarr var länge en Gibson SG GT och han föredrar gamla Marshall JCM800. "
+  "Inte belagt: exakt förstärkare och pedaler på just den här inspelningen (TS808 finns bara dokumenterad i senare rigg) – "
+  "rattlägena är en teknisk uppskattning av ett tungt, groovigt rock'n'roll-riff med mellanhög gain. "
+  "Vill du ha tightare attack: slå på DST Green OD som boost (låg gain, hög volym).",
+  [], "bridge humbucker", 0.35, GGCB)
+
 # --- Monster Truck: Marshall JMP 50 (1970-tal) + Traynor 4x12 V30, Gibson SG, Phase 90, wah
 MT = ["https://musicradar.com/news/guitars/start-me-up-monster-trucks-jeremy-widerman-640348",
       "https://equipboard.com/pros/jeremy-widerman"]

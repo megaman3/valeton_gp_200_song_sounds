@@ -5,7 +5,7 @@
   "license": "Egen sammanställning; källor anges per post",
   "attribution": "Egen research – källor per låt",
   "importedAt": "2026-11-10",
-  "count": 405,
+  "count": 406,
   "tones": [
     {
       "id": "volbeat-a-warrior-s-call-riff-distorted",
@@ -296,6 +296,36 @@
       "sources": [
         "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine",
         "https://www.uberproaudio.com/who-plays-what/859-volbeat-michael-poulsen-guitar-rig-gear-and-equipment"
+      ],
+      "url": "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine"
+    },
+    {
+      "id": "volbeat-guitar-gangsters-cadillac-blood-riff-distorted",
+      "artist": "Volbeat",
+      "song": "Guitar Gangsters & Cadillac Blood",
+      "genre": "rockabilly metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 6,
+        "mid": 6,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Marshall JCM800",
+      "guitar": "Gibson SG GT",
+      "notes": "Titelspåret från albumet 2008, inspelat i Hansen Studios (producent Jacob Hansen); gitarr Michael Poulsen och Thomas Bredahl. Belagt: Poulsens huvudgitarr var länge en Gibson SG GT och han föredrar gamla Marshall JCM800. Inte belagt: exakt förstärkare och pedaler på just den här inspelningen (TS808 finns bara dokumenterad i senare rigg) – rattlägena är en teknisk uppskattning av ett tungt, groovigt rock'n'roll-riff med mellanhög gain. Vill du ha tightare attack: slå på DST Green OD som boost (låg gain, hög volym).",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.35,
+      "sources": [
+        "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine",
+        "https://www.uberproaudio.com/who-plays-what/859-volbeat-michael-poulsen-guitar-rig-gear-and-equipment",
+        "https://en.wikipedia.org/wiki/Guitar_Gangsters_%26_Cadillac_Blood",
+        "https://www.discogs.com/release/1443382-Volbeat-Guitar-Gangsters-Cadillac-Blood"
       ],
       "url": "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine"
     },
