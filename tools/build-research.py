@@ -47,6 +47,21 @@ t("Volbeat", "Guitar Gangsters & Cadillac Blood", "rockabilly metal", "2000s", "
   "Vill du ha tightare attack: slå på DST Green OD som boost (låg gain, hög volym).",
   [], "bridge humbucker", 0.35, GGCB)
 
+# Shotgun Blues (Servant of the Mind, 2021). Belagt: Rob Caggiano spelar lead på sina Jackson Shadowcaster; tvillinggitarr-
+# harmonier i Volbeats äldre stil (Guitar World via Wikipedia/guitar.com). Boss HM-2 på albumet är bara kopplad till "Becoming"
+# – inte till den här låten – och läggs därför inte in. Förstärkare för låten ej belagd: Poulsens JCM800-förkärlek används.
+SB = VB + ["https://en.wikipedia.org/wiki/Shotgun_Blues_(Volbeat_song)",
+           "https://guitar.com/features/interviews/volbeat-new-album-servant-of-the-mind/",
+           "https://ghostcultmag.com/album-review-volbeat-servant-of-the-mind-emi/"]
+SBN = ("Singel från Servant of the Mind (2021), inspelad i Hansen Studios och Sonic Debris. Belagt: Rob Caggiano spelar lead på "
+       "Jackson Shadowcaster; tunga riff och tvillinggitarr-harmonier i Volbeats tidiga stil. Inte belagt: förstärkare och pedaler "
+       "för just den här låten (albumets Boss HM-2 är bara kopplad till \"Becoming\") – Poulsens förkärlek för JCM800 används, "
+       "rattlägena är en teknisk uppskattning.")
+t("Volbeat", "Shotgun Blues", "heavy metal", "2020s", "distorted", "riff", (7.5,6,5.5,6.5,6,1.5), VBA, "Gibson SG GT / Jackson Shadowcaster",
+  SBN, [], "bridge humbucker", 0.4, SB)
+t("Volbeat", "Shotgun Blues", "heavy metal", "2020s", "distorted", "solo", (8,5.5,6.5,6.5,6,2.5), VBA, "Jackson Shadowcaster (Rob Caggiano)",
+  SBN + " Solo/harmonier: lite mer gain och mellanregister, kort eko.", ["delay"], "bridge humbucker", 0.35, SB)
+
 # --- Monster Truck: Marshall JMP 50 (1970-tal) + Traynor 4x12 V30, Gibson SG, Phase 90, wah
 MT = ["https://musicradar.com/news/guitars/start-me-up-monster-trucks-jeremy-widerman-640348",
       "https://equipboard.com/pros/jeremy-widerman"]

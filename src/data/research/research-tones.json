@@ -5,7 +5,7 @@
   "license": "Egen sammanställning; källor anges per post",
   "attribution": "Egen research – källor per låt",
   "importedAt": "2026-11-10",
-  "count": 413,
+  "count": 415,
   "tones": [
     {
       "id": "volbeat-a-warrior-s-call-riff-distorted",
@@ -356,6 +356,70 @@
         "https://www.uberproaudio.com/who-plays-what/859-volbeat-michael-poulsen-guitar-rig-gear-and-equipment",
         "https://en.wikipedia.org/wiki/Guitar_Gangsters_%26_Cadillac_Blood",
         "https://www.discogs.com/release/1443382-Volbeat-Guitar-Gangsters-Cadillac-Blood"
+      ],
+      "url": "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine"
+    },
+    {
+      "id": "volbeat-shotgun-blues-riff-distorted",
+      "artist": "Volbeat",
+      "song": "Shotgun Blues",
+      "genre": "heavy metal",
+      "era": "2020s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6,
+        "mid": 5.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Marshall JCM800",
+      "guitar": "Gibson SG GT / Jackson Shadowcaster",
+      "notes": "Singel från Servant of the Mind (2021), inspelad i Hansen Studios och Sonic Debris. Belagt: Rob Caggiano spelar lead på Jackson Shadowcaster; tunga riff och tvillinggitarr-harmonier i Volbeats tidiga stil. Inte belagt: förstärkare och pedaler för just den här låten (albumets Boss HM-2 är bara kopplad till \"Becoming\") – Poulsens förkärlek för JCM800 används, rattlägena är en teknisk uppskattning.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.4,
+      "sources": [
+        "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine",
+        "https://www.uberproaudio.com/who-plays-what/859-volbeat-michael-poulsen-guitar-rig-gear-and-equipment",
+        "https://en.wikipedia.org/wiki/Shotgun_Blues_(Volbeat_song)",
+        "https://guitar.com/features/interviews/volbeat-new-album-servant-of-the-mind/",
+        "https://ghostcultmag.com/album-review-volbeat-servant-of-the-mind-emi/"
+      ],
+      "url": "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine"
+    },
+    {
+      "id": "volbeat-shotgun-blues-solo-distorted",
+      "artist": "Volbeat",
+      "song": "Shotgun Blues",
+      "genre": "heavy metal",
+      "era": "2020s",
+      "toneType": "distorted",
+      "part": "solo",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2.5
+      },
+      "amp": "Marshall JCM800",
+      "guitar": "Jackson Shadowcaster (Rob Caggiano)",
+      "notes": "Singel från Servant of the Mind (2021), inspelad i Hansen Studios och Sonic Debris. Belagt: Rob Caggiano spelar lead på Jackson Shadowcaster; tunga riff och tvillinggitarr-harmonier i Volbeats tidiga stil. Inte belagt: förstärkare och pedaler för just den här låten (albumets Boss HM-2 är bara kopplad till \"Becoming\") – Poulsens förkärlek för JCM800 används, rattlägena är en teknisk uppskattning. Solo/harmonier: lite mer gain och mellanregister, kort eko.",
+      "effects": [
+        "delay"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.35,
+      "sources": [
+        "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine",
+        "https://www.uberproaudio.com/who-plays-what/859-volbeat-michael-poulsen-guitar-rig-gear-and-equipment",
+        "https://en.wikipedia.org/wiki/Shotgun_Blues_(Volbeat_song)",
+        "https://guitar.com/features/interviews/volbeat-new-album-servant-of-the-mind/",
+        "https://ghostcultmag.com/album-review-volbeat-servant-of-the-mind-emi/"
       ],
       "url": "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine"
     },
