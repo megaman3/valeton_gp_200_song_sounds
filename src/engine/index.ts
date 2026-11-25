@@ -66,5 +66,5 @@ export function mergeSongs(base: Song[], extra: Song[]): Song[] {
 }
 
 export { database };
-export { searchSongs } from './SongSearch';
+export { search, searchSongs } from './SongSearch';
 export { formatPreset } from './formatPreset';

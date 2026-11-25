@@ -8,6 +8,8 @@ interface Props {
   limit: number;
   selectedId?: string;
   onSelect: (id: string) => void;
+  /** Resultaten bygger på stavfelstolerant sökning (inga exakta träffar). */
+  fuzzy?: boolean;
   /** Markerar favoriter med ★ i listan. */
   isFavorite?: (song: Song) => boolean;
 }
@@ -30,7 +32,7 @@ const isNarrow = () => typeof window !== 'undefined' && window.matchMedia('(max-
  * inställningarna under en lång lista. Den fälls ut igen när man skriver, trycker
  * i sökfältet eller på "Visa alla träffar". På dator ligger listan bredvid och visas alltid.
  */
-export default function SongSearch({ query, onQueryChange, songs, limit, selectedId, onSelect, isFavorite }: Props) {
+export default function SongSearch({ query, onQueryChange, songs, limit, selectedId, onSelect, fuzzy, isFavorite }: Props) {
   const [active, setActive] = useState(0);
   const [collapsed, setCollapsed] = useState(false);
   const listRef = useRef<HTMLUListElement>(null);
@@ -107,6 +109,9 @@ export default function SongSearch({ query, onQueryChange, songs, limit, selecte
       />
       {songs.length > 0 && (
         <p className="hidden text-xs text-zinc-500 md:block">↑ ↓ för att bläddra, Enter för att välja, Esc för att rensa.</p>
+      )}
+      {fuzzy && songs.length > 0 && (
+        <p className="text-xs text-amber-400/90">Inga exakta träffar – visar låtar med liknande stavning.</p>
       )}
       {collapsed && songs.length > 0 && (
         <button

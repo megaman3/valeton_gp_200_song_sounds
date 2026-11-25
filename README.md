@@ -8,6 +8,8 @@ parametrar som finns i din GP-200 enligt Valetons manual.
 **Appen online:** https://megaman3.github.io/valeton_gp_200_song_sounds/
 
 Skriv låt, artist eller **ljudtyp**, och välj med musen eller med **↑ / ↓ + Enter** (Esc rensar sökningen).
+Sökningen tål stavfel: ger en sökning inga exakta träffar visas låtar med liknande stavning
+(t.ex. "wiskey" → Whiskey in the Jar, "metalica" → Metallica).
 
 - **Ljudtyper:** 20 färdiga grundljud som "Jazz clean", "Texas blues", "60-tals fuzz", "Djent / modern metal" och
   "Ambient shimmer". Sök på t.ex. `clean`, `blues`, `high gain`, `fuzz` eller `ljudtyp` (visar alla), eller välj en

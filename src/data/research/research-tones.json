@@ -5,7 +5,7 @@
   "license": "Egen sammanställning; källor anges per post",
   "attribution": "Egen research – källor per låt",
   "importedAt": "2026-11-10",
-  "count": 405,
+  "count": 415,
   "tones": [
     {
       "id": "volbeat-a-warrior-s-call-riff-distorted",
@@ -240,6 +240,36 @@
       "url": "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine"
     },
     {
+      "id": "volbeat-mr-mrs-ness-riff-distorted",
+      "artist": "Volbeat",
+      "song": "Mr. & Mrs. Ness",
+      "genre": "heavy metal",
+      "era": "2010s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 6,
+        "mid": 6,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Marshall JCM800",
+      "guitar": "Gibson SG",
+      "notes": "Michael Poulsen: \"He likes the old 800s\" (gitarrtekniker). Live idag Kemper + Fractal. Låtnivåns rattlägen är tolkning.",
+      "effects": [
+        "Ibanez TS808 Tube Screamer"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine",
+        "https://www.uberproaudio.com/who-plays-what/859-volbeat-michael-poulsen-guitar-rig-gear-and-equipment"
+      ],
+      "url": "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine"
+    },
+    {
       "id": "volbeat-sad-man-s-tongue-riff-overdriven",
       "artist": "Volbeat",
       "song": "Sad Man's Tongue",
@@ -296,6 +326,100 @@
       "sources": [
         "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine",
         "https://www.uberproaudio.com/who-plays-what/859-volbeat-michael-poulsen-guitar-rig-gear-and-equipment"
+      ],
+      "url": "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine"
+    },
+    {
+      "id": "volbeat-guitar-gangsters-cadillac-blood-riff-distorted",
+      "artist": "Volbeat",
+      "song": "Guitar Gangsters & Cadillac Blood",
+      "genre": "rockabilly metal",
+      "era": "2000s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 6,
+        "mid": 6,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Marshall JCM800",
+      "guitar": "Gibson SG GT",
+      "notes": "Titelspåret från albumet 2008, inspelat i Hansen Studios (producent Jacob Hansen); gitarr Michael Poulsen och Thomas Bredahl. Belagt: Poulsens huvudgitarr var länge en Gibson SG GT och han föredrar gamla Marshall JCM800. Inte belagt: exakt förstärkare och pedaler på just den här inspelningen (TS808 finns bara dokumenterad i senare rigg) – rattlägena är en teknisk uppskattning av ett tungt, groovigt rock'n'roll-riff med mellanhög gain. Vill du ha tightare attack: slå på DST Green OD som boost (låg gain, hög volym).",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.35,
+      "sources": [
+        "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine",
+        "https://www.uberproaudio.com/who-plays-what/859-volbeat-michael-poulsen-guitar-rig-gear-and-equipment",
+        "https://en.wikipedia.org/wiki/Guitar_Gangsters_%26_Cadillac_Blood",
+        "https://www.discogs.com/release/1443382-Volbeat-Guitar-Gangsters-Cadillac-Blood"
+      ],
+      "url": "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine"
+    },
+    {
+      "id": "volbeat-shotgun-blues-riff-distorted",
+      "artist": "Volbeat",
+      "song": "Shotgun Blues",
+      "genre": "heavy metal",
+      "era": "2020s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6,
+        "mid": 5.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Marshall JCM800",
+      "guitar": "Gibson SG GT / Jackson Shadowcaster",
+      "notes": "Singel från Servant of the Mind (2021), inspelad i Hansen Studios och Sonic Debris. Belagt: Rob Caggiano spelar lead på Jackson Shadowcaster; tunga riff och tvillinggitarr-harmonier i Volbeats tidiga stil. Inte belagt: förstärkare och pedaler för just den här låten (albumets Boss HM-2 är bara kopplad till \"Becoming\") – Poulsens förkärlek för JCM800 används, rattlägena är en teknisk uppskattning.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.4,
+      "sources": [
+        "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine",
+        "https://www.uberproaudio.com/who-plays-what/859-volbeat-michael-poulsen-guitar-rig-gear-and-equipment",
+        "https://en.wikipedia.org/wiki/Shotgun_Blues_(Volbeat_song)",
+        "https://guitar.com/features/interviews/volbeat-new-album-servant-of-the-mind/",
+        "https://ghostcultmag.com/album-review-volbeat-servant-of-the-mind-emi/"
+      ],
+      "url": "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine"
+    },
+    {
+      "id": "volbeat-shotgun-blues-solo-distorted",
+      "artist": "Volbeat",
+      "song": "Shotgun Blues",
+      "genre": "heavy metal",
+      "era": "2020s",
+      "toneType": "distorted",
+      "part": "solo",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2.5
+      },
+      "amp": "Marshall JCM800",
+      "guitar": "Jackson Shadowcaster (Rob Caggiano)",
+      "notes": "Singel från Servant of the Mind (2021), inspelad i Hansen Studios och Sonic Debris. Belagt: Rob Caggiano spelar lead på Jackson Shadowcaster; tunga riff och tvillinggitarr-harmonier i Volbeats tidiga stil. Inte belagt: förstärkare och pedaler för just den här låten (albumets Boss HM-2 är bara kopplad till \"Becoming\") – Poulsens förkärlek för JCM800 används, rattlägena är en teknisk uppskattning. Solo/harmonier: lite mer gain och mellanregister, kort eko.",
+      "effects": [
+        "delay"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.35,
+      "sources": [
+        "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine",
+        "https://www.uberproaudio.com/who-plays-what/859-volbeat-michael-poulsen-guitar-rig-gear-and-equipment",
+        "https://en.wikipedia.org/wiki/Shotgun_Blues_(Volbeat_song)",
+        "https://guitar.com/features/interviews/volbeat-new-album-servant-of-the-mind/",
+        "https://ghostcultmag.com/album-review-volbeat-servant-of-the-mind-emi/"
       ],
       "url": "https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine"
     },
@@ -443,6 +567,62 @@
       "id": "monster-truck-righteous-smoke-riff-distorted",
       "artist": "Monster Truck",
       "song": "Righteous Smoke",
+      "genre": "hard rock",
+      "era": "2010s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 6,
+        "mid": 6.5,
+        "treble": 6,
+        "presence": 5.5,
+        "reverb": 1.5
+      },
+      "amp": "Marshall JMP 50 (1970s) into Traynor 4x12 Vintage 30 cab",
+      "guitar": "Gibson SG",
+      "notes": "Jeremy Widerman: Marshall JMP in i två Traynor 4x12 (MusicRadar). Pedaler enligt Equipboard (ej verifierat). Rattlägen är tolkning.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/guitars/start-me-up-monster-trucks-jeremy-widerman-640348",
+        "https://equipboard.com/pros/jeremy-widerman"
+      ],
+      "url": "https://musicradar.com/news/guitars/start-me-up-monster-trucks-jeremy-widerman-640348"
+    },
+    {
+      "id": "monster-truck-why-are-you-not-rocking-riff-distorted",
+      "artist": "Monster Truck",
+      "song": "Why Are You Not Rocking?",
+      "genre": "hard rock",
+      "era": "2010s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Marshall JMP 50 (1970s) into Traynor 4x12 Vintage 30 cab",
+      "guitar": "Gibson SG",
+      "notes": "Jeremy Widerman: Marshall JMP in i två Traynor 4x12 (MusicRadar). Pedaler enligt Equipboard (ej verifierat). Rattlägen är tolkning.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://musicradar.com/news/guitars/start-me-up-monster-trucks-jeremy-widerman-640348",
+        "https://equipboard.com/pros/jeremy-widerman"
+      ],
+      "url": "https://musicradar.com/news/guitars/start-me-up-monster-trucks-jeremy-widerman-640348"
+    },
+    {
+      "id": "monster-truck-she-s-a-witch-riff-distorted",
+      "artist": "Monster Truck",
+      "song": "She's a Witch",
       "genre": "hard rock",
       "era": "2010s",
       "toneType": "distorted",
@@ -6434,6 +6614,34 @@
       "url": "https://equipboard.com/john-christ"
     },
     {
+      "id": "pugh-rogefeldt-hog-farm-riff-overdriven",
+      "artist": "Pugh Rogefeldt",
+      "song": "Hog Farm",
+      "genre": "svensk rock",
+      "era": "1970s",
+      "toneType": "overdriven",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 5.5,
+        "bass": 5.5,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2.5
+      },
+      "amp": "Unknown",
+      "guitar": "",
+      "notes": "Öppningsspåret på Bolla och rulla (1974), inspelat i Metronome Studio i Stockholm. Belagt: Pugh Rogefeldt spelar gitarr, munspel och sjunger; elgitarren spelas av brodern Ingemar Rogefeldt. Inte belagt: förstärkare och effekter – ljudet är en genretypisk tolkning av svensk 70-talsrock (varm, lätt överstyrd crunch). Vissa källor anger att låten kom redan 1970.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.3,
+      "sources": [
+        "https://sv.wikipedia.org/wiki/Bolla_och_rulla",
+        "https://sv.wikipedia.org/wiki/Hog_Farm"
+      ],
+      "url": "https://sv.wikipedia.org/wiki/Bolla_och_rulla"
+    },
+    {
       "id": "dizzy-mizz-lizzy-silverflame-riff-distorted",
       "artist": "Dizzy Mizz Lizzy",
       "song": "Silverflame",
@@ -7976,6 +8184,37 @@
       "amp": "Mesa Boogie Dual Rectifier",
       "guitar": "ESP / Gibson Explorer",
       "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon. Förstärkaren för Load/Reload är inte bekräftad i källorna.",
+      "effects": [
+        "noise gate"
+      ],
+      "pickup": "bridge humbucker (EMG)",
+      "confidence": 0.35,
+      "sources": [
+        "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps",
+        "https://en.wikipedia.org/wiki/Mesa/Boogie_Mark_IIC%2B",
+        "https://www.groundguitar.com/james-hetfield-guitars-and-gear/james-hetfields-marshall-jmp-2203/"
+      ],
+      "url": "https://guitarworld.com/news/metallicas-james-hetfield-and-kirk-hammett-john-petrucci-and-more-on-why-they-love-mesaboogies-mark-ii-amps"
+    },
+    {
+      "id": "metallica-turn-the-page-riff-distorted",
+      "artist": "Metallica",
+      "song": "Turn the Page",
+      "genre": "thrash metal",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7,
+        "bass": 6,
+        "mid": 6,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Marshall-type (Wizard Modern Classic)",
+      "guitar": "ESP / Gibson Explorer",
+      "notes": "Metallica: Marshall (JCM800 2203) på de två första albumen; Mesa/Boogie Mark IIC+ från Master of Puppets, Hetfields huvudförstärkare genom ...And Justice for All och återupplivad på Death Magnetic. Svartalbumet: källorna går isär (Mark IIC+, Dual Rectifier, Marshall). Kirk Hammett: Cry Baby-wah på solon. Bob Seger-cover från Garage Inc. (1998). Förstärkaren är bara delvis dokumenterad (Equipboard: Wizard Modern Classic, en modifierad Marshall-typ) – rattlägena är en teknisk uppskattning.",
       "effects": [
         "noise gate"
       ],
@@ -10178,6 +10417,35 @@
       "url": "https://guitarworld.com/features/slash-appetite-reconstruction"
     },
     {
+      "id": "guns-n-roses-shotgun-blues-riff-distorted",
+      "artist": "Guns N' Roses",
+      "song": "Shotgun Blues",
+      "genre": "hard rock",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 8,
+        "bass": 6,
+        "mid": 6.5,
+        "treble": 6.5,
+        "presence": 6,
+        "reverb": 2
+      },
+      "amp": "Marshall",
+      "guitar": "Gibson Les Paul (Derrig '59 replica)",
+      "notes": "Slash på Appetite for Destruction: Kris Derrig-kopia av en -59 Les Paul -> hyrd, modifierad Marshall Super Lead (S.I.R. #39) med Vintage 30-kabinett. Use Your Illusion: Marshall (modell inte bekräftad i källorna). Cry Baby på solon.",
+      "effects": [],
+      "pickup": "bridge humbucker",
+      "confidence": 0.4,
+      "sources": [
+        "https://guitarworld.com/features/slash-appetite-reconstruction",
+        "https://www.guitarworld.com/features/slashs-guitar-gear-everything-you-need-to-nail-the-guns-n-roses-legends-sound",
+        "https://musicradar.com/news/the-story-of-slashs-signature-marshall-amps-and-how-they-capture-his-classic-tones"
+      ],
+      "url": "https://guitarworld.com/features/slash-appetite-reconstruction"
+    },
+    {
       "id": "def-leppard-let-it-go-riff-distorted",
       "artist": "Def Leppard",
       "song": "Let It Go",
@@ -12074,6 +12342,38 @@
         "https://www.premierguitar.com/gear/rig-rundown-slayer"
       ],
       "url": "https://www.guitarworld.com/gear/kerry-king-king-pain"
+    },
+    {
+      "id": "alice-in-chains-man-in-the-box-riff-distorted",
+      "artist": "Alice in Chains",
+      "song": "Man in the Box",
+      "genre": "grunge",
+      "era": "1990s",
+      "toneType": "distorted",
+      "part": "riff",
+      "ampSettings": {
+        "gain": 7.5,
+        "bass": 6,
+        "mid": 6,
+        "treble": 6,
+        "presence": 6,
+        "reverb": 1.5
+      },
+      "amp": "Marshall JCM800 (modded)",
+      "guitar": "G&L Rampage",
+      "notes": "Jerry Cantrell på Facelift (1990): en Bogner-modifierad Marshall JCM800 som ägdes av teknikern Ronnie Champagne och användes till de flesta gitarrspåren (Killer Guitar Rigs). Huvudgitarr: G&L Rampage. Det 'talande' huvudriffet i Man in the Box görs med talkbox – GP-200 har ingen talkbox, så en wah (halvöppen/manuellt rörd) är närmaste ersättning. Vilken talkbox som användes på originalinspelningen är inte bekräftad. Rattlägen är en teknisk uppskattning.",
+      "effects": [
+        "talk box",
+        "wah"
+      ],
+      "pickup": "bridge humbucker",
+      "confidence": 0.5,
+      "sources": [
+        "https://killerguitarrigs.com/jerry-cantrell-guitar-tone-dirt/",
+        "https://www.guitarworld.com/features/jerry-cantrell-facelift",
+        "https://www.premierguitar.com/gear/rig-rundown-alice-in-chains-jerry-cantrell"
+      ],
+      "url": "https://killerguitarrigs.com/jerry-cantrell-guitar-tone-dirt/"
     }
   ]
 }

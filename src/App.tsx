@@ -1,5 +1,5 @@
 import { useMemo, useRef, useState } from 'react';
-import { allSongs, database, generator, searchable, searchSongs, soundTypes } from './engine';
+import { allSongs, database, generator, search, searchable, soundTypes } from './engine';
 import SongSearch from './components/SongSearch';
 import FavoritesList from './components/FavoritesList';
 import { resolveFavorites, useFavorites } from './hooks/useFavorites';
@@ -23,7 +23,10 @@ export default function App() {
   const favoriteSongs = useMemo(() => resolveFavorites(favorites, searchable), [favorites]);
   const mainRef = useRef<HTMLElement>(null);
 
-  const results = useMemo(() => (query.trim() ? searchSongs(searchable, query, MAX_RESULTS) : []), [query]);
+  const { songs: results, fuzzy } = useMemo(
+    () => (query.trim() ? search(searchable, query, MAX_RESULTS) : { songs: [], fuzzy: false }),
+    [query],
+  );
   const song = searchable.find((s) => s.id === songId);
   const profile = song?.source === 'profile' ? database.profiles.find((p) => `sound-${p.id}` === song.id) : undefined;
   const selectSong = (id: string) => {
@@ -87,6 +90,7 @@ export default function App() {
               query={query}
               onQueryChange={setQuery}
               songs={results}
+              fuzzy={fuzzy}
               limit={MAX_RESULTS}
               selectedId={songId}
               onSelect={selectSong}
