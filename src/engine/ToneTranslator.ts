@@ -170,6 +170,12 @@ export class ToneTranslator {
     } else if (ampMatch) {
       ampModel = ampMatch.model;
       notes.push(`AMP: "${tone.amp}" → ${ampModel}. ${ampMatch.rule.reason}`);
+      // Ren del på en distad modell: byt till förstärkarens (eller närmaste) rena kanal.
+      const clean = tone.toneType === 'clean' && this.rules.cleanChannels?.find((c) => c.from.includes(ampModel));
+      if (clean) {
+        notes.push(`AMP: ren del – ${ampModel} → ${clean.to}. ${clean.reason}`);
+        ampModel = clean.to;
+      }
     } else {
       const fb = this.fallbackAmp(s.gain, tone.genre, tone.era);
       ampModel = fb.model;

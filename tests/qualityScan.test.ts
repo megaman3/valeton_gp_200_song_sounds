@@ -38,7 +38,13 @@ describe('kvalitetsskanning', () => {
 
   it('hittar fel epok och ren del på high gain-modell', () => {
     expect(rules({ era: '1970s', amp: 'Peavey 5150', ampSettings: { gain: 8, bass: 5, mid: 5, treble: 6, presence: 6, reverb: 1 } })).toContain('era');
-    expect(rules({ toneType: 'clean', amp: 'Marshall JCM800', ampSettings: { gain: 2, bass: 5, mid: 6, treble: 6, presence: 6, reverb: 2 } })).toContain('clean-highgain');
+    // Översättningen byter själv till en ren kanal, så regeln testas med en konstruerad del.
+    const clean = tone({ toneType: 'clean', ampSettings: { gain: 2, bass: 5, mid: 6, treble: 6, presence: 6, reverb: 2 } });
+    const onHighGain = scanTone(clean, { id: 'p', name: 'p', overrides: { AMP: { enabled: true, model: 'EV 51' } } });
+    expect(onHighGain.findings.map((f) => f.rule)).toContain('clean-highgain');
+    // JCM800 har bara en kanal – en ren del på UK 800 är autentisk och flaggas inte.
+    const onJcm = scanTone(clean, { id: 'p', name: 'p', overrides: { AMP: { enabled: true, model: 'UK 800' } } });
+    expect(onJcm.findings.map((f) => f.rule)).not.toContain('clean-highgain');
   });
 
   it('osäkra formuleringar räknas högst två gånger och forumkällor flaggas', () => {

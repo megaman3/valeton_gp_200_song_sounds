@@ -25,8 +25,11 @@ const BASS_AMPS = new Set(['Classic Bass', 'Foxy Bass', 'Mess Bass', 'Mini Bass'
 /** Modern high gain (Rectifier, 5150, Diezel, ENGL m.fl.) – fanns inte före ca 1980. */
 const MODERN_HIGH_GAIN = /^(Mess|EV 51|Dizz|Eagle|Power LD|Bog Red|Flagman|Solo100 (OD|LD)|Juice R100)/;
 
-/** Förstärkarmodeller som är tydligt distade – udda val för en ren del. */
-const HIGH_GAIN = /^(UK 800|UK 900|Mess|EV 51|Dizz|Eagle|Power LD|Bog Red|Flagman|Solo100 (OD|LD)|Juice R100|Bad-KT OD)/;
+/**
+ * Förstärkarmodeller som är tydligt distade – udda val för en ren del. Marshall UK 800/900 räknas inte:
+ * JCM800 har bara en kanal och originalet blir rent genom att gain/gitarrvolym dras ner.
+ */
+const HIGH_GAIN = /^(Mess|EV 51|Dizz|Eagle|Power LD|Bog Red|Flagman|Solo100 (OD|LD)|Juice R100|Bad-KT OD)/;
 
 /**
  * Basgitarr i gitarrfältet. "Bass" ensamt räcker inte: "Marshall Super Bass" är en gitarrförstärkare,

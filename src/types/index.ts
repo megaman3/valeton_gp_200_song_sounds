@@ -193,6 +193,15 @@ export interface MappingRules {
   effects: EffectRule[];
   /** Effektord som medvetet saknar motsvarighet i GP-200 (t.ex. talk box). */
   ignoredEffects: string[];
+  /** Ren del på en distad förstärkarmodell → förstärkarens (eller närmaste) rena kanal. */
+  cleanChannels?: CleanChannelRule[];
+}
+
+export interface CleanChannelRule {
+  from: string[];
+  to: string;
+  reason: string;
+  basis: 'manual' | 'interpretation';
 }
 
 /** Normaliserad post från en extern källa (t.ex. GuitarToneAdapt). Rattvärden 0–10. */

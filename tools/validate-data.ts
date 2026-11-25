@@ -46,6 +46,13 @@ for (const r of rules.effects) {
   }
 }
 
+// 2a. Rena kanaler pekar på existerande förstärkare
+for (const c of rules.cleanChannels ?? []) {
+  for (const m of [...c.from, c.to]) {
+    if (!validator.modelExists('AMP', m)) error(`clean-kanal [${c.to}]`, `"${m}" finns inte`);
+  }
+}
+
 // 2b. Rättelser av GuitarToneAdapt måste peka på existerande toner
 const gtaIds = new Set(database.external.tones.map((t) => t.id));
 for (const c of gtaCorrections.corrections) {

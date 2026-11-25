@@ -805,11 +805,31 @@
     {
       "match": [
         "svt",
-        "ampeg"
+        "ampeg b 15",
+        "ampeg b15",
+        "portaflex",
+        "ampeg bass"
       ],
       "model": "Classic Bass",
       "basis": "manual",
-      "reason": "Classic Bass bygger på Ampeg SVT (manualen s. 51)."
+      "reason": "Classic Bass bygger på Ampeg SVT (manualen s. 51). Gäller bara uttalade basförstärkare (SVT, B-15, Portaflex)."
+    },
+    {
+      "match": [
+        "ampeg"
+      ],
+      "byGain": [
+        {
+          "maxGain": 3.5,
+          "model": "Dark Twin"
+        },
+        {
+          "maxGain": 10,
+          "model": "Dark DLX"
+        }
+      ],
+      "reason": "Ampeg utan basmodell (t.ex. VT-22, VT-40, V-4, V-2) är rörförstärkare för gitarr med 6L6/7027 – närmast Fender-typerna, inte basförstärkaren Classic Bass.",
+      "basis": "interpretation"
     }
   ],
   "cab": [
@@ -2042,5 +2062,105 @@
     "multi effects",
     "modulation",
     "fx"
+  ],
+  "cleanChannels": [
+    {
+      "from": [
+        "Mess2C+ 1",
+        "Mess2C+ 2",
+        "Mess2C+ 3",
+        "Mess4 LD",
+        "Mess4 LD 2",
+        "Mess4 LD 3",
+        "Mess DualV",
+        "Mess DualM",
+        "L-Star OD"
+      ],
+      "to": "L-Star CL",
+      "basis": "interpretation",
+      "reason": "Mesa/Boogies leadkanaler saknar ren motsvarighet i GP-200; Lone Star CH1 (L-Star CL) är Mesas rena kanal i modellistan."
+    },
+    {
+      "from": [
+        "Solo100 OD",
+        "Solo100 LD"
+      ],
+      "to": "Solo100 CL",
+      "basis": "manual",
+      "reason": "Soldano SLO-100:s rena kanal (manualen)."
+    },
+    {
+      "from": [
+        "Bad-KT OD"
+      ],
+      "to": "Bad-KT CL",
+      "basis": "manual",
+      "reason": "Bad Cat Hot Cat 30:s rena kanal (manualen)."
+    },
+    {
+      "from": [
+        "Match OD"
+      ],
+      "to": "Match CL",
+      "basis": "manual",
+      "reason": "Matchless Chieftain:s rena läge (manualen)."
+    },
+    {
+      "from": [
+        "Z38 OD"
+      ],
+      "to": "Z38 CL",
+      "basis": "manual",
+      "reason": "Dr. Z Maz 38:s rena läge (manualen)."
+    },
+    {
+      "from": [
+        "SUPDual OD"
+      ],
+      "to": "SUPDual CL",
+      "basis": "manual",
+      "reason": "Supro Dual-Tone CH1 (manualen)."
+    },
+    {
+      "from": [
+        "BogSV OD",
+        "Bog BlueV",
+        "Bog BlueM",
+        "Bog RedV",
+        "Bog RedM"
+      ],
+      "to": "BogSV CL",
+      "basis": "interpretation",
+      "reason": "Bogners crunch-/leadkanaler – Bogner Shiva CH1 (BogSV CL) är Bogners rena kanal i modellistan."
+    },
+    {
+      "from": [
+        "Knights OD"
+      ],
+      "to": "Knights CL",
+      "basis": "manual",
+      "reason": "Grindrod Pendragon Normal-kanal (manualen)."
+    },
+    {
+      "from": [
+        "EV 51",
+        "Dizz VH",
+        "Dizz VH S",
+        "Dizz VH+",
+        "Dizz VH+ S",
+        "Eagle 120",
+        "Eagle 120+",
+        "Power LD",
+        "Juice R100",
+        "Juice30 OD",
+        "Flagman 1",
+        "Flagman 2",
+        "Flagman+ 1",
+        "Flagman+ 2"
+      ],
+      "to": "Dark Twin",
+      "basis": "interpretation",
+      "reason": "Förstärkarens rena kanal finns inte i GP-200 (5150, Diezel, ENGL, Orange, Friedman) – Dark Twin är en neutral ren grund."
+    }
   ]
 }

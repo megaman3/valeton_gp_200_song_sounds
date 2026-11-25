@@ -86,3 +86,28 @@ describe('ToneTranslator – effekter', () => {
     expect(r.blocks.NR?.enabled).toBe(true);
   });
 });
+
+describe('ToneTranslator – Ampeg och rena kanaler', () => {
+  const amp = (over: Partial<ResearchedTone>) => translator.translateTone(tone(over)).blocks.AMP?.model;
+  const cleanSettings = { gain: 2, bass: 5, mid: 5, treble: 6, presence: 5, reverb: 2 };
+
+  it('Ampegs gitarrförstärkare blir inte basförstärkaren Classic Bass', () => {
+    expect(amp({ amp: 'Ampeg VT-22' })).toBe('Dark DLX');
+    expect(amp({ amp: 'Ampeg VT-40 (Baxandall EQ)' })).toBe('Dark DLX');
+    expect(amp({ amp: 'Ampeg V-4 / Vox AC30' })).toBe('Dark DLX');
+    expect(amp({ amp: 'Ampeg SVT Classic' })).toBe('Classic Bass');
+  });
+
+  it('ren del på en distad modell får förstärkarens rena kanal', () => {
+    expect(amp({ amp: 'Mesa/Boogie Mark IIC+', toneType: 'clean', ampSettings: cleanSettings })).toBe('L-Star CL');
+    expect(amp({ amp: 'Soldano SLO-100', toneType: 'clean', ampSettings: cleanSettings })).toBe('Solo100 CL');
+    expect(amp({ amp: 'Peavey 5150', toneType: 'clean', ampSettings: cleanSettings })).toBe('Dark Twin');
+    const notes = translator.translateTone(tone({ amp: 'Peavey 5150', toneType: 'clean', ampSettings: cleanSettings })).notes;
+    expect(notes.some((n) => n.includes('ren del – EV 51 → Dark Twin'))).toBe(true);
+  });
+
+  it('JCM800 (en kanal) behålls för rena delar, och distade delar påverkas inte', () => {
+    expect(amp({ amp: 'Marshall JCM800', toneType: 'clean', ampSettings: cleanSettings })).toBe('UK 800');
+    expect(amp({ amp: 'Peavey 5150', toneType: 'distorted' })).toBe('EV 51');
+  });
+});
