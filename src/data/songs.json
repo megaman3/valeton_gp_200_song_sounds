@@ -442,5 +442,106 @@
         }
       }
     ]
+  },
+  {
+    "id": "danko-jones-my-little-rnr",
+    "artist": "Danko Jones",
+    "title": "My Little RnR",
+    "aliases": [
+      "my little rock n roll",
+      "my little rock and roll",
+      "rnr",
+      "rock n roll",
+      "garage rock",
+      "danko garage rock"
+    ],
+    "originalGear": {
+      "notes": "Rå, aggressiv garage-rock med mycket mellanregister, crunch och bett – kompakt Marshall-liknande crunch med tryck, tydlig attack och lite sustain, inte modern metal-dist. Rekommenderat GP-200-preset, inte en verifierad rekonstruktion av Danko Jones studioutrustning."
+    },
+    "parts": [
+      {
+        "id": "rhythm",
+        "name": "Danko Garage Rock",
+        "overrides": {
+          "NR": {
+            "enabled": true,
+            "model": "Gate 2",
+            "params": {
+              "Threshold": 38,
+              "Attack": 20,
+              "Release": 55
+            }
+          },
+          "DST": {
+            "enabled": true,
+            "model": "Green OD",
+            "params": {
+              "Gain": 22,
+              "Tone": 58,
+              "Volume": 75
+            },
+            "note": "Stramar upp förstärkaren och ger attack, snarare än att skapa hela distortionen."
+          },
+          "AMP": {
+            "enabled": true,
+            "model": "UK 800",
+            "params": {
+              "Gain": 75,
+              "Bass": 46,
+              "Middle": 68,
+              "Treble": 62,
+              "Presence": 60,
+              "Volume": 70
+            }
+          },
+          "CAB": {
+            "enabled": true,
+            "model": "UK G12"
+          },
+          "EQ": {
+            "enabled": true,
+            "model": "Guitar EQ 1",
+            "params": {
+              "125 Hz": 1,
+              "400 Hz": 3,
+              "800 Hz": 5,
+              "1.6 kHz": 4,
+              "4 kHz": 2
+            }
+          },
+          "DLY": {
+            "enabled": false,
+            "model": "Digital Delay S"
+          },
+          "RVB": {
+            "enabled": true,
+            "model": "Room",
+            "params": {
+              "Mix": 10,
+              "Decay": 15
+            },
+            "note": "Tone 55 saknas på Room enligt manualen (Mix, Pre Delay, Decay)."
+          },
+          "PRE": {
+            "enabled": false,
+            "model": "COMP"
+          },
+          "WHA": {
+            "enabled": false,
+            "model": "V-Wah"
+          },
+          "MOD": {
+            "enabled": false,
+            "model": "A-Chorus"
+          }
+        },
+        "guitarNotes": {
+          "pickup": "Stallmick, humbucker",
+          "guitarVolume": "10",
+          "guitarTone": "10",
+          "other": "Spela huvudriffet med stallmicken – det ska kännas rått och nästan oborstat. Finjustering: för snällt → AMP Gain 80 · för mycket dist/grötigt → DST Gain 15 · för tunt → 400 Hz +5 · för vasst → Presence 54 och 4 kHz 0 · för lite aggressivitet → 1.6 kHz +6 · för mycket bas i riffet → AMP Bass 40."
+        }
+      }
+    ]
   }
 ]
