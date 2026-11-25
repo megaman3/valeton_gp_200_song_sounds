@@ -32,6 +32,7 @@ npm run import:gta     # hämta senaste GuitarToneAdapt-datasetet
 npm run preset -- "paranoid"             # skriv ut preset i terminalen
 npm run preset -- "back in black" lead   # en specifik del
 npm run build          # bygg för produktion (dist/)
+npm run scan-quality   # kvalitetsskanning: vilka låtar har svagast/motsägelsefullt underlag (tools/quality-report.md)
 ```
 
 ## Struktur
@@ -48,7 +49,7 @@ src/
   types/       Delade TypeScript-typer
 public/        PWA-ikoner (appikon på hemskärmen)
 tests/         Vitest – bl.a. att inget preset använder en modell som saknas i GP-200
-tools/         CLI: import-guitartoneadapt, validate-data, preset-cli, build-research.py
+tools/         CLI: import-guitartoneadapt, validate-data, preset-cli, build-research.py, scan-quality
 docs/          ARCHITECTURE.md – dataflöde, hur man lägger till låtar, färdplan
 ```
 
