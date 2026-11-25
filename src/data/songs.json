@@ -345,5 +345,102 @@
         }
       }
     ]
+  },
+  {
+    "id": "metallica-whiskey-in-the-jar",
+    "artist": "Metallica",
+    "title": "Whiskey in the Jar",
+    "album": "Garage Inc.",
+    "year": 1998,
+    "aliases": [
+      "whiskey",
+      "whisky in the jar",
+      "thin lizzy cover",
+      "garage inc"
+    ],
+    "originalGear": {
+      "notes": "Thin Lizzy-cover. Fetare, mer komprimerat och aggressivt än originalet – Marshall-liknande grund med tydligt mellanregister. Rekommenderat GP-200-preset, inte en verifierad kopia av Metallicas studioutrustning."
+    },
+    "parts": [
+      {
+        "id": "rhythm",
+        "name": "Rhythm / Main Guitar",
+        "overrides": {
+          "NR": {
+            "enabled": true,
+            "model": "Gate 2",
+            "params": {
+              "Threshold": 42,
+              "Attack": 25,
+              "Release": 60
+            }
+          },
+          "DST": {
+            "enabled": true,
+            "model": "Green OD",
+            "params": {
+              "Gain": 18,
+              "Tone": 56,
+              "Volume": 72
+            },
+            "note": "Overdriven boost framför förstärkaren för tightare attack och tydligare riff."
+          },
+          "AMP": {
+            "enabled": true,
+            "model": "UK 800",
+            "params": {
+              "Gain": 72,
+              "Bass": 48,
+              "Middle": 55,
+              "Treble": 62,
+              "Presence": 60,
+              "Volume": 70
+            }
+          },
+          "CAB": {
+            "enabled": true,
+            "model": "UK G12"
+          },
+          "EQ": {
+            "enabled": true,
+            "model": "Guitar EQ 1",
+            "params": {
+              "125 Hz": 2,
+              "400 Hz": -2,
+              "800 Hz": 4,
+              "1.6 kHz": 4,
+              "4 kHz": 2
+            }
+          },
+          "DLY": {
+            "enabled": false
+          },
+          "RVB": {
+            "enabled": true,
+            "model": "Plate",
+            "params": {
+              "Mix": 12,
+              "Decay": 20
+            },
+            "note": "Tone 55 saknas på Plate enligt manualen (Mix, Decay, High Damp)."
+          },
+          "PRE": {
+            "enabled": false
+          },
+          "WHA": {
+            "enabled": false
+          },
+          "MOD": {
+            "enabled": false
+          }
+        },
+        "guitarNotes": {
+          "pickup": "Stallmick, humbucker",
+          "guitarVolume": "10",
+          "guitarTone": "10",
+          "other": "Finjustering: AMP Gain 78 för mer aggressiv dist · Bass 43 för tightare riff · 1.6 kHz +6 för mer bett · Presence 54 och 4 kHz 0 om det låter för vasst · 400 Hz +2 om det låter för tunt."
+        }
+      }
+    ]
   }
 ]
