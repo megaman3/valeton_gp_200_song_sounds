@@ -24,6 +24,7 @@ for song, s, fx in [
     ("Fallen", (6.5,5.5,6,6.5,6,2.5), []),
     ("Doc Holliday", (7,6,6,6.5,6,2), []),
     ("For Evigt", (6.5,5.5,6,6.5,6,2.5), []),
+    ("Mr. & Mrs. Ness", (7,6,6,6.5,6,2), ["Ibanez TS808 Tube Screamer"]),
 ]:
     t("Volbeat", song, "heavy metal", "2010s", "distorted", "riff", s, VBA, VBG, VBN, fx, "bridge humbucker", 0.5, VB)
 t("Volbeat", "Sad Man's Tongue", "rockabilly metal", "2000s", "overdriven", "riff", (5.5,5,6,6.5,6,2.5), VBA, VBG,
@@ -58,6 +59,8 @@ for song, s, fx, era in [
     ("Old Train", (6.5,6,6.5,6,5.5,2), [], "2010s"),
     ("Seven Seas Blues", (6.5,6,7,6,5.5,2), [], "2010s"),
     ("Righteous Smoke", (7,6,6.5,6,5.5,1.5), [], "2010s"),
+    ("Why Are You Not Rocking?", (7.5,6,6.5,6.5,6,1.5), [], "2010s"),
+    ("She's a Witch", (7,6,6.5,6,5.5,1.5), [], "2010s"),
 ]:
     t("Monster Truck", song, "hard rock", era, "distorted", "riff", s, MTA, MTG, MTN, fx, "bridge humbucker", 0.5, MT)
 t("Monster Truck", "The Lion", "hard rock", "2010s", "distorted", "solo", (7.5,5.5,7,6.5,6,2), MTA, MTG, MTN,
@@ -502,6 +505,14 @@ many("Danzig", "heavy metal", [
 # Utan dokumenterad utrustning – genretypisk tolkning
 def unk(artist, genre, url, rows, note, conf=0.3, amp="Unknown", guitar=""):
     many(artist, genre, rows, amp, guitar, note, "bridge humbucker", conf, [url])
+# Pugh Rogefeldt – Hog Farm: öppningsspår på Bolla och rulla (1974), inspelat i Metronome Studio. Belagt: Pugh på gitarr/
+# munspel/sång, brodern Ingemar Rogefeldt på elgitarr (sv.wikipedia). Ingen förstärkare/pedal dokumenterad – genretypisk tolkning.
+many("Pugh Rogefeldt", "svensk rock", [
+    ("Hog Farm", "1970s", "overdriven", "riff", (5.5,5.5,6.5,6.5,6,2.5)),
+], "Unknown", "", "Öppningsspåret på Bolla och rulla (1974), inspelat i Metronome Studio i Stockholm. Belagt: Pugh Rogefeldt spelar "
+   "gitarr, munspel och sjunger; elgitarren spelas av brodern Ingemar Rogefeldt. Inte belagt: förstärkare och effekter – "
+   "ljudet är en genretypisk tolkning av svensk 70-talsrock (varm, lätt överstyrd crunch). Vissa källor anger att låten kom redan 1970.",
+   "bridge humbucker", 0.3, ["https://sv.wikipedia.org/wiki/Bolla_och_rulla", "https://sv.wikipedia.org/wiki/Hog_Farm"])
 unk("Dizzy Mizz Lizzy", "hard rock", "https://en.wikipedia.org/wiki/Dizzy_Mizz_Lizzy", [
     ("Silverflame", "1990s", "distorted", "riff", (6.5,5.5,6,6.5,6,2.5)),
     ("Waterline", "1990s", "distorted", "riff", (6.5,5.5,6,6.5,6,2.5)),
@@ -599,6 +610,10 @@ many("Metallica", "thrash metal", [
         "note": "Förstärkaren för Load/Reload är inte bekräftad i källorna."}),
     ("King Nothing", "1990s", "distorted", "riff", (7,6.5,5.5,6.5,6,2), {"amp": "Mesa Boogie Dual Rectifier", "conf": 0.35,
         "note": "Förstärkaren för Load/Reload är inte bekräftad i källorna."}),
+    # Garage Inc. – förstärkaren är bara delvis dokumenterad (Equipboard: Wizard Modern Classic, Marshall-typ)
+    ("Turn the Page", "1990s", "distorted", "riff", (7,6,6,6.5,6,2), {"amp": "Marshall-type (Wizard Modern Classic)", "conf": 0.35,
+        "note": "Bob Seger-cover från Garage Inc. (1998). Förstärkaren är bara delvis dokumenterad (Equipboard: Wizard Modern Classic, "
+                "en modifierad Marshall-typ) – rattlägena är en teknisk uppskattning."}),
     # Death Magnetic / Hardwired
     ("The Day That Never Comes", "2000s", "distorted", "riff", (7.5,6,5,6.5,6,1.5)),
     ("All Nightmare Long", "2000s", "distorted", "riff", (8,6,5,6.5,6,1)),
@@ -723,6 +738,7 @@ many("Guns N' Roses", "hard rock", [
     ("Civil War", "1990s", "distorted", "riff", (7.5,6,6.5,6.5,6,2.5), {"amp": "Marshall", "conf": 0.4}),
     ("Estranged", "1990s", "distorted", "solo", (7.5,5.5,7,6.5,6,3.5), {"amp": "Marshall", "conf": 0.4, "fx": ["delay"]}),
     ("Yesterdays", "1990s", "distorted", "riff", (7,6,6.5,6.5,6,2.5), {"amp": "Marshall", "conf": 0.4}),
+    ("Shotgun Blues", "1990s", "distorted", "riff", (8,6,6.5,6.5,6,2), {"amp": "Marshall", "conf": 0.4}),
 ], "Marshall Super Lead (modded S.I.R. rental)", "Gibson Les Paul (Derrig '59 replica)", GNRN, "bridge humbucker", 0.5, GNR)
 
 # ============ Def Leppard ============
@@ -823,6 +839,18 @@ many("Slayer", "thrash metal", [
     ("Repentless", "2010s", "distorted", "riff", (8.5,6.5,5,7,7,1), {"conf": 0.45, "amp": "Marshall JCM800 2203KK",
         "note": "Repentless (2015): Kerry Kings signatur-JCM800 (2203KK)."}),
 ], "Marshall JCM800 2203", "B.C. Rich / ESP / Jackson", SLN, "bridge humbucker", 0.5, SL, SFX)
+
+# ============ Alice in Chains ============
+AIC = src("https://killerguitarrigs.com/jerry-cantrell-guitar-tone-dirt/",
+          "https://www.guitarworld.com/features/jerry-cantrell-facelift",
+          "https://www.premierguitar.com/gear/rig-rundown-alice-in-chains-jerry-cantrell")
+AICN = ("Jerry Cantrell på Facelift (1990): en Bogner-modifierad Marshall JCM800 som ägdes av teknikern Ronnie Champagne och "
+        "användes till de flesta gitarrspåren (Killer Guitar Rigs). Huvudgitarr: G&L Rampage. Det 'talande' huvudriffet i "
+        "Man in the Box görs med talkbox – GP-200 har ingen talkbox, så en wah (halvöppen/manuellt rörd) är närmaste ersättning. "
+        "Vilken talkbox som användes på originalinspelningen är inte bekräftad. Rattlägen är en teknisk uppskattning.")
+many("Alice in Chains", "grunge", [
+    ("Man in the Box", "1990s", "distorted", "riff", (7.5,6,6,6,6,1.5)),
+], "Marshall JCM800 (modded)", "G&L Rampage", AICN, "bridge humbucker", 0.5, AIC, ["talk box", "wah"])
 
 ds = dict(source="Egen research (sammanställd vid utveckling – appen använder ingen AI)",
           sourceUrl="", homepage="", license="Egen sammanställning; källor anges per post",
