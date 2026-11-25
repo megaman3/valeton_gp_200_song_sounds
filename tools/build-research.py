@@ -135,18 +135,21 @@ for song, era, s in [
     t("Motörhead", song, "heavy metal", era, "distorted", "riff", s, "Marshall (cranked)", "Gibson Les Paul Standard", MHN, [], "bridge humbucker", 0.4, MH)
 
 # --- Svenska pop/rock-artister utan dokumenterad gitarrutrustning: genretypisk tolkning
-def swe(artist, url, rows, note):
+def swe(artist, url, rows, note, guitar="", extra_src=()):
     for song, era, tt, part, s, fx, pick in rows:
-        t(artist, song, "pop rock", era, tt, part, s, "Unknown", "", note, fx, pick, 0.3, [url])
-GT = "Ingen dokumenterad gitarrutrustning hittad (Mats Persson/Per Gessle). Genretypisk tolkning av svensk powerpop – lita mer på örat än på värdena."
+        t(artist, song, "pop rock", era, tt, part, s, "Unknown", guitar, note, fx, pick, 0.3, [url, *extra_src])
+GT = ("Mats \"MP\" Persson spelade Fender \"precis som Francis Rossi i Status Quo\" (dvs. Telecaster) enligt bandets tidiga krönika – "
+      "en fansida, och uppgiften gäller 70-talet. Förstärkare för inspelningarna är inte dokumenterade; ljudet är en genretypisk "
+      "tolkning av svensk powerpop – lita mer på örat än på värdena." + " Kontrollerat 2026-11-25.")
 swe("Gyllene Tider", "https://en.wikipedia.org/wiki/Gyllene_Tider", [
     ("Sommartider", "1980s", "overdriven", "riff", (4.5,5,6,7,6,2.5), [], "bridge"),
     ("När vi två blir en", "1980s", "overdriven", "riff", (4,5,6,7,6,2.5), [], "bridge"),
     ("Flickorna på TV2", "1980s", "overdriven", "riff", (4.5,5,6,7,6,2), [], "bridge"),
     ("(Dansar inte lika bra som) sjömän", "1980s", "overdriven", "riff", (4,5,6,7,6,2.5), [], "bridge"),
     ("Juni, juli, augusti", "1980s", "clean", "clean", (2.5,5,5.5,7,6,3), ["chorus"], "middle"),
-], GT)
-MU = "Ingen dokumenterad gitarrutrustning hittad för Magnus Uggla Band. Genretypisk tolkning av 70/80-talets svenska rock/new wave."
+], GT, "Fender Telecaster (MP Persson)", ["https://www.oocities.org/ticco01/GylleneTiderfakta.htm"])
+MU = ("Ingen dokumenterad gitarrutrustning hittad för Magnus Uggla Band (Varning på stan: albumet 1977 producerat av Anders "
+      "Henriksson och Uggla; gitarristen anges inte i tillgängliga källor). Genretypisk tolkning av 70/80-talets svenska rock/new wave." + " Kontrollerat 2026-11-25: ingen ytterligare utrustning hittad.")
 swe("Magnus Uggla", "https://en.wikipedia.org/wiki/Magnus_Uggla", [
     ("Varning på stan", "1970s", "distorted", "riff", (6.5,5.5,6,6.5,6,2), [], "bridge humbucker"),
     ("Jag mår illa", "1970s", "distorted", "riff", (6.5,5.5,6,7,6,2), [], "bridge humbucker"),
@@ -154,14 +157,16 @@ swe("Magnus Uggla", "https://en.wikipedia.org/wiki/Magnus_Uggla", [
     ("Joey Killer", "1980s", "distorted", "riff", (6.5,5.5,5.5,7,6.5,2.5), [], "bridge humbucker"),
     ("Centralstimulerad", "1990s", "distorted", "riff", (6.5,5.5,5.5,7,6.5,2), [], "bridge humbucker"),
 ], MU)
-TL = "Ingen dokumenterad gitarrutrustning hittad. Genretypisk tolkning av svensk pop/rock från 80-talet."
+TL = ("Tomas Ledins favoritgitarr är en röd Fender Telecaster (fansida, ej verifierat för inspelningarna). Sommaren är kort kom 1982 "
+      "(albumet Gränslös, Polar Music); studiomusikerna och förstärkarna är inte dokumenterade. Genretypisk tolkning av svensk "
+      "pop/rock från 80-talet." + " Kontrollerat 2026-11-25.")
 swe("Thomas Ledin", "https://sv.wikipedia.org/wiki/Thomas_Ledin", [
     ("Sommaren är kort", "1980s", "overdriven", "riff", (4.5,5,6,6.5,6,2.5), [], "bridge"),
     ("Just nu!", "1980s", "overdriven", "riff", (5,5,6,6.5,6,2.5), [], "bridge"),
     ("Not Bad at All", "1980s", "overdriven", "riff", (4.5,5,6,6.5,6,2.5), [], "bridge"),
     ("En del av mitt hjärta", "1980s", "clean", "clean", (2.5,5,5.5,6.5,6,3.5), ["chorus"], "middle"),
     ("Genom ett regnigt Europa", "1980s", "overdriven", "riff", (4.5,5,6,6.5,6,3), [], "bridge"),
-], TL)
+], TL, "Fender Telecaster", ["https://kaspersennyfikenpa.se/wiki/musiker/tomas-ledin/", "https://en.wikipedia.org/wiki/Sommaren_%C3%A4r_kort"])
 
 # --- The Buggles: syntpop; Bruce Woolley på gitarr, Vox AC30 nämnd för demon (ej bekräftad för skivan)
 BG = ["https://www.inkl.com/news/the-buggles-how-we-made-video-killed-the-radio-star",
@@ -176,13 +181,13 @@ for song, tt, part, s, fx in [
     t("The Buggles", song, "synth pop", "1970s", tt, part, s, "Vox AC30", "", BGN, fx, "", 0.3, BG)
 
 # ============ 60/70-tal ============
-def many(artist, genre, rows, amp, guitar, note, pickup, conf, src, fx=None):
+def many(artist, genre, rows, amp, guitar, note, pickup, conf, src, fx=None, reviewed=None):
     for row in rows:
         song, era, tt, part, st = row[:5]
         extra = row[5] if len(row) > 5 else {}
         t(artist, song, genre, era, tt, part, st, extra.get("amp", amp), extra.get("guitar", guitar),
           note + (" " + extra["note"] if "note" in extra else ""), extra.get("fx", fx or []),
-          extra.get("pickup", pickup), extra.get("conf", conf), src + extra.get("src", []), extra.get("reviewed"))
+          extra.get("pickup", pickup), extra.get("conf", conf), src + extra.get("src", []), extra.get("reviewed", reviewed))
 
 # Queen: Red Special -> treble booster -> Vox AC30 (Normal-kanalen), volymratten styr gain
 QU = ["https://brianmayworld.com/BrianMaysound.htm",
@@ -329,7 +334,7 @@ many("Blue Öyster Cult", "hard rock", [
 
 # Sweet: Andy Scott – ES-335 / Strat, uppskruvad förstärkare (modell okänd)
 SW = ["https://www.Guitar.com/features/andy-scotts-es-335/", "https://www.guitarworld.com/artists/guitarists/the-sweet-andy-scott"]
-SWN = "Andy Scott: Cherry -61 ES-335 med Bigsby och Stratocaster; ljudet från uppskruvad förstärkare utan fuzz (inspirerad av Blackmore). Förstärkarmodellen är inte dokumenterad."
+SWN = "Andy Scott: Cherry -61 ES-335 med Bigsby och Stratocaster; ljudet från uppskruvad förstärkare utan fuzz (inspirerad av Blackmore). Förstärkarmodellen är inte dokumenterad. Kontrollerat 2026-11-25: ingen ytterligare utrustning hittad."
 many("Sweet", "glam rock", [
     ("The Ballroom Blitz", "1970s", "distorted", "riff", (6.5,5.5,6,7,6,2)),
     ("Fox on the Run", "1970s", "distorted", "riff", (6.5,5.5,6,7,6,2.5)),
@@ -523,8 +528,8 @@ many("Danzig", "heavy metal", [
 ], "VHT with Marshall cab", "B.C. Rich", DZN, "bridge humbucker", 0.4, DZ)
 
 # Utan dokumenterad utrustning – genretypisk tolkning
-def unk(artist, genre, url, rows, note, conf=0.3, amp="Unknown", guitar=""):
-    many(artist, genre, rows, amp, guitar, note, "bridge humbucker", conf, [url])
+def unk(artist, genre, url, rows, note, conf=0.3, amp="Unknown", guitar="", reviewed=None):
+    many(artist, genre, rows, amp, guitar, note, "bridge humbucker", conf, [url], reviewed=reviewed)
 # Pugh Rogefeldt – Hog Farm: öppningsspår på Bolla och rulla (1974), inspelat i Metronome Studio. Belagt: Pugh på gitarr/
 # munspel/sång, brodern Ingemar Rogefeldt på elgitarr (sv.wikipedia). Ingen förstärkare/pedal dokumenterad – genretypisk tolkning.
 many("Pugh Rogefeldt", "svensk rock", [
@@ -533,14 +538,17 @@ many("Pugh Rogefeldt", "svensk rock", [
    "gitarr, munspel och sjunger; elgitarren spelas av brodern Ingemar Rogefeldt. Inte belagt: förstärkare och effekter – "
    "ljudet är en genretypisk tolkning av svensk 70-talsrock (varm, lätt överstyrd crunch). Vissa källor anger att låten kom redan 1970.",
    "bridge humbucker", 0.3, ["https://sv.wikipedia.org/wiki/Bolla_och_rulla", "https://sv.wikipedia.org/wiki/Hog_Farm"])
-unk("Dizzy Mizz Lizzy", "hard rock", "https://en.wikipedia.org/wiki/Dizzy_Mizz_Lizzy", [
+unk("Dizzy Mizz Lizzy", "hard rock", "https://equipboard.com/pros/tim-christensen", [
     ("Silverflame", "1990s", "distorted", "riff", (6.5,5.5,6,6.5,6,2.5)),
     ("Waterline", "1990s", "distorted", "riff", (6.5,5.5,6,6.5,6,2.5)),
     ("Glory", "1990s", "distorted", "riff", (6.5,5.5,6,6.5,6,2.5)),
     ("Barbedwired Baby's Dream", "1990s", "distorted", "riff", (7,5.5,6,6.5,6,2)),
     ("Love Is a Loser's Game", "1990s", "distorted", "riff", (6.5,5.5,6,6.5,6,2.5)),
     ("Rotator", "1990s", "distorted", "riff", (7,5.5,6,6.5,6,2)),
-], "Ingen dokumenterad gitarrutrustning hittad för Tim Christensen. Genretypisk tolkning av melodisk 90-talshårdrock (crunch).")
+], "Tim Christensen: Marshall Super Lead-topp och Marshall 2x12 (1968) samt Rickenbacker 481 och Gibson ES-330 enligt Equipboards "
+   "användarlistor – inte verifierat och inte daterat till 90-talsinspelningarna. Carl Martin Dizzy Drive (hans signaturpedal) är från "
+   "senare år och läggs inte in. Rattlägena är en teknisk uppskattning av melodisk 90-talshårdrock (crunch). Kontrollerat 2026-11-25.",
+   conf=0.35, amp="Marshall Super Lead", guitar="Gibson ES-330 / Rickenbacker 481")
 unk("The Soundtrack of Our Lives", "garage rock", "https://en.wikipedia.org/wiki/The_Soundtrack_of_Our_Lives", [
     ("Sister Surround", "1990s", "overdriven", "riff", (5.5,5.5,6,6.5,6,3)),
     ("Bigtime", "2000s", "overdriven", "riff", (5.5,5.5,6,6.5,6,3)),
@@ -548,34 +556,44 @@ unk("The Soundtrack of Our Lives", "garage rock", "https://en.wikipedia.org/wiki
     ("Mind the Gap", "2000s", "overdriven", "riff", (5.5,5.5,6,6.5,6,3)),
 ], "Ingen dokumenterad utrustning hittad (Ian Person/Mattias Bärjed). Tolkning: 60-talsinspirerad garagerock – AC30-likt crunch.",
    amp="Vox AC30", guitar="")
-unk("Danko Jones", "hard rock", "https://en.wikipedia.org/wiki/Danko_Jones", [
+unk("Danko Jones", "hard rock", "https://orangeamps.com/articles/interview-danko-jones/", [
     ("First Date", "2000s", "distorted", "riff", (7,6,6,6.5,6,1.5)),
     ("Sticky Situation", "2000s", "distorted", "riff", (7,6,6,6.5,6,1.5)),
     ("Lovercall", "2000s", "distorted", "riff", (7,6,6,6.5,6,1.5)),
     ("Full of Regret", "2010s", "distorted", "riff", (7,6,6,6.5,6,1.5)),
     ("Had Enough", "2000s", "distorted", "riff", (7,6,6,6.5,6,1.5)),
-], "Ingen dokumenterad förstärkare hittad för Danko Jones. Genretypisk tolkning: rak hårdrock med Marshall-karaktär.")
+], "Belagt: Danko Jones har själv berättat att han spelar en Orange Rockerverb 50 (intervju hos Orange) och kom till Orange via "
+   "turnéer med The Supersuckers; tidigare har han använt Hiwatt. Gitarrer: Gibson SG och Les Paul Junior (tidigare Explorer). Inte "
+   "belagt: utrustningen per låt/album och pedaler. Rattlägena är en teknisk uppskattning av rå, mellanregisterrik garagerock.",
+   conf=0.4, amp="Orange Rockerverb 50", guitar="Gibson SG / Les Paul Junior")
 unk("Håkan Hellström", "indie pop", "https://equipboard.com/pros/hakan-hellstrom", [
     ("Känn ingen sorg för mig Göteborg", "2000s", "overdriven", "riff", (4.5,5,6,7,6,3)),
     ("Kom igen Lena!", "2000s", "overdriven", "riff", (5,5,6,7,6,2.5)),
     ("Nu kan du få mig så lätt", "2000s", "overdriven", "riff", (4.5,5,6,7,6,3)),
     ("Det är så jag säger det", "2000s", "overdriven", "riff", (5,5,6,7,6,3)),
     ("Ramlar", "2000s", "overdriven", "riff", (4.5,5,6,7,6,3)),
-], "Ingen förstärkare dokumenterad. Gitarrer enligt Equipboard (ej verifierat): Vox Mark VI, Telecaster Custom. Tolkning: jangly crunch.",
+], "Ingen förstärkare dokumenterad (debutalbumet producerat av Mattias Glavå och Hellström). Gitarrer enligt Equipboard (ej verifierat): "
+   "Vox Mark VI, Telecaster Custom. Tolkning: jangly crunch. Kontrollerat 2026-11-25: ingen ytterligare utrustning hittad.",
    guitar="Fender Telecaster / Vox Mark VI")
 unk("Van Morrison", "rock", "https://en.wikipedia.org/wiki/Van_Morrison", [
     ("Gloria", "1960s", "overdriven", "riff", (5,5.5,6,6.5,6,2.5)),
-    ("Brown Eyed Girl", "1960s", "clean", "riff", (2.5,5,6,6.5,6,3)),
+    ("Brown Eyed Girl", "1960s", "clean", "riff", (2.5,5,6,6.5,6,3), {"amp": "Fender Tweed Deluxe", "conf": 0.4,
+        "guitar": "Gibson L-5 (Al Gorgoni, lead) / Epiphone Howard Roberts (Hugh McCracken)", "pickup": "neck humbucker",
+        "note": "Belagt (MusicRadar, inspelningen 1967): Hugh McCracken spelade kompet på en Epiphone Howard Roberts-archtop, "
+                "okopplad men mickad; Al Gorgoni spelade lead. Gorgonis rigg under perioden var en Gibson L-5 på halsmicken genom en "
+                "tweed Fender Deluxe – inte uttryckligen kopplad till just den här låten.",
+        "src": ["https://www.musicradar.com/artists/guitarists/van-morrison-brown-eyed-girl-recording-week",
+                "https://musicradar.com/news/van-morrison-brown-eyed-girl-interview"]}),
     ("Domino", "1970s", "clean", "riff", (3,5,6,6.5,6,3)),
     ("Wild Night", "1970s", "clean", "riff", (3,5,6,6.5,6,3)),
     ("Moondance", "1970s", "clean", "clean", (2,5.5,6,5.5,5,3)),
-], "Ingen dokumenterad gitarrutrustning hittad (studiomusiker på inspelningarna). Genretypisk tolkning.")
+], "Ingen dokumenterad gitarrutrustning hittad för de övriga låtarna (studiomusiker på inspelningarna). Genretypisk tolkning. Kontrollerat 2026-11-25: ingen ytterligare utrustning hittad.")
 unk("John Legend", "soul", "https://en.wikipedia.org/wiki/John_Legend", [
     ("Green Light", "2000s", "clean", "riff", (2.5,5,6,6.5,6,2.5)),
     ("Ordinary People", "2000s", "clean", "clean", (2,5,5.5,6,5.5,3.5)),
     ("All of Me", "2010s", "clean", "clean", (2,5,5.5,6,5.5,3.5)),
-], "John Legends låtar är piano- och sångbaserade (All of Me har ingen elgitarr). Detta är ett rent ackompanjemangsljud för att spela låten på gitarr – inte en återskapning.",
-   conf=0.2)
+], "John Legends låtar är piano- och sångbaserade (All of Me har ingen elgitarr). Detta är ett rent ackompanjemangsljud för att spela låten på gitarr – inte en återskapning. Det finns ingen gitarrutrustning att researcha.",
+   conf=0.2, reviewed=["confidence", "amp-fallback", "generic", "missing"])
 
 # The Haunted – ingen bandspecifik förstärkare dokumenterad
 many("The Haunted", "thrash metal", [
@@ -587,7 +605,7 @@ many("The Haunted", "thrash metal", [
     ("The Flood", "2000s", "distorted", "riff", (8.7,6,5.5,6.5,6,1.5)),
     ("No Compromise", "2000s", "distorted", "riff", (9,6,5.5,6.5,6,1)),
 ], "Unknown", "Gibson / ESP Les Paul Custom",
-   "Ingen bandspecifik förstärkare dokumenterad. Patrik Jensen \"svär vid Orange 2x12-kabinett\" (Ola Englund via Equipboard); Anders Björlers Peavey Supreme 160 gäller At the Gates. Genretypisk tolkning av svensk thrash.",
+   "Ingen bandspecifik förstärkare dokumenterad. Patrik Jensen \"svär vid Orange 2x12-kabinett\" (Ola Englund via Equipboard); Anders Björlers Peavey Supreme 160 gäller At the Gates. Genretypisk tolkning av svensk thrash. Kontrollerat 2026-11-25: ingen ytterligare utrustning hittad.",
    "bridge humbucker", 0.3, ["https://equipboard.com/pros/patrik-jensen", "https://www.uberproaudio.com/who-plays-what/513-the-haunted-anders-bjoerler-guitar-rig-gear-and-equipment"],
    ["noise gate"])
 

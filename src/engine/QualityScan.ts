@@ -17,6 +17,8 @@ export interface ToneScan {
   ampModel?: string;
   score: number;
   findings: QualityFinding[];
+  /** Noteringen säger att artisten redan researchats utan nya fynd ("Kontrollerat ÅÅÅÅ-MM-DD"). */
+  checked: boolean;
 }
 
 /** GP-200-förstärkare som bygger på basförstärkare. */
@@ -129,7 +131,8 @@ export function scanTone(tone: ResearchedTone, part: SongPart): ToneScan {
 
   // Granskade fynd (rättelsefilen) flaggas inte igen.
   const open = findings.filter((f) => !tone.reviewed?.includes(f.rule));
-  return { tone, ampModel, score: open.reduce((sum, f) => sum + f.points, 0), findings: open };
+  const checked = /Kontrollerat \d{4}-\d{2}-\d{2}/.test(tone.notes);
+  return { tone, ampModel, score: open.reduce((sum, f) => sum + f.points, 0), findings: open, checked };
 }
 
 export type RiskLevel = 'hög' | 'medel' | 'låg';

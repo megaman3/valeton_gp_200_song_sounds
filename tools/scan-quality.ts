@@ -52,17 +52,20 @@ const reasonsOf = (s: SongScan) => {
 };
 
 // Per artist: hur många låtar med hög/medel risk – där ger research per artist mest.
-const artists = new Map<string, { songs: number; high: number; medium: number; total: number }>();
+const artists = new Map<string, { songs: number; high: number; medium: number; total: number; checked: number }>();
 for (const s of ranked) {
-  const a = artists.get(s.artist) ?? { songs: 0, high: 0, medium: 0, total: 0 };
+  const a = artists.get(s.artist) ?? { songs: 0, high: 0, medium: 0, total: 0, checked: 0 };
   a.songs++;
+  if (s.parts.every((p) => p.checked)) a.checked++;
   a.total += s.score;
   if (riskLevel(s.score) === 'hög') a.high++;
   else if (riskLevel(s.score) === 'medel') a.medium++;
   artists.set(s.artist, a);
 }
+// Artister där alla låtar redan researchats utan nya fynd listas separat – ny research ger troligen inget.
+const checkedArtists = [...artists.entries()].filter(([, a]) => a.checked === a.songs && a.high + a.medium > 0).map(([n]) => n);
 const artistRanked = [...artists.entries()]
-  .filter(([, a]) => a.high + a.medium > 0)
+  .filter(([, a]) => a.high + a.medium > 0 && a.checked < a.songs)
   .sort((a, b) => b[1].high * 3 + b[1].medium - (a[1].high * 3 + a[1].medium) || b[1].total - a[1].total);
 
 /** Regler som tyder på faktiska fel (inte bara svagt underlag) – billigast att kontrollera, störst nytta. */
@@ -122,6 +125,8 @@ const md: string[] = [
   ...artistRanked.slice(0, TOP).map(
     ([name, a]) => `| ${esc(name)} | ${a.songs} | ${a.high} | ${a.medium} | ${(a.total / a.songs).toFixed(1)} |`,
   ),
+  '',
+  `**Redan researchade utan nya fynd** (svagt underlag kvarstår, ny research ger troligen inget): ${checkedArtists.join(', ') || '–'}.`,
   '',
 ];
 writeFileSync('tools/quality-report.md', md.join('\n'));
