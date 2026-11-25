@@ -541,6 +541,91 @@
           "guitarTone": "10",
           "other": "Spela huvudriffet med stallmicken – det ska kännas rått och nästan oborstat. Finjustering: för snällt → AMP Gain 80 · för mycket dist/grötigt → DST Gain 15 · för tunt → 400 Hz +5 · för vasst → Presence 54 och 4 kHz 0 · för lite aggressivitet → 1.6 kHz +6 · för mycket bas i riffet → AMP Bass 40."
         }
+      },
+      {
+        "id": "live",
+        "name": "Live mix (med band)",
+        "overrides": {
+          "NR": {
+            "enabled": true,
+            "model": "Gate 2",
+            "params": {
+              "Threshold": 38,
+              "Attack": 20,
+              "Release": 55
+            }
+          },
+          "DST": {
+            "enabled": true,
+            "model": "Green OD",
+            "params": {
+              "Gain": 16,
+              "Tone": 61,
+              "Volume": 82
+            },
+            "note": "OD:n som boost och tightening – lägre gain och högre nivå än studiopresetet ger ett hårdare, mer fokuserat riff."
+          },
+          "AMP": {
+            "enabled": true,
+            "model": "UK 800",
+            "params": {
+              "Gain": 72,
+              "Bass": 42,
+              "Middle": 72,
+              "Treble": 63,
+              "Presence": 58,
+              "Volume": 70
+            },
+            "note": "Mindre bas och mer mellanregister: gitarren ska låta stor tillsammans med bas och trummor, inte ensam."
+          },
+          "CAB": {
+            "enabled": true,
+            "model": "UK G12"
+          },
+          "EQ": {
+            "enabled": true,
+            "model": "Guitar EQ 1",
+            "params": {
+              "125 Hz": -4,
+              "400 Hz": 4,
+              "800 Hz": 6,
+              "1.6 kHz": 5,
+              "4 kHz": 2
+            },
+            "note": "800 Hz = riffets kropp, 1.6 kHz = bett genom trummor och bas, 125 Hz neddraget så att basen får göra jobbet."
+          },
+          "DLY": {
+            "enabled": false,
+            "model": "Digital Delay S"
+          },
+          "RVB": {
+            "enabled": true,
+            "model": "Room",
+            "params": {
+              "Mix": 8,
+              "Decay": 12
+            },
+            "note": "Nästan torrt. Tone 55 saknas på Room enligt manualen (Mix, Pre Delay, Decay)."
+          },
+          "PRE": {
+            "enabled": false,
+            "model": "COMP"
+          },
+          "WHA": {
+            "enabled": false,
+            "model": "V-Wah"
+          },
+          "MOD": {
+            "enabled": false,
+            "model": "A-Chorus"
+          }
+        },
+        "guitarNotes": {
+          "pickup": "Stallmick, humbucker",
+          "guitarVolume": "10",
+          "guitarTone": "10",
+          "other": "Spela med hård attack – kompensera inte svag attack med mer gain. Prioritera mellanregistret och Green OD:s Volume före AMP Gain. Med bandet: gitarren försvinner → 800 Hz +2 till · för tunn → 400 Hz +2 till · för hård/vass → 4 kHz −3 · grötigt riff → 125 Hz −5 till · distortionen flyter ihop → DST Gain 10–12 · för lite rå rockkänsla → AMP Gain 78."
+        }
       }
     ]
   }
