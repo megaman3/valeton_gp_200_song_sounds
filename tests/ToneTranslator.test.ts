@@ -86,3 +86,72 @@ describe('ToneTranslator – effekter', () => {
     expect(r.blocks.NR?.enabled).toBe(true);
   });
 });
+
+describe('ToneTranslator – Ampeg och rena kanaler', () => {
+  const amp = (over: Partial<ResearchedTone>) => translator.translateTone(tone(over)).blocks.AMP?.model;
+  const cleanSettings = { gain: 2, bass: 5, mid: 5, treble: 6, presence: 5, reverb: 2 };
+
+  it('Ampegs gitarrförstärkare blir inte basförstärkaren Classic Bass', () => {
+    expect(amp({ amp: 'Ampeg VT-22' })).toBe('Dark DLX');
+    expect(amp({ amp: 'Ampeg VT-40 (Baxandall EQ)' })).toBe('Dark DLX');
+    expect(amp({ amp: 'Ampeg V-4 / Vox AC30' })).toBe('Dark DLX');
+    expect(amp({ amp: 'Ampeg SVT Classic' })).toBe('Classic Bass');
+  });
+
+  it('ren del på en distad modell får förstärkarens rena kanal', () => {
+    expect(amp({ amp: 'Mesa/Boogie Mark IIC+', toneType: 'clean', ampSettings: cleanSettings })).toBe('L-Star CL');
+    expect(amp({ amp: 'Soldano SLO-100', toneType: 'clean', ampSettings: cleanSettings })).toBe('Solo100 CL');
+    expect(amp({ amp: 'Peavey 5150', toneType: 'clean', ampSettings: cleanSettings })).toBe('Dark Twin');
+    const notes = translator.translateTone(tone({ amp: 'Peavey 5150', toneType: 'clean', ampSettings: cleanSettings })).notes;
+    expect(notes.some((n) => n.includes('ren del – EV 51 → Dark Twin'))).toBe(true);
+  });
+
+  it('JCM800 (en kanal) behålls för rena delar, och distade delar påverkas inte', () => {
+    expect(amp({ amp: 'Marshall JCM800', toneType: 'clean', ampSettings: cleanSettings })).toBe('UK 800');
+    expect(amp({ amp: 'Peavey 5150', toneType: 'distorted' })).toBe('EV 51');
+  });
+});
+
+describe('ToneTranslator – regelordning och epok (funna av kvalitetsskanningen)', () => {
+  const amp = (over: Partial<ResearchedTone>) => translator.translateTone(tone(over)).blocks.AMP?.model;
+
+  it('Soldano går före Plexi trots orden "Super Lead"', () => {
+    expect(amp({ amp: 'Soldano SLO-100 Super Lead Overdrive', ampSettings: { gain: 8, bass: 5, mid: 6, treble: 6, presence: 6, reverb: 1 } })).toBe('Solo100 LD');
+  });
+
+  it('Mesa Mark I översätts som Mark IIC+, inte Mark IV', () => {
+    expect(amp({ amp: 'Mesa/Boogie Mark I' })).toBe('Mess2C+ 1');
+    expect(amp({ amp: 'Mesa/Boogie Mark IV' })).toBe('Mess4 LD');
+  });
+
+  it('Peaveys 70-talsrör blir inte 5150, och 70-tals-Orange blir inte Rockerverb', () => {
+    expect(amp({ amp: 'Peavey Mace (1971) with 4x12', era: '1970s', ampSettings: { gain: 5, bass: 5, mid: 6, treble: 6, presence: 5, reverb: 2 } })).toBe('Bellman 59N');
+    expect(amp({ amp: 'Peavey 5150' })).toBe('EV 51');
+    expect(amp({ amp: 'Orange 80W 2x12 combo', era: '1970s' })).toBe('Juice30 OD');
+    expect(amp({ amp: 'Orange Rockerverb 50', era: '2000s' })).toBe('Juice R100');
+  });
+});
+
+describe('ToneTranslator – reverb-nivå och scoopad EQ (kodgranskning)', () => {
+  const rvb = (over: Partial<ResearchedTone>) => translator.translateTone(tone({ amp: 'Marshall JCM800', ...over })).blocks.RVB;
+  const settings = (reverb: number, mid = 5) => ({ gain: 7, bass: 5, mid, treble: 6, presence: 5, reverb });
+
+  it('en uttalad reverb behåller regelns Mix oavsett förstärkarens reverb-ratt', () => {
+    const shimmer = rvb({ effects: ['shimmer reverb'], ampSettings: settings(1) });
+    expect(shimmer?.model).toBe('Shimmer');
+    expect(shimmer?.params?.Mix).toBe(30);
+    expect(rvb({ effects: ['shimmer reverb'], ampSettings: settings(10) })?.params?.Mix).toBe(30);
+  });
+
+  it('reverb utan typ (eller bara rattläget) följer förstärkarens reverb-ratt', () => {
+    expect(rvb({ effects: ['reverb'], ampSettings: settings(8) })?.params?.Mix).toBe(32);
+    expect(rvb({ effects: [], ampSettings: settings(5) })?.params?.Mix).toBe(20);
+  });
+
+  it('"scooped mids" blir V-formad EQ även när förstärkarens mid-ratt är hög', () => {
+    const eq = translator.translateTone(tone({ effects: ['EQ with scooped mids'], ampSettings: settings(0, 6) })).blocks.EQ;
+    expect(eq?.params?.['800 Hz']).toBe(-10);
+    const lift = translator.translateTone(tone({ effects: ['EQ'], ampSettings: settings(0, 6) })).blocks.EQ;
+    expect(lift?.params?.['800 Hz']).toBe(6);
+  });
+});

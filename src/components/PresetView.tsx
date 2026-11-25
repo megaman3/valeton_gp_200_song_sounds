@@ -3,12 +3,40 @@ import { BLOCK_ORDER } from '../types';
 import type { GeneratedPreset } from '../types';
 import { formatPreset, validator } from '../engine';
 
+/**
+ * Kopierar text. navigator.clipboard finns bara i säkra sammanhang (https/localhost) och kan nekas –
+ * då används den äldre execCommand-vägen via ett dolt textfält.
+ */
+export async function copyText(text: string): Promise<boolean> {
+  try {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(text);
+      return true;
+    }
+  } catch {
+    // Nekad behörighet – prova reservvägen nedan.
+  }
+  try {
+    const area = document.createElement('textarea');
+    area.value = text;
+    area.setAttribute('readonly', '');
+    area.style.position = 'fixed';
+    area.style.opacity = '0';
+    document.body.appendChild(area);
+    area.select();
+    const ok = document.execCommand('copy');
+    area.remove();
+    return ok;
+  } catch {
+    return false;
+  }
+}
+
 export default function PresetView({ preset }: { preset: GeneratedPreset }) {
-  const [copied, setCopied] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'copied' | 'failed'>('idle');
   const copy = async () => {
-    await navigator.clipboard.writeText(formatPreset(preset));
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1500);
+    setStatus((await copyText(formatPreset(preset))) ? 'copied' : 'failed');
+    setTimeout(() => setStatus('idle'), 2000);
   };
   const g = preset.guitarNotes;
 
@@ -17,7 +45,7 @@ export default function PresetView({ preset }: { preset: GeneratedPreset }) {
       <div className="flex items-center justify-between gap-4">
         <h2 className="text-xl font-semibold">{preset.title}</h2>
         <button onClick={copy} className="rounded bg-zinc-800 px-3 py-1 text-sm hover:bg-zinc-700">
-          {copied ? 'Kopierat!' : 'Kopiera som text'}
+          {status === 'copied' ? 'Kopierat!' : status === 'failed' ? 'Kunde inte kopiera' : 'Kopiera som text'}
         </button>
       </div>
 

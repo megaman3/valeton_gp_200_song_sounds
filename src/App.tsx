@@ -1,5 +1,5 @@
 import { useMemo, useRef, useState } from 'react';
-import { allSongs, database, generator, search, searchable, soundTypes } from './engine';
+import { allSongs, BASIS_STYLE, basisLabel, database, generator, search, searchable, soundTypes } from './engine';
 import SongSearch from './components/SongSearch';
 import FavoritesList from './components/FavoritesList';
 import { resolveFavorites, useFavorites } from './hooks/useFavorites';
@@ -111,6 +111,12 @@ export default function App() {
                     {song.artist}
                     {song.year ? ` · ${song.year}` : ''}
                   </div>
+                  <div className="mt-1.5 flex flex-wrap items-center gap-2 text-xs text-zinc-400">
+                    <span className={`rounded px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide ring-1 ${BASIS_STYLE[basisLabel(song, part).key]}`}>
+                      {basisLabel(song, part).text}
+                    </span>
+                    <span>{basisLabel(song, part).description}</span>
+                  </div>
                 </div>
                 <button
                   onClick={() => toggle(song)}
@@ -126,10 +132,7 @@ export default function App() {
               </div>
               {profile && (
                 <div className="rounded-lg bg-zinc-900/80 p-3 text-sm text-zinc-300 ring-1 ring-zinc-800 backdrop-blur-sm">
-                  <span className="mr-2 rounded bg-amber-500/20 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-400">
-                    Ljudtyp
-                  </span>
-                  {profile.description} Värdena är rekommenderade startvärden – justera efter gitarr och lyssning.
+                  {profile.description}
                 </div>
               )}
               {song.parts.length > 1 && (

@@ -170,6 +170,12 @@ export class ToneTranslator {
     } else if (ampMatch) {
       ampModel = ampMatch.model;
       notes.push(`AMP: "${tone.amp}" → ${ampModel}. ${ampMatch.rule.reason}`);
+      // Ren del på en distad modell: byt till förstärkarens (eller närmaste) rena kanal.
+      const clean = tone.toneType === 'clean' && this.rules.cleanChannels?.find((c) => c.from.includes(ampModel));
+      if (clean) {
+        notes.push(`AMP: ren del – ${ampModel} → ${clean.to}. ${clean.reason}`);
+        ampModel = clean.to;
+      }
     } else {
       const fb = this.fallbackAmp(s.gain, tone.genre, tone.era);
       ampModel = fb.model;
@@ -215,15 +221,18 @@ export class ToneTranslator {
     );
     if (eqIdx !== -1) {
       used.add(eqIdx);
-      const midBoost = /mid|upper/.test(effectTexts[eqIdx]) && !/scoop|cut/.test(effectTexts[eqIdx]);
+      // Texten går före förstärkarens mid-ratt: "scooped mids" ska aldrig bli ett mellanregisterlyft.
+      const text = effectTexts[eqIdx];
+      const scoop = /scoop|cut/.test(text);
+      const midLift = !scoop && (/mid|upper/.test(text) || s.mid > 3.5);
       blocks.EQ = {
         enabled: true,
         model: 'Guitar EQ 1',
-        params: midBoost || s.mid > 3.5
+        params: midLift
           ? { '125 Hz': 0, '400 Hz': 0, '800 Hz': 6, '1.6 kHz': 8, '4 kHz': 0, Volume: 0 }
           : { '125 Hz': 6, '400 Hz': -4, '800 Hz': -10, '1.6 kHz': 0, '4 kHz': 6, Volume: 0 },
       };
-      notes.push(`EQ: "${tone.effects[eqIdx]}" → Guitar EQ 1 (${midBoost || s.mid > 3.5 ? 'mellanregisterlyft' : 'V-formad'}).`);
+      notes.push(`EQ: "${tone.effects[eqIdx]}" → Guitar EQ 1 (${midLift ? 'mellanregisterlyft' : 'V-formad'}).`);
     } else if (!ampHasMiddle && Math.abs(s.mid - 5) >= 2) {
       const v = clamp((s.mid - 5) * 6, -50, 50);
       blocks.EQ = {
@@ -250,16 +259,20 @@ export class ToneTranslator {
 
     // --- RVB: regel + förstärkarens reverb-ratt
     const fender = FENDER_AMPS.test(ampModel);
-    if (blocks.RVB?.model === 'Room' && fender && blocks.RVB.note?.startsWith('Reverb utan')) {
+    // Reverben "kommer från förstärkaren" när ingen typ är angiven (allmän reverb-regel eller bara rattläget).
+    // Bara då styr förstärkarens reverb-ratt Mix – en uttalad shimmer/plate/hall behåller regelns Mix.
+    let rvbFromAmp = blocks.RVB?.note?.startsWith('Reverb utan') ?? false;
+    if (blocks.RVB?.model === 'Room' && fender && rvbFromAmp) {
       blocks.RVB = { enabled: true, model: 'Spring', params: { Mix: 25, Decay: 40, Tone: 50 }, note: 'Fjäderreverb, som i Fender-förstärkare.' };
     }
     if (!blocks.RVB && s.reverb >= 2) {
       blocks.RVB = fender
         ? { enabled: true, model: 'Spring', params: { Mix: 25, Decay: 40, Tone: 50 } }
         : { enabled: true, model: 'Room', params: { Mix: 15, 'Pre Delay': 10, Decay: 35 } };
+      rvbFromAmp = true;
       notes.push(`RVB: förstärkarens reverb ${s.reverb}/10 → ${blocks.RVB.model}.`);
     }
-    if (blocks.RVB?.params && 'Mix' in blocks.RVB.params && s.reverb > 0) {
+    if (rvbFromAmp && blocks.RVB?.params && 'Mix' in blocks.RVB.params && s.reverb > 0) {
       blocks.RVB.params.Mix = clamp(s.reverb * 4, 8, 40);
     }
 

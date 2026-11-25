@@ -9,6 +9,7 @@ import type {
   ToneProfile,
 } from '../types';
 import { GP200Validator } from './GP200Validator';
+import { basisLabel } from './basisLabel';
 
 const OFF: BlockSetting = { enabled: false };
 
@@ -55,6 +56,7 @@ export class PresetGenerator {
       Object.entries({ ...profile?.guitarNotes, ...part.guitarNotes }).filter(([, v]) => v),
     );
     return {
+      basis: (({ text, description }) => ({ text, description }))(basisLabel(song, part)),
       songId: song.id,
       partId: part.id,
       title: `${song.artist} – ${song.title} (${part.name})`,

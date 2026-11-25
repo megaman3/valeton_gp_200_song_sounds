@@ -58,6 +58,30 @@
     },
     {
       "match": [
+        "soldano",
+        "slo",
+        "slo 100",
+        "slo100"
+      ],
+      "byGain": [
+        {
+          "maxGain": 3,
+          "model": "Solo100 CL"
+        },
+        {
+          "maxGain": 6,
+          "model": "Solo100 OD"
+        },
+        {
+          "maxGain": 10,
+          "model": "Solo100 LD"
+        }
+      ],
+      "basis": "manual",
+      "reason": "Solo100 bygger på Soldano SLO-100 (manualen s. 44–45)."
+    },
+    {
+      "match": [
         "plexi",
         "super lead",
         "1959",
@@ -129,11 +153,13 @@
         "mark 2c+",
         "mark 2c",
         "iic+",
-        "c+"
+        "c+",
+        "mark i",
+        "mark 1"
       ],
       "model": "Mess2C+ 1",
       "basis": "manual",
-      "reason": "Mess2C+ bygger på Mesa/Boogie Mark IIC+ (manualen s. 47)."
+      "reason": "Mess2C+ bygger på Mesa/Boogie Mark IIC+ (manualen s. 47). Mark I (1970-talets Boogie) har samma lead-krets och översätts också hit."
     },
     {
       "match": [
@@ -149,8 +175,7 @@
         "mark v",
         "mark 5",
         "mark iii",
-        "mark 3",
-        "mark i"
+        "mark 3"
       ],
       "model": "Mess4 LD",
       "basis": "interpretation",
@@ -296,30 +321,6 @@
     },
     {
       "match": [
-        "soldano",
-        "slo",
-        "slo 100",
-        "slo100"
-      ],
-      "byGain": [
-        {
-          "maxGain": 3,
-          "model": "Solo100 CL"
-        },
-        {
-          "maxGain": 6,
-          "model": "Solo100 OD"
-        },
-        {
-          "maxGain": 10,
-          "model": "Solo100 LD"
-        }
-      ],
-      "basis": "manual",
-      "reason": "Solo100 bygger på Soldano SLO-100 (manualen s. 44–45)."
-    },
-    {
-      "match": [
         "shiva"
       ],
       "byGain": [
@@ -387,7 +388,8 @@
         }
       ],
       "basis": "interpretation",
-      "reason": "Orange utan modellangivelse: AD30 vid lägre gain, Rockerverb vid högre."
+      "reason": "Orange utan modellangivelse: AD30 vid lägre gain, Rockerverb vid högre. Orange från 1960–70-talet (OR80/OR120, utan mastervolym) → Juice30 OD; Rockerverb är en modern konstruktion.",
+      "vintage": "Juice30 OD"
     },
     {
       "match": [
@@ -731,6 +733,28 @@
     },
     {
       "match": [
+        "peavey mace",
+        "peavey deuce",
+        "peavey classic",
+        "peavey delta blues",
+        "peavey vintage",
+        "peavey musician"
+      ],
+      "byGain": [
+        {
+          "maxGain": 4,
+          "model": "Dark Twin"
+        },
+        {
+          "maxGain": 10,
+          "model": "Bellman 59N"
+        }
+      ],
+      "reason": "Peaveys rörförstärkare från 1970-talet (Mace, Deuce, Classic) är amerikanska 6L6-förstärkare med mycket ren effekt – närmast Fender Twin/Bassman, inte 5150 (EV 51).",
+      "basis": "interpretation"
+    },
+    {
+      "match": [
         "krank",
         "splawn",
         "revv",
@@ -805,11 +829,31 @@
     {
       "match": [
         "svt",
-        "ampeg"
+        "ampeg b 15",
+        "ampeg b15",
+        "portaflex",
+        "ampeg bass"
       ],
       "model": "Classic Bass",
       "basis": "manual",
-      "reason": "Classic Bass bygger på Ampeg SVT (manualen s. 51)."
+      "reason": "Classic Bass bygger på Ampeg SVT (manualen s. 51). Gäller bara uttalade basförstärkare (SVT, B-15, Portaflex)."
+    },
+    {
+      "match": [
+        "ampeg"
+      ],
+      "byGain": [
+        {
+          "maxGain": 3.5,
+          "model": "Dark Twin"
+        },
+        {
+          "maxGain": 10,
+          "model": "Dark DLX"
+        }
+      ],
+      "reason": "Ampeg utan basmodell (t.ex. VT-22, VT-40, V-4, V-2) är rörförstärkare för gitarr med 6L6/7027 – närmast Fender-typerna, inte basförstärkaren Classic Bass.",
+      "basis": "interpretation"
     }
   ],
   "cab": [
@@ -2042,5 +2086,105 @@
     "multi effects",
     "modulation",
     "fx"
+  ],
+  "cleanChannels": [
+    {
+      "from": [
+        "Mess2C+ 1",
+        "Mess2C+ 2",
+        "Mess2C+ 3",
+        "Mess4 LD",
+        "Mess4 LD 2",
+        "Mess4 LD 3",
+        "Mess DualV",
+        "Mess DualM",
+        "L-Star OD"
+      ],
+      "to": "L-Star CL",
+      "basis": "interpretation",
+      "reason": "Mesa/Boogies leadkanaler saknar ren motsvarighet i GP-200; Lone Star CH1 (L-Star CL) är Mesas rena kanal i modellistan."
+    },
+    {
+      "from": [
+        "Solo100 OD",
+        "Solo100 LD"
+      ],
+      "to": "Solo100 CL",
+      "basis": "manual",
+      "reason": "Soldano SLO-100:s rena kanal (manualen)."
+    },
+    {
+      "from": [
+        "Bad-KT OD"
+      ],
+      "to": "Bad-KT CL",
+      "basis": "manual",
+      "reason": "Bad Cat Hot Cat 30:s rena kanal (manualen)."
+    },
+    {
+      "from": [
+        "Match OD"
+      ],
+      "to": "Match CL",
+      "basis": "manual",
+      "reason": "Matchless Chieftain:s rena läge (manualen)."
+    },
+    {
+      "from": [
+        "Z38 OD"
+      ],
+      "to": "Z38 CL",
+      "basis": "manual",
+      "reason": "Dr. Z Maz 38:s rena läge (manualen)."
+    },
+    {
+      "from": [
+        "SUPDual OD"
+      ],
+      "to": "SUPDual CL",
+      "basis": "manual",
+      "reason": "Supro Dual-Tone CH1 (manualen)."
+    },
+    {
+      "from": [
+        "BogSV OD",
+        "Bog BlueV",
+        "Bog BlueM",
+        "Bog RedV",
+        "Bog RedM"
+      ],
+      "to": "BogSV CL",
+      "basis": "interpretation",
+      "reason": "Bogners crunch-/leadkanaler – Bogner Shiva CH1 (BogSV CL) är Bogners rena kanal i modellistan."
+    },
+    {
+      "from": [
+        "Knights OD"
+      ],
+      "to": "Knights CL",
+      "basis": "manual",
+      "reason": "Grindrod Pendragon Normal-kanal (manualen)."
+    },
+    {
+      "from": [
+        "EV 51",
+        "Dizz VH",
+        "Dizz VH S",
+        "Dizz VH+",
+        "Dizz VH+ S",
+        "Eagle 120",
+        "Eagle 120+",
+        "Power LD",
+        "Juice R100",
+        "Juice30 OD",
+        "Flagman 1",
+        "Flagman 2",
+        "Flagman+ 1",
+        "Flagman+ 2"
+      ],
+      "to": "Dark Twin",
+      "basis": "interpretation",
+      "reason": "Förstärkarens rena kanal finns inte i GP-200 (5150, Diezel, ENGL, Orange, Friedman) – Dark Twin är en neutral ren grund."
+    }
   ]
 }

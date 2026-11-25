@@ -1,0 +1,170 @@
+{
+  "description": "Rättelser av GuitarToneAdapt-toner efter egen research. Läses in ovanpå guitartoneadapt.json, så att de överlever en ny import (npm run import:gta).",
+  "corrections": [
+    {
+      "id": "motorhead-ace-of-spades-riff-distorted",
+      "set": {
+        "guitar": "Fender Stratocaster",
+        "pickup": "bridge single coil",
+        "confidence": 0.5
+      },
+      "appendNote": "Rättat efter egen research: Fast Eddie Clarke spelade Stratocaster med Motörhead (egen intervju, Vintage Guitar 2012) – Rickenbackern var Lemmys bas. Gitarrförstärkaren på inspelningen (Jackson's Studios, 1980, producent Vic Maile) är inte dokumenterad; en uppskruvad Marshall är en tolkning.",
+      "addSources": [
+        "https://equipboard.com/pros/eddie-clarke",
+        "https://en.wikipedia.org/wiki/Ace_of_Spades_(song)"
+      ],
+      "reason": "GuitarToneAdapt angav 'Rickenbacker / Marshall' som gitarr, vilket är Lemmys basrigg."
+    },
+    {
+      "id": "green-day-basket-case-riff-distorted",
+      "appendNote": "Bekräftat av egen research: Rob Cavallos Marshall 1959 Super Lead (Plexi), modifierad av Martin Golub ('Dookie-moden'), och Billie Joe Armstrongs 'Blue' med Seymour Duncan SH-4. Gitarren är stämd ett halvt steg ner (Eb).",
+      "addSources": [
+        "https://www.guitarworld.com/gear/guitar-amp-heads/the-real-story-behind-green-days-iconic-dookie-tone",
+        "https://www.marshall.com/ae/en/backstage/articles/the-dookie-mod",
+        "https://www.premierguitar.com/articles/Rig_Rundown_Green_Day"
+      ],
+      "reason": "Kontroll i researchpiloten; lägger till stämning och källor."
+    },
+    {
+      "id": "nirvana-breed-distorted-distorted",
+      "exclude": true,
+      "reason": "Krist Novoselic: Gibson RD Artist Bass + Ampeg SVT. Tonen beskriver basistens rigg, inte gitarren – ett basljud som hamnat bland gitarrljuden."
+    },
+    {
+      "id": "linkin-park-given-up-distorted-distorted",
+      "exclude": true,
+      "reason": "Dave Farrell: Music Man StingRay + Ampeg SVT-CL/8x10. Tonen beskriver basistens rigg, inte gitarren – ett basljud som hamnat bland gitarrljuden."
+    },
+    {
+      "id": "type-o-negative-black-no-1-clean-clean",
+      "exclude": true,
+      "reason": "Peter Steele: Fender Precision Bass + Ampeg SVT. Tonen beskriver basistens rigg, inte gitarren – ett basljud som hamnat bland gitarrljuden."
+    },
+    {
+      "id": "red-hot-chile-peppers-give-it-away-clean-clean",
+      "exclude": true,
+      "reason": "Flea: Gallien-Krueger 800RB + Mesa basskåp. Tonen beskriver basistens rigg, inte gitarren – ett basljud som hamnat bland gitarrljuden."
+    },
+    {
+      "id": "tame-impala-let-it-happen-distorted-distorted",
+      "exclude": true,
+      "reason": "Noteringen gäller basinspelningen (bas DI + förstärkare); förstärkaren är okänd. Tonen beskriver basistens rigg, inte gitarren – ett basljud som hamnat bland gitarrljuden."
+    },
+    {
+      "id": "steely-dan-reelin-in-the-years-solo-distorted",
+      "reviewed": [
+        "bass-amp-model"
+      ],
+      "appendNote": "Granskat: Elliott Randalls gitarrsolo spelades enligt källan in direkt genom en Ampeg SVT (en basförstärkare) – därför är Classic Bass avsiktligt.",
+      "reason": "Basförstärkaren är dokumenterad för gitarrsolot – inte ett fel."
+    },
+    {
+      "id": "dire-straits-money-for-nothing-riff-distorted",
+      "reviewed": [
+        "bass-gear"
+      ],
+      "reason": "Falsklarm: förstärkarfältet nämner Ampeg SVT-VR bara som en alternativ uppgift; Laney är den citerade förstärkaren."
+    },
+    {
+      "id": "local-h-bound-for-the-floor-riff-distorted",
+      "reviewed": [
+        "bass-gear"
+      ],
+      "appendNote": "Granskat: Scott Lucas extra basmikrofon i gitarren gick till en basförstärkare; gitarrljudet är Matchless-delen.",
+      "reason": "Basmicken i gitarren är dokumenterad och avsiktlig."
+    },
+    {
+      "id": "royal-blood-figure-it-out-riff-distorted",
+      "reviewed": [
+        "bass-gear"
+      ],
+      "appendNote": "Obs: originalet spelas på bas med oktav/fuzz (Mike Kerr). På gitarr blir presetet en approximation – lägg gärna PRE OCTA på för oktaven under.",
+      "reason": "Royal Blood har ingen gitarrist – basen är originalet."
+    },
+    {
+      "id": "royal-blood-little-monster-riff-distorted",
+      "reviewed": [
+        "bass-gear"
+      ],
+      "appendNote": "Obs: originalet spelas på bas med oktav/fuzz (Mike Kerr). På gitarr blir presetet en approximation – lägg gärna PRE OCTA på för oktaven under.",
+      "reason": "Royal Blood har ingen gitarrist – basen är originalet."
+    },
+    {
+      "id": "the-beatles-she-loves-you-mono-version-riff-distorted",
+      "set": {
+        "guitar": "1962 Gretsch Duo Jet (George Harrison), 1958 Rickenbacker 325 (John Lennon)"
+      },
+      "reason": "Gitarrfältet listade även Paul McCartneys Höfner-bas, som inte hör till gitarrljudet."
+    },
+    {
+      "id": "creedence-clearwater-revival-born-on-the-bayou-riff-distorted",
+      "reviewed": [
+        "rickenbacker"
+      ],
+      "reason": "John Fogertys Rickenbacker var en sexsträngad gitarr, inte en bas."
+    },
+    {
+      "id": "tom-petty-runnin-down-a-dream-riff-distorted",
+      "reviewed": [
+        "rickenbacker"
+      ],
+      "reason": "Mike Campbells Rickenbacker är en sexsträngad gitarr, inte en bas."
+    },
+    {
+      "id": "speed-kill-cap-riff-distorted",
+      "set": {
+        "confidence": 0.3
+      },
+      "appendNote": "Säkerheten sänkt: källan säger själv att ingen utrustning hittades – ljudet är en genretypisk uppskattning.",
+      "reason": "Säkerhet 0.8 trots att noteringen säger att inga källor hittades."
+    },
+    {
+      "id": "helen-55-dumb-summer-riff-distorted",
+      "set": {
+        "confidence": 0.3
+      },
+      "appendNote": "Säkerheten sänkt: källan säger själv att ingen utrustning hittades – ljudet är en genretypisk uppskattning.",
+      "reason": "Säkerhet 0.8 trots att noteringen säger att inga källor hittades."
+    },
+    {
+      "id": "three-man-down-40-gmm-grammy-solo-distorted",
+      "set": {
+        "confidence": 0.3
+      },
+      "appendNote": "Säkerheten sänkt: källan säger själv att ingen utrustning hittades – ljudet är en genretypisk uppskattning.",
+      "reason": "Säkerhet 0.8 trots att noteringen säger att inga källor hittades."
+    },
+    {
+      "id": "xiron-sharpens-ironx-engine-no-9-riff-distorted",
+      "set": {
+        "confidence": 0.3
+      },
+      "appendNote": "Säkerheten sänkt: källan säger själv att ingen utrustning hittades – ljudet är en genretypisk uppskattning.",
+      "reason": "Säkerhet 0.8 trots att noteringen säger att inga källor hittades."
+    },
+    {
+      "id": "bruno-mars-why-you-wanna-fight-solo-distorted",
+      "set": {
+        "confidence": 0.3
+      },
+      "appendNote": "Säkerheten sänkt: källan säger själv att ingen utrustning hittades – ljudet är en genretypisk uppskattning.",
+      "reason": "Säkerhet 0.8 trots att noteringen säger att inga källor hittades."
+    },
+    {
+      "id": "sunborn-glacier-riff-distorted",
+      "set": {
+        "confidence": 0.3
+      },
+      "appendNote": "Säkerheten sänkt: källan säger själv att ingen utrustning hittades – ljudet är en genretypisk uppskattning.",
+      "reason": "Säkerhet 0.8 trots att noteringen säger att inga källor hittades."
+    },
+    {
+      "id": "stoopi-six-minutes-riff-clean",
+      "set": {
+        "confidence": 0.3
+      },
+      "appendNote": "Säkerheten sänkt: källan säger själv att ingen utrustning hittades – ljudet är en genretypisk uppskattning.",
+      "reason": "Säkerhet 0.8 trots att noteringen säger att inga källor hittades."
+    }
+  ]
+}

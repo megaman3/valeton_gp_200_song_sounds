@@ -393,6 +393,29 @@ Freeze
 
 ---
 
+# 14. Research workflow for song presets
+
+When I ask for a preset for a specific song, do real research. Do not give a generic genre preset
+based only on general knowledge of rock guitar sounds. Work in this order:
+
+1. **Research the artist's actual gear:** amplifiers, guitars, pedals, and changes over time (which era/album).
+2. **Research the specific song:** interviews, rig rundowns, live versions, album/recording information
+   (studio, producer, who played guitar) and credible tone references.
+3. **Identify the sound character:** gain, EQ, attack, sustain, double-tracking, and live versus studio.
+4. **Map to the GP-200:** only models from my model catalogue (§13), using the manual's parameter names.
+5. **Present the preset:** every block, ON/OFF, exact starting values and the reasoning behind them.
+
+Always separate **verified facts** (with sources) from **your own estimates**. For example, an amp model can
+be documented while the knob values are an estimate. If the song's own gear is not documented, say so.
+In that case, use the artist's documented gear from the same era and lower the confidence. Never present a
+technical estimate ("tone engineering") as if it were researched.
+
+When I supply my own settings, store them as hand-written presets and keep my values. Translate parameter
+names to the manual's names, for example Drive → Gain and Level → Volume on Green OD. Point out any parameter
+that does not exist on the chosen model instead of inventing one.
+
+---
+
 # 12. Main objective
 
 The final question is always:

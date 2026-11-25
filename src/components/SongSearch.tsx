@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type KeyboardEvent } from 'react';
 import type { Song } from '../types';
+import { BASIS_STYLE, songBasisLabel } from '../engine/basisLabel';
 
 interface Props {
   query: string;
@@ -13,13 +14,6 @@ interface Props {
   /** Markerar favoriter med ★ i listan. */
   isFavorite?: (song: Song) => boolean;
 }
-
-const SOURCE_LABEL: Record<NonNullable<Song['source']>, string> = {
-  curated: ' · handskriven',
-  guitartoneadapt: '',
-  research: ' · egen research',
-  profile: '',
-};
 
 /** Samma brytpunkt som Tailwinds `md`: under den ligger listan ovanför inställningarna. */
 const isNarrow = () => typeof window !== 'undefined' && window.matchMedia('(max-width: 767px)').matches;
@@ -141,11 +135,6 @@ export default function SongSearch({ query, onQueryChange, songs, limit, selecte
                 } ${isActive ? 'bg-zinc-700/80' : isSelected ? 'bg-zinc-800/80' : 'hover:bg-zinc-900/80'}`}
               >
                 <div className="font-medium">
-                  {s.source === 'profile' && (
-                    <span className="mr-2 rounded bg-amber-500/20 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-400">
-                      Ljudtyp
-                    </span>
-                  )}
                   {s.title}
                   {isFavorite?.(s) && (
                     <span aria-label="favorit" className="ml-1.5 text-amber-400">
@@ -153,10 +142,12 @@ export default function SongSearch({ query, onQueryChange, songs, limit, selecte
                     </span>
                   )}
                 </div>
-                <div className="text-xs text-zinc-400">
-                  {s.artist}
-                  {s.year ? ` · ${s.year}` : ''}
-                  {SOURCE_LABEL[s.source ?? 'curated']}
+                <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-zinc-400">
+                  <span>
+                    {s.artist}
+                    {s.year ? ` · ${s.year}` : ''}
+                  </span>
+                  <BasisBadge song={s} />
                 </div>
               </button>
             </li>
@@ -166,5 +157,14 @@ export default function SongSearch({ query, onQueryChange, songs, limit, selecte
         {songs.length === limit && <li className="text-xs text-zinc-500">Visar de {limit} första – förfina sökningen.</li>}
       </ul>
     </aside>
+  );
+}
+
+function BasisBadge({ song }: { song: Song }) {
+  const label = songBasisLabel(song);
+  return (
+    <span title={label.description} className={`rounded px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide ring-1 ${BASIS_STYLE[label.key]}`}>
+      {label.text}
+    </span>
   );
 }

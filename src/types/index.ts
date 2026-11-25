@@ -129,6 +129,8 @@ export interface SongPart {
   guitarNotes?: GuitarNotes;
   /** 0–1: hur väldokumenterat originalljudet är (från extern källa). */
   confidence?: number;
+  /** 'user' = inställningar som användaren själv tagit fram och lagt in. */
+  author?: 'user';
   /** Förklaringar till varje regelbeslut i översättningen. */
   translationNotes?: string[];
   /** Originalutrustning och källor för just denna del. */
@@ -193,9 +195,40 @@ export interface MappingRules {
   effects: EffectRule[];
   /** Effektord som medvetet saknar motsvarighet i GP-200 (t.ex. talk box). */
   ignoredEffects: string[];
+  /** Ren del på en distad förstärkarmodell → förstärkarens (eller närmaste) rena kanal. */
+  cleanChannels?: CleanChannelRule[];
+}
+
+export interface CleanChannelRule {
+  from: string[];
+  to: string;
+  reason: string;
+  basis: 'manual' | 'interpretation';
 }
 
 /** Normaliserad post från en extern källa (t.ex. GuitarToneAdapt). Rattvärden 0–10. */
+/**
+ * Rättelse av en importerad ton (t.ex. GuitarToneAdapt) som ligger i en egen fil så att den
+ * överlever en ny import. Fält i `set` ersätter tonens fält; `appendNote` och `addSources` läggs till.
+ */
+export interface ToneCorrection {
+  id: string;
+  set?: Partial<Pick<ResearchedTone, 'amp' | 'guitar' | 'pickup' | 'confidence' | 'effects'>>;
+  appendNote?: string;
+  addSources?: string[];
+  /** Tonen tas bort helt (t.ex. ett basljud som hamnat bland gitarrljuden). */
+  exclude?: boolean;
+  /** Kvalitetsregler som granskats och visat sig vara korrekta (flaggas inte längre av scan-quality). */
+  reviewed?: string[];
+  /** Varför rättelsen gjordes (visas inte i appen). */
+  reason: string;
+}
+
+export interface ToneCorrections {
+  description: string;
+  corrections: ToneCorrection[];
+}
+
 export interface ResearchedTone {
   id: string;
   artist: string;
@@ -220,6 +253,8 @@ export interface ResearchedTone {
   confidence: number;
   sources: string[];
   url: string;
+  /** Kvalitetsregler som granskats för just den här tonen (se ToneCorrection.reviewed). */
+  reviewed?: string[];
 }
 
 export interface ExternalDataset {
@@ -246,6 +281,8 @@ export interface ValidationIssue {
 }
 
 export interface GeneratedPreset {
+  /** Vad presetet bygger på (se engine/basisLabel). */
+  basis?: { text: string; description: string };
   songId: string;
   partId: string;
   title: string;

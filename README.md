@@ -14,6 +14,9 @@ Sökningen tål stavfel: ger en sökning inga exakta träffar visas låtar med l
 - **Ljudtyper:** 20 färdiga grundljud som "Jazz clean", "Texas blues", "60-tals fuzz", "Djent / modern metal" och
   "Ambient shimmer". Sök på t.ex. `clean`, `blues`, `high gain`, `fuzz` eller `ljudtyp` (visar alla), eller välj en
   ljudtyp på startsidan. Ljudtyperna är profilerna i `src/data/tone-profiles.json`.
+- **Etikett för underlaget:** varje låt visar vad presetet bygger på – *Dokumenterad utrustning*, *Delvis dokumenterad*,
+  *Uppskattning*, *Handskriven*, *Dina inställningar* eller *Ljudtyp* – så att du ser vilka presets som mest behöver provas
+  och justeras på gehör. Etiketten följer även med i "Kopiera som text".
 - **Favorites:** tryck på ☆ vid en låt eller ljudtyp för att spara den under fliken *★ Favorites*. Favoriterna
   sparas bara lokalt i webbläsaren på den enhet du använder (ingen backend, fungerar offline) och försvinner om du
   rensar webbplatsdata.
@@ -32,6 +35,7 @@ npm run import:gta     # hämta senaste GuitarToneAdapt-datasetet
 npm run preset -- "paranoid"             # skriv ut preset i terminalen
 npm run preset -- "back in black" lead   # en specifik del
 npm run build          # bygg för produktion (dist/)
+npm run scan-quality   # kvalitetsskanning: vilka låtar har svagast/motsägelsefullt underlag (tools/quality-report.md)
 ```
 
 ## Struktur
@@ -48,7 +52,7 @@ src/
   types/       Delade TypeScript-typer
 public/        PWA-ikoner (appikon på hemskärmen)
 tests/         Vitest – bl.a. att inget preset använder en modell som saknas i GP-200
-tools/         CLI: import-guitartoneadapt, validate-data, preset-cli, build-research.py
+tools/         CLI: import-guitartoneadapt, validate-data, preset-cli, build-research.py, scan-quality
 docs/          ARCHITECTURE.md – dataflöde, hur man lägger till låtar, färdplan
 ```
 
@@ -72,6 +76,8 @@ Pages måste vara aktiverat med källa "GitHub Actions" under Settings → Pages
 - **Låtdata:** [GuitarToneAdapt – Guitar Tone Dataset](https://github.com/Pera-Labs/guitar-tone-dataset),
   © GuitarToneAdapt (https://guitartoneadapt.com), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
   Datan är normaliserad (basljud borttagna) och översatt till GP-200-modeller av detta projekt.
+  Fel som egen research hittar rättas i `src/data/external/gta-corrections.json`, som läses in ovanpå
+  importen och därför överlever `npm run import:gta`.
 - **Egen research:** `src/data/research/research-tones.json` – originalutrustning från intervjuer och
   rig-genomgångar (källa anges per låt). Utrustningen är källbelagd; rattlägen per låt är tolkningar och
   märks med lägre säkerhet. Finns låten redan i GuitarToneAdapt läggs researchdelarna till som extra delar.

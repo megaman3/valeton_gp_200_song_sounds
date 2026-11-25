@@ -5,6 +5,8 @@
  */
 import { BLOCK_ORDER } from '../src/types';
 import { database, generator, searchable, soundTypes, validator } from '../src/engine';
+import { gtaCorrections } from '../src/engine/data';
+import gtaRaw from '../src/data/external/guitartoneadapt.json';
 
 const showAll = process.argv.includes('--all');
 let errors = 0;
@@ -43,6 +45,19 @@ for (const r of rules.effects) {
   for (const issue of validator.validateBlock(r.block, { enabled: true, model: r.model, params: r.params })) {
     if (issue.level === 'error') error(`effektregel [${r.match[0]}]`, issue.message);
   }
+}
+
+// 2a. Rena kanaler pekar på existerande förstärkare
+for (const c of rules.cleanChannels ?? []) {
+  for (const m of [...c.from, c.to]) {
+    if (!validator.modelExists('AMP', m)) error(`clean-kanal [${c.to}]`, `"${m}" finns inte`);
+  }
+}
+
+// 2b. Rättelser av GuitarToneAdapt måste peka på existerande toner
+const gtaIds = new Set((gtaRaw as { tones: { id: string }[] }).tones.map((t) => t.id));
+for (const c of gtaCorrections.corrections) {
+  if (!gtaIds.has(c.id)) error('gta-corrections', `"${c.id}" finns inte i guitartoneadapt.json`);
 }
 
 // 3. Alla genererade presets
