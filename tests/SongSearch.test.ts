@@ -25,6 +25,15 @@ describe('searchSongs', () => {
     expect(first('paranod').title).toBe('Paranoid');
   });
 
+  it('hittar närmaste låt även när ett ord är för felstavat', () => {
+    const first = (q: string) => search(allSongs, q).songs[0];
+    // "yard" är två ändringar från "jar" – för mycket för stavfelssökningen, men resten av orden stämmer.
+    expect(first('Whisky in the Yard')).toMatchObject({ artist: 'Metallica', title: 'Whiskey in the Jar' });
+    expect(first('whisky yar')).toMatchObject({ title: 'Whiskey in the Jar' });
+    // Ett ensamt ord som inte liknar något ger fortfarande inga träffar.
+    expect(search(allSongs, 'zzzz qqqq').songs).toEqual([]);
+  });
+
   it('exakta träffar går före och korta ord måste stavas rätt', () => {
     expect(search(allSongs, 'Whiskey').fuzzy).toBe(false);
     const exact = searchSongs(allSongs, 'metallica');
