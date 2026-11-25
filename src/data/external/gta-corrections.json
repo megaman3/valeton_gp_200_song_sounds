@@ -1,0 +1,29 @@
+{
+  "description": "Rättelser av GuitarToneAdapt-toner efter egen research. Läses in ovanpå guitartoneadapt.json, så att de överlever en ny import (npm run import:gta).",
+  "corrections": [
+    {
+      "id": "motorhead-ace-of-spades-riff-distorted",
+      "set": {
+        "guitar": "Fender Stratocaster",
+        "pickup": "bridge single coil",
+        "confidence": 0.5
+      },
+      "appendNote": "Rättat efter egen research: Fast Eddie Clarke spelade Stratocaster med Motörhead (egen intervju, Vintage Guitar 2012) – Rickenbackern var Lemmys bas. Gitarrförstärkaren på inspelningen (Jackson's Studios, 1980, producent Vic Maile) är inte dokumenterad; en uppskruvad Marshall är en tolkning.",
+      "addSources": [
+        "https://equipboard.com/pros/eddie-clarke",
+        "https://en.wikipedia.org/wiki/Ace_of_Spades_(song)"
+      ],
+      "reason": "GuitarToneAdapt angav 'Rickenbacker / Marshall' som gitarr, vilket är Lemmys basrigg."
+    },
+    {
+      "id": "green-day-basket-case-riff-distorted",
+      "appendNote": "Bekräftat av egen research: Rob Cavallos Marshall 1959 Super Lead (Plexi), modifierad av Martin Golub ('Dookie-moden'), och Billie Joe Armstrongs 'Blue' med Seymour Duncan SH-4. Gitarren är stämd ett halvt steg ner (Eb).",
+      "addSources": [
+        "https://www.guitarworld.com/gear/guitar-amp-heads/the-real-story-behind-green-days-iconic-dookie-tone",
+        "https://www.marshall.com/ae/en/backstage/articles/the-dookie-mod",
+        "https://www.premierguitar.com/articles/Rig_Rundown_Green_Day"
+      ],
+      "reason": "Kontroll i researchpiloten; lägger till stämning och källor."
+    }
+  ]
+}

@@ -196,6 +196,24 @@ export interface MappingRules {
 }
 
 /** Normaliserad post från en extern källa (t.ex. GuitarToneAdapt). Rattvärden 0–10. */
+/**
+ * Rättelse av en importerad ton (t.ex. GuitarToneAdapt) som ligger i en egen fil så att den
+ * överlever en ny import. Fält i `set` ersätter tonens fält; `appendNote` och `addSources` läggs till.
+ */
+export interface ToneCorrection {
+  id: string;
+  set?: Partial<Pick<ResearchedTone, 'amp' | 'guitar' | 'pickup' | 'confidence' | 'effects'>>;
+  appendNote?: string;
+  addSources?: string[];
+  /** Varför rättelsen gjordes (visas inte i appen). */
+  reason: string;
+}
+
+export interface ToneCorrections {
+  description: string;
+  corrections: ToneCorrection[];
+}
+
 export interface ResearchedTone {
   id: string;
   artist: string;

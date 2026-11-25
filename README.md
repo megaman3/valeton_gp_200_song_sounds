@@ -72,6 +72,8 @@ Pages måste vara aktiverat med källa "GitHub Actions" under Settings → Pages
 - **Låtdata:** [GuitarToneAdapt – Guitar Tone Dataset](https://github.com/Pera-Labs/guitar-tone-dataset),
   © GuitarToneAdapt (https://guitartoneadapt.com), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
   Datan är normaliserad (basljud borttagna) och översatt till GP-200-modeller av detta projekt.
+  Fel som egen research hittar rättas i `src/data/external/gta-corrections.json`, som läses in ovanpå
+  importen och därför överlever `npm run import:gta`.
 - **Egen research:** `src/data/research/research-tones.json` – originalutrustning från intervjuer och
   rig-genomgångar (källa anges per låt). Utrustningen är källbelagd; rattlägen per låt är tolkningar och
   märks med lägre säkerhet. Finns låten redan i GuitarToneAdapt läggs researchdelarna till som extra delar.

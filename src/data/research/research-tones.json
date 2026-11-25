@@ -3089,14 +3089,16 @@
       },
       "amp": "Vox AC30",
       "guitar": "Fender Telecaster",
-      "notes": "Francis Rossi: grön, modifierad Telecaster. Vox AC30 (\"skulle helst bara använda en AC30\") och Marshall-toppar (JCM800 senare). Rick Parfitt: Telecaster.",
+      "notes": "Francis Rossi: grön, modifierad Telecaster. Vox AC30 (\"skulle helst bara använda en AC30\") och Marshall-toppar (JCM800 senare). Rick Parfitt: Telecaster. Belagt: inspelad 1973 i IBC Studios, London, till stor del live med bandets scenutrustning och förstärkare, i dubbelt tempo mot den ursprungliga bluesversionen. Vilka förstärkare som stod i studion är inte dokumenterat – AC30 bygger på Rossis allmänna förkärlek.",
       "effects": [],
       "pickup": "bridge single coil",
       "confidence": 0.45,
       "sources": [
         "https://www.uberproaudio.com/who-plays-what/588-status-quo-francis-rossi-guitar-rig-gear-and-equipment",
         "https://vintageguitar.com/18470/status-quos-francis-rossi",
-        "https://www.guitarworld.com/amp/features/francis-rossi-telecasters"
+        "https://www.guitarworld.com/amp/features/francis-rossi-telecasters",
+        "https://en.wikipedia.org/wiki/Caroline_(Status_Quo_song)",
+        "https://www.loudersound.com/features/status-quo-hello-interview"
       ],
       "url": "https://www.uberproaudio.com/who-plays-what/588-status-quo-francis-rossi-guitar-rig-gear-and-equipment"
     },

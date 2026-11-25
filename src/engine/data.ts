@@ -4,15 +4,37 @@ import profilesJson from '../data/tone-profiles.json';
 import songsJson from '../data/songs.json';
 import rulesJson from '../data/mapping-rules.json';
 import gtaJson from '../data/external/guitartoneadapt.json';
+import gtaCorrectionsJson from '../data/external/gta-corrections.json';
 import researchJson from '../data/research/research-tones.json';
 import type {
   ExternalDataset,
   GP200Manual,
   GP200ModelList,
   MappingRules,
+  ToneCorrections,
   Song,
   ToneProfile,
 } from '../types';
+
+/** Lägger egna rättelser ovanpå ett importerat dataset (påverkar inte originalfilen). */
+export function applyCorrections(dataset: ExternalDataset, corrections: ToneCorrections): ExternalDataset {
+  const byId = new Map(corrections.corrections.map((c) => [c.id, c]));
+  return {
+    ...dataset,
+    tones: dataset.tones.map((tone) => {
+      const c = byId.get(tone.id);
+      if (!c) return tone;
+      return {
+        ...tone,
+        ...c.set,
+        notes: [tone.notes, c.appendNote].filter(Boolean).join(' '),
+        sources: [...tone.sources, ...(c.addSources ?? []).filter((s) => !tone.sources.includes(s))],
+      };
+    }),
+  };
+}
+
+export const gtaCorrections = gtaCorrectionsJson as ToneCorrections;
 
 /** Samlad, typad åtkomst till all JSON-data. */
 export interface ToneDatabase {
@@ -32,6 +54,6 @@ export const database: ToneDatabase = {
   profiles: profilesJson as unknown as ToneProfile[],
   curatedSongs: songsJson as unknown as Song[],
   rules: rulesJson as unknown as MappingRules,
-  external: gtaJson as ExternalDataset,
+  external: applyCorrections(gtaJson as ExternalDataset, gtaCorrections),
   research: researchJson as ExternalDataset,
 };

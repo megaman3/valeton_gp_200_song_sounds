@@ -181,7 +181,7 @@ def many(artist, genre, rows, amp, guitar, note, pickup, conf, src, fx=None):
         extra = row[5] if len(row) > 5 else {}
         t(artist, song, genre, era, tt, part, st, extra.get("amp", amp), extra.get("guitar", guitar),
           note + (" " + extra["note"] if "note" in extra else ""), extra.get("fx", fx or []),
-          extra.get("pickup", pickup), extra.get("conf", conf), src)
+          extra.get("pickup", pickup), extra.get("conf", conf), src + extra.get("src", []))
 
 # Queen: Red Special -> treble booster -> Vox AC30 (Normal-kanalen), volymratten styr gain
 QU = ["https://brianmayworld.com/BrianMaysound.htm",
@@ -266,7 +266,10 @@ SQN = "Francis Rossi: grön, modifierad Telecaster. Vox AC30 (\"skulle helst bar
 many("Status Quo", "boogie rock", [
     ("Rockin' All Over the World", "1970s", "overdriven", "riff", (5.5,5.5,6,6.5,6,2)),
     ("Whatever You Want", "1970s", "overdriven", "riff", (6,5.5,6,6.5,6,2)),
-    ("Caroline", "1970s", "overdriven", "riff", (5.5,5.5,6,6.5,6,2)),
+    ("Caroline", "1970s", "overdriven", "riff", (5.5,5.5,6,6.5,6,2), {"note": "Belagt: inspelad 1973 i IBC Studios, London, "
+        "till stor del live med bandets scenutrustning och förstärkare, i dubbelt tempo mot den ursprungliga bluesversionen. "
+        "Vilka förstärkare som stod i studion är inte dokumenterat – AC30 bygger på Rossis allmänna förkärlek.",
+        "src": ["https://en.wikipedia.org/wiki/Caroline_(Status_Quo_song)", "https://www.loudersound.com/features/status-quo-hello-interview"]}),
     ("Down Down", "1970s", "overdriven", "riff", (6,5.5,6,6.5,6,2)),
     ("Paper Plane", "1970s", "overdriven", "riff", (5.5,5.5,6,6.5,6,2)),
     ("In the Army Now", "1980s", "distorted", "riff", (6.5,5.5,6,6.5,6,3), {"amp": "Marshall JCM800", "fx": ["Ibanez TS808 Tube Screamer"]}),

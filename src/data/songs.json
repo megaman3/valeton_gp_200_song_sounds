@@ -626,6 +626,64 @@
           "guitarTone": "10",
           "other": "Spela med hård attack – kompensera inte svag attack med mer gain. Prioritera mellanregistret och Green OD:s Volume före AMP Gain. Med bandet: gitarren försvinner → 800 Hz +2 till · för tunn → 400 Hz +2 till · för hård/vass → 4 kHz −3 · grötigt riff → 125 Hz −5 till · distortionen flyter ihop → DST Gain 10–12 · för lite rå rockkänsla → AMP Gain 78."
         }
+      },
+      {
+        "id": "research",
+        "name": "Researchad (Orange Rockerverb)",
+        "overrides": {
+          "AMP": {
+            "enabled": true,
+            "model": "Juice R100",
+            "params": {
+              "Gain": 53,
+              "Volume": 60,
+              "Bass": 55,
+              "Middle": 65,
+              "Treble": 65,
+              "Bright": "OFF"
+            }
+          },
+          "CAB": {
+            "enabled": true,
+            "model": "Juice",
+            "params": {
+              "Volume": 50
+            }
+          },
+          "NR": {
+            "enabled": true,
+            "model": "Gate 1",
+            "params": {
+              "Threshold": 28
+            }
+          }
+        },
+        "confidence": 0.4,
+        "translationNotes": [
+          "AMP: \"Orange Rockerverb 50\" → Juice R100. Juice R100 bygger på Orange Rockerverb 100 (manualen s. 49).",
+          "AMP Gain: originalets 7/10 × 10 × 0.75 = 53 (Hi Gain-modeller har mer förstärkning i sig).",
+          "Juice R100 saknar Presence-ratt (original 6/10).",
+          "CAB: inget kabinett angivet – Juice passar Juice R100 (som Auto CAB Match).",
+          "NR: Gate 1 eftersom gain är 7/10."
+        ],
+        "guitarNotes": {
+          "pickup": "bridge humbucker",
+          "other": "Originalgitarr: Gibson SG / Gibson Les Paul Junior"
+        },
+        "originalGear": {
+          "amp": [
+            "Orange Rockerverb 50"
+          ],
+          "guitar": "Gibson SG / Gibson Les Paul Junior",
+          "notes": "Belagt: Danko Jones har själv berättat att han spelar en Orange Rockerverb 50 (intervju hos Orange) och kom till Orange via turnéer med The Supersuckers; tidigare har han använt Hiwatt. Gitarrer: Gibson SG (vit) och Les Paul Junior, tidigare Explorer på scen. Inte belagt: utrustningen på just den här inspelningen och eventuella pedaler (källorna går isär om en Blues Driver). Rattlägena är en teknisk uppskattning av rå, mellanregisterrik garagerock.",
+          "pedals": []
+        },
+        "sources": [
+          "https://orangeamps.com/articles/interview-danko-jones/",
+          "https://www.guitarworld.com/news/keeping-jones-guitarist-danko-jones-talks-kiss-metallica-volbeat-and-gear",
+          "https://www.fret12.com/blogs/string-things/danko-jones-the-sound-and-the-story"
+        ],
+        "sourceUrl": "https://orangeamps.com/articles/interview-danko-jones/"
       }
     ]
   }
