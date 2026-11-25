@@ -1,4 +1,5 @@
 import type { Song } from '../types';
+import { BASIS_STYLE, songBasisLabel } from '../engine/basisLabel';
 
 interface Props {
   songs: Song[];
@@ -28,9 +29,17 @@ export default function FavoritesList({ songs, selectedId, onSelect, onRemove }:
             }`}
           >
             <div className="truncate font-medium">{s.title}</div>
-            <div className="truncate text-xs text-zinc-400">
-              {s.artist}
-              {s.year ? ` · ${s.year}` : ''}
+            <div className="flex items-center gap-2 text-xs text-zinc-400">
+              <span className="truncate">
+                {s.artist}
+                {s.year ? ` · ${s.year}` : ''}
+              </span>
+              <span
+                title={songBasisLabel(s).description}
+                className={`rounded px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide ring-1 shrink-0 ${BASIS_STYLE[songBasisLabel(s).key]}`}
+              >
+                {songBasisLabel(s).text}
+              </span>
             </div>
           </button>
           <button

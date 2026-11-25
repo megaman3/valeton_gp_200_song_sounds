@@ -14,6 +14,9 @@ Sökningen tål stavfel: ger en sökning inga exakta träffar visas låtar med l
 - **Ljudtyper:** 20 färdiga grundljud som "Jazz clean", "Texas blues", "60-tals fuzz", "Djent / modern metal" och
   "Ambient shimmer". Sök på t.ex. `clean`, `blues`, `high gain`, `fuzz` eller `ljudtyp` (visar alla), eller välj en
   ljudtyp på startsidan. Ljudtyperna är profilerna i `src/data/tone-profiles.json`.
+- **Etikett för underlaget:** varje låt visar vad presetet bygger på – *Dokumenterad utrustning*, *Delvis dokumenterad*,
+  *Uppskattning*, *Handskriven*, *Dina inställningar* eller *Ljudtyp* – så att du ser vilka presets som mest behöver provas
+  och justeras på gehör. Etiketten följer även med i "Kopiera som text".
 - **Favorites:** tryck på ☆ vid en låt eller ljudtyp för att spara den under fliken *★ Favorites*. Favoriterna
   sparas bara lokalt i webbläsaren på den enhet du använder (ingen backend, fungerar offline) och försvinner om du
   rensar webbplatsdata.

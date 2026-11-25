@@ -4,6 +4,7 @@ import type { GeneratedPreset } from '../types';
 /** Textformat enligt CLAUDE.md §4 – alla block, i fast ordning. */
 export function formatPreset(preset: GeneratedPreset): string {
   const lines: string[] = [`## ${preset.title}`, ''];
+  if (preset.basis) lines.push(`Underlag: ${preset.basis.text} – ${preset.basis.description}`, '');
   for (const block of BLOCK_ORDER) {
     const b = preset.blocks[block];
     lines.push(`**${block}:** ${b.enabled ? 'ON' : 'OFF'}`);

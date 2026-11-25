@@ -129,6 +129,8 @@ export interface SongPart {
   guitarNotes?: GuitarNotes;
   /** 0–1: hur väldokumenterat originalljudet är (från extern källa). */
   confidence?: number;
+  /** 'user' = inställningar som användaren själv tagit fram och lagt in. */
+  author?: 'user';
   /** Förklaringar till varje regelbeslut i översättningen. */
   translationNotes?: string[];
   /** Originalutrustning och källor för just denna del. */
@@ -279,6 +281,8 @@ export interface ValidationIssue {
 }
 
 export interface GeneratedPreset {
+  /** Vad presetet bygger på (se engine/basisLabel). */
+  basis?: { text: string; description: string };
   songId: string;
   partId: string;
   title: string;

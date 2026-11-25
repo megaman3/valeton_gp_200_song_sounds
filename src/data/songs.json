@@ -439,7 +439,8 @@
           "guitarVolume": "10",
           "guitarTone": "10",
           "other": "Finjustering: AMP Gain 78 för mer aggressiv dist · Bass 43 för tightare riff · 1.6 kHz +6 för mer bett · Presence 54 och 4 kHz 0 om det låter för vasst · 400 Hz +2 om det låter för tunt."
-        }
+        },
+        "author": "user"
       }
     ]
   },
@@ -540,7 +541,8 @@
           "guitarVolume": "10",
           "guitarTone": "10",
           "other": "Spela huvudriffet med stallmicken – det ska kännas rått och nästan oborstat. Finjustering: för snällt → AMP Gain 80 · för mycket dist/grötigt → DST Gain 15 · för tunt → 400 Hz +5 · för vasst → Presence 54 och 4 kHz 0 · för lite aggressivitet → 1.6 kHz +6 · för mycket bas i riffet → AMP Bass 40."
-        }
+        },
+        "author": "user"
       },
       {
         "id": "live",
@@ -625,7 +627,8 @@
           "guitarVolume": "10",
           "guitarTone": "10",
           "other": "Spela med hård attack – kompensera inte svag attack med mer gain. Prioritera mellanregistret och Green OD:s Volume före AMP Gain. Med bandet: gitarren försvinner → 800 Hz +2 till · för tunn → 400 Hz +2 till · för hård/vass → 4 kHz −3 · grötigt riff → 125 Hz −5 till · distortionen flyter ihop → DST Gain 10–12 · för lite rå rockkänsla → AMP Gain 78."
-        }
+        },
+        "author": "user"
       },
       {
         "id": "research",
