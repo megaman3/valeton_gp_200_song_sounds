@@ -66,7 +66,7 @@ const artistRanked = [...artists.entries()]
   .sort((a, b) => b[1].high * 3 + b[1].medium - (a[1].high * 3 + a[1].medium) || b[1].total - a[1].total);
 
 /** Regler som tyder på faktiska fel (inte bara svagt underlag) – billigast att kontrollera, störst nytta. */
-const CONTRADICTIONS = new Set(['bass-amp-model', 'bass-gear', 'rickenbacker', 'era', 'genre-gain', 'clean-highgain', 'type-gain']);
+const CONTRADICTIONS = new Set(['bass-amp-model', 'bass-gear', 'rickenbacker', 'era', 'genre-gain', 'clean-highgain', 'conf-mismatch']);
 const contradictions = ranked.flatMap((s) =>
   s.parts.flatMap((p) =>
     p.findings.filter((f) => CONTRADICTIONS.has(f.rule)).map((f) => ({ s, p, f })),

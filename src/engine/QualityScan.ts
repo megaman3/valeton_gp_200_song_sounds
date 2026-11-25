@@ -22,8 +22,15 @@ export interface ToneScan {
 /** GP-200-förstärkare som bygger på basförstärkare. */
 const BASS_AMPS = new Set(['Classic Bass', 'Foxy Bass', 'Mess Bass', 'Mini Bass', 'Bass Pre']);
 
-/** Modern high gain (Rectifier, 5150, Diezel, ENGL m.fl.) – fanns inte före ca 1980. */
-const MODERN_HIGH_GAIN = /^(Mess|EV 51|Dizz|Eagle|Power LD|Bog Red|Flagman|Solo100 (OD|LD)|Juice R100)/;
+/**
+ * Modern high gain (Rectifier, 5150, Diezel, ENGL m.fl.) – fanns inte före ca 1980.
+ * Mesa Mark-serien (Mess2C+/Mess4) räknas inte: Boogie/Mark I användes redan runt 1970 (t.ex. Santana).
+ */
+const MODERN_HIGH_GAIN = /^(Mess Dual|EV 51|Dizz|Eagle|Power LD|Bog Red|Flagman|Solo100 (OD|LD)|Juice R100)/;
+/** Mesa Mark-serien fanns inte före ca 1970. */
+const MESA_MARK = /^Mess(2C\+|4)/;
+/** Noteringen säger att inga källor hittades. */
+const NO_SOURCES = /no (direct |official )?sources|no official rig|could not (be )?(find|confirm)|not found|unknown (amp|gear)/i;
 
 /**
  * Förstärkarmodeller som är tydligt distade – udda val för en ren del. Marshall UK 800/900 räknas inte:
@@ -92,8 +99,13 @@ export function scanTone(tone: ResearchedTone, part: SongPart): ToneScan {
 
   // 5. Modellen passar inte tiden
   const dec = decade(tone.era);
-  if (dec !== undefined && dec <= 1970 && ampModel && MODERN_HIGH_GAIN.test(ampModel)) {
+  if (dec !== undefined && ampModel && ((dec <= 1970 && MODERN_HIGH_GAIN.test(ampModel)) || (dec <= 1960 && MESA_MARK.test(ampModel)))) {
     add('era', 2, `${ampModel} (modern high gain) för en inspelning från ${dec}-talet`);
+  }
+
+  // 6b. Hög säkerhet trots att noteringen säger att inga källor hittades
+  if (tone.confidence >= 0.7 && NO_SOURCES.test(tone.notes)) {
+    add('conf-mismatch', 3, `säkerhet ${tone.confidence} men noteringen säger att inga källor hittades`);
   }
 
   // 6. Gain passar inte genre/tontyp
@@ -115,7 +127,9 @@ export function scanTone(tone: ResearchedTone, part: SongPart): ToneScan {
   // 8. Saknade uppgifter
   if (!guitar.trim()) add('missing', 1, 'gitarr saknas');
 
-  return { tone, ampModel, score: findings.reduce((sum, f) => sum + f.points, 0), findings };
+  // Granskade fynd (rättelsefilen) flaggas inte igen.
+  const open = findings.filter((f) => !tone.reviewed?.includes(f.rule));
+  return { tone, ampModel, score: open.reduce((sum, f) => sum + f.points, 0), findings: open };
 }
 
 export type RiskLevel = 'hög' | 'medel' | 'låg';

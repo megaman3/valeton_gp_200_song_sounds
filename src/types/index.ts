@@ -214,6 +214,10 @@ export interface ToneCorrection {
   set?: Partial<Pick<ResearchedTone, 'amp' | 'guitar' | 'pickup' | 'confidence' | 'effects'>>;
   appendNote?: string;
   addSources?: string[];
+  /** Tonen tas bort helt (t.ex. ett basljud som hamnat bland gitarrljuden). */
+  exclude?: boolean;
+  /** Kvalitetsregler som granskats och visat sig vara korrekta (flaggas inte längre av scan-quality). */
+  reviewed?: string[];
   /** Varför rättelsen gjordes (visas inte i appen). */
   reason: string;
 }
@@ -247,6 +251,8 @@ export interface ResearchedTone {
   confidence: number;
   sources: string[];
   url: string;
+  /** Kvalitetsregler som granskats för just den här tonen (se ToneCorrection.reviewed). */
+  reviewed?: string[];
 }
 
 export interface ExternalDataset {

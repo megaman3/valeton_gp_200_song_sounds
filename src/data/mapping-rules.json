@@ -58,6 +58,30 @@
     },
     {
       "match": [
+        "soldano",
+        "slo",
+        "slo 100",
+        "slo100"
+      ],
+      "byGain": [
+        {
+          "maxGain": 3,
+          "model": "Solo100 CL"
+        },
+        {
+          "maxGain": 6,
+          "model": "Solo100 OD"
+        },
+        {
+          "maxGain": 10,
+          "model": "Solo100 LD"
+        }
+      ],
+      "basis": "manual",
+      "reason": "Solo100 bygger på Soldano SLO-100 (manualen s. 44–45)."
+    },
+    {
+      "match": [
         "plexi",
         "super lead",
         "1959",
@@ -129,11 +153,13 @@
         "mark 2c+",
         "mark 2c",
         "iic+",
-        "c+"
+        "c+",
+        "mark i",
+        "mark 1"
       ],
       "model": "Mess2C+ 1",
       "basis": "manual",
-      "reason": "Mess2C+ bygger på Mesa/Boogie Mark IIC+ (manualen s. 47)."
+      "reason": "Mess2C+ bygger på Mesa/Boogie Mark IIC+ (manualen s. 47). Mark I (1970-talets Boogie) har samma lead-krets och översätts också hit."
     },
     {
       "match": [
@@ -149,8 +175,7 @@
         "mark v",
         "mark 5",
         "mark iii",
-        "mark 3",
-        "mark i"
+        "mark 3"
       ],
       "model": "Mess4 LD",
       "basis": "interpretation",
@@ -296,30 +321,6 @@
     },
     {
       "match": [
-        "soldano",
-        "slo",
-        "slo 100",
-        "slo100"
-      ],
-      "byGain": [
-        {
-          "maxGain": 3,
-          "model": "Solo100 CL"
-        },
-        {
-          "maxGain": 6,
-          "model": "Solo100 OD"
-        },
-        {
-          "maxGain": 10,
-          "model": "Solo100 LD"
-        }
-      ],
-      "basis": "manual",
-      "reason": "Solo100 bygger på Soldano SLO-100 (manualen s. 44–45)."
-    },
-    {
-      "match": [
         "shiva"
       ],
       "byGain": [
@@ -387,7 +388,8 @@
         }
       ],
       "basis": "interpretation",
-      "reason": "Orange utan modellangivelse: AD30 vid lägre gain, Rockerverb vid högre."
+      "reason": "Orange utan modellangivelse: AD30 vid lägre gain, Rockerverb vid högre. Orange från 1960–70-talet (OR80/OR120, utan mastervolym) → Juice30 OD; Rockerverb är en modern konstruktion.",
+      "vintage": "Juice30 OD"
     },
     {
       "match": [
@@ -728,6 +730,28 @@
       "model": "Eagle 120",
       "basis": "interpretation",
       "reason": "Hughes & Kettner saknas; tysk high gain (ENGL Savage) är närmast."
+    },
+    {
+      "match": [
+        "peavey mace",
+        "peavey deuce",
+        "peavey classic",
+        "peavey delta blues",
+        "peavey vintage",
+        "peavey musician"
+      ],
+      "byGain": [
+        {
+          "maxGain": 4,
+          "model": "Dark Twin"
+        },
+        {
+          "maxGain": 10,
+          "model": "Bellman 59N"
+        }
+      ],
+      "reason": "Peaveys rörförstärkare från 1970-talet (Mace, Deuce, Classic) är amerikanska 6L6-förstärkare med mycket ren effekt – närmast Fender Twin/Bassman, inte 5150 (EV 51).",
+      "basis": "interpretation"
     },
     {
       "match": [

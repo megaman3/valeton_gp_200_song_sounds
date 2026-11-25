@@ -4,11 +4,12 @@ import json, re, sys
 out = sys.argv[1]
 tones = []
 def slug(s): return re.sub(r'[^a-z0-9]+', '-', s.lower()).strip('-')
-def t(artist, song, genre, era, toneType, part, s, amp, guitar, notes, effects, pickup, conf, sources):
+def t(artist, song, genre, era, toneType, part, s, amp, guitar, notes, effects, pickup, conf, sources, reviewed=None):
     g,b,m,tr,p,r = s
     tones.append(dict(id=f"{slug(artist)}-{slug(song)}-{part}-{toneType}", artist=artist, song=song, genre=genre, era=era,
         toneType=toneType, part=part, ampSettings=dict(gain=g,bass=b,mid=m,treble=tr,presence=p,reverb=r),
-        amp=amp, guitar=guitar, notes=notes, effects=effects, pickup=pickup, confidence=conf, sources=sources, url=sources[0]))
+        amp=amp, guitar=guitar, notes=notes, effects=effects, pickup=pickup, confidence=conf, sources=sources, url=sources[0],
+        **({"reviewed": reviewed} if reviewed else {})))
 
 # --- Volbeat: Marshall JCM800 + Gibson SG, TS808 som boost (Guitar World rig tour)
 VB = ["https://guitarworld.com/features/rig-tour-volbeat-on-the-gear-that-fuels-the-danish-american-rock-n-roll-machine",
@@ -181,7 +182,7 @@ def many(artist, genre, rows, amp, guitar, note, pickup, conf, src, fx=None):
         extra = row[5] if len(row) > 5 else {}
         t(artist, song, genre, era, tt, part, st, extra.get("amp", amp), extra.get("guitar", guitar),
           note + (" " + extra["note"] if "note" in extra else ""), extra.get("fx", fx or []),
-          extra.get("pickup", pickup), extra.get("conf", conf), src + extra.get("src", []))
+          extra.get("pickup", pickup), extra.get("conf", conf), src + extra.get("src", []), extra.get("reviewed"))
 
 # Queen: Red Special -> treble booster -> Vox AC30 (Normal-kanalen), volymratten styr gain
 QU = ["https://brianmayworld.com/BrianMaysound.htm",
@@ -210,7 +211,8 @@ BE = ["https://guitarworld.com/lessons/tabs-beatles-cant-buy-me-love", "https://
 BEN = "The Beatles: Vox AC30 1962-66, Vox UL730 under Revolver/Sgt. Pepper, silverface Fender Twin från 1968."
 many("The Beatles", "rock", [
     ("A Hard Day's Night", "1960s", "overdriven", "riff", (3.5,5,6,7,6,2.5), {"guitar": "Rickenbacker 360/12"}),
-    ("I Feel Fine", "1960s", "overdriven", "riff", (4,5,6,7,6,2.5), {"guitar": "Gretsch / Rickenbacker"}),
+    ("I Feel Fine", "1960s", "overdriven", "riff", (4,5,6,7,6,2.5), {"guitar": "Gretsch / Rickenbacker",
+        "reviewed": ["rickenbacker"]}),  # Lennons Rickenbacker var en sexsträngad gitarr
     ("Help!", "1960s", "overdriven", "riff", (3.5,5,6,7,6,2.5), {"guitar": "Rickenbacker 325"}),
     ("Ticket to Ride", "1960s", "overdriven", "riff", (4,5,6,7,6,2.5), {"guitar": "Rickenbacker 360/12"}),
     ("Paperback Writer", "1960s", "overdriven", "riff", (5,5.5,6,6.5,6,2), {"guitar": "Epiphone Casino"}),

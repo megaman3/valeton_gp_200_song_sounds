@@ -6,6 +6,7 @@
 import { BLOCK_ORDER } from '../src/types';
 import { database, generator, searchable, soundTypes, validator } from '../src/engine';
 import { gtaCorrections } from '../src/engine/data';
+import gtaRaw from '../src/data/external/guitartoneadapt.json';
 
 const showAll = process.argv.includes('--all');
 let errors = 0;
@@ -54,7 +55,7 @@ for (const c of rules.cleanChannels ?? []) {
 }
 
 // 2b. Rättelser av GuitarToneAdapt måste peka på existerande toner
-const gtaIds = new Set(database.external.tones.map((t) => t.id));
+const gtaIds = new Set((gtaRaw as { tones: { id: string }[] }).tones.map((t) => t.id));
 for (const c of gtaCorrections.corrections) {
   if (!gtaIds.has(c.id)) error('gta-corrections', `"${c.id}" finns inte i guitartoneadapt.json`);
 }

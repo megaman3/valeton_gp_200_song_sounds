@@ -111,3 +111,23 @@ describe('ToneTranslator – Ampeg och rena kanaler', () => {
     expect(amp({ amp: 'Peavey 5150', toneType: 'distorted' })).toBe('EV 51');
   });
 });
+
+describe('ToneTranslator – regelordning och epok (funna av kvalitetsskanningen)', () => {
+  const amp = (over: Partial<ResearchedTone>) => translator.translateTone(tone(over)).blocks.AMP?.model;
+
+  it('Soldano går före Plexi trots orden "Super Lead"', () => {
+    expect(amp({ amp: 'Soldano SLO-100 Super Lead Overdrive', ampSettings: { gain: 8, bass: 5, mid: 6, treble: 6, presence: 6, reverb: 1 } })).toBe('Solo100 LD');
+  });
+
+  it('Mesa Mark I översätts som Mark IIC+, inte Mark IV', () => {
+    expect(amp({ amp: 'Mesa/Boogie Mark I' })).toBe('Mess2C+ 1');
+    expect(amp({ amp: 'Mesa/Boogie Mark IV' })).toBe('Mess4 LD');
+  });
+
+  it('Peaveys 70-talsrör blir inte 5150, och 70-tals-Orange blir inte Rockerverb', () => {
+    expect(amp({ amp: 'Peavey Mace (1971) with 4x12', era: '1970s', ampSettings: { gain: 5, bass: 5, mid: 6, treble: 6, presence: 5, reverb: 2 } })).toBe('Bellman 59N');
+    expect(amp({ amp: 'Peavey 5150' })).toBe('EV 51');
+    expect(amp({ amp: 'Orange 80W 2x12 combo', era: '1970s' })).toBe('Juice30 OD');
+    expect(amp({ amp: 'Orange Rockerverb 50', era: '2000s' })).toBe('Juice R100');
+  });
+});

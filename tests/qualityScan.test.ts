@@ -59,4 +59,11 @@ describe('kvalitetsskanning', () => {
     expect(decade('2010s+')).toBe(2010);
     expect(decade('')).toBeUndefined();
   });
+
+  it('granskade regler flaggas inte och hög säkerhet utan källor fångas', () => {
+    expect(rules({ guitar: 'Rickenbacker', reviewed: ['rickenbacker'] })).not.toContain('rickenbacker');
+    expect(rules({ confidence: 0.8, notes: 'No direct sources found for the amp.' })).toContain('conf-mismatch');
+    expect(rules({ era: '1970s', amp: 'Mesa/Boogie Mark I' })).not.toContain('era'); // Boogie fanns ~1970
+  });
 });
+

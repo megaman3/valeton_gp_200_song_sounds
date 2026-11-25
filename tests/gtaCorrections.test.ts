@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { applyCorrections, gtaCorrections } from '../src/engine/data';
-import { allSongs, database } from '../src/engine';
+import { allSongs } from '../src/engine';
 import type { ExternalDataset } from '../src/types';
+import gtaRaw from '../src/data/external/guitartoneadapt.json';
 
 const base = {
   source: '', sourceUrl: '', homepage: '', license: '', attribution: '', importedAt: '', count: 1,
@@ -20,7 +21,8 @@ describe('GuitarToneAdapt-rättelser', () => {
   });
 
   it('alla rättelser pekar på existerande toner', () => {
-    const ids = new Set(database.external.tones.map((t) => t.id));
+    // Mot originalfilen – uteslutna toner finns inte i den rättade datan.
+    const ids = new Set((gtaRaw as { tones: { id: string }[] }).tones.map((t) => t.id));
     for (const c of gtaCorrections.corrections) expect(ids.has(c.id), c.id).toBe(true);
   });
 
@@ -29,4 +31,20 @@ describe('GuitarToneAdapt-rättelser', () => {
     expect(ace.parts[0].originalGear?.guitar).toBe('Fender Stratocaster');
     expect(ace.parts[0].confidence).toBe(0.5);
   });
+
+  it('kan utesluta toner och markera granskade regler', () => {
+    const two = { ...base, tones: [base.tones[0], { ...base.tones[0], id: 'y' }] } as ExternalDataset;
+    const out = applyCorrections(two, { description: '', corrections: [
+      { id: 'x', exclude: true, reason: '' },
+      { id: 'y', reviewed: ['bass-gear'], reason: '' },
+    ] }).tones;
+    expect(out.map((t) => t.id)).toEqual(['y']);
+    expect(out[0].reviewed).toEqual(['bass-gear']);
+  });
+
+  it('basljud som hamnat bland gitarrljuden är borttagna', () => {
+    expect(allSongs.some((s) => s.artist === 'Nirvana' && s.title === 'Breed')).toBe(false);
+    expect(allSongs.some((s) => s.title === 'Given Up')).toBe(false);
+  });
 });
+

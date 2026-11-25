@@ -21,12 +21,13 @@ export function applyCorrections(dataset: ExternalDataset, corrections: ToneCorr
   const byId = new Map(corrections.corrections.map((c) => [c.id, c]));
   return {
     ...dataset,
-    tones: dataset.tones.map((tone) => {
+    tones: dataset.tones.filter((tone) => !byId.get(tone.id)?.exclude).map((tone) => {
       const c = byId.get(tone.id);
       if (!c) return tone;
       return {
         ...tone,
         ...c.set,
+        reviewed: c.reviewed ?? tone.reviewed,
         notes: [tone.notes, c.appendNote].filter(Boolean).join(' '),
         sources: [...tone.sources, ...(c.addSources ?? []).filter((s) => !tone.sources.includes(s))],
       };
