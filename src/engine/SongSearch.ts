@@ -57,17 +57,55 @@ function fuzzyIncludes(words: string[], term: string): boolean {
  *
  * Ger det inga träffar görs en stavfelstolerant sökning: ord på 4–7 bokstäver får
  * skilja sig med en bokstav, längre ord med två ("wiskey" → Whiskey, "metalica" → Metallica).
+ *
+ * Hittar inte heller den något räcker det att alla ord på 3+ bokstäver utom ett matchar,
+ * närmaste stavning först ("whisky in the yard" → Whiskey in the Jar).
  */
 export function search(songs: Song[], query: string, limit = Infinity): SearchResult {
   const terms = normalize(query).split(' ').filter(Boolean);
   if (terms.length === 0) return { songs: songs.slice(0, limit), fuzzy: false };
   const exact = rank(songs, query, terms, false, limit);
   if (exact.length > 0 || terms.every((t) => maxTypos(t) === 0)) return { songs: exact, fuzzy: false };
-  return { songs: rank(songs, query, terms, true, limit), fuzzy: true };
+  const fuzzy = rank(songs, query, terms, true, limit);
+  if (fuzzy.length > 0) return { songs: fuzzy, fuzzy: true };
+  return { songs: rankPartial(songs, terms.filter((t) => t.length >= 3), limit), fuzzy: true };
 }
 
 export function searchSongs(songs: Song[], query: string, limit = Infinity): Song[] {
   return search(songs, query, limit).songs;
+}
+
+/** Minsta antal ändringar mellan sökordet och något ord i texten (hela ordet eller dess början). */
+function closest(words: string[], term: string): number {
+  let best = term.length;
+  for (const w of words) {
+    best = Math.min(best, editDistance(term, w, best), w.length > term.length ? editDistance(term, w.slice(0, term.length), best) : best);
+    if (best === 0) break;
+  }
+  return best;
+}
+
+/**
+ * Sista utvägen: alla sökord på 3+ bokstäver utom ett ska matcha (exakt eller med ett
+ * tillåtet stavfel). Rankas efter totalt stavningsavstånd, så låten som ligger närmast
+ * hela sökningen kommer först ("yard" är två ändringar från "jar" men räknas ändå).
+ */
+function rankPartial(songs: Song[], terms: string[], limit: number): Song[] {
+  if (terms.length < 2) return [];
+  const scored: { song: Song; score: number }[] = [];
+  for (const song of songs) {
+    const haystack = normalize([song.artist, song.title, song.album ?? '', ...(song.aliases ?? [])].join(' '));
+    const compact = haystack.replace(/ /g, '');
+    const words = haystack.split(' ');
+    const dist = terms.map((t) => (haystack.includes(t) || compact.includes(t) ? 0 : closest(words, t)));
+    const hits = dist.filter((d, i) => d <= Math.max(1, maxTypos(terms[i]))).length;
+    if (hits < terms.length - 1) continue;
+    scored.push({ song, score: dist.reduce((a, b) => a + b, 0) });
+  }
+  return scored
+    .sort((a, b) => a.score - b.score || a.song.artist.localeCompare(b.song.artist))
+    .slice(0, limit)
+    .map((s) => s.song);
 }
 
 function rank(songs: Song[], query: string, terms: string[], fuzzy: boolean, limit: number): Song[] {
